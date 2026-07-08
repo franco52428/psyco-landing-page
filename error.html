@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada | MindFlow</title>
+    <style>
+        /* =========================================
+           Variables CSS & Reset (Mismo estilo principal)
+        ========================================= */
+        :root {
+            --primary: #4F46E5;
+            --primary-hover: #4338CA;
+            --bg-color: #F8FAFC;
+            --text-main: #0F172A;
+            --text-muted: #475569;
+            --accent-purple: #8B5CF6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow: hidden; /* Evita scroll innecesario en la página de error */
+        }
+
+        /* =========================================
+           Navegación Superior
+        ========================================= */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+            text-decoration: none;
+        }
+        
+        .logo span { color: var(--primary); }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .btn-login {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .btn-login:hover { color: var(--primary); }
+
+        /* =========================================
+           Sección de Error 404
+        ========================================= */
+        .error-section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 5%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInDown 0.6s ease-out;
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+            animation: fadeInUp 0.6s ease-out 0.1s both;
+        }
+
+        .error-description {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+
+        .error-ctas {
+            display: flex;
+            gap: 1rem;
+            animation: fadeInUp 0.6s ease-out 0.3s both;
+        }
+
+        .btn-primary-large {
+            background: var(--text-main);
+            color: white;
+            padding: 0.9rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary-large:hover {
+            background: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .btn-secondary-large {
+            background: white;
+            color: var(--text-main);
+            padding: 0.9rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 1px solid #E2E8F0;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary-large:hover {
+            border-color: #CBD5E1;
+            background: #F8FAFC;
+        }
+
+        /* =========================================
+           Animaciones
+        ========================================= */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .error-code { font-size: 6rem; }
+            .error-title { font-size: 2rem; }
+            .error-ctas { flex-direction: column; width: 100%; max-width: 300px; }
+            .btn-primary-large, .btn-secondary-large { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <!-- Al hacer clic en el logo, regresará a la landing -->
+        <a href="/index.html" class="logo">Mind<span>Flow</span></a>
+        <div class="nav-links">
+            <a href="/login" class="btn-login">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <!-- Contenido 404 -->
+    <main class="error-section">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Parece que perdimos el hilo de esta sesión.</h1>
+        <p class="error-description">La página que intentas consultar no existe, ha cambiado de nombre o fue movida. Regresemos a un lugar seguro.</p>
+        
+        <div class="error-ctas">
+            <!-- Asegúrate de que este enlace apunte a la raíz de tu bucket/dominio -->
+            <a href="/index.html" class="btn-primary-large">Volver al inicio</a>
+            <a href="mailto:soporte@tudominio.com" class="btn-secondary-large">Contactar soporte</a>
+        </div>
+    </main>
+
+</body>
+</html>
