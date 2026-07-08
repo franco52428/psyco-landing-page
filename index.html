@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindFlow | Tu Copiloto Clínico</title>
+    <style>
+        /* =========================================
+           Variables CSS & Reset
+           Listas para integrarse con tu frontend framework
+        ========================================= */
+        :root {
+            --primary: #6366F1; /* Índigo moderno y confiable */
+            --primary-hover: #4F46E5;
+            --bg-color: #F8FAFC; /* Fondo muy suave, reduce la fatiga visual */
+            --card-bg: #FFFFFF;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --accent: #10B981; /* Verde esmeralda para el éxito/dinero */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* =========================================
+           Navegación (SaaS Standard)
+        ========================================= */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .btn-login {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .btn-login:hover {
+            color: var(--primary);
+        }
+
+        .btn-signup {
+            background: var(--primary);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.2);
+        }
+
+        .btn-signup:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+        }
+
+        /* =========================================
+           Hero Section
+        ========================================= */
+        .hero {
+            padding: 12rem 5% 6rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #EEF2FF;
+            color: var(--primary);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-inline: auto;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .hero-ctas {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+
+        .btn-primary-large {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+        }
+
+        .btn-primary-large:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(99, 102, 241, 0.3);
+        }
+
+        /* =========================================
+           Features Grid (Propuesta de Valor)
+        ========================================= */
+        .features {
+            padding: 4rem 5% 8rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #F1F5F9;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: #E0E7FF;
+        }
+
+        .icon-wrapper {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Colores específicos por feature */
+        .feature-card:nth-child(1) .icon-wrapper { background: #EEF2FF; color: var(--primary); }
+        .feature-card:nth-child(2) .icon-wrapper { background: #ECFDF5; color: var(--accent); }
+        .feature-card:nth-child(3) .icon-wrapper { background: #FFF7ED; color: #F97316; }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* =========================================
+           Animaciones
+        ========================================= */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero-ctas { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Superior -->
+    <nav>
+        <div class="logo">MindFlow.</div>
+        <div class="nav-links">
+            <a href="/login" class="btn-login">Iniciar sesión</a>
+            <a href="/signup" class="btn-signup">Pruébalo gratis</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (El gancho comercial) -->
+    <header class="hero">
+        <div class="badge">Diseñado exclusivamente para psicólogos independientes</div>
+        <h1>Recupera tu tiempo.<br>Enfócate solo en <span>hacer terapia.</span></h1>
+        <p>El primer asistente inteligente que redacta tus notas, gestiona los paquetes de sesiones de tus pacientes y automatiza la administración de tu consultorio. Sin fricciones, sin estrés.</p>
+        
+        <div class="hero-ctas">
+            <a href="/signup" class="btn-primary-large">Comenzar mis 14 días gratis</a>
+        </div>
+    </header>
+
+    <!-- Sección de Funcionalidades (Eliminando puntos de dolor) -->
+    <section class="features">
+        
+        <!-- Feature 1: Dictado -->
+        <div class="feature-card">
+            <div class="icon-wrapper">🎙️</div>
+            <h3>Habla, no teclees</h3>
+            <p>Dicta el resumen de tu sesión y nuestra IA se encarga del resto. Estructuramos tus monólogos en formatos clínicos estandarizados (SOAP) en segundos.</p>
+        </div>
+
+        <!-- Feature 2: Gestión de Planes (El gestor de negocio) -->
+        <div class="feature-card">
+            <div class="icon-wrapper">💳</div>
+            <h3>Adiós a los cobros incómodos</h3>
+            <p>Deja que el sistema sea el "asistente malo". Llevamos el conteo exacto de los planes de tus pacientes y les enviamos recordatorios automáticos y amables cuando deben renovar.</p>
+        </div>
+
+        <!-- Feature 3: Análisis Clínico (La promesa futura) -->
+        <div class="feature-card">
+            <div class="icon-wrapper">🧠</div>
+            <h3>Tu copiloto clínico</h3>
+            <p>El sistema lee entre líneas. Analizamos la evolución de los pacientes a través de tus notas y te generamos alertas predictivas para que nunca pierdas un detalle crucial.</p>
+        </div>
+
+    </section>
+
+    <!-- Script ligero para interactividad básica -->
+    <script>
+        // Efecto parallax muy sutil en las tarjetas para dar sensación de fluidez
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body>
+</html>
