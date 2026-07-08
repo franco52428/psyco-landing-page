@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindFlow | Tu Ecosistema Clínico</title>
+    <title>MindFlow | El asistente del psicólogo independiente</title>
     <style>
         /* =========================================
            Variables CSS & Reset
         ========================================= */
         :root {
-            --primary: #4F46E5; /* Índigo vibrante */
+            --primary: #4F46E5; 
             --primary-hover: #4338CA;
             --bg-color: #F8FAFC;
             --card-bg: #FFFFFF;
@@ -97,26 +97,26 @@
         }
 
         /* =========================================
-           Hero Section
+           Hero Section (Conexión Emocional)
         ========================================= */
         .hero {
             padding: 11rem 5% 5rem;
             text-align: center;
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto;
         }
 
         .badge {
             display: inline-flex;
             align-items: center;
-            background: #EEF2FF;
-            color: var(--primary);
+            background: #F5F3FF;
+            color: var(--accent-purple);
             padding: 0.5rem 1.2rem;
             border-radius: 50px;
             font-size: 0.875rem;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 2rem;
-            border: 1px solid #E0E7FF;
+            border: 1px solid #EDE9FE;
             animation: fadeInDown 0.6s ease-out;
         }
 
@@ -136,10 +136,10 @@
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: var(--text-muted);
             margin-bottom: 2.5rem;
-            max-width: 650px;
+            max-width: 800px;
             margin-inline: auto;
             animation: fadeInUp 0.6s ease-out 0.2s both;
         }
@@ -169,7 +169,7 @@
         }
 
         /* =========================================
-           Features Grid (6 Pilares)
+           Features Grid (El mix: Software + IA + Data)
         ========================================= */
         .features-header {
             text-align: center;
@@ -180,6 +180,8 @@
             font-size: 2.2rem;
             font-weight: 700;
             color: var(--text-main);
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .features {
@@ -219,13 +221,33 @@
             margin-bottom: 1.5rem;
         }
 
+        .problem-tag {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
         /* Colores Específicos */
-        .card-calendar .icon-wrapper { background: #E0F2FE; color: var(--accent-blue); }
-        .card-process .icon-wrapper { background: #EDE9FE; color: var(--accent-purple); }
+        .card-ai .icon-wrapper { background: #EDE9FE; color: var(--accent-purple); }
+        .card-ai .problem-tag { color: var(--accent-purple); }
+
         .card-voice .icon-wrapper { background: #EEF2FF; color: var(--primary); }
+        .card-voice .problem-tag { color: var(--primary); }
+
         .card-billing .icon-wrapper { background: #D1FAE5; color: var(--accent-green); }
-        .card-ai .icon-wrapper { background: #FEF3C7; color: var(--accent-amber); }
+        .card-billing .problem-tag { color: var(--accent-green); }
+
+        .card-calendar .icon-wrapper { background: #FEF3C7; color: var(--accent-amber); }
+        .card-calendar .problem-tag { color: var(--accent-amber); }
+
         .card-security .icon-wrapper { background: #FFE4E6; color: var(--accent-rose); }
+        .card-security .problem-tag { color: var(--accent-rose); }
+
+        .card-process .icon-wrapper { background: #E0F2FE; color: var(--accent-blue); }
+        .card-process .problem-tag { color: var(--accent-blue); }
 
         .feature-card h3 {
             font-size: 1.25rem;
@@ -267,69 +289,75 @@
         <div class="logo">Mind<span>Flow</span></div>
         <div class="nav-links">
             <a href="/login" class="btn-login">Iniciar sesión</a>
-            <a href="/signup" class="btn-signup">Pruébalo gratis</a>
+            <a href="/signup" class="btn-signup">Probar gratis</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero">
-        <div class="badge">✨ El asistente integral para tu consultorio</div>
-        <h1>Todo tu consultorio en un<br><span>solo lugar.</span></h1>
-        <p>Desde la primera cita en tu agenda hasta el resguardo cifrado de tus notas clínicas. Organiza, analiza y automatiza tu práctica profesional sin complicaciones tecnológicas.</p>
+        <div class="badge">Software + Analítica + Inteligencia Artificial</div>
+        <h1>Sabemos que tu memoria no es infinita.<br><span>Tu asistente clínico sí lo es.</span></h1>
+        <p>Recordar la vida de 30 pacientes, los acuerdos de cada sesión, las tarifas personalizadas y no perder ningún documento en el proceso es agotador. Hemos creado un ecosistema que combina el orden del software, el poder de los datos y la agudeza de la IA para respaldar tu práctica independiente.</p>
         
         <div class="hero-ctas">
-            <a href="/signup" class="btn-primary-large">Crear mi cuenta gratis</a>
+            <a href="/signup" class="btn-primary-large">Delegar mi carga operativa hoy</a>
         </div>
     </header>
 
     <!-- Header Funcionalidades -->
     <div class="features-header">
-        <h2>Diseñado para el flujo de trabajo real</h2>
+        <h2>Diseñado para el caos real del consultorio</h2>
     </div>
 
-    <!-- Features Grid -->
+    <!-- Features Grid (Soluciones Exactas) -->
     <section class="features">
         
-        <!-- 1. Agenda -->
-        <div class="feature-card card-calendar">
-            <div class="icon-wrapper">📅</div>
-            <h3>Calendario Inteligente</h3>
-            <p>Gestiona tus sesiones con fluidez. Visualiza tu disponibilidad, bloquea espacios personales y mantén el control total de tus tiempos sin cruces ni olvidos.</p>
-        </div>
-
-        <!-- 2. Procesos Clínicos (El Core) -->
+        <!-- 1. El problema de olvidar en qué iban -->
         <div class="feature-card card-process">
-            <div class="icon-wrapper">📂</div>
-            <h3>Expedientes Dinámicos</h3>
-            <p>Agrupa pacientes en un mismo "Proceso Clínico" (ideal para terapia de pareja o familiar). Centraliza notas, documentos, y focos de trabajo en un único ecosistema ordenado.</p>
+            <div class="icon-wrapper">🔄</div>
+            <span class="problem-tag">"¿En qué me quedé con este paciente?"</span>
+            <h3>Memoria Clínica al Instante (IA)</h3>
+            <p>Antes de que tu paciente cruce la puerta, la IA lee todo el historial y te genera un resumen de 1 minuto: dónde se quedaron, qué tareas le dejaste y cuáles fueron los acuerdos clave de la última sesión.</p>
         </div>
 
-        <!-- 3. Dictado / Notas -->
-        <div class="feature-card card-voice">
-            <div class="icon-wrapper">🎙️</div>
-            <h3>Habla, no teclees</h3>
-            <p>Usa el dictado por voz para registrar tus sesiones. Captura el resumen de tu intervención rápidamente y olvídate de invertir horas extra redactando historias clínicas.</p>
-        </div>
-
-        <!-- 4. Gestión de Planes -->
-        <div class="feature-card card-billing">
-            <div class="icon-wrapper">💳</div>
-            <h3>Piloto Automático de Planes</h3>
-            <p>El sistema lleva el conteo de los paquetes de sesiones de tus pacientes. Recibe alertas cuando un plan esté por terminar y elimina la fricción de tener que cobrar presencialmente.</p>
-        </div>
-
-        <!-- 5. Inteligencia Artificial -->
+        <!-- 2. El problema de los puntos ciegos -->
         <div class="feature-card card-ai">
             <div class="icon-wrapper">🧠</div>
-            <h3>Análisis Clínico (IA)</h3>
-            <p>Tu copiloto personal. Nuestro sistema analiza silenciosamente el progreso en tus procesos, recordándote datos vitales de tus pacientes justo cuando los necesitas.</p>
+            <span class="problem-tag">"Siento que estoy pasando algo por alto"</span>
+            <h3>Supervisión Analítica Silenciosa</h3>
+            <p>Actuamos como un colega supervisor. Nuestra analítica detecta patrones estancados en el tiempo y te alerta sutilmente si estás olvidando abordar un foco de trabajo o si el paciente muestra signos de resistencia.</p>
         </div>
 
-        <!-- 6. Seguridad -->
+        <!-- 3. El problema de las tarifas olvidadas -->
+        <div class="feature-card card-billing">
+            <div class="icon-wrapper">💳</div>
+            <span class="problem-tag">"No recuerdo cuánto le cobraba a él"</span>
+            <h3>Perfiles Financieros Únicos</h3>
+            <p>A veces haces descuentos o manejas tarifas antiguas. El software registra el perfil exacto de facturación de cada persona, gestiona sus paquetes de sesiones y te muestra su historial de pagos sin esfuerzo.</p>
+        </div>
+
+        <!-- 4. El problema de la gestión de citas -->
+        <div class="feature-card card-calendar">
+            <div class="icon-wrapper">📅</div>
+            <span class="problem-tag">"Se me complica gestionar la agenda"</span>
+            <h3>Control Total del Tiempo</h3>
+            <p>Deja de cruzar mensajes por WhatsApp para coordinar citas. Una agenda robusta que automatiza recordatorios, previene solapamientos y se adapta a tus ritmos personales de trabajo y descanso.</p>
+        </div>
+
+        <!-- 5. El problema de redactar tarde -->
+        <div class="feature-card card-voice">
+            <div class="icon-wrapper">🎙️</div>
+            <span class="problem-tag">"Tengo historias clínicas atrasadas"</span>
+            <h3>Redacción Asistida por Voz</h3>
+            <p>Termina la sesión, presiona grabar y dicta tus pensamientos. La IA no solo transcribe, sino que estructura tu monólogo en un formato clínico ordenado y listo para ser guardado en el expediente.</p>
+        </div>
+
+        <!-- 6. El problema de perder la información -->
         <div class="feature-card card-security">
-            <div class="icon-wrapper">🛡️</div>
-            <h3>Privacidad Grado Corporativo</h3>
-            <p>Tu ética, respaldada por ingeniería. Toda la información viaja cifrada, con backups automáticos y servidores disponibles 24/7. Tranquilidad absoluta para ti y tus pacientes.</p>
+            <div class="icon-wrapper">🔐</div>
+            <span class="problem-tag">"A veces pierdo notas o documentos"</span>
+            <h3>Bóveda Centralizada de Datos</h3>
+            <p>Olvídate del miedo a perder información dispersa en libretas o carpetas locales. Toda la historia, adjuntos y consentimientos de tu paciente viven en un entorno cloud blindado, cifrado y respaldado 24/7.</p>
         </div>
 
     </section>
