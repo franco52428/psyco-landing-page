@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindFlow | El asistente del psicólogo independiente</title>
+    <style>
+        /* =========================================
+           Variables CSS & Reset
+        ========================================= */
+        :root {
+            --primary: #4F46E5; 
+            --primary-hover: #4338CA;
+            --bg-color: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-main: #0F172A;
+            --text-muted: #475569;
+            --accent-green: #10B981;
+            --accent-purple: #8B5CF6;
+            --accent-rose: #F43F5E;
+            --accent-amber: #F59E0B;
+            --accent-blue: #3B82F6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* =========================================
+           Navegación
+        ========================================= */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+        }
+        
+        .logo span { color: var(--primary); }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .btn-login {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .btn-login:hover { color: var(--primary); }
+
+        .btn-signup {
+            background: var(--primary);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2);
+        }
+
+        .btn-signup:hover {
+            background: var(--primary-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 8px -1px rgba(79, 70, 229, 0.3);
+        }
+
+        /* =========================================
+           Hero Section (Conexión Emocional)
+        ========================================= */
+        .hero {
+            padding: 11rem 5% 5rem;
+            text-align: center;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            background: #F5F3FF;
+            color: var(--accent-purple);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            border: 1px solid #EDE9FE;
+            animation: fadeInDown 0.6s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+            animation: fadeInUp 0.6s ease-out 0.1s both;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--primary), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 800px;
+            margin-inline: auto;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+
+        .hero-ctas {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            animation: fadeInUp 0.6s ease-out 0.3s both;
+        }
+
+        .btn-primary-large {
+            background: var(--text-main);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary-large:hover {
+            background: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* =========================================
+           Features Grid (El mix: Software + IA + Data)
+        ========================================= */
+        .features-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .features-header h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .features {
+            padding: 2rem 5% 8rem;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #E2E8F0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+            border-color: #CBD5E1;
+        }
+
+        .icon-wrapper {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .problem-tag {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* Colores Específicos */
+        .card-ai .icon-wrapper { background: #EDE9FE; color: var(--accent-purple); }
+        .card-ai .problem-tag { color: var(--accent-purple); }
+
+        .card-voice .icon-wrapper { background: #EEF2FF; color: var(--primary); }
+        .card-voice .problem-tag { color: var(--primary); }
+
+        .card-billing .icon-wrapper { background: #D1FAE5; color: var(--accent-green); }
+        .card-billing .problem-tag { color: var(--accent-green); }
+
+        .card-calendar .icon-wrapper { background: #FEF3C7; color: var(--accent-amber); }
+        .card-calendar .problem-tag { color: var(--accent-amber); }
+
+        .card-security .icon-wrapper { background: #FFE4E6; color: var(--accent-rose); }
+        .card-security .problem-tag { color: var(--accent-rose); }
+
+        .card-process .icon-wrapper { background: #E0F2FE; color: var(--accent-blue); }
+        .card-process .problem-tag { color: var(--accent-blue); }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--text-main);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        /* =========================================
+           Animaciones
+        ========================================= */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .features { gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="logo">Mind<span>Flow</span></div>
+        <div class="nav-links">
+            <a href="/login" class="btn-login">Iniciar sesión</a>
+            <a href="/signup" class="btn-signup">Probar gratis</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="badge">Software + Analítica + Inteligencia Artificial</div>
+        <h1>Sabemos que tu memoria no es infinita.<br><span>Tu asistente clínico sí lo es.</span></h1>
+        <p>Recordar la vida de 30 pacientes, los acuerdos de cada sesión, las tarifas personalizadas y no perder ningún documento en el proceso es agotador. Hemos creado un ecosistema que combina el orden del software, el poder de los datos y la agudeza de la IA para respaldar tu práctica independiente.</p>
+        
+        <div class="hero-ctas">
+            <a href="/signup" class="btn-primary-large">Delegar mi carga operativa hoy</a>
+        </div>
+    </header>
+
+    <!-- Header Funcionalidades -->
+    <div class="features-header">
+        <h2>Diseñado para el caos real del consultorio</h2>
+    </div>
+
+    <!-- Features Grid (Soluciones Exactas) -->
+    <section class="features">
+        
+        <!-- 1. El problema de olvidar en qué iban -->
+        <div class="feature-card card-process">
+            <div class="icon-wrapper">🔄</div>
+            <span class="problem-tag">"¿En qué me quedé con este paciente?"</span>
+            <h3>Memoria Clínica al Instante (IA)</h3>
+            <p>Antes de que tu paciente cruce la puerta, la IA lee todo el historial y te genera un resumen de 1 minuto: dónde se quedaron, qué tareas le dejaste y cuáles fueron los acuerdos clave de la última sesión.</p>
+        </div>
+
+        <!-- 2. El problema de los puntos ciegos -->
+        <div class="feature-card card-ai">
+            <div class="icon-wrapper">🧠</div>
+            <span class="problem-tag">"Siento que estoy pasando algo por alto"</span>
+            <h3>Supervisión Analítica Silenciosa</h3>
+            <p>Actuamos como un colega supervisor. Nuestra analítica detecta patrones estancados en el tiempo y te alerta sutilmente si estás olvidando abordar un foco de trabajo o si el paciente muestra signos de resistencia.</p>
+        </div>
+
+        <!-- 3. El problema de las tarifas olvidadas -->
+        <div class="feature-card card-billing">
+            <div class="icon-wrapper">💳</div>
+            <span class="problem-tag">"No recuerdo cuánto le cobraba a él"</span>
+            <h3>Perfiles Financieros Únicos</h3>
+            <p>A veces haces descuentos o manejas tarifas antiguas. El software registra el perfil exacto de facturación de cada persona, gestiona sus paquetes de sesiones y te muestra su historial de pagos sin esfuerzo.</p>
+        </div>
+
+        <!-- 4. El problema de la gestión de citas -->
+        <div class="feature-card card-calendar">
+            <div class="icon-wrapper">📅</div>
+            <span class="problem-tag">"Se me complica gestionar la agenda"</span>
+            <h3>Control Total del Tiempo</h3>
+            <p>Deja de cruzar mensajes por WhatsApp para coordinar citas. Una agenda robusta que automatiza recordatorios, previene solapamientos y se adapta a tus ritmos personales de trabajo y descanso.</p>
+        </div>
+
+        <!-- 5. El problema de redactar tarde -->
+        <div class="feature-card card-voice">
+            <div class="icon-wrapper">🎙️</div>
+            <span class="problem-tag">"Tengo historias clínicas atrasadas"</span>
+            <h3>Redacción Asistida por Voz</h3>
+            <p>Termina la sesión, presiona grabar y dicta tus pensamientos. La IA no solo transcribe, sino que estructura tu monólogo en un formato clínico ordenado y listo para ser guardado en el expediente.</p>
+        </div>
+
+        <!-- 6. El problema de perder la información -->
+        <div class="feature-card card-security">
+            <div class="icon-wrapper">🔐</div>
+            <span class="problem-tag">"A veces pierdo notas o documentos"</span>
+            <h3>Bóveda Centralizada de Datos</h3>
+            <p>Olvídate del miedo a perder información dispersa en libretas o carpetas locales. Toda la historia, adjuntos y consentimientos de tu paciente viven en un entorno cloud blindado, cifrado y respaldado 24/7.</p>
+        </div>
+
+    </section>
+
+</body>
+</html>

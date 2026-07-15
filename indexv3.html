@@ -1,10 +1,9 @@
-Aquí tienes el código HTML actualizado con el nuevo nombre Verdme, conservando la estructura y estilos originales:
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verdme | El asistente del psicólogo independiente</title>
+    <title>MindFlow | El asistente del psicólogo independiente</title>
     <style>
         /* =========================================
            Variables CSS & Reset
@@ -271,6 +270,7 @@ Aquí tienes el código HTML actualizado con el nuevo nombre Verdme, conservando
         .card-ai .icon-wrapper { background: #EDE9FE; color: var(--accent-purple); }
         .card-process .icon-wrapper { background: #E0F2FE; color: var(--accent-blue); }
         .card-calendar .icon-wrapper { background: #FEF3C7; color: var(--accent-amber); }
+        .card-security .icon-wrapper { background: #FFE4E6; color: var(--accent-rose); }
 
         .feature-card h3 {
             font-size: 1.25rem;
@@ -284,41 +284,6 @@ Aquí tienes el código HTML actualizado con el nuevo nombre Verdme, conservando
             font-size: 0.95rem;
             line-height: 1.6;
             flex-grow: 1;
-        }
-
-        /* =========================================
-           Sección Seguridad y Ética
-        ========================================= */
-        .security-section {
-            background-color: var(--card-bg);
-            padding: 5rem 5%;
-            border-top: 1px solid #E2E8F0;
-            border-bottom: 1px solid #E2E8F0;
-        }
-
-        .security-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .security-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-main);
-        }
-
-        .security-section h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--text-main);
-            margin-bottom: 1.5rem;
-        }
-
-        .security-section p {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            line-height: 1.8;
         }
 
         /* =========================================
@@ -390,7 +355,7 @@ Aquí tienes el código HTML actualizado con el nuevo nombre Verdme, conservando
 
     <!-- Navegación -->
     <nav>
-        <div class="logo">Verd<span>me</span></div>
+        <div class="logo">Mind<span>Flow</span></div>
         <div class="nav-links">
             <a href="/login" class="btn-login">Iniciar sesión</a>
             <a href="/signup" class="btn-signup">Probar gratis</a>
@@ -401,7 +366,7 @@ Aquí tienes el código HTML actualizado con el nuevo nombre Verdme, conservando
     <header class="hero">
         <div class="badge">El ecosistema clínico diseñado para terapeutas humanos.</div>
         <h1>Menos tiempo en la pantalla.<br><span>Más presencia con tus pacientes.</span></h1>
-        <p>Libérate de la carga administrativa y de la redacción tediosa de historias clínicas. Verdme organiza tu consultorio y potencia tus análisis con inteligencia clínica, para que te concentres únicamente en transformar vidas.</p>
+        <p>Libérate de la carga administrativa y de la redacción tediosa de historias clínicas. MindFlow organiza tu consultorio y potencia tus análisis con inteligencia clínica, para que te concentres únicamente en transformar vidas.</p>
         
         <div class="hero-ctas">
             <a href="/signup" class="btn-primary-large">Comenzar mi prueba gratuita (Sin tarjetas)</a>
@@ -420,7 +385,7 @@ Aquí tienes el código HTML actualizado con el nuevo nombre Verdme, conservando
     <!-- 3. Sección de Propuesta de Valor / Características -->
     <div class="features-header">
         <h2>Tu intuición clínica, amplificada.</h2>
-        <p>No reemplazamos tu criterio; te damos las herramientas para llevarlo al siguiente nivel. Descubre cómo Verdme se convierte en tu copiloto silencioso.</p>
+        <p>No reemplazamos tu criterio; te damos las herramientas para llevarlo al siguiente nivel. Descubre cómo MindFlow se convierte en tu copiloto silencioso.</p>
     </div>
 
     <section class="features">
@@ -453,18 +418,16 @@ Aquí tienes el código HTML actualizado con el nuevo nombre Verdme, conservando
             <p>Gestiona tu disponibilidad sin cruces de horarios. Olvídate de la fricción de cobrar en persona: el sistema realiza el conteo de los paquetes de sesiones de tus pacientes y les avisa automáticamente cuándo es momento de renovar.</p>
         </div>
 
-    </section>
-
-    <!-- 4. Sección de Seguridad y Ética -->
-    <section class="security-section">
-        <div class="security-container">
-            <div class="security-icon">🔐</div>
-            <h2>Tu secreto profesional, resguardado por ingeniería.</h2>
+        <!-- Bloque 5 (Nueva Card de Seguridad) -->
+        <div class="feature-card card-security">
+            <div class="icon-wrapper">🔐</div>
+            <h3>Tu secreto profesional, resguardado por ingeniería.</h3>
             <p>Sabemos que la confianza es la base de tu práctica. Por eso, toda la información de tus pacientes viaja y se almacena bajo estrictos estándares de cifrado de grado corporativo, con respaldos automáticos las 24 horas del día. Tu tranquilidad y la de ellos es nuestra prioridad absoluta.</p>
         </div>
+
     </section>
 
-    <!-- 5. Sección de Cierre / CTA Final -->
+    <!-- 4. Sección de Cierre / CTA Final -->
     <section class="cta-final">
         <h2>Devuélvele el enfoque a lo que realmente importa: el ser humano.</h2>
         <p>Automatiza la burocracia de tu consultorio y redescubre el placer de tu profesión con las herramientas más avanzadas del mercado.</p>
