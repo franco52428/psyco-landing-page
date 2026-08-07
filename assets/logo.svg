@@ -1,0 +1,29 @@
+<svg class="logo-icon" aria-hidden="true" width="64" height="64" viewBox="0 0 400 400">
+                <defs>
+                    <linearGradient id="landingLogoLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#065F46"/>
+                        <stop offset="100%" stop-color="#022C22"/>
+                    </linearGradient>
+                    <linearGradient id="landingLogoRight" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#6EE7B7"/>
+                        <stop offset="100%" stop-color="#059669"/>
+                    </linearGradient>
+                    <linearGradient id="landingLogoCircle" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#FCD34D"/>
+                        <stop offset="100%" stop-color="#92400E"/>
+                    </linearGradient>
+                    <filter id="landingLogoShadow" x="-30%" y="-30%" width="160%" height="170%">
+                        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+                    </filter>
+                </defs>
+                <g filter="url(#landingLogoShadow)">
+                    <circle cx="200" cy="216" r="132" fill="#6EE7B7" opacity="0.20"/>
+                    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#landingLogoLeft)"/>
+                    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#landingLogoRight)"/>
+                    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+                </g>
+                <g filter="url(#landingLogoShadow)">
+                    <circle cx="200" cy="92" r="30" fill="url(#landingLogoCircle)"/>
+                    <circle cx="200" cy="92" r="46" fill="none" stroke="#34D399" stroke-width="3"/>
+                </g>
+            </svg>

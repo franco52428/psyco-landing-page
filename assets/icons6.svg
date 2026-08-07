@@ -1,0 +1,191 @@
+<svg width="1400" height="1100" viewBox="0 0 1400 1100" xmlns="http://www.w3.org/2000/svg" style="background-color: #F8FAFC; font-family: 'Inter', system-ui, sans-serif;">
+  <defs>
+    <!-- Degradados -->
+    <linearGradient id="gradMain" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    
+    <linearGradient id="gradRev" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+
+    <linearGradient id="gradPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="gradGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Estilos de texto -->
+    <style>
+      .title { font-size: 32px; font-weight: 800; fill: #0F172A; text-anchor: middle; letter-spacing: -1px; }
+      .label { font-size: 16px; font-weight: 600; fill: #475569; text-anchor: middle; }
+      .grid-line { stroke: #E2E8F0; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <text x="700" y="80" class="title">VERDME: 20 EXPLORACIONES DE ICONO (V + CHULITO)</text>
+  
+  <!-- Cuadrícula de fondo -->
+  <path d="M0 150 L1400 150 M0 380 L1400 380 M0 610 L1400 610 M0 840 L1400 840" class="grid-line" />
+
+  <!-- FILA 1 -->
+  <!-- 1. Clásico -->
+  <g transform="translate(140, 200)">
+    <path d="M 0 60 L 40 120 L 110 30" fill="none" stroke="url(#gradMain)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="110" cy="30" r="8" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">1. Clásico</text>
+  </g>
+
+  <!-- 2. Ángulos Agudos -->
+  <g transform="translate(420, 200)">
+    <path d="M 0 60 L 40 120 L 110 30" fill="none" stroke="url(#gradMain)" stroke-width="20" stroke-linejoin="miter" />
+    <circle cx="110" cy="30" r="10" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">2. Agudo</text>
+  </g>
+
+  <!-- 3. Desconectado -->
+  <g transform="translate(700, 200)">
+    <path d="M 0 50 L 30 95" fill="none" stroke="url(#gradPurple)" stroke-width="24" stroke-linecap="round" />
+    <path d="M 45 120 L 110 30" fill="none" stroke="url(#gradGreen)" stroke-width="24" stroke-linecap="round" />
+    <circle cx="110" cy="30" r="8" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">3. Desconectado</text>
+  </g>
+
+  <!-- 4. Fluido / Curvo -->
+  <g transform="translate(980, 200)">
+    <path d="M 0 50 Q 40 140 110 30" fill="none" stroke="url(#gradMain)" stroke-width="24" stroke-linecap="round" />
+    <circle cx="110" cy="30" r="8" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">4. Fluido Orgánico</text>
+  </g>
+
+  <!-- 5. Invertido -->
+  <g transform="translate(1260, 200)">
+    <path d="M 0 70 L 40 120 L 110 30" fill="none" stroke="url(#gradRev)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="110" cy="30" r="8" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">5. Gradiente Inverso</text>
+  </g>
+
+  <!-- FILA 2 -->
+  <!-- 6. Punto Inferior -->
+  <g transform="translate(140, 430)">
+    <path d="M 0 60 L 40 120 L 110 30" fill="none" stroke="url(#gradMain)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="40" cy="120" r="8" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">6. Punto Base</text>
+  </g>
+
+  <!-- 7. Triple Punto -->
+  <g transform="translate(420, 430)">
+    <path d="M 0 60 L 40 120 L 110 30" fill="none" stroke="url(#gradMain)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="0" cy="60" r="6" fill="#FFFFFF" />
+    <circle cx="40" cy="120" r="6" fill="#FFFFFF" />
+    <circle cx="110" cy="30" r="6" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">7. Nodos</text>
+  </g>
+
+  <!-- 8. Asimétrico Extremo -->
+  <g transform="translate(700, 430)">
+    <path d="M 20 80 L 40 110 L 120 10" fill="none" stroke="url(#gradMain)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="120" cy="10" r="8" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">8. Dinámico Alto</text>
+  </g>
+
+  <!-- 9. Brazo Izquierdo Recto -->
+  <g transform="translate(980, 430)">
+    <path d="M 20 40 L 20 110 L 100 30" fill="none" stroke="url(#gradMain)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="100" cy="30" r="8" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">9. Base Recta</text>
+  </g>
+
+  <!-- 10. Trazo Grueso -->
+  <g transform="translate(1260, 430)">
+    <path d="M 0 60 L 45 115 L 110 30" fill="none" stroke="url(#gradMain)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="110" cy="30" r="10" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">10. Bold / Denso</text>
+  </g>
+
+  <!-- FILA 3 -->
+  <!-- 11. Tipo App Morada -->
+  <g transform="translate(140, 660)">
+    <rect x="-20" y="10" width="140" height="140" rx="35" fill="url(#gradPurple)" />
+    <path d="M 15 80 L 45 115 L 90 40" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="90" cy="40" r="5" fill="#10B981" />
+    <text x="55" y="180" class="label">11. Caja Morada</text>
+  </g>
+
+  <!-- 12. Tipo App Blanca (Outline) -->
+  <g transform="translate(420, 660)">
+    <rect x="-20" y="10" width="140" height="140" rx="35" fill="#FFFFFF" stroke="url(#gradPurple)" stroke-width="4" />
+    <path d="M 15 80 L 45 115 L 90 40" fill="none" stroke="url(#gradMain)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="90" cy="40" r="6" fill="#FFFFFF" stroke="url(#gradGreen)" stroke-width="4" />
+    <text x="55" y="180" class="label">12. Caja Blanca</text>
+  </g>
+
+  <!-- 13. Tipo App Degradada -->
+  <g transform="translate(700, 660)">
+    <rect x="-20" y="10" width="140" height="140" rx="35" fill="url(#gradMain)" />
+    <path d="M 15 80 L 45 115 L 90 40" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="55" y="180" class="label">13. Caja Degradado</text>
+  </g>
+
+  <!-- 14. Geométrico (Superposición) -->
+  <g transform="translate(980, 660)">
+    <path d="M 0 50 L 40 110" fill="none" stroke="url(#gradPurple)" stroke-width="24" stroke-linecap="round" />
+    <path d="M 20 110 L 110 20" fill="none" stroke="url(#gradGreen)" stroke-width="24" stroke-linecap="round" style="mix-blend-mode: multiply;" />
+    <circle cx="110" cy="20" r="8" fill="#FFFFFF" />
+    <text x="55" y="180" class="label">14. Cruce de Trazos</text>
+  </g>
+
+  <!-- 15. Contorno Doble -->
+  <g transform="translate(1260, 660)">
+    <path d="M 0 60 L 40 120 L 110 30" fill="none" stroke="url(#gradPurple)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 0 80 L 40 140 L 110 50" fill="none" stroke="url(#gradGreen)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="55" y="180" class="label">15. Eco / Doble</text>
+  </g>
+
+  <!-- FILA 4 -->
+  <!-- 16. Bucle / Infinito -->
+  <g transform="translate(140, 890)">
+    <path d="M 0 70 L 40 120 L 90 50 C 120 10, 140 70, 90 90" fill="none" stroke="url(#gradMain)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="90" cy="90" r="6" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">16. Bucle</text>
+  </g>
+
+  <!-- 17. Abstracto Humano -->
+  <g transform="translate(420, 890)">
+    <path d="M 10 70 L 40 110 L 90 50" fill="none" stroke="url(#gradPurple)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="105" cy="20" r="14" fill="url(#gradGreen)" />
+    <circle cx="105" cy="20" r="5" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">17. Figura Humana</text>
+  </g>
+
+  <!-- 18. Líneas Paralelas -->
+  <g transform="translate(700, 890)">
+    <path d="M 0 60 L 40 110 L 100 30" fill="none" stroke="url(#gradMain)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 15 70 L 40 130 L 115 40" fill="none" stroke="url(#gradMain)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="115" cy="40" r="4" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">18. Líneas Múltiples</text>
+  </g>
+
+  <!-- 19. Anillo Integrado -->
+  <g transform="translate(980, 890)">
+    <path d="M 0 70 L 40 120 L 95 50" fill="none" stroke="url(#gradMain)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="110" cy="30" r="16" fill="none" stroke="url(#gradGreen)" stroke-width="8" />
+    <text x="55" y="160" class="label">19. Anillo Cierre</text>
+  </g>
+
+  <!-- 20. Ultra Minimalista -->
+  <g transform="translate(1260, 890)">
+    <path d="M 10 50 L 40 100 L 110 20" fill="none" stroke="url(#gradMain)" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter" />
+    <circle cx="110" cy="20" r="4" fill="#FFFFFF" />
+    <text x="55" y="160" class="label">20. Minimalista Fino</text>
+  </g>
+
+</svg>

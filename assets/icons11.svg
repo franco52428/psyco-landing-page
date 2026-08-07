@@ -1,0 +1,82 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes de volumen (Efecto 3D y profundidad) -->
+    <!-- Brazo posterior (Más oscuro para dar percepción de fondo) -->
+    <linearGradient id="vLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338CA"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    
+    <!-- Brazo frontal (Más brillante, capta la luz) -->
+    <linearGradient id="vRight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#5B21B6"/>
+    </linearGradient>
+    
+    <!-- Núcleo de Paz / Mente (Esmeralda radiante) -->
+    <linearGradient id="mindGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <!-- Resaltados de luz para los bordes biselados -->
+    <linearGradient id="edgeHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    
+    <!-- Filtros de Sombra y Resplandor (Claves para eliminar lo plano) -->
+    <filter id="dropShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    
+    <filter id="heavyShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <filter id="coreGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura de Paz (Resplandor ambiental en el fondo) -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient)" filter="url(#glow)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient)" filter="url(#glow)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo de la V (Estructura base, al fondo) -->
+  <g filter="url(#dropShadow)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft)"/>
+    <!-- Detalle de luz interior del brazo izquierdo -->
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight)"/>
+  </g>
+
+  <!-- Brazo Derecho de la V (Sobrepuesto en primer plano) -->
+  <!-- Al aplicarle el heavyShadow, genera una sombra real sobre el brazo izquierdo, creando el efecto 3D -->
+  <g filter="url(#heavyShadow)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight)"/>
+    <!-- Bisel de cristal/luz en el borde superior izquierdo del brazo derecho -->
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight)"/>
+    <!-- Bisel en el borde superior plano -->
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Elemento Central: Mente / Intuición (Suspendido y emitiendo luz) -->
+  <g filter="url(#dropShadow)">
+    <!-- Base esmeralda -->
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient)"/>
+    
+    <!-- Anillo orbital tecnológico (Simboliza el software procesando la psique) -->
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#10B981" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#8B5CF6" stroke-width="1" opacity="0.4"/>
+
+    <!-- Núcleo de claridad (El "insight" clínico) -->
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -1,0 +1,1325 @@
+<svg width="1660" height="2408" viewBox="0 0 1660 2408" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<rect width="1660" height="2408" fill="#FFFFFF"/>
+<text x="36" y="60" fill="#0F172A" font-size="34" font-weight="600" letter-spacing="1">20 variantes cromaticas</text>
+<text x="36" y="88" fill="#94A3B8" font-size="17">Misma geometria — solo cambia la paleta</text>
+<g>
+<rect x="28" y="138" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="28" y="138" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E7490"/>
+      <stop offset="100%" stop-color="#082F49"/>
+    </linearGradient>
+    <linearGradient id="vRight1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#0E7490"/>
+    </linearGradient>
+    <linearGradient id="mindGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(190,242,100,0.67)"/>
+      <stop offset="100%" stop-color="#3F6212"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow1" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow1" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient1)" filter="url(#glow1)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient1)" filter="url(#glow1)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow1)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft1)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight1)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow1)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight1)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight1)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow1)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient1)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#22D3EE" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow1)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#7DD3FC" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow1)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="48" y="536" fill="#94A3B8" font-size="13" font-weight="600">01</text>
+<text x="76" y="536" fill="#0F172A" font-size="15" font-weight="600">Cian Artico</text>
+<text x="76" y="554" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#67E8F9  /  #082F49  /  #22D3EE</text>
+</g>
+<g>
+<rect x="436" y="138" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="436" y="138" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9D174D"/>
+      <stop offset="100%" stop-color="#4C0519"/>
+    </linearGradient>
+    <linearGradient id="vRight2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F9A8D4"/>
+      <stop offset="100%" stop-color="#BE185D"/>
+    </linearGradient>
+    <linearGradient id="mindGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(103,232,249,0.67)"/>
+      <stop offset="100%" stop-color="#0E7490"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient2)" filter="url(#glow2)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient2)" filter="url(#glow2)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow2)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft2)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight2)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow2)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight2)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight2)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow2)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient2)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#22D3EE" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow2)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#F0ABFC" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow2)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="456" y="536" fill="#94A3B8" font-size="13" font-weight="600">02</text>
+<text x="484" y="536" fill="#0F172A" font-size="15" font-weight="600">Magenta Neon</text>
+<text x="484" y="554" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#F9A8D4  /  #4C0519  /  #22D3EE</text>
+</g>
+<g>
+<rect x="844" y="138" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="844" y="138" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+    <linearGradient id="vRight3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="mindGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(252,211,77,0.67)"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow3" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow3" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient3)" filter="url(#glow3)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient3)" filter="url(#glow3)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow3)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft3)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight3)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow3)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight3)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight3)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow3)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient3)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#FBBF24" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow3)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#34D399" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow3)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="864" y="536" fill="#94A3B8" font-size="13" font-weight="600">03</text>
+<text x="892" y="536" fill="#0F172A" font-size="15" font-weight="600">Esmeralda Profundo</text>
+<text x="892" y="554" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#6EE7B7  /  #022C22  /  #FBBF24</text>
+</g>
+<g>
+<rect x="1252" y="138" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="1252" y="138" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#431407"/>
+    </linearGradient>
+    <linearGradient id="vRight4" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="mindGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(125,211,252,0.67)"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow4" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow4" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow4" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow4" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient4)" filter="url(#glow4)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient4)" filter="url(#glow4)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow4)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft4)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight4)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow4)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight4)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight4)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow4)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient4)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#38BDF8" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow4)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#FDBA74" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow4)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="1272" y="536" fill="#94A3B8" font-size="13" font-weight="600">04</text>
+<text x="1300" y="536" fill="#0F172A" font-size="15" font-weight="600">Ambar Solar</text>
+<text x="1300" y="554" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#FCD34D  /  #431407  /  #38BDF8</text>
+</g>
+<g>
+<rect x="28" y="592" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="28" y="592" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B91C1C"/>
+      <stop offset="100%" stop-color="#450A0A"/>
+    </linearGradient>
+    <linearGradient id="vRight5" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FCA5A5"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+    <linearGradient id="mindGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(253,224,71,0.67)"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow5" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow5" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow5" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow5" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient5)" filter="url(#glow5)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient5)" filter="url(#glow5)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow5)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft5)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight5)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow5)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight5)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight5)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow5)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient5)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#FACC15" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow5)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#FB923C" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow5)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="48" y="990" fill="#94A3B8" font-size="13" font-weight="600">05</text>
+<text x="76" y="990" fill="#0F172A" font-size="15" font-weight="600">Carmesi Volcanico</text>
+<text x="76" y="1008" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#FCA5A5  /  #450A0A  /  #FACC15</text>
+</g>
+<g>
+<rect x="436" y="592" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="436" y="592" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#0C1A4A"/>
+    </linearGradient>
+    <linearGradient id="vRight6" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#93C5FD"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="mindGradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(94,234,212,0.67)"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow6" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow6" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow6" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow6" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient6)" filter="url(#glow6)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient6)" filter="url(#glow6)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow6)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft6)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight6)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow6)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight6)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight6)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow6)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient6)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#2DD4BF" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow6)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#60A5FA" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow6)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="456" y="990" fill="#94A3B8" font-size="13" font-weight="600">06</text>
+<text x="484" y="990" fill="#0F172A" font-size="15" font-weight="600">Azul Abismo</text>
+<text x="484" y="1008" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#93C5FD  /  #0C1A4A  /  #2DD4BF</text>
+</g>
+<g>
+<rect x="844" y="592" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="844" y="592" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7E22CE"/>
+      <stop offset="100%" stop-color="#2E1065"/>
+    </linearGradient>
+    <linearGradient id="vRight7" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D8B4FE"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+    <linearGradient id="mindGradient7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(190,242,100,0.67)"/>
+      <stop offset="100%" stop-color="#4D7C0F"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow7" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow7" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow7" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow7" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient7)" filter="url(#glow7)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient7)" filter="url(#glow7)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow7)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft7)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight7)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow7)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight7)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight7)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow7)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient7)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#A3E635" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow7)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#C084FC" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow7)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="864" y="990" fill="#94A3B8" font-size="13" font-weight="600">07</text>
+<text x="892" y="990" fill="#0F172A" font-size="15" font-weight="600">Violeta Real</text>
+<text x="892" y="1008" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#D8B4FE  /  #2E1065  /  #A3E635</text>
+</g>
+<g>
+<rect x="1252" y="592" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="1252" y="592" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#042F2E"/>
+    </linearGradient>
+    <linearGradient id="vRight8" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5EEAD4"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="mindGradient8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(251,146,60,0.67)"/>
+      <stop offset="100%" stop-color="#9A3412"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight8" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow8" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow8" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow8" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow8" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient8)" filter="url(#glow8)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient8)" filter="url(#glow8)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow8)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft8)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight8)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow8)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight8)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight8)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow8)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient8)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#FB923C" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow8)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#2DD4BF" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow8)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="1272" y="990" fill="#94A3B8" font-size="13" font-weight="600">08</text>
+<text x="1300" y="990" fill="#0F172A" font-size="15" font-weight="600">Verde Jade</text>
+<text x="1300" y="1008" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#5EEAD4  /  #042F2E  /  #FB923C</text>
+</g>
+<g>
+<rect x="28" y="1046" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="28" y="1046" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BE185D"/>
+      <stop offset="100%" stop-color="#500724"/>
+    </linearGradient>
+    <linearGradient id="vRight9" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FBCFE8"/>
+      <stop offset="100%" stop-color="#DB2777"/>
+    </linearGradient>
+    <linearGradient id="mindGradient9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(45,212,191,0.67)"/>
+      <stop offset="100%" stop-color="#115E59"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight9" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow9" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow9" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow9" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow9" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient9)" filter="url(#glow9)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient9)" filter="url(#glow9)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow9)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft9)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight9)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow9)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight9)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight9)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow9)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient9)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#2DD4BF" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow9)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#F472B6" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow9)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="48" y="1444" fill="#94A3B8" font-size="13" font-weight="600">09</text>
+<text x="76" y="1444" fill="#0F172A" font-size="15" font-weight="600">Rosa Cuarzo</text>
+<text x="76" y="1462" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#FBCFE8  /  #500724  /  #2DD4BF</text>
+</g>
+<g>
+<rect x="436" y="1046" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="436" y="1046" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A16207"/>
+      <stop offset="100%" stop-color="#3B2306"/>
+    </linearGradient>
+    <linearGradient id="vRight10" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+    <linearGradient id="mindGradient10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(147,197,253,0.67)"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight10" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow10" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow10" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow10" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow10" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient10)" filter="url(#glow10)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient10)" filter="url(#glow10)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow10)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft10)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight10)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow10)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight10)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight10)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow10)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient10)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#93C5FD" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow10)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#FCD34D" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow10)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="456" y="1444" fill="#94A3B8" font-size="13" font-weight="600">10</text>
+<text x="484" y="1444" fill="#0F172A" font-size="15" font-weight="600">Oro Antiguo</text>
+<text x="484" y="1462" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#FDE68A  /  #3B2306  /  #93C5FD</text>
+</g>
+<g>
+<rect x="844" y="1046" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="844" y="1046" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#083344"/>
+    </linearGradient>
+    <linearGradient id="vRight11" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A5F3FC"/>
+      <stop offset="100%" stop-color="#0E7490"/>
+    </linearGradient>
+    <linearGradient id="mindGradient11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(244,114,182,0.67)"/>
+      <stop offset="100%" stop-color="#9D174D"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight11" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow11" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow11" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow11" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow11" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient11)" filter="url(#glow11)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient11)" filter="url(#glow11)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow11)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft11)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight11)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow11)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight11)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight11)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow11)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient11)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#F472B6" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow11)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#67E8F9" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow11)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="864" y="1444" fill="#94A3B8" font-size="13" font-weight="600">11</text>
+<text x="892" y="1444" fill="#0F172A" font-size="15" font-weight="600">Turquesa Tropical</text>
+<text x="892" y="1462" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#A5F3FC  /  #083344  /  #F472B6</text>
+</g>
+<g>
+<rect x="1252" y="1046" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="1252" y="1046" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6D28D9"/>
+      <stop offset="100%" stop-color="#20064E"/>
+    </linearGradient>
+    <linearGradient id="vRight12" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C4B5FD"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="mindGradient12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(251,146,60,0.67)"/>
+      <stop offset="100%" stop-color="#7C2D12"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight12" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow12" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow12" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow12" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow12" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient12)" filter="url(#glow12)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient12)" filter="url(#glow12)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow12)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft12)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight12)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow12)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight12)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight12)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow12)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient12)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#FB923C" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow12)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#A78BFA" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow12)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="1272" y="1444" fill="#94A3B8" font-size="13" font-weight="600">12</text>
+<text x="1300" y="1444" fill="#0F172A" font-size="15" font-weight="600">Purpura Cosmico</text>
+<text x="1300" y="1462" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#C4B5FD  /  #20064E  /  #FB923C</text>
+</g>
+<g>
+<rect x="28" y="1500" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="28" y="1500" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft13" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="vRight13" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="mindGradient13" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(125,211,252,0.67)"/>
+      <stop offset="100%" stop-color="#0C4A6E"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight13" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow13" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow13" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow13" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow13" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient13)" filter="url(#glow13)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient13)" filter="url(#glow13)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow13)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft13)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight13)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow13)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight13)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight13)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow13)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient13)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#38BDF8" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow13)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#CBD5E1" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow13)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="48" y="1898" fill="#94A3B8" font-size="13" font-weight="600">13</text>
+<text x="76" y="1898" fill="#0F172A" font-size="15" font-weight="600">Acero Nocturno</text>
+<text x="76" y="1916" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#94A3B8  /  #020617  /  #38BDF8</text>
+</g>
+<g>
+<rect x="436" y="1500" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="436" y="1500" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft14" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4D7C0F"/>
+      <stop offset="100%" stop-color="#1A2E05"/>
+    </linearGradient>
+    <linearGradient id="vRight14" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BEF264"/>
+      <stop offset="100%" stop-color="#65A30D"/>
+    </linearGradient>
+    <linearGradient id="mindGradient14" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(167,139,250,0.67)"/>
+      <stop offset="100%" stop-color="#5B21B6"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight14" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow14" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow14" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow14" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow14" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient14)" filter="url(#glow14)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient14)" filter="url(#glow14)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow14)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft14)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight14)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow14)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight14)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight14)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow14)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient14)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#A78BFA" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow14)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#A3E635" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow14)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="456" y="1898" fill="#94A3B8" font-size="13" font-weight="600">14</text>
+<text x="484" y="1898" fill="#0F172A" font-size="15" font-weight="600">Lima Electrico</text>
+<text x="484" y="1916" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#BEF264  /  #1A2E05  /  #A78BFA</text>
+</g>
+<g>
+<rect x="844" y="1500" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="844" y="1500" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft15" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2410C"/>
+      <stop offset="100%" stop-color="#431407"/>
+    </linearGradient>
+    <linearGradient id="vRight15" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FDBA74"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="mindGradient15" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(45,212,191,0.67)"/>
+      <stop offset="100%" stop-color="#134E4A"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight15" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow15" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow15" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow15" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow15" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient15)" filter="url(#glow15)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient15)" filter="url(#glow15)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow15)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft15)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight15)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow15)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight15)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight15)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow15)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient15)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#2DD4BF" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow15)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#FB7185" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow15)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="864" y="1898" fill="#94A3B8" font-size="13" font-weight="600">15</text>
+<text x="892" y="1898" fill="#0F172A" font-size="15" font-weight="600">Coral Atardecer</text>
+<text x="892" y="1916" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#FDBA74  /  #431407  /  #2DD4BF</text>
+</g>
+<g>
+<rect x="1252" y="1500" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="1252" y="1500" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft16" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3730A3"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="vRight16" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A5B4FC"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="mindGradient16" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(250,204,21,0.67)"/>
+      <stop offset="100%" stop-color="#713F12"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight16" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow16" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow16" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow16" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow16" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient16)" filter="url(#glow16)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient16)" filter="url(#glow16)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow16)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft16)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight16)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow16)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight16)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight16)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow16)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient16)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#FACC15" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow16)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#818CF8" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow16)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="1272" y="1898" fill="#94A3B8" font-size="13" font-weight="600">16</text>
+<text x="1300" y="1898" fill="#0F172A" font-size="15" font-weight="600">Indigo Medianoche</text>
+<text x="1300" y="1916" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#A5B4FC  /  #1E1B4B  /  #FACC15</text>
+</g>
+<g>
+<rect x="28" y="1954" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="28" y="1954" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft17" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#052E16"/>
+    </linearGradient>
+    <linearGradient id="vRight17" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#86EFAC"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+    <linearGradient id="mindGradient17" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(216,180,254,0.67)"/>
+      <stop offset="100%" stop-color="#6B21A8"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight17" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow17" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow17" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow17" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow17" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient17)" filter="url(#glow17)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient17)" filter="url(#glow17)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow17)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft17)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight17)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow17)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight17)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight17)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow17)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient17)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#C084FC" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow17)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#4ADE80" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow17)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="48" y="2352" fill="#94A3B8" font-size="13" font-weight="600">17</text>
+<text x="76" y="2352" fill="#0F172A" font-size="15" font-weight="600">Bosque Mistico</text>
+<text x="76" y="2370" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#86EFAC  /  #052E16  /  #C084FC</text>
+</g>
+<g>
+<rect x="436" y="1954" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="436" y="1954" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft18" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#881337"/>
+      <stop offset="100%" stop-color="#3F0715"/>
+    </linearGradient>
+    <linearGradient id="vRight18" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FDA4AF"/>
+      <stop offset="100%" stop-color="#9F1239"/>
+    </linearGradient>
+    <linearGradient id="mindGradient18" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(253,186,116,0.67)"/>
+      <stop offset="100%" stop-color="#7C2D12"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight18" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow18" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow18" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow18" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow18" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient18)" filter="url(#glow18)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient18)" filter="url(#glow18)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow18)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft18)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight18)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow18)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight18)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight18)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow18)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient18)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#FDBA74" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow18)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#FB7185" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow18)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="456" y="2352" fill="#94A3B8" font-size="13" font-weight="600">18</text>
+<text x="484" y="2352" fill="#0F172A" font-size="15" font-weight="600">Vino Borgona</text>
+<text x="484" y="2370" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#FDA4AF  /  #3F0715  /  #FDBA74</text>
+</g>
+<g>
+<rect x="844" y="1954" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="844" y="1954" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft19" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#92400E"/>
+      <stop offset="100%" stop-color="#2A1206"/>
+    </linearGradient>
+    <linearGradient id="vRight19" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F0B27A"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="mindGradient19" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(56,189,248,0.67)"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight19" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow19" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow19" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow19" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow19" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient19)" filter="url(#glow19)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient19)" filter="url(#glow19)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow19)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft19)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight19)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow19)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight19)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight19)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow19)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient19)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#38BDF8" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow19)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#FCD34D" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow19)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="864" y="2352" fill="#94A3B8" font-size="13" font-weight="600">19</text>
+<text x="892" y="2352" fill="#0F172A" font-size="15" font-weight="600">Cobre Industrial</text>
+<text x="892" y="2370" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#F0B27A  /  #2A1206  /  #38BDF8</text>
+</g>
+<g>
+<rect x="1252" y="1954" width="380" height="426" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<svg x="1252" y="1954" width="380" height="380" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vLeft20" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3F3F46"/>
+      <stop offset="100%" stop-color="#09090B"/>
+    </linearGradient>
+    <linearGradient id="vRight20" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4D4D8"/>
+      <stop offset="100%" stop-color="#52525B"/>
+    </linearGradient>
+    <linearGradient id="mindGradient20" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(226,232,240,0.67)"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="edgeHighlight20" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow20" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+    <filter id="heavyShadow20" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-10" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow20" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="coreGlow20" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="400" cy="360" r="240" fill="url(#mindGradient20)" filter="url(#glow20)" opacity="0.12"/>
+  <circle cx="400" cy="360" r="140" fill="url(#mindGradient20)" filter="url(#glow20)" opacity="0.2"/>
+
+  <!-- Brazo Izquierdo -->
+  <g filter="url(#dropShadow20)">
+    <path d="M 200 250 L 340 620 L 460 620 L 320 250 Z" fill="url(#vLeft20)"/>
+    <path d="M 200 250 L 210 250 L 345 615 L 340 620 Z" fill="url(#edgeHighlight20)"/>
+  </g>
+
+  <!-- Brazo Derecho -->
+  <g filter="url(#heavyShadow20)">
+    <path d="M 480 250 L 340 620 L 460 620 L 600 250 Z" fill="url(#vRight20)"/>
+    <path d="M 480 250 L 340 620 L 350 620 L 490 250 Z" fill="url(#edgeHighlight20)"/>
+    <polygon points="480,250 600,250 595,255 485,255" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Mente / Intuicion -->
+  <g filter="url(#dropShadow20)">
+    <circle cx="400" cy="180" r="75" fill="url(#mindGradient20)"/>
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-dasharray="15 10" opacity="0.7" filter="url(#coreGlow20)"/>
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#A1A1AA" stroke-width="1" opacity="0.4"/>
+    <circle cx="400" cy="180" r="20" fill="#FFFFFF" filter="url(#coreGlow20)"/>
+    <circle cx="400" cy="180" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="1272" y="2352" fill="#94A3B8" font-size="13" font-weight="600">20</text>
+<text x="1300" y="2352" fill="#0F172A" font-size="15" font-weight="600">Grafito Platino</text>
+<text x="1300" y="2370" fill="#94A3B8" font-size="11.5" letter-spacing="0.5">#D4D4D8  /  #09090B  /  #E2E8F0</text>
+</g>
+</svg>

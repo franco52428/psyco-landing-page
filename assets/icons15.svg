@@ -1,0 +1,644 @@
+<svg width="1516" height="3636" viewBox="0 0 1516 3636" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Helvetica, Arial, sans-serif" shape-rendering="geometricPrecision">
+<rect width="1516" height="3636" fill="#FFFFFF"/>
+<text x="36" y="62" fill="#0F172A" font-size="33" font-weight="700" letter-spacing="-0.4">50 marcas — bienestar mental</text>
+<text x="36" y="94" fill="#94A3B8" font-size="16">Mismos iconos, geometria intacta · vectorial puro sin filtros · gradientes de 11 paradas interpoladas en HSL</text>
+<line x1="36" y1="118" x2="1480" y2="118" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="26" y="176" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="26" y="176" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g0" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#5CB8B4"/><stop offset="20.0%" stop-color="#4EB2AF"/><stop offset="30.0%" stop-color="#47A5A2"/><stop offset="40.0%" stop-color="#419895"/><stop offset="50.0%" stop-color="#3B8A88"/><stop offset="60.0%" stop-color="#358180"/><stop offset="70.0%" stop-color="#307977"/><stop offset="80.0%" stop-color="#2B706E"/><stop offset="90.0%" stop-color="#266665"/><stop offset="100.0%" stop-color="#215D5C"/></linearGradient><linearGradient id="l0" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#63BBB7"/><stop offset="20.0%" stop-color="#5CB8B4"/><stop offset="30.0%" stop-color="#55B5B1"/><stop offset="40.0%" stop-color="#4EB2AF"/><stop offset="50.0%" stop-color="#4AACA9"/><stop offset="60.0%" stop-color="#47A5A2"/><stop offset="70.0%" stop-color="#449F9C"/><stop offset="80.0%" stop-color="#419895"/><stop offset="90.0%" stop-color="#3E918F"/><stop offset="100.0%" stop-color="#3B8A88"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g0)" stroke-width="46.00" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g0)" />
+</svg>
+<text x="46" y="466" fill="#CBD5E1" font-size="12" font-weight="700">01</text>
+<text x="74" y="466" fill="#0F172A" font-size="16" font-weight="600">Vessel</text>
+<text x="46" y="485" fill="#94A3B8" font-size="11">curve_wide · dot · teal</text>
+<rect x="324" y="176" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="324" y="176" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g1" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#84AE8B"/><stop offset="20.0%" stop-color="#79A582"/><stop offset="30.0%" stop-color="#6F9B78"/><stop offset="40.0%" stop-color="#669070"/><stop offset="50.0%" stop-color="#5F8368"/><stop offset="60.0%" stop-color="#587B61"/><stop offset="70.0%" stop-color="#50735A"/><stop offset="80.0%" stop-color="#496A53"/><stop offset="90.0%" stop-color="#42624C"/><stop offset="100.0%" stop-color="#3B5945"/></linearGradient><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#89B390"/><stop offset="20.0%" stop-color="#84AE8B"/><stop offset="30.0%" stop-color="#7FA986"/><stop offset="40.0%" stop-color="#79A582"/><stop offset="50.0%" stop-color="#74A07D"/><stop offset="60.0%" stop-color="#6F9B78"/><stop offset="70.0%" stop-color="#6A9673"/><stop offset="80.0%" stop-color="#669070"/><stop offset="90.0%" stop-color="#63896C"/><stop offset="100.0%" stop-color="#5F8368"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g1)" stroke-width="46.00" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g1)" />
+</svg>
+<text x="344" y="466" fill="#CBD5E1" font-size="12" font-weight="700">02</text>
+<text x="372" y="466" fill="#0F172A" font-size="16" font-weight="600">Valle</text>
+<text x="344" y="485" fill="#94A3B8" font-size="11">wide · dot · salvia</text>
+<rect x="622" y="176" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="622" y="176" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g2" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#D2AA8B"/><stop offset="10.0%" stop-color="#CBA181"/><stop offset="20.0%" stop-color="#C39978"/><stop offset="30.0%" stop-color="#BA916F"/><stop offset="40.0%" stop-color="#B18867"/><stop offset="50.0%" stop-color="#A8805F"/><stop offset="60.0%" stop-color="#9F7755"/><stop offset="70.0%" stop-color="#946D4D"/><stop offset="80.0%" stop-color="#896445"/><stop offset="90.0%" stop-color="#7D5B3E"/><stop offset="100.0%" stop-color="#715237"/></linearGradient><linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#D2AA8B"/><stop offset="10.0%" stop-color="#CEA686"/><stop offset="20.0%" stop-color="#CBA181"/><stop offset="30.0%" stop-color="#C79D7C"/><stop offset="40.0%" stop-color="#C39978"/><stop offset="50.0%" stop-color="#BF9573"/><stop offset="60.0%" stop-color="#BA916F"/><stop offset="70.0%" stop-color="#B68C6B"/><stop offset="80.0%" stop-color="#B18867"/><stop offset="90.0%" stop-color="#AD8463"/><stop offset="100.0%" stop-color="#A8805F"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0 L 252.12 152.0 L 200.0 244.39 L 147.88 152.0 Z" fill="url(#g2)" />
+  </g>
+  <path d="M 171.25 104.0 A 28.75 28.75 0 0 1 228.75 104.0 Z" fill="url(#g2)" />
+</svg>
+<text x="642" y="466" fill="#CBD5E1" font-size="12" font-weight="700">03</text>
+<text x="670" y="466" fill="#0F172A" font-size="16" font-weight="600">Vela</text>
+<text x="642" y="485" fill="#94A3B8" font-size="11">solid · half · arena</text>
+<rect x="920" y="176" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="920" y="176" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g3" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#7B8DD1"/><stop offset="10.0%" stop-color="#7083CA"/><stop offset="20.0%" stop-color="#6579C4"/><stop offset="30.0%" stop-color="#5A6FBC"/><stop offset="40.0%" stop-color="#5065B5"/><stop offset="50.0%" stop-color="#4B5EA8"/><stop offset="60.0%" stop-color="#44569D"/><stop offset="70.0%" stop-color="#3E4F91"/><stop offset="80.0%" stop-color="#384786"/><stop offset="90.0%" stop-color="#32407A"/><stop offset="100.0%" stop-color="#2C396E"/></linearGradient><linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#7B8DD1"/><stop offset="10.0%" stop-color="#7588CE"/><stop offset="20.0%" stop-color="#7083CA"/><stop offset="30.0%" stop-color="#6A7EC7"/><stop offset="40.0%" stop-color="#6579C4"/><stop offset="50.0%" stop-color="#6074C0"/><stop offset="60.0%" stop-color="#5A6FBC"/><stop offset="70.0%" stop-color="#556AB8"/><stop offset="80.0%" stop-color="#5065B5"/><stop offset="90.0%" stop-color="#4C61AF"/><stop offset="100.0%" stop-color="#4B5EA8"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 200.8 237.87 L 151.56 152.0 Z" fill="url(#g3)" opacity="0.55"/>
+    <path d="M 288.0 152.0 L 200.0 308.0 L 200.0 237.87 L 248.44 152.0 Z" fill="url(#g3)" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="37.26" fill="none" stroke="url(#l3)" stroke-width="7.67" />
+  <circle cx="200.00" cy="92.00" r="18.86" fill="url(#g3)" />
+</svg>
+<text x="940" y="466" fill="#CBD5E1" font-size="12" font-weight="700">04</text>
+<text x="968" y="466" fill="#0F172A" font-size="16" font-weight="600">Verta</text>
+<text x="940" y="485" fill="#94A3B8" font-size="11">facet · dot_ring · indigo</text>
+<rect x="1218" y="176" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="1218" y="176" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g4" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8CAFD6"/><stop offset="10.0%" stop-color="#7DA2CE"/><stop offset="20.0%" stop-color="#6E95C6"/><stop offset="30.0%" stop-color="#5F88BE"/><stop offset="40.0%" stop-color="#517BB5"/><stop offset="50.0%" stop-color="#4A6FA5"/><stop offset="60.0%" stop-color="#44679B"/><stop offset="70.0%" stop-color="#3D5F90"/><stop offset="80.0%" stop-color="#375886"/><stop offset="90.0%" stop-color="#32507B"/><stop offset="100.0%" stop-color="#2C4870"/></linearGradient><linearGradient id="l4" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8CAFD6"/><stop offset="10.0%" stop-color="#84A9D2"/><stop offset="20.0%" stop-color="#7DA2CE"/><stop offset="30.0%" stop-color="#759CCA"/><stop offset="40.0%" stop-color="#6E95C6"/><stop offset="50.0%" stop-color="#678FC2"/><stop offset="60.0%" stop-color="#5F88BE"/><stop offset="70.0%" stop-color="#5882B9"/><stop offset="80.0%" stop-color="#517BB5"/><stop offset="90.0%" stop-color="#4C75AE"/><stop offset="100.0%" stop-color="#4A6FA5"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 Q 146.0 286.0 200.0 308.0" fill="none" stroke="url(#g4)" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 288.0 152.0 Q 254.0 286.0 200.0 308.0" fill="none" stroke="url(#g4)" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  </g>
+  <path d="M 211.73 67.02 A 27.60 27.60 0 1 0 211.73 116.98 A 27.60 27.60 0 0 1 211.73 67.02 Z" fill="url(#g4)" />
+</svg>
+<text x="1238" y="466" fill="#CBD5E1" font-size="12" font-weight="700">05</text>
+<text x="1266" y="466" fill="#0F172A" font-size="16" font-weight="600">Vireo</text>
+<text x="1238" y="485" fill="#94A3B8" font-size="11">wing · moon · niebla</text>
+<rect x="26" y="522" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="26" y="522" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g5" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#77C5B9"/><stop offset="10.0%" stop-color="#6BBEB2"/><stop offset="20.0%" stop-color="#5EB8AB"/><stop offset="30.0%" stop-color="#52B1A4"/><stop offset="40.0%" stop-color="#4CA498"/><stop offset="50.0%" stop-color="#47968C"/><stop offset="60.0%" stop-color="#408D83"/><stop offset="70.0%" stop-color="#3A847B"/><stop offset="80.0%" stop-color="#347B72"/><stop offset="90.0%" stop-color="#2E7268"/><stop offset="100.0%" stop-color="#28685F"/></linearGradient><linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#77C5B9"/><stop offset="10.0%" stop-color="#71C2B5"/><stop offset="20.0%" stop-color="#6BBEB2"/><stop offset="30.0%" stop-color="#65BBAE"/><stop offset="40.0%" stop-color="#5EB8AB"/><stop offset="50.0%" stop-color="#58B4A7"/><stop offset="60.0%" stop-color="#52B1A4"/><stop offset="70.0%" stop-color="#4EAB9F"/><stop offset="80.0%" stop-color="#4CA498"/><stop offset="90.0%" stop-color="#4A9D92"/><stop offset="100.0%" stop-color="#47968C"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g5)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 150.0 152.0 L 200.0 244.0 L 250.0 152.0" fill="none" stroke="url(#g5)" stroke-width="11.50" stroke-linecap="round" stroke-linejoin="round" opacity="0.62"/>
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g5)" />
+</svg>
+<text x="46" y="812" fill="#CBD5E1" font-size="12" font-weight="700">06</text>
+<text x="74" y="812" fill="#0F172A" font-size="16" font-weight="600">Vivo</text>
+<text x="46" y="831" fill="#94A3B8" font-size="11">double · dot · menta</text>
+<rect x="324" y="522" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="324" y="522" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g6" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#A79BD2"/><stop offset="10.0%" stop-color="#9C90C9"/><stop offset="20.0%" stop-color="#9185C0"/><stop offset="30.0%" stop-color="#867BB6"/><stop offset="40.0%" stop-color="#7C71AB"/><stop offset="50.0%" stop-color="#7268A0"/><stop offset="60.0%" stop-color="#685E98"/><stop offset="70.0%" stop-color="#60568E"/><stop offset="80.0%" stop-color="#584F83"/><stop offset="90.0%" stop-color="#504779"/><stop offset="100.0%" stop-color="#48406E"/></linearGradient><linearGradient id="l6" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#A79BD2"/><stop offset="10.0%" stop-color="#A195CE"/><stop offset="20.0%" stop-color="#9C90C9"/><stop offset="30.0%" stop-color="#968AC5"/><stop offset="40.0%" stop-color="#9185C0"/><stop offset="50.0%" stop-color="#8B80BB"/><stop offset="60.0%" stop-color="#867BB6"/><stop offset="70.0%" stop-color="#8176B1"/><stop offset="80.0%" stop-color="#7C71AB"/><stop offset="90.0%" stop-color="#776CA6"/><stop offset="100.0%" stop-color="#7268A0"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g6)" stroke-width="28.52" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="47.15" fill="none" stroke="url(#l6)" stroke-width="5.75" opacity="0.5"/>
+  <circle cx="200.00" cy="92.00" r="35.65" fill="none" stroke="url(#l6)" stroke-width="7.67" opacity="0.8"/>
+  <circle cx="200.00" cy="92.00" r="17.94" fill="url(#g6)" />
+</svg>
+<text x="344" y="812" fill="#CBD5E1" font-size="12" font-weight="700">07</text>
+<text x="372" y="812" fill="#0F172A" font-size="16" font-weight="600">Vaia</text>
+<text x="344" y="831" fill="#94A3B8" font-size="11">curve · breath · lavanda</text>
+<rect x="622" y="522" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="622" y="522" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g7" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#5D7B93"/><stop offset="10.0%" stop-color="#537188"/><stop offset="20.0%" stop-color="#4A677C"/><stop offset="30.0%" stop-color="#405D71"/><stop offset="40.0%" stop-color="#385264"/><stop offset="50.0%" stop-color="#2F4858"/><stop offset="60.0%" stop-color="#2A4251"/><stop offset="70.0%" stop-color="#263C4A"/><stop offset="80.0%" stop-color="#213643"/><stop offset="90.0%" stop-color="#1D303C"/><stop offset="100.0%" stop-color="#192A35"/></linearGradient><linearGradient id="l7" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#5D7B93"/><stop offset="10.0%" stop-color="#58768D"/><stop offset="20.0%" stop-color="#537188"/><stop offset="30.0%" stop-color="#4E6C82"/><stop offset="40.0%" stop-color="#4A677C"/><stop offset="50.0%" stop-color="#456277"/><stop offset="60.0%" stop-color="#405D71"/><stop offset="70.0%" stop-color="#3C586B"/><stop offset="80.0%" stop-color="#385264"/><stop offset="90.0%" stop-color="#334D5E"/><stop offset="100.0%" stop-color="#2F4858"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g7)" stroke-width="15.64" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 171.56 121.45 A 40.94 40.94 0 1 1 211.28 131.35" fill="none" stroke="url(#g7)" stroke-width="11.04" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<text x="642" y="812" fill="#CBD5E1" font-size="12" font-weight="700">08</text>
+<text x="670" y="812" fill="#0F172A" font-size="16" font-weight="600">Venia</text>
+<text x="642" y="831" fill="#94A3B8" font-size="11">thin · enso · abismo</text>
+<rect x="920" y="522" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="920" y="522" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g8" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#5CB8B4"/><stop offset="20.0%" stop-color="#4EB2AF"/><stop offset="30.0%" stop-color="#47A5A2"/><stop offset="40.0%" stop-color="#419895"/><stop offset="50.0%" stop-color="#3B8A88"/><stop offset="60.0%" stop-color="#358180"/><stop offset="70.0%" stop-color="#307977"/><stop offset="80.0%" stop-color="#2B706E"/><stop offset="90.0%" stop-color="#266665"/><stop offset="100.0%" stop-color="#215D5C"/></linearGradient><linearGradient id="l8" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#63BBB7"/><stop offset="20.0%" stop-color="#5CB8B4"/><stop offset="30.0%" stop-color="#55B5B1"/><stop offset="40.0%" stop-color="#4EB2AF"/><stop offset="50.0%" stop-color="#4AACA9"/><stop offset="60.0%" stop-color="#47A5A2"/><stop offset="70.0%" stop-color="#449F9C"/><stop offset="80.0%" stop-color="#419895"/><stop offset="90.0%" stop-color="#3E918F"/><stop offset="100.0%" stop-color="#3B8A88"/></linearGradient></defs>
+  <circle cx="200.00" cy="208.00" r="156.00" fill="none" stroke="url(#l8)" stroke-width="7.67" />
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g8)" stroke-width="28.52" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="37.26" fill="none" stroke="url(#l8)" stroke-width="7.67" />
+  <circle cx="200.00" cy="92.00" r="18.86" fill="url(#g8)" />
+</svg>
+<text x="940" y="812" fill="#CBD5E1" font-size="12" font-weight="700">09</text>
+<text x="968" y="812" fill="#0F172A" font-size="16" font-weight="600">Vero</text>
+<text x="940" y="831" fill="#94A3B8" font-size="11">stroke · dot_ring · teal</text>
+<rect x="1218" y="522" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="1218" y="522" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g9" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#AC84A8"/><stop offset="10.0%" stop-color="#A47AA0"/><stop offset="20.0%" stop-color="#9B6F98"/><stop offset="30.0%" stop-color="#91668E"/><stop offset="40.0%" stop-color="#865F83"/><stop offset="50.0%" stop-color="#7A5878"/><stop offset="60.0%" stop-color="#725070"/><stop offset="70.0%" stop-color="#694967"/><stop offset="80.0%" stop-color="#60415F"/><stop offset="90.0%" stop-color="#573A56"/><stop offset="100.0%" stop-color="#4E334D"/></linearGradient><linearGradient id="l9" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#AC84A8"/><stop offset="10.0%" stop-color="#A87FA4"/><stop offset="20.0%" stop-color="#A47AA0"/><stop offset="30.0%" stop-color="#A0749C"/><stop offset="40.0%" stop-color="#9B6F98"/><stop offset="50.0%" stop-color="#976A93"/><stop offset="60.0%" stop-color="#91668E"/><stop offset="70.0%" stop-color="#8C6389"/><stop offset="80.0%" stop-color="#865F83"/><stop offset="90.0%" stop-color="#805C7E"/><stop offset="100.0%" stop-color="#7A5878"/></linearGradient></defs>
+  <g>
+    <circle cx="112.00" cy="152.00" r="11.96" fill="url(#g9)" />
+    <circle cx="134.00" cy="191.00" r="11.96" fill="url(#g9)" />
+    <circle cx="156.00" cy="230.00" r="11.96" fill="url(#g9)" />
+    <circle cx="178.00" cy="269.00" r="11.96" fill="url(#g9)" />
+    <circle cx="200.00" cy="308.00" r="11.96" fill="url(#g9)" />
+    <circle cx="288.00" cy="152.00" r="11.96" fill="url(#g9)" />
+    <circle cx="266.00" cy="191.00" r="11.96" fill="url(#g9)" />
+    <circle cx="244.00" cy="230.00" r="11.96" fill="url(#g9)" />
+    <circle cx="222.00" cy="269.00" r="11.96" fill="url(#g9)" />
+    <circle cx="200.00" cy="308.00" r="11.96" fill="url(#g9)" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g9)" />
+</svg>
+<text x="1238" y="812" fill="#CBD5E1" font-size="12" font-weight="700">10</text>
+<text x="1266" y="812" fill="#0F172A" font-size="16" font-weight="600">Vanta</text>
+<text x="1238" y="831" fill="#94A3B8" font-size="11">dotted · dot · ciruela</text>
+<rect x="26" y="868" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="26" y="868" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g10" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#DBA488"/><stop offset="10.0%" stop-color="#D49B7E"/><stop offset="20.0%" stop-color="#CD9275"/><stop offset="30.0%" stop-color="#C5896D"/><stop offset="40.0%" stop-color="#BD8064"/><stop offset="50.0%" stop-color="#B4785D"/><stop offset="60.0%" stop-color="#AE6D50"/><stop offset="70.0%" stop-color="#A16449"/><stop offset="80.0%" stop-color="#945B42"/><stop offset="90.0%" stop-color="#87533B"/><stop offset="100.0%" stop-color="#7A4A35"/></linearGradient><linearGradient id="l10" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#DBA488"/><stop offset="10.0%" stop-color="#D89F83"/><stop offset="20.0%" stop-color="#D49B7E"/><stop offset="30.0%" stop-color="#D1967A"/><stop offset="40.0%" stop-color="#CD9275"/><stop offset="50.0%" stop-color="#C98D71"/><stop offset="60.0%" stop-color="#C5896D"/><stop offset="70.0%" stop-color="#C18568"/><stop offset="80.0%" stop-color="#BD8064"/><stop offset="90.0%" stop-color="#B97C61"/><stop offset="100.0%" stop-color="#B4785D"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g10)" stroke-width="28.52" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 174.7 106.0 A 25.3 25.3 0 0 1 225.3 106.0 Z" fill="url(#g10)" />
+  <path d="M 159.01 106.00 A 40.99 40.99 0 0 1 240.99 106.00" fill="none" stroke="url(#l10)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 143.33 106.00 A 56.67 56.67 0 0 1 256.67 106.00" fill="none" stroke="url(#l10)" stroke-width="5.75" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+</svg>
+<text x="46" y="1158" fill="#CBD5E1" font-size="12" font-weight="700">11</text>
+<text x="74" y="1158" fill="#0F172A" font-size="16" font-weight="600">Vera</text>
+<text x="46" y="1177" fill="#94A3B8" font-size="11">curve · sunrise · terracota</text>
+<rect x="324" y="868" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="324" y="868" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g11" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#84AE8B"/><stop offset="20.0%" stop-color="#79A582"/><stop offset="30.0%" stop-color="#6F9B78"/><stop offset="40.0%" stop-color="#669070"/><stop offset="50.0%" stop-color="#5F8368"/><stop offset="60.0%" stop-color="#587B61"/><stop offset="70.0%" stop-color="#50735A"/><stop offset="80.0%" stop-color="#496A53"/><stop offset="90.0%" stop-color="#42624C"/><stop offset="100.0%" stop-color="#3B5945"/></linearGradient><linearGradient id="l11" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#89B390"/><stop offset="20.0%" stop-color="#84AE8B"/><stop offset="30.0%" stop-color="#7FA986"/><stop offset="40.0%" stop-color="#79A582"/><stop offset="50.0%" stop-color="#74A07D"/><stop offset="60.0%" stop-color="#6F9B78"/><stop offset="70.0%" stop-color="#6A9673"/><stop offset="80.0%" stop-color="#669070"/><stop offset="90.0%" stop-color="#63896C"/><stop offset="100.0%" stop-color="#5F8368"/></linearGradient></defs>
+  <g>
+    <path d="M 116.4 159.8 L 136.9 196.2" fill="none" stroke="url(#g11)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+    <path d="M 283.6 159.8 L 263.1 196.2" fill="none" stroke="url(#g11)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+    <path d="M 145.7 211.8 L 166.3 248.2" fill="none" stroke="url(#g11)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+    <path d="M 254.3 211.8 L 233.7 248.2" fill="none" stroke="url(#g11)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+    <path d="M 175.1 263.8 L 195.6 300.2" fill="none" stroke="url(#g11)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+    <path d="M 224.9 263.8 L 204.4 300.2" fill="none" stroke="url(#g11)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+  </g>
+  <circle cx="200.00" cy="86.00" r="14.26" fill="url(#g11)" />
+  <circle cx="165.50" cy="106.00" r="7.59" fill="url(#g11)" />
+  <circle cx="234.50" cy="106.00" r="7.59" fill="url(#g11)" />
+</svg>
+<text x="344" y="1158" fill="#CBD5E1" font-size="12" font-weight="700">12</text>
+<text x="372" y="1158" fill="#0F172A" font-size="16" font-weight="600">Volta</text>
+<text x="344" y="1177" fill="#94A3B8" font-size="11">steps · triple · salvia</text>
+<rect x="622" y="868" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="622" y="868" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g12" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8CAFD6"/><stop offset="10.0%" stop-color="#7DA2CE"/><stop offset="20.0%" stop-color="#6E95C6"/><stop offset="30.0%" stop-color="#5F88BE"/><stop offset="40.0%" stop-color="#517BB5"/><stop offset="50.0%" stop-color="#4A6FA5"/><stop offset="60.0%" stop-color="#44679B"/><stop offset="70.0%" stop-color="#3D5F90"/><stop offset="80.0%" stop-color="#375886"/><stop offset="90.0%" stop-color="#32507B"/><stop offset="100.0%" stop-color="#2C4870"/></linearGradient><linearGradient id="l12" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8CAFD6"/><stop offset="10.0%" stop-color="#84A9D2"/><stop offset="20.0%" stop-color="#7DA2CE"/><stop offset="30.0%" stop-color="#759CCA"/><stop offset="40.0%" stop-color="#6E95C6"/><stop offset="50.0%" stop-color="#678FC2"/><stop offset="60.0%" stop-color="#5F88BE"/><stop offset="70.0%" stop-color="#5882B9"/><stop offset="80.0%" stop-color="#517BB5"/><stop offset="90.0%" stop-color="#4C75AE"/><stop offset="100.0%" stop-color="#4A6FA5"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 163.04 152.0 Z" fill="url(#g12)" opacity="0.55"/>
+    <path d="M 288.0 152.0 L 200.0 308.0 L 236.96 152.0 Z" fill="url(#g12)" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g12)" />
+</svg>
+<text x="642" y="1158" fill="#CBD5E1" font-size="12" font-weight="700">13</text>
+<text x="670" y="1158" fill="#0F172A" font-size="16" font-weight="600">Vidra</text>
+<text x="642" y="1177" fill="#94A3B8" font-size="11">taper · dot · niebla</text>
+<rect x="920" y="868" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="920" y="868" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g13" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#77C5B9"/><stop offset="10.0%" stop-color="#6BBEB2"/><stop offset="20.0%" stop-color="#5EB8AB"/><stop offset="30.0%" stop-color="#52B1A4"/><stop offset="40.0%" stop-color="#4CA498"/><stop offset="50.0%" stop-color="#47968C"/><stop offset="60.0%" stop-color="#408D83"/><stop offset="70.0%" stop-color="#3A847B"/><stop offset="80.0%" stop-color="#347B72"/><stop offset="90.0%" stop-color="#2E7268"/><stop offset="100.0%" stop-color="#28685F"/></linearGradient><linearGradient id="l13" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#77C5B9"/><stop offset="10.0%" stop-color="#71C2B5"/><stop offset="20.0%" stop-color="#6BBEB2"/><stop offset="30.0%" stop-color="#65BBAE"/><stop offset="40.0%" stop-color="#5EB8AB"/><stop offset="50.0%" stop-color="#58B4A7"/><stop offset="60.0%" stop-color="#52B1A4"/><stop offset="70.0%" stop-color="#4EAB9F"/><stop offset="80.0%" stop-color="#4CA498"/><stop offset="90.0%" stop-color="#4A9D92"/><stop offset="100.0%" stop-color="#47968C"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g13)" stroke-width="14.72" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+    <path d="M 142.0 166.0 C 142.0 284.0 258.0 284.0 258.0 166.0" fill="none" stroke="url(#g13)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g13)" />
+</svg>
+<text x="940" y="1158" fill="#CBD5E1" font-size="12" font-weight="700">14</text>
+<text x="968" y="1158" fill="#0F172A" font-size="16" font-weight="600">Vinta</text>
+<text x="940" y="1177" fill="#94A3B8" font-size="11">nest · dot · menta</text>
+<rect x="1218" y="868" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="1218" y="868" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g14" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#5D7B93"/><stop offset="10.0%" stop-color="#537188"/><stop offset="20.0%" stop-color="#4A677C"/><stop offset="30.0%" stop-color="#405D71"/><stop offset="40.0%" stop-color="#385264"/><stop offset="50.0%" stop-color="#2F4858"/><stop offset="60.0%" stop-color="#2A4251"/><stop offset="70.0%" stop-color="#263C4A"/><stop offset="80.0%" stop-color="#213643"/><stop offset="90.0%" stop-color="#1D303C"/><stop offset="100.0%" stop-color="#192A35"/></linearGradient><linearGradient id="l14" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#5D7B93"/><stop offset="10.0%" stop-color="#58768D"/><stop offset="20.0%" stop-color="#537188"/><stop offset="30.0%" stop-color="#4E6C82"/><stop offset="40.0%" stop-color="#4A677C"/><stop offset="50.0%" stop-color="#456277"/><stop offset="60.0%" stop-color="#405D71"/><stop offset="70.0%" stop-color="#3C586B"/><stop offset="80.0%" stop-color="#385264"/><stop offset="90.0%" stop-color="#334D5E"/><stop offset="100.0%" stop-color="#2F4858"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 128.0 234.0 168.0 252.0 200.0 308.0" fill="none" stroke="url(#g14)" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 288.0 152.0 C 272.0 234.0 232.0 252.0 200.0 308.0" fill="none" stroke="url(#g14)" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 200.0 51.0025 C 229.095 88.0325 226.45 115.805 200.0 118.45 C 173.55 115.805 170.905 88.0325 200.0 51.0025 Z" fill="url(#g14)" />
+</svg>
+<text x="1238" y="1158" fill="#CBD5E1" font-size="12" font-weight="700">15</text>
+<text x="1266" y="1158" fill="#0F172A" font-size="16" font-weight="600">Vetta</text>
+<text x="1238" y="1177" fill="#94A3B8" font-size="11">wave · drop · abismo</text>
+<rect x="26" y="1214" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="26" y="1214" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g15" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#D2AA8B"/><stop offset="10.0%" stop-color="#CBA181"/><stop offset="20.0%" stop-color="#C39978"/><stop offset="30.0%" stop-color="#BA916F"/><stop offset="40.0%" stop-color="#B18867"/><stop offset="50.0%" stop-color="#A8805F"/><stop offset="60.0%" stop-color="#9F7755"/><stop offset="70.0%" stop-color="#946D4D"/><stop offset="80.0%" stop-color="#896445"/><stop offset="90.0%" stop-color="#7D5B3E"/><stop offset="100.0%" stop-color="#715237"/></linearGradient><linearGradient id="l15" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#D2AA8B"/><stop offset="10.0%" stop-color="#CEA686"/><stop offset="20.0%" stop-color="#CBA181"/><stop offset="30.0%" stop-color="#C79D7C"/><stop offset="40.0%" stop-color="#C39978"/><stop offset="50.0%" stop-color="#BF9573"/><stop offset="60.0%" stop-color="#BA916F"/><stop offset="70.0%" stop-color="#B68C6B"/><stop offset="80.0%" stop-color="#B18867"/><stop offset="90.0%" stop-color="#AD8463"/><stop offset="100.0%" stop-color="#A8805F"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 118.0 302.0 282.0 302.0 288.0 152.0" fill="none" stroke="url(#g15)" stroke-width="25.30" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 200.0 300.0 L 200.0 330.0" fill="none" stroke="url(#g15)" stroke-width="20.24" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 160.0 338.0 L 240.0 338.0" fill="none" stroke="url(#g15)" stroke-width="17.48" stroke-linecap="round" stroke-linejoin="round" opacity="0.62"/>
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g15)" />
+</svg>
+<text x="46" y="1504" fill="#CBD5E1" font-size="12" font-weight="700">16</text>
+<text x="74" y="1504" fill="#0F172A" font-size="16" font-weight="600">Vanya</text>
+<text x="46" y="1523" fill="#94A3B8" font-size="11">chalice · dot · arena</text>
+<rect x="324" y="1214" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="324" y="1214" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g16" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#A79BD2"/><stop offset="10.0%" stop-color="#9C90C9"/><stop offset="20.0%" stop-color="#9185C0"/><stop offset="30.0%" stop-color="#867BB6"/><stop offset="40.0%" stop-color="#7C71AB"/><stop offset="50.0%" stop-color="#7268A0"/><stop offset="60.0%" stop-color="#685E98"/><stop offset="70.0%" stop-color="#60568E"/><stop offset="80.0%" stop-color="#584F83"/><stop offset="90.0%" stop-color="#504779"/><stop offset="100.0%" stop-color="#48406E"/></linearGradient><linearGradient id="l16" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#A79BD2"/><stop offset="10.0%" stop-color="#A195CE"/><stop offset="20.0%" stop-color="#9C90C9"/><stop offset="30.0%" stop-color="#968AC5"/><stop offset="40.0%" stop-color="#9185C0"/><stop offset="50.0%" stop-color="#8B80BB"/><stop offset="60.0%" stop-color="#867BB6"/><stop offset="70.0%" stop-color="#8176B1"/><stop offset="80.0%" stop-color="#7C71AB"/><stop offset="90.0%" stop-color="#776CA6"/><stop offset="100.0%" stop-color="#7268A0"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g16)" stroke-width="28.52" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g transform="rotate(-38 200.0 118.0)"><ellipse cx="200.0" cy="90.0" rx="9.7" ry="24.2" fill="url(#g16)"/></g>
+  <g transform="rotate(0 200.0 118.0)"><ellipse cx="200.0" cy="90.0" rx="9.7" ry="24.2" fill="url(#g16)"/></g>
+  <g transform="rotate(38 200.0 118.0)"><ellipse cx="200.0" cy="90.0" rx="9.7" ry="24.2" fill="url(#g16)"/></g>
+</svg>
+<text x="344" y="1504" fill="#CBD5E1" font-size="12" font-weight="700">17</text>
+<text x="372" y="1504" fill="#0F172A" font-size="16" font-weight="600">Vira</text>
+<text x="344" y="1523" fill="#94A3B8" font-size="11">stroke · lotus · lavanda</text>
+<rect x="622" y="1214" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="622" y="1214" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g17" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#5CB8B4"/><stop offset="20.0%" stop-color="#4EB2AF"/><stop offset="30.0%" stop-color="#47A5A2"/><stop offset="40.0%" stop-color="#419895"/><stop offset="50.0%" stop-color="#3B8A88"/><stop offset="60.0%" stop-color="#358180"/><stop offset="70.0%" stop-color="#307977"/><stop offset="80.0%" stop-color="#2B706E"/><stop offset="90.0%" stop-color="#266665"/><stop offset="100.0%" stop-color="#215D5C"/></linearGradient><linearGradient id="l17" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#63BBB7"/><stop offset="20.0%" stop-color="#5CB8B4"/><stop offset="30.0%" stop-color="#55B5B1"/><stop offset="40.0%" stop-color="#4EB2AF"/><stop offset="50.0%" stop-color="#4AACA9"/><stop offset="60.0%" stop-color="#47A5A2"/><stop offset="70.0%" stop-color="#449F9C"/><stop offset="80.0%" stop-color="#419895"/><stop offset="90.0%" stop-color="#3E918F"/><stop offset="100.0%" stop-color="#3B8A88"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g17)" stroke-width="28.52" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 181.41 101.96 A 19.55 19.55 0 0 1 218.59 101.96" fill="none" stroke="url(#g17)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+  <path d="M 167.19 97.34 A 34.50 34.50 0 0 1 232.81 97.34" fill="none" stroke="url(#g17)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" opacity="0.66"/>
+  <path d="M 152.97 92.72 A 49.45 49.45 0 0 1 247.03 92.72" fill="none" stroke="url(#g17)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"/>
+</svg>
+<text x="642" y="1504" fill="#CBD5E1" font-size="12" font-weight="700">18</text>
+<text x="670" y="1504" fill="#0F172A" font-size="16" font-weight="600">Vesna</text>
+<text x="642" y="1523" fill="#94A3B8" font-size="11">curve · arcs · teal</text>
+<rect x="920" y="1214" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="920" y="1214" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g18" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#7B8DD1"/><stop offset="10.0%" stop-color="#7083CA"/><stop offset="20.0%" stop-color="#6579C4"/><stop offset="30.0%" stop-color="#5A6FBC"/><stop offset="40.0%" stop-color="#5065B5"/><stop offset="50.0%" stop-color="#4B5EA8"/><stop offset="60.0%" stop-color="#44569D"/><stop offset="70.0%" stop-color="#3E4F91"/><stop offset="80.0%" stop-color="#384786"/><stop offset="90.0%" stop-color="#32407A"/><stop offset="100.0%" stop-color="#2C396E"/></linearGradient><linearGradient id="l18" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#7B8DD1"/><stop offset="10.0%" stop-color="#7588CE"/><stop offset="20.0%" stop-color="#7083CA"/><stop offset="30.0%" stop-color="#6A7EC7"/><stop offset="40.0%" stop-color="#6579C4"/><stop offset="50.0%" stop-color="#6074C0"/><stop offset="60.0%" stop-color="#5A6FBC"/><stop offset="70.0%" stop-color="#556AB8"/><stop offset="80.0%" stop-color="#5065B5"/><stop offset="90.0%" stop-color="#4C61AF"/><stop offset="100.0%" stop-color="#4B5EA8"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g18)" stroke-width="46.00" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="18.86" fill="none" stroke="url(#g18)" stroke-width="11.50" />
+</svg>
+<text x="940" y="1504" fill="#CBD5E1" font-size="12" font-weight="700">19</text>
+<text x="968" y="1504" fill="#0F172A" font-size="16" font-weight="600">Valen</text>
+<text x="940" y="1523" fill="#94A3B8" font-size="11">wide · ring · indigo</text>
+<rect x="1218" y="1214" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="1218" y="1214" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g19" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#AC84A8"/><stop offset="10.0%" stop-color="#A47AA0"/><stop offset="20.0%" stop-color="#9B6F98"/><stop offset="30.0%" stop-color="#91668E"/><stop offset="40.0%" stop-color="#865F83"/><stop offset="50.0%" stop-color="#7A5878"/><stop offset="60.0%" stop-color="#725070"/><stop offset="70.0%" stop-color="#694967"/><stop offset="80.0%" stop-color="#60415F"/><stop offset="90.0%" stop-color="#573A56"/><stop offset="100.0%" stop-color="#4E334D"/></linearGradient><linearGradient id="l19" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#AC84A8"/><stop offset="10.0%" stop-color="#A87FA4"/><stop offset="20.0%" stop-color="#A47AA0"/><stop offset="30.0%" stop-color="#A0749C"/><stop offset="40.0%" stop-color="#9B6F98"/><stop offset="50.0%" stop-color="#976A93"/><stop offset="60.0%" stop-color="#91668E"/><stop offset="70.0%" stop-color="#8C6389"/><stop offset="80.0%" stop-color="#865F83"/><stop offset="90.0%" stop-color="#805C7E"/><stop offset="100.0%" stop-color="#7A5878"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 184.0 280.0" fill="none" stroke="url(#g19)" stroke-width="25.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+    <path d="M 288.0 152.0 L 216.0 280.0" fill="none" stroke="url(#g19)" stroke-width="25.30" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g19)" />
+</svg>
+<text x="1238" y="1504" fill="#CBD5E1" font-size="12" font-weight="700">20</text>
+<text x="1266" y="1504" fill="#0F172A" font-size="16" font-weight="600">Vosk</text>
+<text x="1238" y="1523" fill="#94A3B8" font-size="11">split · dot · ciruela</text>
+<rect x="26" y="1560" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="26" y="1560" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g20" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#84AE8B"/><stop offset="20.0%" stop-color="#79A582"/><stop offset="30.0%" stop-color="#6F9B78"/><stop offset="40.0%" stop-color="#669070"/><stop offset="50.0%" stop-color="#5F8368"/><stop offset="60.0%" stop-color="#587B61"/><stop offset="70.0%" stop-color="#50735A"/><stop offset="80.0%" stop-color="#496A53"/><stop offset="90.0%" stop-color="#42624C"/><stop offset="100.0%" stop-color="#3B5945"/></linearGradient><linearGradient id="l20" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#89B390"/><stop offset="20.0%" stop-color="#84AE8B"/><stop offset="30.0%" stop-color="#7FA986"/><stop offset="40.0%" stop-color="#79A582"/><stop offset="50.0%" stop-color="#74A07D"/><stop offset="60.0%" stop-color="#6F9B78"/><stop offset="70.0%" stop-color="#6A9673"/><stop offset="80.0%" stop-color="#669070"/><stop offset="90.0%" stop-color="#63896C"/><stop offset="100.0%" stop-color="#5F8368"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g20)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 146.0 152.0 C 146.0 268.0 254.0 268.0 254.0 152.0" fill="none" stroke="url(#g20)" stroke-width="11.50" stroke-linecap="round" stroke-linejoin="round" opacity="0.62"/>
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g20)" />
+</svg>
+<text x="46" y="1850" fill="#CBD5E1" font-size="12" font-weight="700">21</text>
+<text x="74" y="1850" fill="#0F172A" font-size="16" font-weight="600">Vinea</text>
+<text x="46" y="1869" fill="#94A3B8" font-size="11">double_curve · dot · salvia</text>
+<rect x="324" y="1560" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="324" y="1560" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g21" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8CAFD6"/><stop offset="10.0%" stop-color="#7DA2CE"/><stop offset="20.0%" stop-color="#6E95C6"/><stop offset="30.0%" stop-color="#5F88BE"/><stop offset="40.0%" stop-color="#517BB5"/><stop offset="50.0%" stop-color="#4A6FA5"/><stop offset="60.0%" stop-color="#44679B"/><stop offset="70.0%" stop-color="#3D5F90"/><stop offset="80.0%" stop-color="#375886"/><stop offset="90.0%" stop-color="#32507B"/><stop offset="100.0%" stop-color="#2C4870"/></linearGradient><linearGradient id="l21" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8CAFD6"/><stop offset="10.0%" stop-color="#84A9D2"/><stop offset="20.0%" stop-color="#7DA2CE"/><stop offset="30.0%" stop-color="#759CCA"/><stop offset="40.0%" stop-color="#6E95C6"/><stop offset="50.0%" stop-color="#678FC2"/><stop offset="60.0%" stop-color="#5F88BE"/><stop offset="70.0%" stop-color="#5882B9"/><stop offset="80.0%" stop-color="#517BB5"/><stop offset="90.0%" stop-color="#4C75AE"/><stop offset="100.0%" stop-color="#4A6FA5"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0 L 252.12 152.0 L 200.0 244.39 L 147.88 152.0 Z" fill="url(#g21)" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="47.15" fill="none" stroke="url(#l21)" stroke-width="5.75" opacity="0.5"/>
+  <circle cx="200.00" cy="92.00" r="35.65" fill="none" stroke="url(#l21)" stroke-width="7.67" opacity="0.8"/>
+  <circle cx="200.00" cy="92.00" r="17.94" fill="url(#g21)" />
+</svg>
+<text x="344" y="1850" fill="#CBD5E1" font-size="12" font-weight="700">22</text>
+<text x="372" y="1850" fill="#0F172A" font-size="16" font-weight="600">Vantia</text>
+<text x="344" y="1869" fill="#94A3B8" font-size="11">solid · breath · niebla</text>
+<rect x="622" y="1560" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="622" y="1560" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g22" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#77C5B9"/><stop offset="10.0%" stop-color="#6BBEB2"/><stop offset="20.0%" stop-color="#5EB8AB"/><stop offset="30.0%" stop-color="#52B1A4"/><stop offset="40.0%" stop-color="#4CA498"/><stop offset="50.0%" stop-color="#47968C"/><stop offset="60.0%" stop-color="#408D83"/><stop offset="70.0%" stop-color="#3A847B"/><stop offset="80.0%" stop-color="#347B72"/><stop offset="90.0%" stop-color="#2E7268"/><stop offset="100.0%" stop-color="#28685F"/></linearGradient><linearGradient id="l22" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#77C5B9"/><stop offset="10.0%" stop-color="#71C2B5"/><stop offset="20.0%" stop-color="#6BBEB2"/><stop offset="30.0%" stop-color="#65BBAE"/><stop offset="40.0%" stop-color="#5EB8AB"/><stop offset="50.0%" stop-color="#58B4A7"/><stop offset="60.0%" stop-color="#52B1A4"/><stop offset="70.0%" stop-color="#4EAB9F"/><stop offset="80.0%" stop-color="#4CA498"/><stop offset="90.0%" stop-color="#4A9D92"/><stop offset="100.0%" stop-color="#47968C"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g22)" stroke-width="15.64" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="98.00" r="19.78" fill="url(#g22)" />
+  <path d="M 200.0 74.0 C 220.7 50.0 212.65 28.0 200.0 22.0" fill="none" stroke="url(#l22)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<text x="642" y="1850" fill="#CBD5E1" font-size="12" font-weight="700">23</text>
+<text x="670" y="1850" fill="#0F172A" font-size="16" font-weight="600">Voru</text>
+<text x="642" y="1869" fill="#94A3B8" font-size="11">thin · seed · menta</text>
+<rect x="920" y="1560" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="920" y="1560" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g23" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#DBA488"/><stop offset="10.0%" stop-color="#D49B7E"/><stop offset="20.0%" stop-color="#CD9275"/><stop offset="30.0%" stop-color="#C5896D"/><stop offset="40.0%" stop-color="#BD8064"/><stop offset="50.0%" stop-color="#B4785D"/><stop offset="60.0%" stop-color="#AE6D50"/><stop offset="70.0%" stop-color="#A16449"/><stop offset="80.0%" stop-color="#945B42"/><stop offset="90.0%" stop-color="#87533B"/><stop offset="100.0%" stop-color="#7A4A35"/></linearGradient><linearGradient id="l23" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#DBA488"/><stop offset="10.0%" stop-color="#D89F83"/><stop offset="20.0%" stop-color="#D49B7E"/><stop offset="30.0%" stop-color="#D1967A"/><stop offset="40.0%" stop-color="#CD9275"/><stop offset="50.0%" stop-color="#C98D71"/><stop offset="60.0%" stop-color="#C5896D"/><stop offset="70.0%" stop-color="#C18568"/><stop offset="80.0%" stop-color="#BD8064"/><stop offset="90.0%" stop-color="#B97C61"/><stop offset="100.0%" stop-color="#B4785D"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g23)" stroke-width="21.16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18.63 17.19"/>
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g23)" />
+</svg>
+<text x="940" y="1850" fill="#CBD5E1" font-size="12" font-weight="700">24</text>
+<text x="968" y="1850" fill="#0F172A" font-size="16" font-weight="600">Vori</text>
+<text x="940" y="1869" fill="#94A3B8" font-size="11">dashed · dot · terracota</text>
+<rect x="1218" y="1560" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="1218" y="1560" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g24" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#5D7B93"/><stop offset="10.0%" stop-color="#537188"/><stop offset="20.0%" stop-color="#4A677C"/><stop offset="30.0%" stop-color="#405D71"/><stop offset="40.0%" stop-color="#385264"/><stop offset="50.0%" stop-color="#2F4858"/><stop offset="60.0%" stop-color="#2A4251"/><stop offset="70.0%" stop-color="#263C4A"/><stop offset="80.0%" stop-color="#213643"/><stop offset="90.0%" stop-color="#1D303C"/><stop offset="100.0%" stop-color="#192A35"/></linearGradient><linearGradient id="l24" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#5D7B93"/><stop offset="10.0%" stop-color="#58768D"/><stop offset="20.0%" stop-color="#537188"/><stop offset="30.0%" stop-color="#4E6C82"/><stop offset="40.0%" stop-color="#4A677C"/><stop offset="50.0%" stop-color="#456277"/><stop offset="60.0%" stop-color="#405D71"/><stop offset="70.0%" stop-color="#3C586B"/><stop offset="80.0%" stop-color="#385264"/><stop offset="90.0%" stop-color="#334D5E"/><stop offset="100.0%" stop-color="#2F4858"/></linearGradient></defs>
+  <g>
+    <circle cx="200.00" cy="218.00" r="118.00" fill="url(#g24)" />
+    <path d="M 144.0 174 L 200.0 262 L 256.0 174" fill="none" stroke="#FFFFFF" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
+<text x="1238" y="1850" fill="#CBD5E1" font-size="12" font-weight="700">25</text>
+<text x="1266" y="1850" fill="#0F172A" font-size="16" font-weight="600">Vuma</text>
+<text x="1238" y="1869" fill="#94A3B8" font-size="11">negative · none · abismo</text>
+<rect x="26" y="1906" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="26" y="1906" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g25" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#5CB8B4"/><stop offset="20.0%" stop-color="#4EB2AF"/><stop offset="30.0%" stop-color="#47A5A2"/><stop offset="40.0%" stop-color="#419895"/><stop offset="50.0%" stop-color="#3B8A88"/><stop offset="60.0%" stop-color="#358180"/><stop offset="70.0%" stop-color="#307977"/><stop offset="80.0%" stop-color="#2B706E"/><stop offset="90.0%" stop-color="#266665"/><stop offset="100.0%" stop-color="#215D5C"/></linearGradient><linearGradient id="l25" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#63BBB7"/><stop offset="20.0%" stop-color="#5CB8B4"/><stop offset="30.0%" stop-color="#55B5B1"/><stop offset="40.0%" stop-color="#4EB2AF"/><stop offset="50.0%" stop-color="#4AACA9"/><stop offset="60.0%" stop-color="#47A5A2"/><stop offset="70.0%" stop-color="#449F9C"/><stop offset="80.0%" stop-color="#419895"/><stop offset="90.0%" stop-color="#3E918F"/><stop offset="100.0%" stop-color="#3B8A88"/></linearGradient></defs>
+  <circle cx="200.00" cy="208.00" r="156.00" fill="none" stroke="url(#l25)" stroke-width="5.75" opacity="0.75"/>
+  <g>
+    <path d="M 112.0 152.0 Q 146.0 286.0 200.0 308.0" fill="none" stroke="url(#g25)" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 288.0 152.0 Q 254.0 286.0 200.0 308.0" fill="none" stroke="url(#g25)" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g25)" />
+</svg>
+<text x="46" y="2196" fill="#CBD5E1" font-size="12" font-weight="700">26</text>
+<text x="74" y="2196" fill="#0F172A" font-size="16" font-weight="600">Vayu</text>
+<text x="46" y="2215" fill="#94A3B8" font-size="11">wing · dot · teal</text>
+<rect x="324" y="1906" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="324" y="1906" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g26" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#A79BD2"/><stop offset="10.0%" stop-color="#9C90C9"/><stop offset="20.0%" stop-color="#9185C0"/><stop offset="30.0%" stop-color="#867BB6"/><stop offset="40.0%" stop-color="#7C71AB"/><stop offset="50.0%" stop-color="#7268A0"/><stop offset="60.0%" stop-color="#685E98"/><stop offset="70.0%" stop-color="#60568E"/><stop offset="80.0%" stop-color="#584F83"/><stop offset="90.0%" stop-color="#504779"/><stop offset="100.0%" stop-color="#48406E"/></linearGradient><linearGradient id="l26" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#A79BD2"/><stop offset="10.0%" stop-color="#A195CE"/><stop offset="20.0%" stop-color="#9C90C9"/><stop offset="30.0%" stop-color="#968AC5"/><stop offset="40.0%" stop-color="#9185C0"/><stop offset="50.0%" stop-color="#8B80BB"/><stop offset="60.0%" stop-color="#867BB6"/><stop offset="70.0%" stop-color="#8176B1"/><stop offset="80.0%" stop-color="#7C71AB"/><stop offset="90.0%" stop-color="#776CA6"/><stop offset="100.0%" stop-color="#7268A0"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g26)" stroke-width="46.00" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 171.25 104.0 A 28.75 28.75 0 0 1 228.75 104.0 Z" fill="url(#g26)" />
+</svg>
+<text x="344" y="2196" fill="#CBD5E1" font-size="12" font-weight="700">27</text>
+<text x="372" y="2196" fill="#0F172A" font-size="16" font-weight="600">Vanda</text>
+<text x="344" y="2215" fill="#94A3B8" font-size="11">curve_wide · half · lavanda</text>
+<rect x="622" y="1906" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="622" y="1906" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g27" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#7B8DD1"/><stop offset="10.0%" stop-color="#7083CA"/><stop offset="20.0%" stop-color="#6579C4"/><stop offset="30.0%" stop-color="#5A6FBC"/><stop offset="40.0%" stop-color="#5065B5"/><stop offset="50.0%" stop-color="#4B5EA8"/><stop offset="60.0%" stop-color="#44569D"/><stop offset="70.0%" stop-color="#3E4F91"/><stop offset="80.0%" stop-color="#384786"/><stop offset="90.0%" stop-color="#32407A"/><stop offset="100.0%" stop-color="#2C396E"/></linearGradient><linearGradient id="l27" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#7B8DD1"/><stop offset="10.0%" stop-color="#7588CE"/><stop offset="20.0%" stop-color="#7083CA"/><stop offset="30.0%" stop-color="#6A7EC7"/><stop offset="40.0%" stop-color="#6579C4"/><stop offset="50.0%" stop-color="#6074C0"/><stop offset="60.0%" stop-color="#5A6FBC"/><stop offset="70.0%" stop-color="#556AB8"/><stop offset="80.0%" stop-color="#5065B5"/><stop offset="90.0%" stop-color="#4C61AF"/><stop offset="100.0%" stop-color="#4B5EA8"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g27)" stroke-width="28.52" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="18.40" fill="url(#g27)" />
+  <ellipse cx="200.0" cy="92.0" rx="56.4" ry="23.5" fill="none" stroke="url(#l27)" stroke-width="7.67" transform="rotate(-22 200.0 92.0)"/>
+</svg>
+<text x="642" y="2196" fill="#CBD5E1" font-size="12" font-weight="700">28</text>
+<text x="670" y="2196" fill="#0F172A" font-size="16" font-weight="600">Vinca</text>
+<text x="642" y="2215" fill="#94A3B8" font-size="11">stroke · orbit · indigo</text>
+<rect x="920" y="1906" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="920" y="1906" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g28" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#D2AA8B"/><stop offset="10.0%" stop-color="#CBA181"/><stop offset="20.0%" stop-color="#C39978"/><stop offset="30.0%" stop-color="#BA916F"/><stop offset="40.0%" stop-color="#B18867"/><stop offset="50.0%" stop-color="#A8805F"/><stop offset="60.0%" stop-color="#9F7755"/><stop offset="70.0%" stop-color="#946D4D"/><stop offset="80.0%" stop-color="#896445"/><stop offset="90.0%" stop-color="#7D5B3E"/><stop offset="100.0%" stop-color="#715237"/></linearGradient><linearGradient id="l28" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#D2AA8B"/><stop offset="10.0%" stop-color="#CEA686"/><stop offset="20.0%" stop-color="#CBA181"/><stop offset="30.0%" stop-color="#C79D7C"/><stop offset="40.0%" stop-color="#C39978"/><stop offset="50.0%" stop-color="#BF9573"/><stop offset="60.0%" stop-color="#BA916F"/><stop offset="70.0%" stop-color="#B68C6B"/><stop offset="80.0%" stop-color="#B18867"/><stop offset="90.0%" stop-color="#AD8463"/><stop offset="100.0%" stop-color="#A8805F"/></linearGradient></defs>
+  <circle cx="200.00" cy="208.00" r="160.00" fill="url(#l28)" opacity="0.18"/>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 200.8 237.87 L 151.56 152.0 Z" fill="url(#g28)" opacity="0.55"/>
+    <path d="M 288.0 152.0 L 200.0 308.0 L 200.0 237.87 L 248.44 152.0 Z" fill="url(#g28)" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g28)" />
+</svg>
+<text x="940" y="2196" fill="#CBD5E1" font-size="12" font-weight="700">29</text>
+<text x="968" y="2196" fill="#0F172A" font-size="16" font-weight="600">Voss</text>
+<text x="940" y="2215" fill="#94A3B8" font-size="11">facet · dot · arena</text>
+<rect x="1218" y="1906" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="1218" y="1906" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g29" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#84AE8B"/><stop offset="20.0%" stop-color="#79A582"/><stop offset="30.0%" stop-color="#6F9B78"/><stop offset="40.0%" stop-color="#669070"/><stop offset="50.0%" stop-color="#5F8368"/><stop offset="60.0%" stop-color="#587B61"/><stop offset="70.0%" stop-color="#50735A"/><stop offset="80.0%" stop-color="#496A53"/><stop offset="90.0%" stop-color="#42624C"/><stop offset="100.0%" stop-color="#3B5945"/></linearGradient><linearGradient id="l29" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#89B390"/><stop offset="20.0%" stop-color="#84AE8B"/><stop offset="30.0%" stop-color="#7FA986"/><stop offset="40.0%" stop-color="#79A582"/><stop offset="50.0%" stop-color="#74A07D"/><stop offset="60.0%" stop-color="#6F9B78"/><stop offset="70.0%" stop-color="#6A9673"/><stop offset="80.0%" stop-color="#669070"/><stop offset="90.0%" stop-color="#63896C"/><stop offset="100.0%" stop-color="#5F8368"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 210.0 L 186.0 308.0 L 292.0 122.0" fill="none" stroke="url(#g29)" stroke-width="28.52" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g29)" />
+</svg>
+<text x="1238" y="2196" fill="#CBD5E1" font-size="12" font-weight="700">30</text>
+<text x="1266" y="2196" fill="#0F172A" font-size="16" font-weight="600">Vale</text>
+<text x="1238" y="2215" fill="#94A3B8" font-size="11">check · dot · salvia</text>
+<rect x="26" y="2252" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="26" y="2252" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g30" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#AC84A8"/><stop offset="10.0%" stop-color="#A47AA0"/><stop offset="20.0%" stop-color="#9B6F98"/><stop offset="30.0%" stop-color="#91668E"/><stop offset="40.0%" stop-color="#865F83"/><stop offset="50.0%" stop-color="#7A5878"/><stop offset="60.0%" stop-color="#725070"/><stop offset="70.0%" stop-color="#694967"/><stop offset="80.0%" stop-color="#60415F"/><stop offset="90.0%" stop-color="#573A56"/><stop offset="100.0%" stop-color="#4E334D"/></linearGradient><linearGradient id="l30" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#AC84A8"/><stop offset="10.0%" stop-color="#A87FA4"/><stop offset="20.0%" stop-color="#A47AA0"/><stop offset="30.0%" stop-color="#A0749C"/><stop offset="40.0%" stop-color="#9B6F98"/><stop offset="50.0%" stop-color="#976A93"/><stop offset="60.0%" stop-color="#91668E"/><stop offset="70.0%" stop-color="#8C6389"/><stop offset="80.0%" stop-color="#865F83"/><stop offset="90.0%" stop-color="#805C7E"/><stop offset="100.0%" stop-color="#7A5878"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g30)" stroke-width="28.52" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 211.73 67.02 A 27.60 27.60 0 1 0 211.73 116.98 A 27.60 27.60 0 0 1 211.73 67.02 Z" fill="url(#g30)" />
+</svg>
+<text x="46" y="2542" fill="#CBD5E1" font-size="12" font-weight="700">31</text>
+<text x="74" y="2542" fill="#0F172A" font-size="16" font-weight="600">Viora</text>
+<text x="46" y="2561" fill="#94A3B8" font-size="11">curve · moon · ciruela</text>
+<rect x="324" y="2252" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="324" y="2252" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g31" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8CAFD6"/><stop offset="10.0%" stop-color="#7DA2CE"/><stop offset="20.0%" stop-color="#6E95C6"/><stop offset="30.0%" stop-color="#5F88BE"/><stop offset="40.0%" stop-color="#517BB5"/><stop offset="50.0%" stop-color="#4A6FA5"/><stop offset="60.0%" stop-color="#44679B"/><stop offset="70.0%" stop-color="#3D5F90"/><stop offset="80.0%" stop-color="#375886"/><stop offset="90.0%" stop-color="#32507B"/><stop offset="100.0%" stop-color="#2C4870"/></linearGradient><linearGradient id="l31" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8CAFD6"/><stop offset="10.0%" stop-color="#84A9D2"/><stop offset="20.0%" stop-color="#7DA2CE"/><stop offset="30.0%" stop-color="#759CCA"/><stop offset="40.0%" stop-color="#6E95C6"/><stop offset="50.0%" stop-color="#678FC2"/><stop offset="60.0%" stop-color="#5F88BE"/><stop offset="70.0%" stop-color="#5882B9"/><stop offset="80.0%" stop-color="#517BB5"/><stop offset="90.0%" stop-color="#4C75AE"/><stop offset="100.0%" stop-color="#4A6FA5"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g31)" stroke-width="46.00" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 200.0 51.0025 C 229.095 88.0325 226.45 115.805 200.0 118.45 C 173.55 115.805 170.905 88.0325 200.0 51.0025 Z" fill="url(#g31)" />
+</svg>
+<text x="344" y="2542" fill="#CBD5E1" font-size="12" font-weight="700">32</text>
+<text x="372" y="2542" fill="#0F172A" font-size="16" font-weight="600">Vinda</text>
+<text x="344" y="2561" fill="#94A3B8" font-size="11">wide · drop · niebla</text>
+<rect x="622" y="2252" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="622" y="2252" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g32" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#77C5B9"/><stop offset="10.0%" stop-color="#6BBEB2"/><stop offset="20.0%" stop-color="#5EB8AB"/><stop offset="30.0%" stop-color="#52B1A4"/><stop offset="40.0%" stop-color="#4CA498"/><stop offset="50.0%" stop-color="#47968C"/><stop offset="60.0%" stop-color="#408D83"/><stop offset="70.0%" stop-color="#3A847B"/><stop offset="80.0%" stop-color="#347B72"/><stop offset="90.0%" stop-color="#2E7268"/><stop offset="100.0%" stop-color="#28685F"/></linearGradient><linearGradient id="l32" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#77C5B9"/><stop offset="10.0%" stop-color="#71C2B5"/><stop offset="20.0%" stop-color="#6BBEB2"/><stop offset="30.0%" stop-color="#65BBAE"/><stop offset="40.0%" stop-color="#5EB8AB"/><stop offset="50.0%" stop-color="#58B4A7"/><stop offset="60.0%" stop-color="#52B1A4"/><stop offset="70.0%" stop-color="#4EAB9F"/><stop offset="80.0%" stop-color="#4CA498"/><stop offset="90.0%" stop-color="#4A9D92"/><stop offset="100.0%" stop-color="#47968C"/></linearGradient></defs>
+  <g>
+    <circle cx="112.00" cy="152.00" r="11.96" fill="url(#g32)" />
+    <circle cx="134.00" cy="191.00" r="11.96" fill="url(#g32)" />
+    <circle cx="156.00" cy="230.00" r="11.96" fill="url(#g32)" />
+    <circle cx="178.00" cy="269.00" r="11.96" fill="url(#g32)" />
+    <circle cx="200.00" cy="308.00" r="11.96" fill="url(#g32)" />
+    <circle cx="288.00" cy="152.00" r="11.96" fill="url(#g32)" />
+    <circle cx="266.00" cy="191.00" r="11.96" fill="url(#g32)" />
+    <circle cx="244.00" cy="230.00" r="11.96" fill="url(#g32)" />
+    <circle cx="222.00" cy="269.00" r="11.96" fill="url(#g32)" />
+    <circle cx="200.00" cy="308.00" r="11.96" fill="url(#g32)" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="47.15" fill="none" stroke="url(#l32)" stroke-width="5.75" opacity="0.5"/>
+  <circle cx="200.00" cy="92.00" r="35.65" fill="none" stroke="url(#l32)" stroke-width="7.67" opacity="0.8"/>
+  <circle cx="200.00" cy="92.00" r="17.94" fill="url(#g32)" />
+</svg>
+<text x="642" y="2542" fill="#CBD5E1" font-size="12" font-weight="700">33</text>
+<text x="670" y="2542" fill="#0F172A" font-size="16" font-weight="600">Veya</text>
+<text x="642" y="2561" fill="#94A3B8" font-size="11">dotted · breath · menta</text>
+<rect x="920" y="2252" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="920" y="2252" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g33" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#5D7B93"/><stop offset="10.0%" stop-color="#537188"/><stop offset="20.0%" stop-color="#4A677C"/><stop offset="30.0%" stop-color="#405D71"/><stop offset="40.0%" stop-color="#385264"/><stop offset="50.0%" stop-color="#2F4858"/><stop offset="60.0%" stop-color="#2A4251"/><stop offset="70.0%" stop-color="#263C4A"/><stop offset="80.0%" stop-color="#213643"/><stop offset="90.0%" stop-color="#1D303C"/><stop offset="100.0%" stop-color="#192A35"/></linearGradient><linearGradient id="l33" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#5D7B93"/><stop offset="10.0%" stop-color="#58768D"/><stop offset="20.0%" stop-color="#537188"/><stop offset="30.0%" stop-color="#4E6C82"/><stop offset="40.0%" stop-color="#4A677C"/><stop offset="50.0%" stop-color="#456277"/><stop offset="60.0%" stop-color="#405D71"/><stop offset="70.0%" stop-color="#3C586B"/><stop offset="80.0%" stop-color="#385264"/><stop offset="90.0%" stop-color="#334D5E"/><stop offset="100.0%" stop-color="#2F4858"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0 L 252.12 152.0 L 200.0 244.39 L 147.88 152.0 Z" fill="url(#g33)" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="18.86" fill="none" stroke="url(#g33)" stroke-width="11.50" />
+</svg>
+<text x="940" y="2542" fill="#CBD5E1" font-size="12" font-weight="700">34</text>
+<text x="968" y="2542" fill="#0F172A" font-size="16" font-weight="600">Vada</text>
+<text x="940" y="2561" fill="#94A3B8" font-size="11">solid · ring · abismo</text>
+<rect x="1218" y="2252" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="1218" y="2252" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g34" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#DBA488"/><stop offset="10.0%" stop-color="#D49B7E"/><stop offset="20.0%" stop-color="#CD9275"/><stop offset="30.0%" stop-color="#C5896D"/><stop offset="40.0%" stop-color="#BD8064"/><stop offset="50.0%" stop-color="#B4785D"/><stop offset="60.0%" stop-color="#AE6D50"/><stop offset="70.0%" stop-color="#A16449"/><stop offset="80.0%" stop-color="#945B42"/><stop offset="90.0%" stop-color="#87533B"/><stop offset="100.0%" stop-color="#7A4A35"/></linearGradient><linearGradient id="l34" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#DBA488"/><stop offset="10.0%" stop-color="#D89F83"/><stop offset="20.0%" stop-color="#D49B7E"/><stop offset="30.0%" stop-color="#D1967A"/><stop offset="40.0%" stop-color="#CD9275"/><stop offset="50.0%" stop-color="#C98D71"/><stop offset="60.0%" stop-color="#C5896D"/><stop offset="70.0%" stop-color="#C18568"/><stop offset="80.0%" stop-color="#BD8064"/><stop offset="90.0%" stop-color="#B97C61"/><stop offset="100.0%" stop-color="#B4785D"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g34)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 150.0 152.0 L 200.0 244.0 L 250.0 152.0" fill="none" stroke="url(#g34)" stroke-width="11.50" stroke-linecap="round" stroke-linejoin="round" opacity="0.62"/>
+  </g>
+  <path d="M 174.7 106.0 A 25.3 25.3 0 0 1 225.3 106.0 Z" fill="url(#g34)" />
+  <path d="M 159.01 106.00 A 40.99 40.99 0 0 1 240.99 106.00" fill="none" stroke="url(#l34)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 143.33 106.00 A 56.67 56.67 0 0 1 256.67 106.00" fill="none" stroke="url(#l34)" stroke-width="5.75" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+</svg>
+<text x="1238" y="2542" fill="#CBD5E1" font-size="12" font-weight="700">35</text>
+<text x="1266" y="2542" fill="#0F172A" font-size="16" font-weight="600">Verna</text>
+<text x="1238" y="2561" fill="#94A3B8" font-size="11">double · sunrise · terracota</text>
+<rect x="26" y="2598" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="26" y="2598" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g35" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#5CB8B4"/><stop offset="20.0%" stop-color="#4EB2AF"/><stop offset="30.0%" stop-color="#47A5A2"/><stop offset="40.0%" stop-color="#419895"/><stop offset="50.0%" stop-color="#3B8A88"/><stop offset="60.0%" stop-color="#358180"/><stop offset="70.0%" stop-color="#307977"/><stop offset="80.0%" stop-color="#2B706E"/><stop offset="90.0%" stop-color="#266665"/><stop offset="100.0%" stop-color="#215D5C"/></linearGradient><linearGradient id="l35" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#63BBB7"/><stop offset="20.0%" stop-color="#5CB8B4"/><stop offset="30.0%" stop-color="#55B5B1"/><stop offset="40.0%" stop-color="#4EB2AF"/><stop offset="50.0%" stop-color="#4AACA9"/><stop offset="60.0%" stop-color="#47A5A2"/><stop offset="70.0%" stop-color="#449F9C"/><stop offset="80.0%" stop-color="#419895"/><stop offset="90.0%" stop-color="#3E918F"/><stop offset="100.0%" stop-color="#3B8A88"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g35)" stroke-width="14.72" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+    <path d="M 142.0 166.0 C 142.0 284.0 258.0 284.0 258.0 166.0" fill="none" stroke="url(#g35)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 171.56 121.45 A 40.94 40.94 0 1 1 211.28 131.35" fill="none" stroke="url(#g35)" stroke-width="11.04" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<text x="46" y="2888" fill="#CBD5E1" font-size="12" font-weight="700">36</text>
+<text x="74" y="2888" fill="#0F172A" font-size="16" font-weight="600">Vola</text>
+<text x="46" y="2907" fill="#94A3B8" font-size="11">nest · enso · teal</text>
+<rect x="324" y="2598" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="324" y="2598" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g36" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#A79BD2"/><stop offset="10.0%" stop-color="#9C90C9"/><stop offset="20.0%" stop-color="#9185C0"/><stop offset="30.0%" stop-color="#867BB6"/><stop offset="40.0%" stop-color="#7C71AB"/><stop offset="50.0%" stop-color="#7268A0"/><stop offset="60.0%" stop-color="#685E98"/><stop offset="70.0%" stop-color="#60568E"/><stop offset="80.0%" stop-color="#584F83"/><stop offset="90.0%" stop-color="#504779"/><stop offset="100.0%" stop-color="#48406E"/></linearGradient><linearGradient id="l36" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#A79BD2"/><stop offset="10.0%" stop-color="#A195CE"/><stop offset="20.0%" stop-color="#9C90C9"/><stop offset="30.0%" stop-color="#968AC5"/><stop offset="40.0%" stop-color="#9185C0"/><stop offset="50.0%" stop-color="#8B80BB"/><stop offset="60.0%" stop-color="#867BB6"/><stop offset="70.0%" stop-color="#8176B1"/><stop offset="80.0%" stop-color="#7C71AB"/><stop offset="90.0%" stop-color="#776CA6"/><stop offset="100.0%" stop-color="#7268A0"/></linearGradient></defs>
+  <circle cx="200.00" cy="208.00" r="156.00" fill="none" stroke="url(#l36)" stroke-width="5.75" stroke-dasharray="5.8 11.5"/>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g36)" stroke-width="15.64" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="37.26" fill="none" stroke="url(#l36)" stroke-width="7.67" />
+  <circle cx="200.00" cy="92.00" r="18.86" fill="url(#g36)" />
+</svg>
+<text x="344" y="2888" fill="#CBD5E1" font-size="12" font-weight="700">37</text>
+<text x="372" y="2888" fill="#0F172A" font-size="16" font-weight="600">Vuna</text>
+<text x="344" y="2907" fill="#94A3B8" font-size="11">thin · dot_ring · lavanda</text>
+<rect x="622" y="2598" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="622" y="2598" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g37" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#84AE8B"/><stop offset="20.0%" stop-color="#79A582"/><stop offset="30.0%" stop-color="#6F9B78"/><stop offset="40.0%" stop-color="#669070"/><stop offset="50.0%" stop-color="#5F8368"/><stop offset="60.0%" stop-color="#587B61"/><stop offset="70.0%" stop-color="#50735A"/><stop offset="80.0%" stop-color="#496A53"/><stop offset="90.0%" stop-color="#42624C"/><stop offset="100.0%" stop-color="#3B5945"/></linearGradient><linearGradient id="l37" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#89B390"/><stop offset="20.0%" stop-color="#84AE8B"/><stop offset="30.0%" stop-color="#7FA986"/><stop offset="40.0%" stop-color="#79A582"/><stop offset="50.0%" stop-color="#74A07D"/><stop offset="60.0%" stop-color="#6F9B78"/><stop offset="70.0%" stop-color="#6A9673"/><stop offset="80.0%" stop-color="#669070"/><stop offset="90.0%" stop-color="#63896C"/><stop offset="100.0%" stop-color="#5F8368"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 128.0 234.0 168.0 252.0 200.0 308.0" fill="none" stroke="url(#g37)" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 288.0 152.0 C 272.0 234.0 232.0 252.0 200.0 308.0" fill="none" stroke="url(#g37)" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="86.00" r="14.26" fill="url(#g37)" />
+  <circle cx="165.50" cy="106.00" r="7.59" fill="url(#g37)" />
+  <circle cx="234.50" cy="106.00" r="7.59" fill="url(#g37)" />
+</svg>
+<text x="642" y="2888" fill="#CBD5E1" font-size="12" font-weight="700">38</text>
+<text x="670" y="2888" fill="#0F172A" font-size="16" font-weight="600">Vayra</text>
+<text x="642" y="2907" fill="#94A3B8" font-size="11">wave · triple · salvia</text>
+<rect x="920" y="2598" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="920" y="2598" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g38" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#7B8DD1"/><stop offset="10.0%" stop-color="#7083CA"/><stop offset="20.0%" stop-color="#6579C4"/><stop offset="30.0%" stop-color="#5A6FBC"/><stop offset="40.0%" stop-color="#5065B5"/><stop offset="50.0%" stop-color="#4B5EA8"/><stop offset="60.0%" stop-color="#44569D"/><stop offset="70.0%" stop-color="#3E4F91"/><stop offset="80.0%" stop-color="#384786"/><stop offset="90.0%" stop-color="#32407A"/><stop offset="100.0%" stop-color="#2C396E"/></linearGradient><linearGradient id="l38" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#7B8DD1"/><stop offset="10.0%" stop-color="#7588CE"/><stop offset="20.0%" stop-color="#7083CA"/><stop offset="30.0%" stop-color="#6A7EC7"/><stop offset="40.0%" stop-color="#6579C4"/><stop offset="50.0%" stop-color="#6074C0"/><stop offset="60.0%" stop-color="#5A6FBC"/><stop offset="70.0%" stop-color="#556AB8"/><stop offset="80.0%" stop-color="#5065B5"/><stop offset="90.0%" stop-color="#4C61AF"/><stop offset="100.0%" stop-color="#4B5EA8"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 132.0 244.0 188.0 294.0 218.0 308.0" fill="none" stroke="url(#g38)" stroke-width="22.08" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+    <path d="M 288.0 152.0 C 268.0 244.0 212.0 294.0 182.0 308.0" fill="none" stroke="url(#g38)" stroke-width="22.08" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g38)" />
+</svg>
+<text x="940" y="2888" fill="#CBD5E1" font-size="12" font-weight="700">39</text>
+<text x="968" y="2888" fill="#0F172A" font-size="16" font-weight="600">Vena</text>
+<text x="940" y="2907" fill="#94A3B8" font-size="11">ribbon · dot · indigo</text>
+<rect x="1218" y="2598" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="1218" y="2598" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g39" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#AC84A8"/><stop offset="10.0%" stop-color="#A47AA0"/><stop offset="20.0%" stop-color="#9B6F98"/><stop offset="30.0%" stop-color="#91668E"/><stop offset="40.0%" stop-color="#865F83"/><stop offset="50.0%" stop-color="#7A5878"/><stop offset="60.0%" stop-color="#725070"/><stop offset="70.0%" stop-color="#694967"/><stop offset="80.0%" stop-color="#60415F"/><stop offset="90.0%" stop-color="#573A56"/><stop offset="100.0%" stop-color="#4E334D"/></linearGradient><linearGradient id="l39" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#AC84A8"/><stop offset="10.0%" stop-color="#A87FA4"/><stop offset="20.0%" stop-color="#A47AA0"/><stop offset="30.0%" stop-color="#A0749C"/><stop offset="40.0%" stop-color="#9B6F98"/><stop offset="50.0%" stop-color="#976A93"/><stop offset="60.0%" stop-color="#91668E"/><stop offset="70.0%" stop-color="#8C6389"/><stop offset="80.0%" stop-color="#865F83"/><stop offset="90.0%" stop-color="#805C7E"/><stop offset="100.0%" stop-color="#7A5878"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 118.0 302.0 282.0 302.0 288.0 152.0" fill="none" stroke="url(#g39)" stroke-width="25.30" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 200.0 300.0 L 200.0 330.0" fill="none" stroke="url(#g39)" stroke-width="20.24" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 160.0 338.0 L 240.0 338.0" fill="none" stroke="url(#g39)" stroke-width="17.48" stroke-linecap="round" stroke-linejoin="round" opacity="0.62"/>
+  </g>
+  <circle cx="200.00" cy="92.00" r="18.86" fill="none" stroke="url(#g39)" stroke-width="11.50" />
+</svg>
+<text x="1238" y="2888" fill="#CBD5E1" font-size="12" font-weight="700">40</text>
+<text x="1266" y="2888" fill="#0F172A" font-size="16" font-weight="600">Vaso</text>
+<text x="1238" y="2907" fill="#94A3B8" font-size="11">chalice · ring · ciruela</text>
+<rect x="26" y="2944" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="26" y="2944" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g40" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8CAFD6"/><stop offset="10.0%" stop-color="#7DA2CE"/><stop offset="20.0%" stop-color="#6E95C6"/><stop offset="30.0%" stop-color="#5F88BE"/><stop offset="40.0%" stop-color="#517BB5"/><stop offset="50.0%" stop-color="#4A6FA5"/><stop offset="60.0%" stop-color="#44679B"/><stop offset="70.0%" stop-color="#3D5F90"/><stop offset="80.0%" stop-color="#375886"/><stop offset="90.0%" stop-color="#32507B"/><stop offset="100.0%" stop-color="#2C4870"/></linearGradient><linearGradient id="l40" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8CAFD6"/><stop offset="10.0%" stop-color="#84A9D2"/><stop offset="20.0%" stop-color="#7DA2CE"/><stop offset="30.0%" stop-color="#759CCA"/><stop offset="40.0%" stop-color="#6E95C6"/><stop offset="50.0%" stop-color="#678FC2"/><stop offset="60.0%" stop-color="#5F88BE"/><stop offset="70.0%" stop-color="#5882B9"/><stop offset="80.0%" stop-color="#517BB5"/><stop offset="90.0%" stop-color="#4C75AE"/><stop offset="100.0%" stop-color="#4A6FA5"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g40)" stroke-width="28.52" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 149.4 92.0 L 177.0 92.0 L 189.65 71.3 L 208.05 111.55 L 223.0 92.0 L 250.6 92.0" fill="none" stroke="url(#g40)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<text x="46" y="3234" fill="#CBD5E1" font-size="12" font-weight="700">41</text>
+<text x="74" y="3234" fill="#0F172A" font-size="16" font-weight="600">Vega</text>
+<text x="46" y="3253" fill="#94A3B8" font-size="11">stroke · pulse · niebla</text>
+<rect x="324" y="2944" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="324" y="2944" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g41" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#77C5B9"/><stop offset="10.0%" stop-color="#6BBEB2"/><stop offset="20.0%" stop-color="#5EB8AB"/><stop offset="30.0%" stop-color="#52B1A4"/><stop offset="40.0%" stop-color="#4CA498"/><stop offset="50.0%" stop-color="#47968C"/><stop offset="60.0%" stop-color="#408D83"/><stop offset="70.0%" stop-color="#3A847B"/><stop offset="80.0%" stop-color="#347B72"/><stop offset="90.0%" stop-color="#2E7268"/><stop offset="100.0%" stop-color="#28685F"/></linearGradient><linearGradient id="l41" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#77C5B9"/><stop offset="10.0%" stop-color="#71C2B5"/><stop offset="20.0%" stop-color="#6BBEB2"/><stop offset="30.0%" stop-color="#65BBAE"/><stop offset="40.0%" stop-color="#5EB8AB"/><stop offset="50.0%" stop-color="#58B4A7"/><stop offset="60.0%" stop-color="#52B1A4"/><stop offset="70.0%" stop-color="#4EAB9F"/><stop offset="80.0%" stop-color="#4CA498"/><stop offset="90.0%" stop-color="#4A9D92"/><stop offset="100.0%" stop-color="#47968C"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g41)" stroke-width="46.00" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 181.41 101.96 A 19.55 19.55 0 0 1 218.59 101.96" fill="none" stroke="url(#g41)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+  <path d="M 167.19 97.34 A 34.50 34.50 0 0 1 232.81 97.34" fill="none" stroke="url(#g41)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" opacity="0.66"/>
+  <path d="M 152.97 92.72 A 49.45 49.45 0 0 1 247.03 92.72" fill="none" stroke="url(#g41)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"/>
+</svg>
+<text x="344" y="3234" fill="#CBD5E1" font-size="12" font-weight="700">42</text>
+<text x="372" y="3234" fill="#0F172A" font-size="16" font-weight="600">Vala</text>
+<text x="344" y="3253" fill="#94A3B8" font-size="11">curve_wide · arcs · menta</text>
+<rect x="622" y="2944" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="622" y="2944" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g42" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#D2AA8B"/><stop offset="10.0%" stop-color="#CBA181"/><stop offset="20.0%" stop-color="#C39978"/><stop offset="30.0%" stop-color="#BA916F"/><stop offset="40.0%" stop-color="#B18867"/><stop offset="50.0%" stop-color="#A8805F"/><stop offset="60.0%" stop-color="#9F7755"/><stop offset="70.0%" stop-color="#946D4D"/><stop offset="80.0%" stop-color="#896445"/><stop offset="90.0%" stop-color="#7D5B3E"/><stop offset="100.0%" stop-color="#715237"/></linearGradient><linearGradient id="l42" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#D2AA8B"/><stop offset="10.0%" stop-color="#CEA686"/><stop offset="20.0%" stop-color="#CBA181"/><stop offset="30.0%" stop-color="#C79D7C"/><stop offset="40.0%" stop-color="#C39978"/><stop offset="50.0%" stop-color="#BF9573"/><stop offset="60.0%" stop-color="#BA916F"/><stop offset="70.0%" stop-color="#B68C6B"/><stop offset="80.0%" stop-color="#B18867"/><stop offset="90.0%" stop-color="#AD8463"/><stop offset="100.0%" stop-color="#A8805F"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 163.04 152.0 Z" fill="url(#g42)" opacity="0.55"/>
+    <path d="M 288.0 152.0 L 200.0 308.0 L 236.96 152.0 Z" fill="url(#g42)" />
+  </g>
+  <path d="M 171.25 104.0 A 28.75 28.75 0 0 1 228.75 104.0 Z" fill="url(#g42)" />
+</svg>
+<text x="642" y="3234" fill="#CBD5E1" font-size="12" font-weight="700">43</text>
+<text x="670" y="3234" fill="#0F172A" font-size="16" font-weight="600">Vidan</text>
+<text x="642" y="3253" fill="#94A3B8" font-size="11">taper · half · arena</text>
+<rect x="920" y="2944" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="920" y="2944" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g43" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#5D7B93"/><stop offset="10.0%" stop-color="#537188"/><stop offset="20.0%" stop-color="#4A677C"/><stop offset="30.0%" stop-color="#405D71"/><stop offset="40.0%" stop-color="#385264"/><stop offset="50.0%" stop-color="#2F4858"/><stop offset="60.0%" stop-color="#2A4251"/><stop offset="70.0%" stop-color="#263C4A"/><stop offset="80.0%" stop-color="#213643"/><stop offset="90.0%" stop-color="#1D303C"/><stop offset="100.0%" stop-color="#192A35"/></linearGradient><linearGradient id="l43" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#5D7B93"/><stop offset="10.0%" stop-color="#58768D"/><stop offset="20.0%" stop-color="#537188"/><stop offset="30.0%" stop-color="#4E6C82"/><stop offset="40.0%" stop-color="#4A677C"/><stop offset="50.0%" stop-color="#456277"/><stop offset="60.0%" stop-color="#405D71"/><stop offset="70.0%" stop-color="#3C586B"/><stop offset="80.0%" stop-color="#385264"/><stop offset="90.0%" stop-color="#334D5E"/><stop offset="100.0%" stop-color="#2F4858"/></linearGradient></defs>
+  <circle cx="200.00" cy="208.00" r="156.00" fill="none" stroke="url(#l43)" stroke-width="5.75" opacity="0.75"/>
+  <g>
+    <path d="M 116.4 159.8 L 136.9 196.2" fill="none" stroke="url(#g43)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+    <path d="M 283.6 159.8 L 263.1 196.2" fill="none" stroke="url(#g43)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+    <path d="M 145.7 211.8 L 166.3 248.2" fill="none" stroke="url(#g43)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+    <path d="M 254.3 211.8 L 233.7 248.2" fill="none" stroke="url(#g43)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+    <path d="M 175.1 263.8 L 195.6 300.2" fill="none" stroke="url(#g43)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+    <path d="M 224.9 263.8 L 204.4 300.2" fill="none" stroke="url(#g43)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g43)" />
+</svg>
+<text x="940" y="3234" fill="#CBD5E1" font-size="12" font-weight="700">44</text>
+<text x="968" y="3234" fill="#0F172A" font-size="16" font-weight="600">Vise</text>
+<text x="940" y="3253" fill="#94A3B8" font-size="11">steps · dot · abismo</text>
+<rect x="1218" y="2944" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="1218" y="2944" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g44" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#DBA488"/><stop offset="10.0%" stop-color="#D49B7E"/><stop offset="20.0%" stop-color="#CD9275"/><stop offset="30.0%" stop-color="#C5896D"/><stop offset="40.0%" stop-color="#BD8064"/><stop offset="50.0%" stop-color="#B4785D"/><stop offset="60.0%" stop-color="#AE6D50"/><stop offset="70.0%" stop-color="#A16449"/><stop offset="80.0%" stop-color="#945B42"/><stop offset="90.0%" stop-color="#87533B"/><stop offset="100.0%" stop-color="#7A4A35"/></linearGradient><linearGradient id="l44" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#DBA488"/><stop offset="10.0%" stop-color="#D89F83"/><stop offset="20.0%" stop-color="#D49B7E"/><stop offset="30.0%" stop-color="#D1967A"/><stop offset="40.0%" stop-color="#CD9275"/><stop offset="50.0%" stop-color="#C98D71"/><stop offset="60.0%" stop-color="#C5896D"/><stop offset="70.0%" stop-color="#C18568"/><stop offset="80.0%" stop-color="#BD8064"/><stop offset="90.0%" stop-color="#B97C61"/><stop offset="100.0%" stop-color="#B4785D"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g44)" stroke-width="23.92" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 146.0 152.0 C 146.0 268.0 254.0 268.0 254.0 152.0" fill="none" stroke="url(#g44)" stroke-width="11.50" stroke-linecap="round" stroke-linejoin="round" opacity="0.62"/>
+  </g>
+  <g transform="rotate(-38 200.0 118.0)"><ellipse cx="200.0" cy="90.0" rx="9.7" ry="24.2" fill="url(#g44)"/></g>
+  <g transform="rotate(0 200.0 118.0)"><ellipse cx="200.0" cy="90.0" rx="9.7" ry="24.2" fill="url(#g44)"/></g>
+  <g transform="rotate(38 200.0 118.0)"><ellipse cx="200.0" cy="90.0" rx="9.7" ry="24.2" fill="url(#g44)"/></g>
+</svg>
+<text x="1238" y="3234" fill="#CBD5E1" font-size="12" font-weight="700">45</text>
+<text x="1266" y="3234" fill="#0F172A" font-size="16" font-weight="600">Vora</text>
+<text x="1238" y="3253" fill="#94A3B8" font-size="11">double_curve · lotus · terracota</text>
+<rect x="26" y="3290" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="26" y="3290" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g45" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#84AE8B"/><stop offset="20.0%" stop-color="#79A582"/><stop offset="30.0%" stop-color="#6F9B78"/><stop offset="40.0%" stop-color="#669070"/><stop offset="50.0%" stop-color="#5F8368"/><stop offset="60.0%" stop-color="#587B61"/><stop offset="70.0%" stop-color="#50735A"/><stop offset="80.0%" stop-color="#496A53"/><stop offset="90.0%" stop-color="#42624C"/><stop offset="100.0%" stop-color="#3B5945"/></linearGradient><linearGradient id="l45" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#8FB795"/><stop offset="10.0%" stop-color="#89B390"/><stop offset="20.0%" stop-color="#84AE8B"/><stop offset="30.0%" stop-color="#7FA986"/><stop offset="40.0%" stop-color="#79A582"/><stop offset="50.0%" stop-color="#74A07D"/><stop offset="60.0%" stop-color="#6F9B78"/><stop offset="70.0%" stop-color="#6A9673"/><stop offset="80.0%" stop-color="#669070"/><stop offset="90.0%" stop-color="#63896C"/><stop offset="100.0%" stop-color="#5F8368"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g45)" stroke-width="21.16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18.63 17.19"/>
+  </g>
+  <circle cx="200.00" cy="98.00" r="19.78" fill="url(#g45)" />
+  <path d="M 200.0 74.0 C 220.7 50.0 212.65 28.0 200.0 22.0" fill="none" stroke="url(#l45)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<text x="46" y="3580" fill="#CBD5E1" font-size="12" font-weight="700">46</text>
+<text x="74" y="3580" fill="#0F172A" font-size="16" font-weight="600">Vinu</text>
+<text x="46" y="3599" fill="#94A3B8" font-size="11">dashed · seed · salvia</text>
+<rect x="324" y="3290" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="324" y="3290" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g46" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#5CB8B4"/><stop offset="20.0%" stop-color="#4EB2AF"/><stop offset="30.0%" stop-color="#47A5A2"/><stop offset="40.0%" stop-color="#419895"/><stop offset="50.0%" stop-color="#3B8A88"/><stop offset="60.0%" stop-color="#358180"/><stop offset="70.0%" stop-color="#307977"/><stop offset="80.0%" stop-color="#2B706E"/><stop offset="90.0%" stop-color="#266665"/><stop offset="100.0%" stop-color="#215D5C"/></linearGradient><linearGradient id="l46" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#6ABEBA"/><stop offset="10.0%" stop-color="#63BBB7"/><stop offset="20.0%" stop-color="#5CB8B4"/><stop offset="30.0%" stop-color="#55B5B1"/><stop offset="40.0%" stop-color="#4EB2AF"/><stop offset="50.0%" stop-color="#4AACA9"/><stop offset="60.0%" stop-color="#47A5A2"/><stop offset="70.0%" stop-color="#449F9C"/><stop offset="80.0%" stop-color="#419895"/><stop offset="90.0%" stop-color="#3E918F"/><stop offset="100.0%" stop-color="#3B8A88"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 200.0 308.0 L 288.0 152.0" fill="none" stroke="url(#g46)" stroke-width="46.00" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M 171.56 121.45 A 40.94 40.94 0 1 1 211.28 131.35" fill="none" stroke="url(#g46)" stroke-width="11.04" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<text x="344" y="3580" fill="#CBD5E1" font-size="12" font-weight="700">47</text>
+<text x="372" y="3580" fill="#0F172A" font-size="16" font-weight="600">Vika</text>
+<text x="344" y="3599" fill="#94A3B8" font-size="11">wide · enso · teal</text>
+<rect x="622" y="3290" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="622" y="3290" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g47" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#A79BD2"/><stop offset="10.0%" stop-color="#9C90C9"/><stop offset="20.0%" stop-color="#9185C0"/><stop offset="30.0%" stop-color="#867BB6"/><stop offset="40.0%" stop-color="#7C71AB"/><stop offset="50.0%" stop-color="#7268A0"/><stop offset="60.0%" stop-color="#685E98"/><stop offset="70.0%" stop-color="#60568E"/><stop offset="80.0%" stop-color="#584F83"/><stop offset="90.0%" stop-color="#504779"/><stop offset="100.0%" stop-color="#48406E"/></linearGradient><linearGradient id="l47" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#A79BD2"/><stop offset="10.0%" stop-color="#A195CE"/><stop offset="20.0%" stop-color="#9C90C9"/><stop offset="30.0%" stop-color="#968AC5"/><stop offset="40.0%" stop-color="#9185C0"/><stop offset="50.0%" stop-color="#8B80BB"/><stop offset="60.0%" stop-color="#867BB6"/><stop offset="70.0%" stop-color="#8176B1"/><stop offset="80.0%" stop-color="#7C71AB"/><stop offset="90.0%" stop-color="#776CA6"/><stop offset="100.0%" stop-color="#7268A0"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 L 184.0 280.0" fill="none" stroke="url(#g47)" stroke-width="25.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+    <path d="M 288.0 152.0 L 216.0 280.0" fill="none" stroke="url(#g47)" stroke-width="25.30" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="47.15" fill="none" stroke="url(#l47)" stroke-width="5.75" opacity="0.5"/>
+  <circle cx="200.00" cy="92.00" r="35.65" fill="none" stroke="url(#l47)" stroke-width="7.67" opacity="0.8"/>
+  <circle cx="200.00" cy="92.00" r="17.94" fill="url(#g47)" />
+</svg>
+<text x="642" y="3580" fill="#CBD5E1" font-size="12" font-weight="700">48</text>
+<text x="670" y="3580" fill="#0F172A" font-size="16" font-weight="600">Valta</text>
+<text x="642" y="3599" fill="#94A3B8" font-size="11">split · breath · lavanda</text>
+<rect x="920" y="3290" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="920" y="3290" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g48" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#7B8DD1"/><stop offset="10.0%" stop-color="#7083CA"/><stop offset="20.0%" stop-color="#6579C4"/><stop offset="30.0%" stop-color="#5A6FBC"/><stop offset="40.0%" stop-color="#5065B5"/><stop offset="50.0%" stop-color="#4B5EA8"/><stop offset="60.0%" stop-color="#44569D"/><stop offset="70.0%" stop-color="#3E4F91"/><stop offset="80.0%" stop-color="#384786"/><stop offset="90.0%" stop-color="#32407A"/><stop offset="100.0%" stop-color="#2C396E"/></linearGradient><linearGradient id="l48" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#7B8DD1"/><stop offset="10.0%" stop-color="#7588CE"/><stop offset="20.0%" stop-color="#7083CA"/><stop offset="30.0%" stop-color="#6A7EC7"/><stop offset="40.0%" stop-color="#6579C4"/><stop offset="50.0%" stop-color="#6074C0"/><stop offset="60.0%" stop-color="#5A6FBC"/><stop offset="70.0%" stop-color="#556AB8"/><stop offset="80.0%" stop-color="#5065B5"/><stop offset="90.0%" stop-color="#4C61AF"/><stop offset="100.0%" stop-color="#4B5EA8"/></linearGradient></defs>
+  <g>
+    <path d="M 112.0 152.0 Q 146.0 286.0 200.0 308.0" fill="none" stroke="url(#g48)" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 288.0 152.0 Q 254.0 286.0 200.0 308.0" fill="none" stroke="url(#g48)" stroke-width="23.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  </g>
+  <path d="M 181.41 101.96 A 19.55 19.55 0 0 1 218.59 101.96" fill="none" stroke="url(#g48)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+  <path d="M 167.19 97.34 A 34.50 34.50 0 0 1 232.81 97.34" fill="none" stroke="url(#g48)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" opacity="0.66"/>
+  <path d="M 152.97 92.72 A 49.45 49.45 0 0 1 247.03 92.72" fill="none" stroke="url(#g48)" stroke-width="7.67" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"/>
+</svg>
+<text x="940" y="3580" fill="#CBD5E1" font-size="12" font-weight="700">49</text>
+<text x="968" y="3580" fill="#0F172A" font-size="16" font-weight="600">Vento</text>
+<text x="940" y="3599" fill="#94A3B8" font-size="11">wing · arcs · indigo</text>
+<rect x="1218" y="3290" width="272" height="320" rx="18" fill="#FFFFFF" stroke="#E8EDF3" stroke-width="1"/>
+<svg x="1218" y="3290" width="272" height="272" viewBox="0 0 400 400">
+<defs><linearGradient id="g49" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#AC84A8"/><stop offset="10.0%" stop-color="#A47AA0"/><stop offset="20.0%" stop-color="#9B6F98"/><stop offset="30.0%" stop-color="#91668E"/><stop offset="40.0%" stop-color="#865F83"/><stop offset="50.0%" stop-color="#7A5878"/><stop offset="60.0%" stop-color="#725070"/><stop offset="70.0%" stop-color="#694967"/><stop offset="80.0%" stop-color="#60415F"/><stop offset="90.0%" stop-color="#573A56"/><stop offset="100.0%" stop-color="#4E334D"/></linearGradient><linearGradient id="l49" gradientUnits="userSpaceOnUse" x1="96" y1="72" x2="312" y2="330"><stop offset="0.0%" stop-color="#AC84A8"/><stop offset="10.0%" stop-color="#A87FA4"/><stop offset="20.0%" stop-color="#A47AA0"/><stop offset="30.0%" stop-color="#A0749C"/><stop offset="40.0%" stop-color="#9B6F98"/><stop offset="50.0%" stop-color="#976A93"/><stop offset="60.0%" stop-color="#91668E"/><stop offset="70.0%" stop-color="#8C6389"/><stop offset="80.0%" stop-color="#865F83"/><stop offset="90.0%" stop-color="#805C7E"/><stop offset="100.0%" stop-color="#7A5878"/></linearGradient></defs>
+  <rect x="52" y="60" width="296" height="296" rx="78" fill="none" stroke="url(#l49)" stroke-width="7.67"/>
+  <g>
+    <path d="M 112.0 152.0 C 112.0 324.0 288.0 324.0 288.0 152.0" fill="none" stroke="url(#g49)" stroke-width="28.52" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <circle cx="200.00" cy="92.00" r="23.00" fill="url(#g49)" />
+</svg>
+<text x="1238" y="3580" fill="#CBD5E1" font-size="12" font-weight="700">50</text>
+<text x="1266" y="3580" fill="#0F172A" font-size="16" font-weight="600">Vaon</text>
+<text x="1238" y="3599" fill="#94A3B8" font-size="11">curve · dot · ciruela</text>
+</svg>

@@ -1,0 +1,1672 @@
+<svg width="1516" height="3618" viewBox="0 0 1516 3618" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<rect width="1516" height="3618" fill="#FFFFFF"/>
+<text x="36" y="66" fill="#0F172A" font-size="34" font-weight="600">50 marcas — V</text>
+<text x="36" y="98" fill="#94A3B8" font-size="17">Geometria exacta · vertices calculados · gradientes, biseles y sombra</text>
+<line x1="36" y1="122" x2="1480" y2="122" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="26" y="178" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="26" y="178" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL0" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3730A3"/><stop offset="100%" stop-color="#171348"/>
+      </linearGradient>
+      <linearGradient id="gR0" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#A5B4FC"/><stop offset="100%" stop-color="#4F46E5"/>
+      </linearGradient>
+      <linearGradient id="gC0" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#B45309"/>
+      </linearGradient>
+      <linearGradient id="gH0" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half0"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh0" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh0)">
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#gL0)"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#gR0)"/>
+    <path d="M 288 148 L 200 312 L 197.2 312 L 281 148 Z" fill="url(#gH0)"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.22"/>
+  </g>
+  <g filter="url(#sh0)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC0)"/>
+    <circle cx="200" cy="92" r="48" fill="none" stroke="#FACC15" stroke-width="2"/>
+    <circle cx="200" cy="92" r="9" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="46" y="466" fill="#CBD5E1" font-size="12" font-weight="700">01</text>
+<text x="74" y="466" fill="#0F172A" font-size="16" font-weight="600">Verta</text>
+<text x="46" y="485" fill="#94A3B8" font-size="11">facet · insight · indigo</text>
+<rect x="324" y="178" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="324" y="178" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F5F5C"/><stop offset="100%" stop-color="#042F2E"/>
+      </linearGradient>
+      <linearGradient id="gR1" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#5EEAD4"/><stop offset="100%" stop-color="#0D9488"/>
+      </linearGradient>
+      <linearGradient id="gC1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A"/><stop offset="100%" stop-color="#A16207"/>
+      </linearGradient>
+      <linearGradient id="gH1" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half1"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh1" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh1)">
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gR1)"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh1)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC1)"/>
+    <circle cx="200" cy="92" r="46" fill="none" stroke="#2DD4BF" stroke-width="3"/>
+  </g>
+</svg>
+<text x="344" y="466" fill="#CBD5E1" font-size="12" font-weight="700">02</text>
+<text x="372" y="466" fill="#0F172A" font-size="16" font-weight="600">Vessel</text>
+<text x="344" y="485" fill="#94A3B8" font-size="11">bowl · disc_ring · teal</text>
+<rect x="622" y="178" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="622" y="178" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#0A1A2F"/>
+      </linearGradient>
+      <linearGradient id="gR2" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#7FB3D5"/><stop offset="100%" stop-color="#2E6B9E"/>
+      </linearGradient>
+      <linearGradient id="gC2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7DD3FC"/><stop offset="100%" stop-color="#0369A1"/>
+      </linearGradient>
+      <linearGradient id="gH2" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half2"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh2" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh2)">
+    <path d="M 112 148 L 200 312 L 288 148 L 250 148 L 200 241.18 L 150 148 Z" fill="url(#gR2)"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh2)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC2)"/>
+    <circle cx="200" cy="92" r="46" fill="none" stroke="#38BDF8" stroke-width="3" stroke-dasharray="9.03 9.03"/>
+  </g>
+</svg>
+<text x="642" y="466" fill="#CBD5E1" font-size="12" font-weight="700">03</text>
+<text x="670" y="466" fill="#0F172A" font-size="16" font-weight="600">Vanta</text>
+<text x="642" y="485" fill="#94A3B8" font-size="11">solid · orbit · abismo</text>
+<rect x="920" y="178" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="920" y="178" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#065F46"/><stop offset="100%" stop-color="#022C22"/>
+      </linearGradient>
+      <linearGradient id="gR3" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#6EE7B7"/><stop offset="100%" stop-color="#059669"/>
+      </linearGradient>
+      <linearGradient id="gC3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FCD34D"/><stop offset="100%" stop-color="#92400E"/>
+      </linearGradient>
+      <linearGradient id="gH3" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half3"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh3" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh3)">
+    <path d="M 112 148 L 200 312 L 288 148 L 236 148 L 207.0 250.5 L 200 285.9 L 193.0 250.5 L 164 148 Z" fill="url(#gR3)"/>
+    <path d="M 112 148 L 164 148 L 167 154 L 109 154 Z" fill="#FFFFFF" opacity="0.38"/>
+    <path d="M 288 148 L 236 148 L 233 154 L 291 154 Z" fill="#FFFFFF" opacity="0.38"/>
+  </g>
+  <g filter="url(#sh3)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC3)"/>
+  </g>
+</svg>
+<text x="940" y="466" fill="#CBD5E1" font-size="12" font-weight="700">04</text>
+<text x="968" y="466" fill="#0F172A" font-size="16" font-weight="600">Vireo</text>
+<text x="940" y="485" fill="#94A3B8" font-size="11">blade · disc · esmeralda</text>
+<rect x="1218" y="178" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="1218" y="178" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL4" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0E5A72"/><stop offset="100%" stop-color="#062A3A"/>
+      </linearGradient>
+      <linearGradient id="gR4" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#7DD3FC"/><stop offset="100%" stop-color="#0891B2"/>
+      </linearGradient>
+      <linearGradient id="gC4" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#BEF264"/><stop offset="100%" stop-color="#3F6212"/>
+      </linearGradient>
+      <linearGradient id="gH4" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half4"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh4" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh4)">
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gL4)"/>
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gR4)" clip-path="url(#half4)"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+  <g filter="url(#sh4)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC4)"/>
+  </g>
+</svg>
+<text x="1238" y="466" fill="#CBD5E1" font-size="12" font-weight="700">05</text>
+<text x="1266" y="466" fill="#0F172A" font-size="16" font-weight="600">Vera</text>
+<text x="1238" y="485" fill="#94A3B8" font-size="11">bowl_facet · disc · artico</text>
+<rect x="26" y="522" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="26" y="522" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL5" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#5B21B6"/><stop offset="100%" stop-color="#2E1065"/>
+      </linearGradient>
+      <linearGradient id="gR5" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C4B5FD"/><stop offset="100%" stop-color="#7C3AED"/>
+      </linearGradient>
+      <linearGradient id="gC5" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#A3E635"/><stop offset="100%" stop-color="#4D7C0F"/>
+      </linearGradient>
+      <linearGradient id="gH5" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half5"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh5" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh5)">
+    <path d="M 112 148 L 200 312 L 288 148 L 266 148 L 200 271.00 L 134 148 Z" fill="#5B21B6"/>
+    <path d="M 158 194 L 200 282 L 242 194 L 224 194 L 200 244.29 L 176 194 Z" fill="#C4B5FD"/>
+  </g>
+  <g filter="url(#sh5)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC5)"/>
+  </g>
+</svg>
+<text x="46" y="810" fill="#CBD5E1" font-size="12" font-weight="700">06</text>
+<text x="74" y="810" fill="#0F172A" font-size="16" font-weight="600">Vivo</text>
+<text x="46" y="829" fill="#94A3B8" font-size="11">nested · disc · violeta</text>
+<rect x="324" y="522" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="324" y="522" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL6" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#4C3A82"/><stop offset="100%" stop-color="#1E1440"/>
+      </linearGradient>
+      <linearGradient id="gR6" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C7B9F0"/><stop offset="100%" stop-color="#6D53BE"/>
+      </linearGradient>
+      <linearGradient id="gC6" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDA4AF"/><stop offset="100%" stop-color="#9F1239"/>
+      </linearGradient>
+      <linearGradient id="gH6" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half6"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh6" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh6)">
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#gL6)"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#gR6)"/>
+    <path d="M 150 148 L 200 241.2 L 250 148 Z" fill="#C7B9F0" opacity="0.32"/>
+  </g>
+  <g filter="url(#sh6)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC6)"/>
+    <circle cx="200" cy="92" r="44" fill="none" stroke="#C084FC" stroke-width="3" stroke-dasharray="8.64 8.64"/>
+    <circle cx="200" cy="92" r="58" fill="none" stroke="#6D53BE" stroke-width="1.5" opacity="0.55"/>
+  </g>
+</svg>
+<text x="344" y="810" fill="#CBD5E1" font-size="12" font-weight="700">07</text>
+<text x="372" y="810" fill="#0F172A" font-size="16" font-weight="600">Vaia</text>
+<text x="344" y="829" fill="#94A3B8" font-size="11">prism · orbit2 · lavanda</text>
+<rect x="622" y="522" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="622" y="522" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL7" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#334155"/><stop offset="100%" stop-color="#0B1220"/>
+      </linearGradient>
+      <linearGradient id="gR7" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#94A3B8"/><stop offset="100%" stop-color="#475569"/>
+      </linearGradient>
+      <linearGradient id="gC7" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#0C4A6E"/>
+      </linearGradient>
+      <linearGradient id="gH7" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half7"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh7" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh7)">
+    <path d="M 112 148 L 200 312 L 288 148 L 268 148 L 200 274.73 L 132 148 Z" fill="url(#gR7)"/>
+  </g>
+  <g filter="url(#sh7)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC7)"/>
+    <circle cx="200" cy="92" r="48" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="200" cy="92" r="9" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="642" y="810" fill="#CBD5E1" font-size="12" font-weight="700">08</text>
+<text x="670" y="810" fill="#0F172A" font-size="16" font-weight="600">Venia</text>
+<text x="642" y="829" fill="#94A3B8" font-size="11">thin · insight · acero</text>
+<rect x="920" y="522" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="920" y="522" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL8" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F5F5C"/><stop offset="100%" stop-color="#042F2E"/>
+      </linearGradient>
+      <linearGradient id="gR8" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#5EEAD4"/><stop offset="100%" stop-color="#0D9488"/>
+      </linearGradient>
+      <linearGradient id="gC8" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A"/><stop offset="100%" stop-color="#A16207"/>
+      </linearGradient>
+      <linearGradient id="gH8" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half8"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh8" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh8)">
+    <circle cx="200" cy="216" r="126" fill="url(#gR8)"/>
+    <path d="M 138 174 L 200 292 L 262 174 L 235 174 L 200 240.61 L 165 174 Z" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="940" y="810" fill="#CBD5E1" font-size="12" font-weight="700">09</text>
+<text x="968" y="810" fill="#0F172A" font-size="16" font-weight="600">Vero</text>
+<text x="940" y="829" fill="#94A3B8" font-size="11">knockout_circle · none · teal</text>
+<rect x="1218" y="522" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="1218" y="522" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL9" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#14532D"/><stop offset="100%" stop-color="#052E16"/>
+      </linearGradient>
+      <linearGradient id="gR9" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#86EFAC"/><stop offset="100%" stop-color="#15803D"/>
+      </linearGradient>
+      <linearGradient id="gC9" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E9D5FF"/><stop offset="100%" stop-color="#7E22CE"/>
+      </linearGradient>
+      <linearGradient id="gH9" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half9"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh9" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh9)">
+    <path d="M 112 148.0 L 200 199.93333333333334 L 288 148.0 L 271.05333333333334 148.0 L 200 189.93 L 128.94666666666666 148.0 Z" fill="#14532D"/>
+    <path d="M 112 171.30166666666668 L 200 223.235 L 288 171.30166666666668 L 271.05333333333334 171.30166666666668 L 200 213.23 L 128.94666666666666 171.30166666666668 Z" fill="#15803D"/>
+    <path d="M 112 194.60333333333335 L 200 246.5366666666667 L 288 194.60333333333335 L 271.05333333333334 194.60333333333335 L 200 236.54 L 128.94666666666666 194.60333333333335 Z" fill="#86EFAC"/>
+  </g>
+  <g filter="url(#sh9)">
+    <circle cx="160" cy="108" r="9" fill="url(#gC9)"/>
+    <circle cx="200" cy="90" r="17" fill="url(#gC9)"/>
+    <circle cx="240" cy="108" r="9" fill="url(#gC9)"/>
+  </g>
+</svg>
+<text x="1238" y="810" fill="#CBD5E1" font-size="12" font-weight="700">10</text>
+<text x="1266" y="810" fill="#0F172A" font-size="16" font-weight="600">Volta</text>
+<text x="1238" y="829" fill="#94A3B8" font-size="11">stack · trio · bosque</text>
+<rect x="26" y="866" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="26" y="866" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL10" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6B2154"/><stop offset="100%" stop-color="#2E0A24"/>
+      </linearGradient>
+      <linearGradient id="gR10" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#E9A8D4"/><stop offset="100%" stop-color="#9D3B7E"/>
+      </linearGradient>
+      <linearGradient id="gC10" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#67E8F9"/><stop offset="100%" stop-color="#0E7490"/>
+      </linearGradient>
+      <linearGradient id="gH10" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half10"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh10" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh10)">
+    <path d="M 112 148 L 200 312 L 288 148 L 236 148 L 207.0 250.5 L 200 285.9 L 193.0 250.5 L 164 148 Z" fill="url(#gL10)"/>
+    <path d="M 112 148 L 200 312 L 288 148 L 236 148 L 207.0 250.5 L 200 285.9 L 193.0 250.5 L 164 148 Z" fill="url(#gR10)" clip-path="url(#half10)"/>
+  </g>
+  <g filter="url(#sh10)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC10)"/>
+  </g>
+</svg>
+<text x="46" y="1154" fill="#CBD5E1" font-size="12" font-weight="700">11</text>
+<text x="74" y="1154" fill="#0F172A" font-size="16" font-weight="600">Vidra</text>
+<text x="46" y="1173" fill="#94A3B8" font-size="11">blade_facet · disc · ciruela</text>
+<rect x="324" y="866" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="324" y="866" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL11" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#0A1A2F"/>
+      </linearGradient>
+      <linearGradient id="gR11" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#7FB3D5"/><stop offset="100%" stop-color="#2E6B9E"/>
+      </linearGradient>
+      <linearGradient id="gC11" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7DD3FC"/><stop offset="100%" stop-color="#0369A1"/>
+      </linearGradient>
+      <linearGradient id="gH11" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half11"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh11" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh11)">
+    <path d="M 112 148 L 200 312 L 288 148 L 232 148 L 200 207.64 L 168 148 Z" fill="url(#gR11)"/>
+    <path d="M 112 148 L 168 148 L 171 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 232 148 L 229 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh11)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC11)"/>
+    <circle cx="200" cy="92" r="46" fill="none" stroke="#38BDF8" stroke-width="3"/>
+  </g>
+</svg>
+<text x="344" y="1154" fill="#CBD5E1" font-size="12" font-weight="700">12</text>
+<text x="372" y="1154" fill="#0F172A" font-size="16" font-weight="600">Vinta</text>
+<text x="344" y="1173" fill="#94A3B8" font-size="11">heavy · disc_ring · abismo</text>
+<rect x="622" y="866" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="622" y="866" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL12" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3730A3"/><stop offset="100%" stop-color="#171348"/>
+      </linearGradient>
+      <linearGradient id="gR12" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#A5B4FC"/><stop offset="100%" stop-color="#4F46E5"/>
+      </linearGradient>
+      <linearGradient id="gC12" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#B45309"/>
+      </linearGradient>
+      <linearGradient id="gH12" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half12"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh12" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh12)">
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="#171348"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="#A5B4FC"/>
+  </g>
+  <g filter="url(#sh12)">
+    <path d="M 200 58 L 234 92 L 200 126 L 166 92 Z" fill="url(#gC12)"/>
+  </g>
+</svg>
+<text x="642" y="1154" fill="#CBD5E1" font-size="12" font-weight="700">13</text>
+<text x="670" y="1154" fill="#0F172A" font-size="16" font-weight="600">Vetta</text>
+<text x="642" y="1173" fill="#94A3B8" font-size="11">split · diamond · indigo</text>
+<rect x="920" y="866" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="920" y="866" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL13" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#065F46"/><stop offset="100%" stop-color="#022C22"/>
+      </linearGradient>
+      <linearGradient id="gR13" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#6EE7B7"/><stop offset="100%" stop-color="#059669"/>
+      </linearGradient>
+      <linearGradient id="gC13" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FCD34D"/><stop offset="100%" stop-color="#92400E"/>
+      </linearGradient>
+      <linearGradient id="gH13" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half13"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh13" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh13)">
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gR13)"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh13)">
+    <path d="M 164 106 L 236 106 A 36 36 0 0 0 164 106 Z" fill="url(#gC13)"/>
+  </g>
+</svg>
+<text x="940" y="1154" fill="#CBD5E1" font-size="12" font-weight="700">14</text>
+<text x="968" y="1154" fill="#0F172A" font-size="16" font-weight="600">Vanya</text>
+<text x="940" y="1173" fill="#94A3B8" font-size="11">bowl · half · esmeralda</text>
+<rect x="1218" y="866" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="1218" y="866" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL14" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#5B21B6"/><stop offset="100%" stop-color="#2E1065"/>
+      </linearGradient>
+      <linearGradient id="gR14" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C4B5FD"/><stop offset="100%" stop-color="#7C3AED"/>
+      </linearGradient>
+      <linearGradient id="gC14" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#A3E635"/><stop offset="100%" stop-color="#4D7C0F"/>
+      </linearGradient>
+      <linearGradient id="gH14" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half14"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh14" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh14)">
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#gL14)"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#gR14)"/>
+    <path d="M 288 148 L 200 312 L 197.2 312 L 281 148 Z" fill="url(#gH14)"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.22"/>
+  </g>
+  <g filter="url(#sh14)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC14)"/>
+    <circle cx="200" cy="92" r="42" fill="none" stroke="#A78BFA" stroke-width="2" opacity="0.5"/>
+    <circle cx="200" cy="92" r="55" fill="none" stroke="#A78BFA" stroke-width="2" opacity="0.3"/>
+  </g>
+</svg>
+<text x="1238" y="1154" fill="#CBD5E1" font-size="12" font-weight="700">15</text>
+<text x="1266" y="1154" fill="#0F172A" font-size="16" font-weight="600">Vira</text>
+<text x="1238" y="1173" fill="#94A3B8" font-size="11">facet · halo · violeta</text>
+<rect x="26" y="1210" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="26" y="1210" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL15" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F5F5C"/><stop offset="100%" stop-color="#042F2E"/>
+      </linearGradient>
+      <linearGradient id="gR15" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#5EEAD4"/><stop offset="100%" stop-color="#0D9488"/>
+      </linearGradient>
+      <linearGradient id="gC15" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A"/><stop offset="100%" stop-color="#A16207"/>
+      </linearGradient>
+      <linearGradient id="gH15" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half15"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh15" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh15)">
+    <path d="M 112 148 L 200 312 L 288 148 L 271 148 L 200 280.32 L 129 148 Z" fill="#042F2E"/>
+    <path d="M 146 182 L 200 290 L 254 182 L 237 182 L 200 256.00 L 163 182 Z" fill="#0F5F5C"/>
+    <path d="M 180 216 L 200 268 L 220 216 L 203 216 L 200 223.80 L 197 216 Z" fill="#0D9488"/>
+  </g>
+  <g filter="url(#sh15)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC15)"/>
+  </g>
+</svg>
+<text x="46" y="1498" fill="#CBD5E1" font-size="12" font-weight="700">16</text>
+<text x="74" y="1498" fill="#0F172A" font-size="16" font-weight="600">Vesna</text>
+<text x="46" y="1517" fill="#94A3B8" font-size="11">nested3 · disc · teal</text>
+<rect x="324" y="1210" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="324" y="1210" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL16" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0E5A72"/><stop offset="100%" stop-color="#062A3A"/>
+      </linearGradient>
+      <linearGradient id="gR16" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#7DD3FC"/><stop offset="100%" stop-color="#0891B2"/>
+      </linearGradient>
+      <linearGradient id="gC16" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#BEF264"/><stop offset="100%" stop-color="#3F6212"/>
+      </linearGradient>
+      <linearGradient id="gH16" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half16"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh16" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh16)">
+    <path d="M 112 148 L 200 312 L 288 148 L 250 148 L 200 241.18 L 150 148 Z" fill="url(#gR16)"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh16)">
+    <circle cx="200" cy="92" r="30" fill="none" stroke="url(#gC16)" stroke-width="13"/>
+  </g>
+</svg>
+<text x="344" y="1498" fill="#CBD5E1" font-size="12" font-weight="700">17</text>
+<text x="372" y="1498" fill="#0F172A" font-size="16" font-weight="600">Valen</text>
+<text x="344" y="1517" fill="#94A3B8" font-size="11">solid · ring_only · artico</text>
+<rect x="622" y="1210" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="622" y="1210" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL17" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6B2154"/><stop offset="100%" stop-color="#2E0A24"/>
+      </linearGradient>
+      <linearGradient id="gR17" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#E9A8D4"/><stop offset="100%" stop-color="#9D3B7E"/>
+      </linearGradient>
+      <linearGradient id="gC17" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#67E8F9"/><stop offset="100%" stop-color="#0E7490"/>
+      </linearGradient>
+      <linearGradient id="gH17" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half17"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh17" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh17)">
+    <circle cx="200" cy="216" r="132" fill="#E9A8D4" opacity="0.20"/>
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#gL17)"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#gR17)"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+  <g filter="url(#sh17)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC17)"/>
+    <circle cx="200" cy="92" r="48" fill="none" stroke="#F0ABFC" stroke-width="2"/>
+    <circle cx="200" cy="92" r="9" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="642" y="1498" fill="#CBD5E1" font-size="12" font-weight="700">18</text>
+<text x="670" y="1498" fill="#0F172A" font-size="16" font-weight="600">Vosk</text>
+<text x="642" y="1517" fill="#94A3B8" font-size="11">plate · insight · ciruela</text>
+<rect x="920" y="1210" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="920" y="1210" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL18" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#14532D"/><stop offset="100%" stop-color="#052E16"/>
+      </linearGradient>
+      <linearGradient id="gR18" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#86EFAC"/><stop offset="100%" stop-color="#15803D"/>
+      </linearGradient>
+      <linearGradient id="gC18" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E9D5FF"/><stop offset="100%" stop-color="#7E22CE"/>
+      </linearGradient>
+      <linearGradient id="gH18" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half18"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh18" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh18)">
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gR18)"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh18)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC18)"/>
+    <circle cx="200" cy="92" r="46" fill="none" stroke="#4ADE80" stroke-width="3" stroke-dasharray="9.03 9.03"/>
+  </g>
+</svg>
+<text x="940" y="1498" fill="#CBD5E1" font-size="12" font-weight="700">19</text>
+<text x="968" y="1498" fill="#0F172A" font-size="16" font-weight="600">Vinea</text>
+<text x="940" y="1517" fill="#94A3B8" font-size="11">bowl · orbit · bosque</text>
+<rect x="1218" y="1210" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="1218" y="1210" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL19" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3730A3"/><stop offset="100%" stop-color="#171348"/>
+      </linearGradient>
+      <linearGradient id="gR19" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#A5B4FC"/><stop offset="100%" stop-color="#4F46E5"/>
+      </linearGradient>
+      <linearGradient id="gC19" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#B45309"/>
+      </linearGradient>
+      <linearGradient id="gH19" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half19"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh19" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh19)">
+    <rect x="72" y="88" width="256" height="256" rx="62" fill="url(#gR19)"/>
+    <path d="M 138 174 L 200 292 L 262 174 L 235 174 L 200 240.61 L 165 174 Z" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="1238" y="1498" fill="#CBD5E1" font-size="12" font-weight="700">20</text>
+<text x="1266" y="1498" fill="#0F172A" font-size="16" font-weight="600">Vantia</text>
+<text x="1238" y="1517" fill="#94A3B8" font-size="11">knockout_square · none · indigo</text>
+<rect x="26" y="1554" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="26" y="1554" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL20" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#4C3A82"/><stop offset="100%" stop-color="#1E1440"/>
+      </linearGradient>
+      <linearGradient id="gR20" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C7B9F0"/><stop offset="100%" stop-color="#6D53BE"/>
+      </linearGradient>
+      <linearGradient id="gC20" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDA4AF"/><stop offset="100%" stop-color="#9F1239"/>
+      </linearGradient>
+      <linearGradient id="gH20" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half20"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh20" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh20)">
+    <path d="M 112 148 L 200 312 L 288 148 L 268 148 L 200 274.73 L 132 148 Z" fill="url(#gR20)"/>
+  </g>
+  <g filter="url(#sh20)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC20)"/>
+    <circle cx="200" cy="92" r="44" fill="none" stroke="#C084FC" stroke-width="3" stroke-dasharray="8.64 8.64"/>
+    <circle cx="200" cy="92" r="58" fill="none" stroke="#6D53BE" stroke-width="1.5" opacity="0.55"/>
+  </g>
+</svg>
+<text x="46" y="1842" fill="#CBD5E1" font-size="12" font-weight="700">21</text>
+<text x="74" y="1842" fill="#0F172A" font-size="16" font-weight="600">Voru</text>
+<text x="46" y="1861" fill="#94A3B8" font-size="11">thin · orbit2 · lavanda</text>
+<rect x="324" y="1554" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="324" y="1554" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL21" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#334155"/><stop offset="100%" stop-color="#0B1220"/>
+      </linearGradient>
+      <linearGradient id="gR21" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#94A3B8"/><stop offset="100%" stop-color="#475569"/>
+      </linearGradient>
+      <linearGradient id="gC21" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#0C4A6E"/>
+      </linearGradient>
+      <linearGradient id="gH21" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half21"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh21" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh21)">
+    <path d="M 112 148.0 L 200 199.93333333333334 L 288 148.0 L 271.05333333333334 148.0 L 200 189.93 L 128.94666666666666 148.0 Z" fill="#334155"/>
+    <path d="M 112 171.30166666666668 L 200 223.235 L 288 171.30166666666668 L 271.05333333333334 171.30166666666668 L 200 213.23 L 128.94666666666666 171.30166666666668 Z" fill="#475569"/>
+    <path d="M 112 194.60333333333335 L 200 246.5366666666667 L 288 194.60333333333335 L 271.05333333333334 194.60333333333335 L 200 236.54 L 128.94666666666666 194.60333333333335 Z" fill="#94A3B8"/>
+  </g>
+  <g filter="url(#sh21)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC21)"/>
+  </g>
+</svg>
+<text x="344" y="1842" fill="#CBD5E1" font-size="12" font-weight="700">22</text>
+<text x="372" y="1842" fill="#0F172A" font-size="16" font-weight="600">Vori</text>
+<text x="344" y="1861" fill="#94A3B8" font-size="11">stack · disc · acero</text>
+<rect x="622" y="1554" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="622" y="1554" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL22" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#0A1A2F"/>
+      </linearGradient>
+      <linearGradient id="gR22" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#7FB3D5"/><stop offset="100%" stop-color="#2E6B9E"/>
+      </linearGradient>
+      <linearGradient id="gC22" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7DD3FC"/><stop offset="100%" stop-color="#0369A1"/>
+      </linearGradient>
+      <linearGradient id="gH22" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half22"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh22" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh22)">
+    <circle cx="200" cy="216" r="126" fill="url(#gR22)"/>
+    <path d="M 138 174 L 200 292 L 262 174 L 235 174 L 200 240.61 L 165 174 Z" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="642" y="1842" fill="#CBD5E1" font-size="12" font-weight="700">23</text>
+<text x="670" y="1842" fill="#0F172A" font-size="16" font-weight="600">Vuma</text>
+<text x="642" y="1861" fill="#94A3B8" font-size="11">knockout_circle · none · abismo</text>
+<rect x="920" y="1554" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="920" y="1554" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL23" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F5F5C"/><stop offset="100%" stop-color="#042F2E"/>
+      </linearGradient>
+      <linearGradient id="gR23" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#5EEAD4"/><stop offset="100%" stop-color="#0D9488"/>
+      </linearGradient>
+      <linearGradient id="gC23" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A"/><stop offset="100%" stop-color="#A16207"/>
+      </linearGradient>
+      <linearGradient id="gH23" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half23"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh23" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh23)">
+    <circle cx="200" cy="216" r="130" fill="none" stroke="#0D9488" stroke-width="6"/>
+    <path d="M 140 178 L 200 288 L 260 178 L 234 178 L 200 240.33 L 166 178 Z" fill="url(#gR23)"/>
+  </g>
+</svg>
+<text x="940" y="1842" fill="#CBD5E1" font-size="12" font-weight="700">24</text>
+<text x="968" y="1842" fill="#0F172A" font-size="16" font-weight="600">Vayu</text>
+<text x="940" y="1861" fill="#94A3B8" font-size="11">outline_ring · none · teal</text>
+<rect x="1218" y="1554" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="1218" y="1554" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL24" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#5B21B6"/><stop offset="100%" stop-color="#2E1065"/>
+      </linearGradient>
+      <linearGradient id="gR24" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C4B5FD"/><stop offset="100%" stop-color="#7C3AED"/>
+      </linearGradient>
+      <linearGradient id="gC24" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#A3E635"/><stop offset="100%" stop-color="#4D7C0F"/>
+      </linearGradient>
+      <linearGradient id="gH24" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half24"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh24" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh24)">
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gL24)"/>
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gR24)" clip-path="url(#half24)"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+  <g filter="url(#sh24)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC24)"/>
+    <circle cx="200" cy="92" r="48" fill="none" stroke="#A78BFA" stroke-width="2"/>
+    <circle cx="200" cy="92" r="9" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="1238" y="1842" fill="#CBD5E1" font-size="12" font-weight="700">25</text>
+<text x="1266" y="1842" fill="#0F172A" font-size="16" font-weight="600">Vanda</text>
+<text x="1238" y="1861" fill="#94A3B8" font-size="11">bowl_facet · insight · violeta</text>
+<rect x="26" y="1898" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="26" y="1898" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL25" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0E5A72"/><stop offset="100%" stop-color="#062A3A"/>
+      </linearGradient>
+      <linearGradient id="gR25" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#7DD3FC"/><stop offset="100%" stop-color="#0891B2"/>
+      </linearGradient>
+      <linearGradient id="gC25" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#BEF264"/><stop offset="100%" stop-color="#3F6212"/>
+      </linearGradient>
+      <linearGradient id="gH25" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half25"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh25" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh25)">
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#gL25)"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#gR25)"/>
+    <path d="M 288 148 L 200 312 L 197.2 312 L 281 148 Z" fill="url(#gH25)"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.22"/>
+  </g>
+  <g filter="url(#sh25)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC25)"/>
+    <circle cx="200" cy="92" r="44" fill="none" stroke="#22D3EE" stroke-width="3" stroke-dasharray="8.64 8.64"/>
+    <circle cx="200" cy="92" r="58" fill="none" stroke="#0891B2" stroke-width="1.5" opacity="0.55"/>
+  </g>
+</svg>
+<text x="46" y="2186" fill="#CBD5E1" font-size="12" font-weight="700">26</text>
+<text x="74" y="2186" fill="#0F172A" font-size="16" font-weight="600">Vinca</text>
+<text x="46" y="2205" fill="#94A3B8" font-size="11">facet · orbit2 · artico</text>
+<rect x="324" y="1898" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="324" y="1898" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL26" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#065F46"/><stop offset="100%" stop-color="#022C22"/>
+      </linearGradient>
+      <linearGradient id="gR26" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#6EE7B7"/><stop offset="100%" stop-color="#059669"/>
+      </linearGradient>
+      <linearGradient id="gC26" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FCD34D"/><stop offset="100%" stop-color="#92400E"/>
+      </linearGradient>
+      <linearGradient id="gH26" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half26"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh26" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh26)">
+    <circle cx="200" cy="216" r="132" fill="#6EE7B7" opacity="0.20"/>
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#gL26)"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#gR26)"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+  <g filter="url(#sh26)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC26)"/>
+    <circle cx="200" cy="92" r="46" fill="none" stroke="#34D399" stroke-width="3"/>
+  </g>
+</svg>
+<text x="344" y="2186" fill="#CBD5E1" font-size="12" font-weight="700">27</text>
+<text x="372" y="2186" fill="#0F172A" font-size="16" font-weight="600">Voss</text>
+<text x="344" y="2205" fill="#94A3B8" font-size="11">plate · disc_ring · esmeralda</text>
+<rect x="622" y="1898" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="622" y="1898" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL27" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6B2154"/><stop offset="100%" stop-color="#2E0A24"/>
+      </linearGradient>
+      <linearGradient id="gR27" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#E9A8D4"/><stop offset="100%" stop-color="#9D3B7E"/>
+      </linearGradient>
+      <linearGradient id="gC27" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#67E8F9"/><stop offset="100%" stop-color="#0E7490"/>
+      </linearGradient>
+      <linearGradient id="gH27" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half27"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh27" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh27)">
+    <path d="M 112 148 L 200 312 L 288 148 L 236 148 L 207.0 250.5 L 200 285.9 L 193.0 250.5 L 164 148 Z" fill="url(#gR27)"/>
+    <path d="M 112 148 L 164 148 L 167 154 L 109 154 Z" fill="#FFFFFF" opacity="0.38"/>
+    <path d="M 288 148 L 236 148 L 233 154 L 291 154 Z" fill="#FFFFFF" opacity="0.38"/>
+  </g>
+  <g filter="url(#sh27)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC27)"/>
+    <circle cx="200" cy="92" r="48" fill="none" stroke="#F0ABFC" stroke-width="2"/>
+    <circle cx="200" cy="92" r="9" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="642" y="2186" fill="#CBD5E1" font-size="12" font-weight="700">28</text>
+<text x="670" y="2186" fill="#0F172A" font-size="16" font-weight="600">Vale</text>
+<text x="642" y="2205" fill="#94A3B8" font-size="11">blade · insight · ciruela</text>
+<rect x="920" y="1898" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="920" y="1898" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL28" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#4C3A82"/><stop offset="100%" stop-color="#1E1440"/>
+      </linearGradient>
+      <linearGradient id="gR28" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C7B9F0"/><stop offset="100%" stop-color="#6D53BE"/>
+      </linearGradient>
+      <linearGradient id="gC28" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDA4AF"/><stop offset="100%" stop-color="#9F1239"/>
+      </linearGradient>
+      <linearGradient id="gH28" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half28"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh28" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh28)">
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gR28)"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh28)">
+    <path d="M 200 58 L 234 92 L 200 126 L 166 92 Z" fill="url(#gC28)"/>
+  </g>
+</svg>
+<text x="940" y="2186" fill="#CBD5E1" font-size="12" font-weight="700">29</text>
+<text x="968" y="2186" fill="#0F172A" font-size="16" font-weight="600">Viora</text>
+<text x="940" y="2205" fill="#94A3B8" font-size="11">bowl · diamond · lavanda</text>
+<rect x="1218" y="1898" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="1218" y="1898" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL29" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#14532D"/><stop offset="100%" stop-color="#052E16"/>
+      </linearGradient>
+      <linearGradient id="gR29" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#86EFAC"/><stop offset="100%" stop-color="#15803D"/>
+      </linearGradient>
+      <linearGradient id="gC29" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E9D5FF"/><stop offset="100%" stop-color="#7E22CE"/>
+      </linearGradient>
+      <linearGradient id="gH29" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half29"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh29" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh29)">
+    <path d="M 112 148 L 200 312 L 288 148 L 232 148 L 200 207.64 L 168 148 Z" fill="url(#gR29)"/>
+    <path d="M 112 148 L 168 148 L 171 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 232 148 L 229 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh29)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC29)"/>
+    <circle cx="200" cy="92" r="46" fill="none" stroke="#4ADE80" stroke-width="3" stroke-dasharray="9.03 9.03"/>
+  </g>
+</svg>
+<text x="1238" y="2186" fill="#CBD5E1" font-size="12" font-weight="700">30</text>
+<text x="1266" y="2186" fill="#0F172A" font-size="16" font-weight="600">Vinda</text>
+<text x="1238" y="2205" fill="#94A3B8" font-size="11">heavy · orbit · bosque</text>
+<rect x="26" y="2242" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="26" y="2242" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL30" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#334155"/><stop offset="100%" stop-color="#0B1220"/>
+      </linearGradient>
+      <linearGradient id="gR30" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#94A3B8"/><stop offset="100%" stop-color="#475569"/>
+      </linearGradient>
+      <linearGradient id="gC30" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#0C4A6E"/>
+      </linearGradient>
+      <linearGradient id="gH30" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half30"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh30" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh30)">
+    <path d="M 112 148 L 200 312 L 288 148 L 266 148 L 200 271.00 L 134 148 Z" fill="#334155"/>
+    <path d="M 158 194 L 200 282 L 242 194 L 224 194 L 200 244.29 L 176 194 Z" fill="#94A3B8"/>
+  </g>
+  <g filter="url(#sh30)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC30)"/>
+    <circle cx="200" cy="92" r="42" fill="none" stroke="#CBD5E1" stroke-width="2" opacity="0.5"/>
+    <circle cx="200" cy="92" r="55" fill="none" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+  </g>
+</svg>
+<text x="46" y="2530" fill="#CBD5E1" font-size="12" font-weight="700">31</text>
+<text x="74" y="2530" fill="#0F172A" font-size="16" font-weight="600">Veya</text>
+<text x="46" y="2549" fill="#94A3B8" font-size="11">nested · halo · acero</text>
+<rect x="324" y="2242" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="324" y="2242" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL31" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#0A1A2F"/>
+      </linearGradient>
+      <linearGradient id="gR31" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#7FB3D5"/><stop offset="100%" stop-color="#2E6B9E"/>
+      </linearGradient>
+      <linearGradient id="gC31" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7DD3FC"/><stop offset="100%" stop-color="#0369A1"/>
+      </linearGradient>
+      <linearGradient id="gH31" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half31"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh31" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh31)">
+    <path d="M 112 148 L 200 312 L 288 148 L 250 148 L 200 241.18 L 150 148 Z" fill="#1E3A5F"/>
+  </g>
+  <g filter="url(#sh31)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC31)"/>
+  </g>
+</svg>
+<text x="344" y="2530" fill="#CBD5E1" font-size="12" font-weight="700">32</text>
+<text x="372" y="2530" fill="#0F172A" font-size="16" font-weight="600">Vada</text>
+<text x="344" y="2549" fill="#94A3B8" font-size="11">solid_flat · disc · abismo</text>
+<rect x="622" y="2242" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="622" y="2242" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL32" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3730A3"/><stop offset="100%" stop-color="#171348"/>
+      </linearGradient>
+      <linearGradient id="gR32" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#A5B4FC"/><stop offset="100%" stop-color="#4F46E5"/>
+      </linearGradient>
+      <linearGradient id="gC32" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#B45309"/>
+      </linearGradient>
+      <linearGradient id="gH32" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half32"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh32" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh32)">
+    <path d="M 112 148 L 200 312 L 288 148 L 271 148 L 200 280.32 L 129 148 Z" fill="#171348"/>
+    <path d="M 146 182 L 200 290 L 254 182 L 237 182 L 200 256.00 L 163 182 Z" fill="#3730A3"/>
+    <path d="M 180 216 L 200 268 L 220 216 L 203 216 L 200 223.80 L 197 216 Z" fill="#4F46E5"/>
+  </g>
+  <g filter="url(#sh32)">
+    <path d="M 164 106 L 236 106 A 36 36 0 0 0 164 106 Z" fill="url(#gC32)"/>
+  </g>
+</svg>
+<text x="642" y="2530" fill="#CBD5E1" font-size="12" font-weight="700">33</text>
+<text x="670" y="2530" fill="#0F172A" font-size="16" font-weight="600">Verna</text>
+<text x="642" y="2549" fill="#94A3B8" font-size="11">nested3 · half · indigo</text>
+<rect x="920" y="2242" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="920" y="2242" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL33" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0E5A72"/><stop offset="100%" stop-color="#062A3A"/>
+      </linearGradient>
+      <linearGradient id="gR33" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#7DD3FC"/><stop offset="100%" stop-color="#0891B2"/>
+      </linearGradient>
+      <linearGradient id="gC33" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#BEF264"/><stop offset="100%" stop-color="#3F6212"/>
+      </linearGradient>
+      <linearGradient id="gH33" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half33"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh33" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh33)">
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gR33)"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh33)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC33)"/>
+    <circle cx="200" cy="92" r="42" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.5"/>
+    <circle cx="200" cy="92" r="55" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.3"/>
+  </g>
+</svg>
+<text x="940" y="2530" fill="#CBD5E1" font-size="12" font-weight="700">34</text>
+<text x="968" y="2530" fill="#0F172A" font-size="16" font-weight="600">Vola</text>
+<text x="940" y="2549" fill="#94A3B8" font-size="11">bowl · halo · artico</text>
+<rect x="1218" y="2242" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="1218" y="2242" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL34" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F5F5C"/><stop offset="100%" stop-color="#042F2E"/>
+      </linearGradient>
+      <linearGradient id="gR34" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#5EEAD4"/><stop offset="100%" stop-color="#0D9488"/>
+      </linearGradient>
+      <linearGradient id="gC34" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A"/><stop offset="100%" stop-color="#A16207"/>
+      </linearGradient>
+      <linearGradient id="gH34" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half34"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh34" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh34)">
+    <path d="M 112 148 L 200 312 L 288 148 L 268 148 L 200 274.73 L 132 148 Z" fill="url(#gR34)"/>
+  </g>
+  <g filter="url(#sh34)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC34)"/>
+    <circle cx="200" cy="92" r="46" fill="none" stroke="#2DD4BF" stroke-width="3"/>
+  </g>
+</svg>
+<text x="1238" y="2530" fill="#CBD5E1" font-size="12" font-weight="700">35</text>
+<text x="1266" y="2530" fill="#0F172A" font-size="16" font-weight="600">Vuna</text>
+<text x="1238" y="2549" fill="#94A3B8" font-size="11">thin · disc_ring · teal</text>
+<rect x="26" y="2586" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="26" y="2586" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL35" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#065F46"/><stop offset="100%" stop-color="#022C22"/>
+      </linearGradient>
+      <linearGradient id="gR35" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#6EE7B7"/><stop offset="100%" stop-color="#059669"/>
+      </linearGradient>
+      <linearGradient id="gC35" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FCD34D"/><stop offset="100%" stop-color="#92400E"/>
+      </linearGradient>
+      <linearGradient id="gH35" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half35"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh35" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh35)">
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#gL35)"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#gR35)"/>
+    <path d="M 150 148 L 200 241.2 L 250 148 Z" fill="#6EE7B7" opacity="0.32"/>
+  </g>
+  <g filter="url(#sh35)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC35)"/>
+  </g>
+</svg>
+<text x="46" y="2874" fill="#CBD5E1" font-size="12" font-weight="700">36</text>
+<text x="74" y="2874" fill="#0F172A" font-size="16" font-weight="600">Vayra</text>
+<text x="46" y="2893" fill="#94A3B8" font-size="11">prism · disc · esmeralda</text>
+<rect x="324" y="2586" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="324" y="2586" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL36" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#5B21B6"/><stop offset="100%" stop-color="#2E1065"/>
+      </linearGradient>
+      <linearGradient id="gR36" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C4B5FD"/><stop offset="100%" stop-color="#7C3AED"/>
+      </linearGradient>
+      <linearGradient id="gC36" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#A3E635"/><stop offset="100%" stop-color="#4D7C0F"/>
+      </linearGradient>
+      <linearGradient id="gH36" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half36"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh36" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh36)">
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="#2E1065"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="#C4B5FD"/>
+  </g>
+  <g filter="url(#sh36)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC36)"/>
+    <circle cx="200" cy="92" r="48" fill="none" stroke="#A78BFA" stroke-width="2"/>
+    <circle cx="200" cy="92" r="9" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="344" y="2874" fill="#CBD5E1" font-size="12" font-weight="700">37</text>
+<text x="372" y="2874" fill="#0F172A" font-size="16" font-weight="600">Vena</text>
+<text x="344" y="2893" fill="#94A3B8" font-size="11">split · insight · violeta</text>
+<rect x="622" y="2586" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="622" y="2586" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL37" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6B2154"/><stop offset="100%" stop-color="#2E0A24"/>
+      </linearGradient>
+      <linearGradient id="gR37" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#E9A8D4"/><stop offset="100%" stop-color="#9D3B7E"/>
+      </linearGradient>
+      <linearGradient id="gC37" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#67E8F9"/><stop offset="100%" stop-color="#0E7490"/>
+      </linearGradient>
+      <linearGradient id="gH37" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half37"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh37" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh37)">
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gL37)"/>
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gR37)" clip-path="url(#half37)"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+  <g filter="url(#sh37)">
+    <circle cx="200" cy="92" r="30" fill="none" stroke="url(#gC37)" stroke-width="13"/>
+  </g>
+</svg>
+<text x="642" y="2874" fill="#CBD5E1" font-size="12" font-weight="700">38</text>
+<text x="670" y="2874" fill="#0F172A" font-size="16" font-weight="600">Vaso</text>
+<text x="642" y="2893" fill="#94A3B8" font-size="11">bowl_facet · ring_only · ciruela</text>
+<rect x="920" y="2586" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="920" y="2586" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL38" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#334155"/><stop offset="100%" stop-color="#0B1220"/>
+      </linearGradient>
+      <linearGradient id="gR38" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#94A3B8"/><stop offset="100%" stop-color="#475569"/>
+      </linearGradient>
+      <linearGradient id="gC38" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#0C4A6E"/>
+      </linearGradient>
+      <linearGradient id="gH38" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half38"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh38" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh38)">
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#gL38)"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#gR38)"/>
+    <path d="M 288 148 L 200 312 L 197.2 312 L 281 148 Z" fill="url(#gH38)"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.22"/>
+  </g>
+  <g filter="url(#sh38)">
+    <rect x="162" y="83" width="76" height="18" rx="9" fill="url(#gC38)"/>
+  </g>
+</svg>
+<text x="940" y="2874" fill="#CBD5E1" font-size="12" font-weight="700">39</text>
+<text x="968" y="2874" fill="#0F172A" font-size="16" font-weight="600">Vega</text>
+<text x="940" y="2893" fill="#94A3B8" font-size="11">facet · bar · acero</text>
+<rect x="1218" y="2586" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="1218" y="2586" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL39" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#4C3A82"/><stop offset="100%" stop-color="#1E1440"/>
+      </linearGradient>
+      <linearGradient id="gR39" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C7B9F0"/><stop offset="100%" stop-color="#6D53BE"/>
+      </linearGradient>
+      <linearGradient id="gC39" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDA4AF"/><stop offset="100%" stop-color="#9F1239"/>
+      </linearGradient>
+      <linearGradient id="gH39" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half39"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh39" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh39)">
+    <path d="M 112 148 L 200 312 L 288 148 L 232 148 L 200 207.64 L 168 148 Z" fill="url(#gR39)"/>
+    <path d="M 112 148 L 168 148 L 171 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 232 148 L 229 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh39)">
+    <path d="M 164 106 L 236 106 A 36 36 0 0 0 164 106 Z" fill="url(#gC39)"/>
+  </g>
+</svg>
+<text x="1238" y="2874" fill="#CBD5E1" font-size="12" font-weight="700">40</text>
+<text x="1266" y="2874" fill="#0F172A" font-size="16" font-weight="600">Vala</text>
+<text x="1238" y="2893" fill="#94A3B8" font-size="11">heavy · half · lavanda</text>
+<rect x="26" y="2930" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="26" y="2930" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL40" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#14532D"/><stop offset="100%" stop-color="#052E16"/>
+      </linearGradient>
+      <linearGradient id="gR40" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#86EFAC"/><stop offset="100%" stop-color="#15803D"/>
+      </linearGradient>
+      <linearGradient id="gC40" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E9D5FF"/><stop offset="100%" stop-color="#7E22CE"/>
+      </linearGradient>
+      <linearGradient id="gH40" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half40"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh40" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh40)">
+    <path d="M 112 148 L 200 312 L 288 148 L 236 148 L 207.0 250.5 L 200 285.9 L 193.0 250.5 L 164 148 Z" fill="url(#gL40)"/>
+    <path d="M 112 148 L 200 312 L 288 148 L 236 148 L 207.0 250.5 L 200 285.9 L 193.0 250.5 L 164 148 Z" fill="url(#gR40)" clip-path="url(#half40)"/>
+  </g>
+  <g filter="url(#sh40)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC40)"/>
+    <circle cx="200" cy="92" r="46" fill="none" stroke="#4ADE80" stroke-width="3" stroke-dasharray="9.03 9.03"/>
+  </g>
+</svg>
+<text x="46" y="3218" fill="#CBD5E1" font-size="12" font-weight="700">41</text>
+<text x="74" y="3218" fill="#0F172A" font-size="16" font-weight="600">Vidan</text>
+<text x="46" y="3237" fill="#94A3B8" font-size="11">blade_facet · orbit · bosque</text>
+<rect x="324" y="2930" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="324" y="2930" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL41" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3730A3"/><stop offset="100%" stop-color="#171348"/>
+      </linearGradient>
+      <linearGradient id="gR41" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#A5B4FC"/><stop offset="100%" stop-color="#4F46E5"/>
+      </linearGradient>
+      <linearGradient id="gC41" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#B45309"/>
+      </linearGradient>
+      <linearGradient id="gH41" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half41"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh41" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh41)">
+    <circle cx="200" cy="216" r="130" fill="none" stroke="#4F46E5" stroke-width="6"/>
+    <path d="M 140 178 L 200 288 L 260 178 L 234 178 L 200 240.33 L 166 178 Z" fill="url(#gR41)"/>
+  </g>
+</svg>
+<text x="344" y="3218" fill="#CBD5E1" font-size="12" font-weight="700">42</text>
+<text x="372" y="3218" fill="#0F172A" font-size="16" font-weight="600">Vise</text>
+<text x="344" y="3237" fill="#94A3B8" font-size="11">outline_ring · none · indigo</text>
+<rect x="622" y="2930" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="622" y="2930" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL42" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#0A1A2F"/>
+      </linearGradient>
+      <linearGradient id="gR42" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#7FB3D5"/><stop offset="100%" stop-color="#2E6B9E"/>
+      </linearGradient>
+      <linearGradient id="gC42" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7DD3FC"/><stop offset="100%" stop-color="#0369A1"/>
+      </linearGradient>
+      <linearGradient id="gH42" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half42"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh42" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh42)">
+    <path d="M 112 148.0 L 200 199.93333333333334 L 288 148.0 L 271.05333333333334 148.0 L 200 189.93 L 128.94666666666666 148.0 Z" fill="#1E3A5F"/>
+    <path d="M 112 171.30166666666668 L 200 223.235 L 288 171.30166666666668 L 271.05333333333334 171.30166666666668 L 200 213.23 L 128.94666666666666 171.30166666666668 Z" fill="#2E6B9E"/>
+    <path d="M 112 194.60333333333335 L 200 246.5366666666667 L 288 194.60333333333335 L 271.05333333333334 194.60333333333335 L 200 236.54 L 128.94666666666666 194.60333333333335 Z" fill="#7FB3D5"/>
+  </g>
+  <g filter="url(#sh42)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC42)"/>
+    <circle cx="200" cy="92" r="48" fill="none" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="200" cy="92" r="9" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="642" y="3218" fill="#CBD5E1" font-size="12" font-weight="700">43</text>
+<text x="670" y="3218" fill="#0F172A" font-size="16" font-weight="600">Vora</text>
+<text x="642" y="3237" fill="#94A3B8" font-size="11">stack · insight · abismo</text>
+<rect x="920" y="2930" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="920" y="2930" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL43" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#065F46"/><stop offset="100%" stop-color="#022C22"/>
+      </linearGradient>
+      <linearGradient id="gR43" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#6EE7B7"/><stop offset="100%" stop-color="#059669"/>
+      </linearGradient>
+      <linearGradient id="gC43" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FCD34D"/><stop offset="100%" stop-color="#92400E"/>
+      </linearGradient>
+      <linearGradient id="gH43" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half43"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh43" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh43)">
+    <path d="M 112 148 L 200 312 L 288 148 L 266 148 L 200 271.00 L 134 148 Z" fill="#065F46"/>
+    <path d="M 158 194 L 200 282 L 242 194 L 224 194 L 200 244.29 L 176 194 Z" fill="#6EE7B7"/>
+  </g>
+  <g filter="url(#sh43)">
+    <path d="M 200 58 L 234 92 L 200 126 L 166 92 Z" fill="url(#gC43)"/>
+  </g>
+</svg>
+<text x="940" y="3218" fill="#CBD5E1" font-size="12" font-weight="700">44</text>
+<text x="968" y="3218" fill="#0F172A" font-size="16" font-weight="600">Vinu</text>
+<text x="940" y="3237" fill="#94A3B8" font-size="11">nested · diamond · esmeralda</text>
+<rect x="1218" y="2930" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="1218" y="2930" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL44" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#5B21B6"/><stop offset="100%" stop-color="#2E1065"/>
+      </linearGradient>
+      <linearGradient id="gR44" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C4B5FD"/><stop offset="100%" stop-color="#7C3AED"/>
+      </linearGradient>
+      <linearGradient id="gC44" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#A3E635"/><stop offset="100%" stop-color="#4D7C0F"/>
+      </linearGradient>
+      <linearGradient id="gH44" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half44"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh44" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh44)">
+    <path d="M 112 148 L 112 260 A 52 52 0 0 0 164 312 L 236 312 A 52 52 0 0 0 288 260 L 288 148 L 250 148 L 250 260 A 14 14 0 0 1 236 274 L 164 274 A 14 14 0 0 1 150 260 L 150 148 Z" fill="url(#gR44)"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh44)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC44)"/>
+  </g>
+</svg>
+<text x="1238" y="3218" fill="#CBD5E1" font-size="12" font-weight="700">45</text>
+<text x="1266" y="3218" fill="#0F172A" font-size="16" font-weight="600">Vika</text>
+<text x="1238" y="3237" fill="#94A3B8" font-size="11">bowl · disc · violeta</text>
+<rect x="26" y="3274" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="26" y="3274" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL45" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F5F5C"/><stop offset="100%" stop-color="#042F2E"/>
+      </linearGradient>
+      <linearGradient id="gR45" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#5EEAD4"/><stop offset="100%" stop-color="#0D9488"/>
+      </linearGradient>
+      <linearGradient id="gC45" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A"/><stop offset="100%" stop-color="#A16207"/>
+      </linearGradient>
+      <linearGradient id="gH45" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half45"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh45" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh45)">
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#gL45)"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#gR45)"/>
+    <path d="M 150 148 L 200 241.2 L 250 148 Z" fill="#5EEAD4" opacity="0.32"/>
+  </g>
+  <g filter="url(#sh45)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC45)"/>
+    <circle cx="200" cy="92" r="42" fill="none" stroke="#2DD4BF" stroke-width="2" opacity="0.5"/>
+    <circle cx="200" cy="92" r="55" fill="none" stroke="#2DD4BF" stroke-width="2" opacity="0.3"/>
+  </g>
+</svg>
+<text x="46" y="3562" fill="#CBD5E1" font-size="12" font-weight="700">46</text>
+<text x="74" y="3562" fill="#0F172A" font-size="16" font-weight="600">Valta</text>
+<text x="46" y="3581" fill="#94A3B8" font-size="11">prism · halo · teal</text>
+<rect x="324" y="3274" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="324" y="3274" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL46" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0E5A72"/><stop offset="100%" stop-color="#062A3A"/>
+      </linearGradient>
+      <linearGradient id="gR46" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#7DD3FC"/><stop offset="100%" stop-color="#0891B2"/>
+      </linearGradient>
+      <linearGradient id="gC46" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#BEF264"/><stop offset="100%" stop-color="#3F6212"/>
+      </linearGradient>
+      <linearGradient id="gH46" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half46"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh46" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh46)">
+    <path d="M 112 148 L 200 312 L 288 148 L 250 148 L 200 241.18 L 150 148 Z" fill="url(#gR46)"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g filter="url(#sh46)">
+    <circle cx="160" cy="108" r="9" fill="url(#gC46)"/>
+    <circle cx="200" cy="90" r="17" fill="url(#gC46)"/>
+    <circle cx="240" cy="108" r="9" fill="url(#gC46)"/>
+  </g>
+</svg>
+<text x="344" y="3562" fill="#CBD5E1" font-size="12" font-weight="700">47</text>
+<text x="372" y="3562" fill="#0F172A" font-size="16" font-weight="600">Vento</text>
+<text x="344" y="3581" fill="#94A3B8" font-size="11">solid · trio · artico</text>
+<rect x="622" y="3274" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="622" y="3274" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL47" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6B2154"/><stop offset="100%" stop-color="#2E0A24"/>
+      </linearGradient>
+      <linearGradient id="gR47" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#E9A8D4"/><stop offset="100%" stop-color="#9D3B7E"/>
+      </linearGradient>
+      <linearGradient id="gC47" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#67E8F9"/><stop offset="100%" stop-color="#0E7490"/>
+      </linearGradient>
+      <linearGradient id="gH47" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half47"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh47" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh47)">
+    <rect x="72" y="88" width="256" height="256" rx="62" fill="url(#gR47)"/>
+    <path d="M 138 174 L 200 292 L 262 174 L 235 174 L 200 240.61 L 165 174 Z" fill="#FFFFFF"/>
+  </g>
+</svg>
+<text x="642" y="3562" fill="#CBD5E1" font-size="12" font-weight="700">48</text>
+<text x="670" y="3562" fill="#0F172A" font-size="16" font-weight="600">Vaon</text>
+<text x="642" y="3581" fill="#94A3B8" font-size="11">knockout_square · none · ciruela</text>
+<rect x="920" y="3274" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="920" y="3274" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL48" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#334155"/><stop offset="100%" stop-color="#0B1220"/>
+      </linearGradient>
+      <linearGradient id="gR48" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#94A3B8"/><stop offset="100%" stop-color="#475569"/>
+      </linearGradient>
+      <linearGradient id="gC48" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#0C4A6E"/>
+      </linearGradient>
+      <linearGradient id="gH48" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half48"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh48" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh48)">
+    <path d="M 112 148 L 200 312 L 288 148 L 236 148 L 207.0 250.5 L 200 285.9 L 193.0 250.5 L 164 148 Z" fill="url(#gR48)"/>
+    <path d="M 112 148 L 164 148 L 167 154 L 109 154 Z" fill="#FFFFFF" opacity="0.38"/>
+    <path d="M 288 148 L 236 148 L 233 154 L 291 154 Z" fill="#FFFFFF" opacity="0.38"/>
+  </g>
+  <g filter="url(#sh48)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC48)"/>
+    <circle cx="200" cy="92" r="44" fill="none" stroke="#CBD5E1" stroke-width="3" stroke-dasharray="8.64 8.64"/>
+    <circle cx="200" cy="92" r="58" fill="none" stroke="#475569" stroke-width="1.5" opacity="0.55"/>
+  </g>
+</svg>
+<text x="940" y="3562" fill="#CBD5E1" font-size="12" font-weight="700">49</text>
+<text x="968" y="3562" fill="#0F172A" font-size="16" font-weight="600">Vidha</text>
+<text x="940" y="3581" fill="#94A3B8" font-size="11">blade · orbit2 · acero</text>
+<rect x="1218" y="3274" width="272" height="318" rx="18" fill="#FFFFFF" stroke="#E6EBF1" stroke-width="1"/>
+<svg x="1218" y="3274" width="272" height="272" viewBox="0 0 400 400">
+  <defs>
+      <linearGradient id="gL49" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#14532D"/><stop offset="100%" stop-color="#052E16"/>
+      </linearGradient>
+      <linearGradient id="gR49" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#86EFAC"/><stop offset="100%" stop-color="#15803D"/>
+      </linearGradient>
+      <linearGradient id="gC49" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E9D5FF"/><stop offset="100%" stop-color="#7E22CE"/>
+      </linearGradient>
+      <linearGradient id="gH49" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="half49"><rect x="200" y="0" width="200" height="400"/></clipPath>
+      <filter id="sh49" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+      </filter>
+    </defs>
+  <g filter="url(#sh49)">
+    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#gL49)"/>
+    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#gR49)"/>
+    <path d="M 288 148 L 200 312 L 197.2 312 L 281 148 Z" fill="url(#gH49)"/>
+    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
+    <path d="M 112 148 L 150 148 L 153 154 L 109 154 Z" fill="#FFFFFF" opacity="0.22"/>
+  </g>
+  <g filter="url(#sh49)">
+    <circle cx="200" cy="92" r="30" fill="url(#gC49)"/>
+    <circle cx="200" cy="92" r="46" fill="none" stroke="#4ADE80" stroke-width="3"/>
+  </g>
+</svg>
+<text x="1238" y="3562" fill="#CBD5E1" font-size="12" font-weight="700">50</text>
+<text x="1266" y="3562" fill="#0F172A" font-size="16" font-weight="600">Volca</text>
+<text x="1238" y="3581" fill="#94A3B8" font-size="11">facet · disc_ring · bosque</text>
+</svg>
