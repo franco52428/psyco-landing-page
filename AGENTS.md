@@ -157,9 +157,11 @@ Los colores oficiales de Wompi se reservan para el módulo de co-marca y su repr
 
 ## Restricciones de implementación
 
-- La landing es estática y debe funcionar abriendo `index.html` o mediante un servidor estático.
-- Evitar dependencias externas innecesarias.
-- Mantener los recursos críticos locales o incrustados.
+- La landing es un artefacto estático autocontenido: debe funcionar cargando únicamente `index.html` desde S3 y CloudFront.
+- Todo el CSS debe permanecer dentro de etiquetas `<style>` en `index.html`; no crear hojas de estilo externas.
+- Todo SVG, icono o recurso visual necesario debe estar incrustado en `index.html`.
+- No agregar JavaScript, fuentes, imágenes, hojas de estilo ni recursos críticos que dependan de una ruta local adicional.
+- Evitar dependencias externas y llamadas de red durante el render inicial.
 - No romper el módulo visual de Wompi ya aprobado.
 - Preservar cambios del usuario no relacionados.
 
@@ -174,4 +176,5 @@ Un cambio comercial está listo cuando:
 5. Funciona sin desbordes a 360, 390, 768, 1280 y 1440 px.
 6. Teclado, foco, contraste, headings y landmarks son coherentes.
 7. El checkout Wompi conserva monto, nombre, métodos y SVG incrustados.
-8. `git diff --check` no reporta errores.
+8. `index.html` no referencia archivos CSS, JavaScript, imágenes o fuentes locales.
+9. `git diff --check` no reporta errores.
