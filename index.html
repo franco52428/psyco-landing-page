@@ -3224,6 +3224,133 @@
           }
         }
     </style>
+    <style>
+        /* Mensaje de la publicidad dentro de la composicion original del landing. */
+        #cobros .partner-lockup {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+            width: fit-content;
+            max-width: 100%;
+            min-height: 44px;
+            margin: 0 0 24px;
+            padding: 0;
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        #cobros .partner-lockup .verdme-mini {
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+            flex: none;
+            margin: 0;
+            padding: 0;
+            color: #242926;
+            font-size: 26px;
+            line-height: 1;
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+
+        #cobros .partner-lockup .payments-brand-icon {
+            display: block;
+            flex: none;
+            width: 40px;
+            height: 40px;
+        }
+
+        #cobros .partner-lockup .payments-brand-name {
+            color: #242926;
+            white-space: nowrap;
+        }
+
+        #cobros .partner-lockup .payments-brand-name span {
+            color: #315B43;
+        }
+
+        #cobros .partner-lockup .integration-mark {
+            display: block;
+            flex: 0 0 1px;
+            width: 1px;
+            height: 28px;
+            margin: 0;
+            padding: 0;
+            background: #D8DCD7;
+            border: 0;
+            font-size: 0;
+            transform: none;
+        }
+
+        #cobros .partner-lockup .wompi-safe-zone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 116px;
+            width: 116px;
+            min-width: 0;
+            height: 44px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+        }
+
+        /* Compensa solo el margen transparente del SVG, sin recortar sus trazados. */
+        #cobros .partner-lockup .wompi-wordmark {
+            position: static;
+            display: block;
+            flex: none;
+            width: 168px;
+            max-width: none;
+            height: 84.51px;
+            margin: 0;
+            padding: 0;
+            transform: none;
+        }
+
+        @media (max-width: 640px) {
+            #cobros .partner-lockup {
+                gap: 12px;
+                margin-bottom: 20px;
+            }
+
+            #cobros .partner-lockup .verdme-mini {
+                font-size: 23px;
+            }
+
+            #cobros .partner-lockup .payments-brand-icon {
+                width: 36px;
+                height: 36px;
+            }
+
+            #cobros .partner-lockup .integration-mark {
+                height: 24px;
+            }
+
+            #cobros .partner-lockup .wompi-safe-zone {
+                flex-basis: 104px;
+                width: 104px;
+                height: 40px;
+            }
+
+            #cobros .partner-lockup .wompi-wordmark {
+                width: 150px;
+                height: 75.45px;
+            }
+        }
+
+        #cobros #payments-ad-title span {
+            display: block;
+            color: #315B43;
+        }
+
+    </style>
 </head>
 <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -3448,7 +3575,7 @@
         </section>
 
     <!-- Módulo Destacado de Pagos Integrados -->
-    <section class="payments-integration" id="cobros">
+    <section class="payments-integration" id="cobros" aria-labelledby="payments-ad-title">
         <svg width="0" height="0" aria-hidden="true" focusable="false" style="position: absolute; overflow: hidden;">
             <defs>
                 <symbol id="wompi-wordmark" viewBox="0 0 1982 997">
@@ -3466,23 +3593,64 @@
         </svg>
 
         <div class="payments-content">
-            <div class="partner-lockup" aria-label="Verdme integrado con Wompi">
-                <span class="verdme-mini">Verd<span>me</span></span>
-                <span class="integration-mark" aria-hidden="true">×</span>
-                <span class="wompi-safe-zone">
-                    <svg class="wompi-wordmark" role="img" aria-label="Wompi"><use href="#wompi-wordmark"></use></svg>
+            <div class="partner-lockup" role="img" aria-label="Verdme integrado con Wompi">
+                <span class="verdme-mini" aria-hidden="true">
+                    <svg class="payments-brand-icon" width="40" height="40" viewBox="0 0 400 400" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="wompiLockupVerdmeLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#2B6645"/>
+                                <stop offset="100%" stop-color="#1F4A34"/>
+                            </linearGradient>
+                            <linearGradient id="wompiLockupVerdmeRight" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#BDDCC9"/>
+                                <stop offset="100%" stop-color="#327A51"/>
+                            </linearGradient>
+                            <linearGradient id="wompiLockupVerdmeCircle" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#D9B978"/>
+                                <stop offset="100%" stop-color="#8A6229"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="200" cy="216" r="132" fill="#BDDCC9" opacity="0.28"/>
+                        <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#wompiLockupVerdmeLeft)"/>
+                        <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#wompiLockupVerdmeRight)"/>
+                        <circle cx="200" cy="92" r="30" fill="url(#wompiLockupVerdmeCircle)"/>
+                        <circle cx="200" cy="92" r="46" fill="none" stroke="#BDDCC9" stroke-width="3"/>
+                    </svg>
+                    <span class="payments-brand-name">Verd<span>me</span></span>
+                </span>
+                <span class="integration-mark" aria-hidden="true"></span>
+                <span class="wompi-safe-zone" aria-hidden="true">
+                    <svg class="wompi-wordmark" viewBox="0 0 1982 997" aria-hidden="true"><use href="#wompi-wordmark" width="1982" height="997"></use></svg>
                 </span>
             </div>
 
-            <div class="payments-badge">Finanzas y cobros con Wompi</div>
-            <h2>Cobra sesiones, paquetes y cuotas desde Verdme.</h2>
-            <p>Genera un link por el valor pendiente y compártelo por WhatsApp. Tu paciente paga en el checkout seguro de Wompi y <strong>Verdme actualiza el cobro y el saldo del proceso</strong>. El dinero llega directamente a tu cuenta Wompi: Verdme no lo recibe ni lo custodia.</p>
+            <div class="payments-badge">Cobros para tu consultorio</div>
+            <h2 id="payments-ad-title">De tu sesión <span>al link de pago.</span></h2>
+            <p>Cobra <strong>sesiones, paquetes y cuotas</strong> con Wompi, desde Verdme.</p>
 
-            <div class="payment-methods-grid">
-                <div class="method-tag">Sesiones, paquetes y cuotas</div>
-                <div class="method-tag">Link listo para compartir por WhatsApp</div>
-                <div class="method-tag">Seguimiento del estado reportado por Wompi</div>
-            </div>
+            <ol class="workflow-list" role="list" aria-label="Cómo funcionan los cobros con Wompi">
+                <li class="workflow-step">
+                    <span class="step-number" aria-hidden="true">01</span>
+                    <div>
+                        <h3>Genera el link</h3>
+                        <p>Por el valor que necesitas cobrar.</p>
+                    </div>
+                </li>
+                <li class="workflow-step">
+                    <span class="step-number" aria-hidden="true">02</span>
+                    <div>
+                        <h3>Compártelo por WhatsApp</h3>
+                        <p>Tu paciente paga en Wompi.</p>
+                    </div>
+                </li>
+                <li class="workflow-step">
+                    <span class="step-number" aria-hidden="true">03</span>
+                    <div>
+                        <h3>El pago se registra solo</h3>
+                        <p>Verdme lo registra y marca el cobro asociado como pagado.</p>
+                    </div>
+                </li>
+            </ol>
         </div>
 
         <div class="payments-visual">
