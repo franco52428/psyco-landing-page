@@ -239,7 +239,7 @@
         }
 
         .features {
-            padding: 0 5% 5rem;
+            padding: 0 5% 2rem;
             max-width: 1280px;
             margin: 0 auto;
             display: grid;
@@ -275,7 +275,6 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Colores Específicos */
         .card-voice .icon-wrapper { background: #EEF2FF; color: var(--primary); }
         .card-ai .icon-wrapper { background: #EDE9FE; color: var(--accent-purple); }
         .card-process .icon-wrapper { background: #E0F2FE; color: var(--accent-blue); }
@@ -294,6 +293,173 @@
             line-height: 1.6;
             flex-grow: 1;
         }
+
+        /* =========================================
+           Sección de Integración de Pagos (Wompi) Ajustada
+        ========================================= */
+        .payments-integration {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            border-radius: 24px;
+            max-width: 1280px;
+            margin: 2rem auto 5rem;
+            padding: 4rem 5%;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            color: white;
+            position: relative;
+            overflow: hidden;
+            width: 90%;
+        }
+
+        .payments-content {
+            flex: 1;
+            position: relative;
+            z-index: 2;
+        }
+
+        .payments-badge {
+            background: rgba(59, 130, 246, 0.15);
+            color: #60A5FA;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .payments-content h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+            line-height: 1.2;
+        }
+
+        .payments-content p {
+            font-size: 1.1rem;
+            color: #94A3B8;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .payment-methods-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .method-tag {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.2s;
+        }
+        
+        .method-tag:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .payments-visual {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mockup-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            color: var(--text-main);
+        }
+
+        .mockup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #E2E8F0;
+            padding-bottom: 1rem;
+        }
+
+        .mockup-header-title h4 { font-size: 1.1rem; font-weight: 700; margin: 0; }
+        .mockup-header-title span { color: var(--text-muted); font-size: 0.8rem; }
+        
+        .mockup-amount-label { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.2rem; }
+        .mockup-amount { font-size: 2.2rem; font-weight: 800; color: var(--text-main); margin-bottom: 1.5rem; letter-spacing: -1px; }
+        
+        .mockup-details {
+            background: #F8FAFC; 
+            border: 1px solid #E2E8F0;
+            border-radius: 8px; 
+            padding: 1rem; 
+            margin-bottom: 1.5rem; 
+            font-size: 0.9rem;
+        }
+
+        .mockup-details-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        .mockup-details-row:last-child { margin-bottom: 0; }
+
+        .payment-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pay-option {
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            padding: 0.8rem 0.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .pay-option.active {
+            border-color: var(--primary);
+            background: #EEF2FF;
+            color: var(--primary);
+        }
+
+        .mockup-btn {
+            background: #000;
+            color: white;
+            width: 100%;
+            padding: 1.1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+            display: block;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .mockup-btn:hover { background: #333; }
 
         /* =========================================
            Sección Seguridad y Ética
@@ -388,6 +554,11 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        @media (max-width: 992px) {
+            .payments-integration { flex-direction: column; text-align: center; padding: 3rem 5%; }
+            .payment-methods-grid { justify-content: center; }
+        }
+
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             .features { gap: 1.5rem; }
@@ -435,7 +606,7 @@
         </div>
         <div class="nav-links">
             <a href="https://app.verdme.com" class="btn-login">Iniciar sesión</a>
-            <a href="mailto:info@verdme.com?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Verdme&body=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20detalles%20sobre%20Verdme.%0D%0A%0D%0A%2D%2D%2D%20Por%20favor%20completa%20tus%20datos%20aqu%C3%AD%20%2D%2D%2D%0D%0A%0D%0ANombre%3A%20%0D%0AEspecialidad%20%C3%B3%20%C3%81rea%3A%20%0D%0ACiudad%20o%20Pa%C3%ADs%3A%20%0D%0ADudas%20que%20me%20gustar%C3%ADa%20resolver%3A%20%0D%0A" class="btn-signup">Probar gratis</a>
+            <a href="mailto:info@imdiamedica?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Verdme&body=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20detalles%20sobre%20Verdme.%0D%0A%0D%0A%2D%2D%2D%20Por%20favor%20completa%20tus%20datos%20aqu%C3%AD%20%2D%2D%2D%0D%0A%0D%0ANombre%3A%20%0D%0AEspecialidad%20%C3%B3%20%C3%81rea%3A%20%0D%0ACiudad%20o%20Pa%C3%ADs%3A%20%0D%0ADudas%20que%20me%20gustar%C3%ADa%20resolver%3A%20%0D%0A" class="btn-signup">Probar gratis</a>
         </div>
     </nav>
 
@@ -446,7 +617,7 @@
         <p>Libérate de la carga administrativa y de la redacción tediosa de historias clínicas. Verdme organiza tu consultorio y potencia tus análisis con inteligencia clínica, para que te concentres únicamente en transformar vidas.</p>
         
         <div class="hero-ctas">
-            <a href="mailto:info@verdme.com?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Verdme&body=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20detalles%20sobre%20Verdme.%0D%0A%0D%0A%2D%2D%2D%20Por%20favor%20completa%20tus%20datos%20aqu%C3%AD%20%2D%2D%2D%0D%0A%0D%0ANombre%3A%20%0D%0AEspecialidad%20%C3%B3%20%C3%81rea%3A%20%0D%0ACiudad%20o%20Pa%C3%ADs%3A%20%0D%0ADudas%20que%20me%20gustar%C3%ADa%20resolver%3A%20%0D%0A" class="btn-primary-large">Comenzar mi prueba gratuita (Sin tarjetas)</a>
+            <a href="mailto:info@imdiamedica?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Verdme&body=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20detalles%20sobre%20Verdme.%0D%0A%0D%0A%2D%2D%2D%20Por%20favor%20completa%20tus%20datos%20aqu%C3%AD%20%2D%2D%2D%0D%0A%0D%0ANombre%3A%20%0D%0AEspecialidad%20%C3%B3%20%C3%81rea%3A%20%0D%0ACiudad%20o%20Pa%C3%ADs%3A%20%0D%0ADudas%20que%20me%20gustar%C3%ADa%20resolver%3A%20%0D%0A" class="btn-primary-large">Comenzar mi prueba gratuita (Sin tarjetas)</a>
             <p class="trust-text">Únete a la nueva era de la psicoterapia digital.</p>
         </div>
     </header>
@@ -490,11 +661,65 @@
 
         <!-- Bloque 4 (Módulo Actualizado: Cobros y Finanzas) -->
         <div class="feature-card card-calendar">
-            <div class="icon-wrapper">💰</div>
-            <h3>Cuentas claras, sin estrés.</h3>
-            <p>Administra el estado económico de tus procesos clínicos. Define valores por sesión, organiza paquetes, registra pagos o devoluciones y conoce al instante cuánto has recibido y cuánto te deben. Trazabilidad financiera sin salir del consultorio virtual.</p>
+            <div class="icon-wrapper">📊</div>
+            <h3>Cuentas claras y finanzas organizadas.</h3>
+            <p>Trazabilidad financiera sin salir de tu consultorio virtual. Define valores por sesión, organiza paquetes, revisa tu balance general y mantén el historial contable de cada paciente perfectamente conciliado y sin dolores de cabeza.</p>
         </div>
 
+    </section>
+
+    <!-- NUEVO: Módulo Destacado de Pagos Integrados -->
+    <section class="payments-integration">
+        <div class="payments-content">
+            <div class="payments-badge">⚙️ Integración Oficial</div>
+            <h2>Recibe pagos online de forma segura y automática.</h2>
+            <p>Olvídate de perseguir comprobantes de transferencia y llevar cuentas manuales. Gracias a nuestra infraestructura conectada con <strong>Wompi</strong>, tus pacientes pueden pagarte en línea con su método favorito. Cada transacción se concilia automáticamente en su expediente clínico y en tu balance financiero.</p>
+            
+            <div class="payment-methods-grid">
+                <div class="method-tag">💳 Tarjetas Crédito/Débito</div>
+                <div class="method-tag">📱 Nequi</div>
+                <div class="method-tag">🏦 PSE</div>
+                <div class="method-tag">🟡 Botón Bancolombia</div>
+                <div class="method-tag">💵 Efectivo (Corresponsales)</div>
+            </div>
+        </div>
+        <div class="payments-visual">
+            <div class="mockup-card">
+                <div class="mockup-header">
+                    <div style="display: flex; align-items: center; gap: 0.8rem;">
+                        <span style="font-size: 1.8rem;">🔒</span>
+                        <div class="mockup-header-title">
+                            <h4>Pasarela de Pagos</h4>
+                            <span>Protegido por Wompi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mockup-amount-label">Total a pagar</div>
+                <div class="mockup-amount">$120,000 COP</div>
+                
+                <div class="mockup-details">
+                    <div class="mockup-details-row">
+                        <span style="color: var(--text-muted);">Paciente:</span>
+                        <strong style="color: var(--text-main);">Juan Pérez</strong>
+                    </div>
+                    <div class="mockup-details-row">
+                        <span style="color: var(--text-muted);">Concepto:</span>
+                        <strong style="color: var(--text-main);">Sesión de Terapia</strong>
+                    </div>
+                </div>
+                
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.8rem;">Elige tu medio de pago:</div>
+                <div class="payment-options">
+                    <div class="pay-option">💳 Tarjetas</div>
+                    <div class="pay-option active">🏦 Nequi / PSE</div>
+                    <div class="pay-option">🟡 Bancolombia</div>
+                    <div class="pay-option">💵 Efectivo</div>
+                </div>
+                
+                <button class="mockup-btn">Continuar con el pago</button>
+            </div>
+        </div>
     </section>
 
     <!-- 4. Sección de Seguridad y Ética -->
@@ -510,7 +735,7 @@
     <section class="cta-final">
         <h2>Devuélvele el enfoque a lo que realmente importa: el ser humano.</h2>
         <p>Automatiza la burocracia de tu consultorio y redescubre el placer de tu profesión con las herramientas más avanzadas del mercado.</p>
-        <a href="mailto:info@verdme.com?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Verdme&body=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20detalles%20sobre%20Verdme.%0D%0A%0D%0A%2D%2D%2D%20Por%20favor%20completa%20tus%20datos%20aqu%C3%AD%20%2D%2D%2D%0D%0A%0D%0ANombre%3A%20%0D%0AEspecialidad%20%C3%B3%20%C3%81rea%3A%20%0D%0ACiudad%20o%20Pa%C3%ADs%3A%20%0D%0ADudas%20que%20me%20gustar%C3%ADa%20resolver%3A%20%0D%0A" class="btn-primary-solid">Crear mi cuenta gratis ahora</a>
+        <a href="mailto:info@imdiamedica?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Verdme&body=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20detalles%20sobre%20Verdme.%0D%0A%0D%0A%2D%2D%2D%20Por%20favor%20completa%20tus%20datos%20aqu%C3%AD%20%2D%2D%2D%0D%0A%0D%0ANombre%3A%20%0D%0AEspecialidad%20%C3%B3%20%C3%81rea%3A%20%0D%0ACiudad%20o%20Pa%C3%ADs%3A%20%0D%0ADudas%20que%20me%20gustar%C3%ADa%20resolver%3A%20%0D%0A" class="btn-primary-solid">Crear mi cuenta gratis ahora</a>
     </section>
 
 </body>
