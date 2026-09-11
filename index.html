@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verdme | Tu consultorio en orden</title>
-    <meta name="description" content="Agenda, procesos clínicos, notas y cobros con Wompi en un solo lugar para darle continuidad a tu práctica psicológica.">
-    <meta name="theme-color" content="#f3f6f2">
+    <title>Verdme | Continuidad para tu práctica</title>
+    <meta name="description" content="Conecta agenda, procesos clínicos, notas, consentimientos y cobros con Wompi para dar continuidad a tu práctica psicológica en un solo lugar.">
+    <meta name="theme-color" content="#F6F6F3">
     <style>
         /* =========================================
            Variables CSS & Reset
@@ -1059,38 +1059,38 @@
             .method-tag { font-size: 0.76rem; }
         }
     </style>
-    <style id="verdme-zen-commercial">
+    <style id="verdme-v0-commercial">
         :root {
-          --primary: #2b6645;
-          --primary-hover: #1f4a34;
-          --bg-color: #f3f6f2;
-          --card-bg: #ffffff;
-          --text-main: #20251f;
-          --text-muted: #5f6b63;
-          --paper-50: #f3f6f2;
-          --paper-100: #edf4ed;
-          --surface: #ffffff;
-          --sage-100: #e4f2e9;
-          --sage-300: #bddbc9;
-          --sage-500: #327a51;
-          --sage-700: #2b6645;
-          --sage-900: #1f4a34;
-          --ink-700: #5f6b63;
-          --ink-900: #20251f;
-          --line-soft: #e5e9e2;
-          --line-strong: #cbd4ca;
+          --primary: #263C2E;
+          --primary-hover: #315B43;
+          --bg-color: #F6F6F3;
+          --card-bg: #FFFFFF;
+          --text-main: #242926;
+          --text-muted: #5F675F;
+          --paper-50: #F6F6F3;
+          --paper-100: #F1F4EF;
+          --surface: #FFFFFF;
+          --sage-100: #E2E7E0;
+          --sage-300: #D8DCD7;
+          --sage-500: #315B43;
+          --sage-700: #315B43;
+          --sage-900: #263C2E;
+          --ink-700: #5F675F;
+          --ink-900: #242926;
+          --line-soft: #DFE4DE;
+          --line-strong: #D8DCD7;
           --success: #2f7a50;
           --warning: #b77a22;
           --danger: #b65445;
-          --shadow-card: 0 1px 2px rgba(31, 42, 35, 0.04);
-          --shadow-soft: 0 18px 42px rgba(31, 42, 35, 0.07);
-          --font-zen: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, sans-serif;
-          --container: 1180px;
+          --shadow-card: 0 1px 2px rgba(36, 41, 38, 0.035);
+          --shadow-soft: 0 18px 42px rgba(36, 41, 38, 0.065);
+          --font-verdme: Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          --container: 1200px;
         }
 
         * {
           box-sizing: border-box;
-          font-family: var(--font-zen);
+          font-family: var(--font-verdme);
         }
 
         html {
@@ -1103,9 +1103,7 @@
           min-width: 320px;
           margin: 0;
           overflow-x: hidden;
-          background:
-            radial-gradient(circle at 0 0, rgba(228, 242, 233, 0.9), transparent 28rem),
-            var(--paper-50);
+          background: var(--paper-50);
           color: var(--ink-900);
           font-size: 1rem;
           line-height: 1.6;
@@ -1138,10 +1136,10 @@
           top: 0.75rem;
           left: 0.75rem;
           padding: 0.7rem 1rem;
-          border-radius: 12px;
+          border-radius: 6px;
           background: var(--ink-900);
           color: #fff;
-          font-weight: 700;
+          font-weight: 600;
           text-decoration: none;
           transform: translateY(-160%);
           transition: transform 160ms ease;
@@ -1157,8 +1155,8 @@
           top: 0;
           width: 100%;
           padding: 0;
-          border-bottom: 1px solid rgba(203, 212, 202, 0.62);
-          background: rgba(243, 246, 242, 0.88);
+          border-bottom: 1px solid rgba(216, 220, 215, 0.88);
+          background: rgba(250, 250, 248, 0.92);
           box-shadow: none;
           backdrop-filter: blur(18px);
           -webkit-backdrop-filter: blur(18px);
@@ -1181,8 +1179,8 @@
           gap: 0.25rem;
           color: var(--ink-900);
           font-size: 1.35rem;
-          font-weight: 750;
-          letter-spacing: -0.045em;
+          font-weight: 600;
+          letter-spacing: -0.035em;
           text-decoration: none;
         }
 
@@ -1206,7 +1204,7 @@
         .nav-menu a {
           color: var(--ink-700);
           font-size: 0.9rem;
-          font-weight: 560;
+          font-weight: 500;
           text-decoration: none;
           transition: color 150ms ease;
         }
@@ -1228,13 +1226,13 @@
         .btn-primary-solid {
           min-height: 46px;
           padding: 0.72rem 1rem;
-          border-radius: 14px;
+          border-radius: 6px;
           display: inline-flex;
           align-items: center;
           justify-content: center;
           gap: 0.5rem;
           font-size: 0.92rem;
-          font-weight: 680;
+          font-weight: 600;
           line-height: 1;
           text-align: center;
           text-decoration: none;
@@ -1251,14 +1249,14 @@
         .btn-login:hover,
         .button-secondary:hover {
           background: #fff;
-          border-color: #aebbae;
+          border-color: var(--sage-500);
         }
 
         .btn-signup,
         .button-primary,
         .btn-primary-solid {
-          border: 1px solid #214f36;
-          background: var(--sage-700);
+          border: 1px solid var(--sage-900);
+          background: var(--sage-900);
           color: #fff;
           box-shadow: var(--shadow-card);
         }
@@ -1266,7 +1264,7 @@
         .btn-signup:hover,
         .button-primary:hover,
         .btn-primary-solid:hover {
-          background: var(--sage-900);
+          background: var(--sage-700);
           transform: translateY(-1px);
         }
 
@@ -1275,7 +1273,7 @@
           max-width: none;
           min-height: auto;
           margin: 0;
-          padding: 9.7rem 1rem 5.5rem;
+          padding: 9.5rem 1rem 5.8rem;
           overflow: hidden;
           text-align: left;
           animation: none;
@@ -1284,12 +1282,16 @@
         .hero-commercial::before {
           content: "";
           position: absolute;
-          top: 6rem;
-          right: -11rem;
-          width: 34rem;
-          height: 34rem;
-          border-radius: 999px;
-          background: radial-gradient(circle, rgba(189, 219, 201, 0.68), rgba(228, 242, 233, 0) 68%);
+          top: 7rem;
+          right: 0;
+          width: min(47vw, 42rem);
+          height: 32rem;
+          border-radius: 0;
+          background-image:
+            linear-gradient(rgba(49, 91, 67, 0.035) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(49, 91, 67, 0.035) 1px, transparent 1px);
+          background-size: 42px 42px;
+          mask-image: linear-gradient(90deg, transparent, #000 32%, #000 72%, transparent);
           pointer-events: none;
         }
 
@@ -1316,7 +1318,7 @@
           gap: 0.55rem;
           color: var(--sage-700);
           font-size: 0.76rem;
-          font-weight: 750;
+          font-weight: 600;
           letter-spacing: 0.12em;
           line-height: 1.4;
           text-transform: uppercase;
@@ -1325,11 +1327,11 @@
         .eyebrow::before,
         .section-kicker::before {
           content: "";
-          width: 7px;
-          height: 7px;
-          border-radius: 999px;
+          width: 24px;
+          height: 1px;
+          border-radius: 0;
           background: var(--sage-500);
-          box-shadow: 0 0 0 5px rgba(50, 122, 81, 0.1);
+          box-shadow: none;
         }
 
         .hero-commercial h1 {
@@ -1337,9 +1339,9 @@
           margin: 0;
           color: var(--ink-900);
           font-size: clamp(2.75rem, 6vw, 4.9rem);
-          font-weight: 720;
-          letter-spacing: -0.065em;
-          line-height: 0.98;
+          font-weight: 600;
+          letter-spacing: -0.05em;
+          line-height: 1.02;
           animation: none;
         }
 
@@ -1373,7 +1375,7 @@
         .hero-actions .button-secondary {
           min-height: 54px;
           padding: 0.95rem 1.25rem;
-          border-radius: 16px;
+          border-radius: 6px;
         }
 
         .hero-commercial .hero-note {
@@ -1400,20 +1402,20 @@
         .product-preview-wrap::before {
           content: "";
           position: absolute;
-          inset: 2.2rem -1.4rem -1.4rem 2.2rem;
-          border: 1px solid rgba(189, 219, 201, 0.72);
-          border-radius: 30px;
-          background: rgba(228, 242, 233, 0.48);
+          inset: 1.1rem -1rem -1rem 1.1rem;
+          border: 1px solid var(--line-soft);
+          border-radius: 12px;
+          background: var(--paper-100);
         }
 
         .product-preview {
           position: relative;
           z-index: 1;
           overflow: hidden;
-          border: 1px solid rgba(203, 212, 202, 0.95);
-          border-radius: 26px;
+          border: 1px solid var(--line-strong);
+          border-radius: 12px;
           background: rgba(255, 255, 255, 0.96);
-          box-shadow: var(--shadow-soft);
+          box-shadow: 0 1px 2px rgba(36, 41, 38, 0.04);
         }
 
         .preview-topbar {
@@ -1437,7 +1439,7 @@
         .preview-brand-mark {
           width: 28px;
           height: 28px;
-          border-radius: 9px;
+          border-radius: 6px;
           display: grid;
           place-items: center;
           background: var(--sage-100);
@@ -1452,7 +1454,7 @@
         .preview-brand strong,
         .preview-user strong {
           font-size: 0.75rem;
-          font-weight: 700;
+          font-weight: 600;
         }
 
         .preview-user span {
@@ -1464,7 +1466,7 @@
           background: var(--paper-100);
           color: var(--sage-900);
           font-size: 0.65rem;
-          font-weight: 750;
+          font-weight: 600;
         }
 
         .preview-canvas {
@@ -1472,13 +1474,13 @@
           display: grid;
           grid-template-columns: 1.2fr 0.8fr;
           gap: 0.85rem;
-          background: linear-gradient(140deg, #fbfcfa, var(--paper-50));
+          background: var(--paper-50);
         }
 
         .preview-panel {
           min-width: 0;
           border: 1px solid var(--line-soft);
-          border-radius: 17px;
+          border-radius: 9px;
           background: #fff;
           box-shadow: var(--shadow-card);
         }
@@ -1516,13 +1518,13 @@
         .preview-count {
           min-width: 30px;
           height: 30px;
-          border-radius: 10px;
+          border-radius: 6px;
           display: grid !important;
           place-items: center;
           background: var(--sage-100);
           color: var(--sage-900) !important;
           font-size: 0.72rem !important;
-          font-weight: 750;
+          font-weight: 600;
         }
 
         .session-list {
@@ -1530,30 +1532,33 @@
           margin: 0;
           padding: 0;
           display: grid;
-          gap: 0.55rem;
+          gap: 0;
+          border-top: 1px solid var(--line-soft);
         }
 
         .session-list li {
           min-width: 0;
-          padding: 0.72rem;
+          padding: 0.8rem 0.15rem;
           display: grid;
           grid-template-columns: 3.4rem minmax(0, 1fr) auto;
           align-items: center;
           gap: 0.6rem;
-          border: 1px solid var(--line-soft);
-          border-radius: 13px;
+          border: 0;
+          border-bottom: 1px solid var(--line-soft);
+          border-radius: 0;
           background: #fff;
         }
 
         .session-list li.is-next {
-          border-color: var(--sage-300);
-          background: color-mix(in srgb, var(--sage-100) 58%, #fff);
+          padding-inline: 0.7rem;
+          background: var(--sage-100);
+          box-shadow: inset 3px 0 0 var(--sage-500);
         }
 
         .session-time {
           color: var(--sage-900);
           font-size: 0.68rem;
-          font-weight: 720;
+          font-weight: 600;
         }
 
         .session-copy {
@@ -1602,7 +1607,7 @@
           gap: 0.42rem;
           color: var(--ink-700);
           font-size: 0.63rem;
-          font-weight: 650;
+          font-weight: 600;
         }
 
         .mini-label svg {
@@ -1616,7 +1621,7 @@
           margin: 0.6rem 0 0;
           color: var(--ink-900);
           font-size: 0.72rem;
-          font-weight: 650;
+          font-weight: 500;
           line-height: 1.45;
         }
 
@@ -1624,14 +1629,14 @@
           width: fit-content;
           margin-top: 0.7rem;
           padding: 0.32rem 0.5rem;
-          border-radius: 999px;
+          border-radius: 5px;
           display: flex;
           align-items: center;
           gap: 0.35rem;
           background: var(--sage-100);
           color: var(--sage-900);
           font-size: 0.58rem;
-          font-weight: 700;
+          font-weight: 600;
         }
 
         .dictation-pill::before {
@@ -1659,7 +1664,7 @@
         .finance-value span {
           color: var(--warning);
           font-size: 0.58rem;
-          font-weight: 700;
+          font-weight: 600;
         }
 
         .hero-commercial .preview-caption {
@@ -1732,9 +1737,9 @@
           margin: 0;
           color: var(--ink-900);
           font-size: clamp(2.15rem, 4vw, 3.55rem);
-          font-weight: 690;
-          letter-spacing: -0.055em;
-          line-height: 1.05;
+          font-weight: 600;
+          letter-spacing: -0.045em;
+          line-height: 1.08;
         }
 
         .section-heading > p,
@@ -1748,7 +1753,10 @@
         }
 
         .workflow-section {
-          padding: 7.5rem 0;
+          padding: 7rem 0;
+          border-top: 1px solid var(--line-soft);
+          border-bottom: 1px solid var(--line-soft);
+          background: var(--surface);
         }
 
         .workflow-grid {
@@ -1782,20 +1790,20 @@
           width: 42px;
           height: 42px;
           border: 1px solid var(--sage-300);
-          border-radius: 14px;
+          border-radius: 6px;
           display: grid;
           place-items: center;
           background: rgba(255, 255, 255, 0.55);
           color: var(--sage-900);
           font-size: 0.8rem;
-          font-weight: 760;
+          font-weight: 600;
         }
 
         .workflow-step h3 {
           margin: 0;
           color: var(--ink-900);
           font-size: 1.15rem;
-          font-weight: 680;
+          font-weight: 600;
           letter-spacing: -0.02em;
         }
 
@@ -1807,58 +1815,60 @@
         }
 
         .feature-showcase {
-          padding: 7.5rem 0;
-          border-top: 1px solid var(--line-soft);
+          padding: 7rem 0;
+          border-top: 0;
           border-bottom: 1px solid var(--line-soft);
-          background: rgba(255, 255, 255, 0.56);
+          background: var(--paper-100);
         }
 
         .capability-grid {
           margin-top: 3rem;
           display: grid;
-          grid-template-columns: repeat(12, minmax(0, 1fr));
-          gap: 1rem;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 0;
+          border-top: 1px solid var(--line-soft);
+          border-left: 1px solid var(--line-soft);
         }
 
         .capability-card {
           min-width: 0;
-          min-height: 310px;
+          min-height: 290px;
           padding: clamp(1.4rem, 3vw, 2.1rem);
-          border: 1px solid var(--line-soft);
-          border-radius: 20px;
+          border: 0;
+          border-right: 1px solid var(--line-soft);
+          border-bottom: 1px solid var(--line-soft);
+          border-radius: 0;
           display: flex;
           flex-direction: column;
-          background: var(--surface);
-          box-shadow: var(--shadow-card);
+          background: transparent;
+          box-shadow: none;
         }
 
         .capability-card:nth-child(1),
         .capability-card:nth-child(4) {
-          grid-column: span 7;
+          grid-column: auto;
         }
 
         .capability-card:nth-child(2),
         .capability-card:nth-child(3) {
-          grid-column: span 5;
+          grid-column: auto;
         }
 
         .capability-card:nth-child(1) {
-          background:
-            radial-gradient(circle at 92% 0, rgba(189, 219, 201, 0.5), transparent 15rem),
-            var(--surface);
+          background: var(--paper-100);
         }
 
         .capability-card:nth-child(4) {
-          background: var(--sage-900);
-          border-color: var(--sage-900);
-          color: #fff;
+          background: var(--paper-100);
+          border-color: var(--line-soft);
+          color: var(--ink-900);
         }
 
         .capability-icon {
           width: 46px;
           height: 46px;
           border: 1px solid var(--sage-300);
-          border-radius: 15px;
+          border-radius: 6px;
           display: grid;
           place-items: center;
           background: var(--sage-100);
@@ -1871,9 +1881,9 @@
         }
 
         .capability-card:nth-child(4) .capability-icon {
-          border-color: rgba(255, 255, 255, 0.2);
-          background: rgba(255, 255, 255, 0.09);
-          color: #fff;
+          border-color: var(--sage-300);
+          background: var(--sage-100);
+          color: var(--sage-900);
         }
 
         .capability-card h3 {
@@ -1882,7 +1892,7 @@
           padding-top: 2.6rem;
           color: var(--ink-900);
           font-size: clamp(1.4rem, 2.4vw, 1.9rem);
-          font-weight: 680;
+          font-weight: 600;
           letter-spacing: -0.035em;
           line-height: 1.12;
         }
@@ -1897,11 +1907,11 @@
 
         .capability-card:nth-child(4) h3,
         .capability-card:nth-child(4) p {
-          color: #fff;
+          color: var(--ink-900);
         }
 
         .capability-card:nth-child(4) p {
-          color: rgba(255, 255, 255, 0.72);
+          color: var(--ink-700);
         }
 
         .capability-tags {
@@ -1916,34 +1926,33 @@
         .capability-tags li {
           padding: 0.35rem 0.55rem;
           border: 1px solid var(--line-soft);
-          border-radius: 999px;
+          border-radius: 4px;
           color: var(--ink-700);
           font-size: 0.7rem;
-          font-weight: 650;
+          font-weight: 500;
         }
 
         .capability-card:nth-child(4) .capability-tags li {
-          border-color: rgba(255, 255, 255, 0.19);
-          color: rgba(255, 255, 255, 0.8);
+          border-color: var(--line-soft);
+          color: var(--ink-700);
         }
 
         .payments-integration {
-          width: min(calc(100% - 2rem), 1240px);
-          max-width: 1240px;
-          margin: 7.5rem auto;
-          padding: clamp(2rem, 4.5vw, 4.4rem);
+          width: 100%;
+          max-width: none;
+          margin: 0;
+          padding: 7.5rem max(1rem, calc((100vw - var(--container)) / 2));
           grid-template-columns: minmax(300px, 0.7fr) minmax(560px, 1.3fr);
           gap: clamp(2.5rem, 5vw, 5rem);
-          border: 1px solid var(--line-strong);
-          border-radius: 28px;
-          background:
-            radial-gradient(circle at 4% 8%, rgba(176, 242, 174, 0.42), transparent 25rem),
-            linear-gradient(145deg, #fbfdfb, var(--paper-100));
-          box-shadow: var(--shadow-soft);
+          border: 0;
+          border-bottom: 1px solid var(--line-soft);
+          border-radius: 0;
+          background: var(--surface);
+          box-shadow: none;
         }
 
         .payments-integration::before {
-          background-image: linear-gradient(rgba(43, 102, 69, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(43, 102, 69, 0.025) 1px, transparent 1px);
+          background-image: linear-gradient(rgba(49, 91, 67, 0.028) 1px, transparent 1px), linear-gradient(90deg, rgba(49, 91, 67, 0.028) 1px, transparent 1px);
           background-size: 44px 44px;
           mask-image: linear-gradient(90deg, black, transparent 68%);
         }
@@ -1960,15 +1969,15 @@
 
         .payments-badge::before {
           background: var(--sage-500);
-          box-shadow: 0 0 0 5px rgba(50, 122, 81, 0.1);
+          box-shadow: none;
         }
 
         .payments-content h2 {
           color: var(--ink-900);
           font-size: clamp(2.2rem, 4vw, 3.5rem);
-          font-weight: 690;
-          letter-spacing: -0.055em;
-          line-height: 1.04;
+          font-weight: 600;
+          letter-spacing: -0.045em;
+          line-height: 1.08;
         }
 
         .payments-content > p {
@@ -1981,13 +1990,18 @@
 
         .method-tag {
           border-color: var(--line-soft);
-          border-radius: 999px;
+          border-radius: 5px;
           background: rgba(255, 255, 255, 0.72);
           color: var(--ink-900);
         }
 
         .method-tag::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          border-radius: 999px;
           background: var(--sage-700);
+          box-shadow: none;
         }
 
         .wompi-checkout-note {
@@ -2005,7 +2019,9 @@
         .security-section {
           margin: 0;
           padding: 7.5rem 1rem;
-          background: var(--paper-100);
+          border-top: 0;
+          border-bottom: 1px solid var(--line-soft);
+          background: var(--sage-100);
           color: var(--ink-900);
           text-align: left;
         }
@@ -2048,7 +2064,7 @@
           width: 42px;
           height: 42px;
           border: 1px solid var(--sage-300);
-          border-radius: 14px;
+          border-radius: 6px;
           display: grid;
           place-items: center;
           background: rgba(255, 255, 255, 0.5);
@@ -2064,7 +2080,7 @@
           margin: 0;
           color: var(--ink-900);
           font-size: 1rem;
-          font-weight: 680;
+          font-weight: 600;
         }
 
         .security-list p {
@@ -2078,38 +2094,39 @@
           width: min(calc(100% - 2rem), var(--container));
           margin: 7.5rem auto;
           padding: clamp(2.4rem, 6vw, 5.4rem);
-          border: 1px solid var(--sage-900);
-          border-radius: 28px;
+          border: 1px solid var(--line-strong);
+          border-left: 4px solid var(--sage-700);
+          border-radius: 12px;
           background:
-            radial-gradient(circle at 95% 10%, rgba(189, 219, 201, 0.17), transparent 22rem),
-            var(--sage-900);
-          color: #fff;
+            linear-gradient(90deg, rgba(226, 231, 224, 0.56), rgba(246, 246, 243, 0) 66%),
+            var(--surface);
+          color: var(--ink-900);
           text-align: center;
-          box-shadow: var(--shadow-soft);
+          box-shadow: none;
         }
 
         .cta-final h2 {
           max-width: 800px;
           margin-inline: auto;
-          color: #fff;
+          color: var(--ink-900);
         }
 
         .cta-final p {
           max-width: 650px;
           margin: 1.15rem auto 0;
-          color: rgba(255, 255, 255, 0.72);
+          color: var(--ink-700);
           font-size: 1.05rem;
           line-height: 1.7;
         }
 
         .cta-final .section-kicker {
           margin: 0 auto 1.35rem;
-          color: var(--sage-300);
+          color: var(--sage-700);
         }
 
         .cta-final .section-kicker::before {
-          background: var(--sage-300);
-          box-shadow: 0 0 0 5px rgba(189, 219, 201, 0.12);
+          background: var(--sage-500);
+          box-shadow: none;
         }
 
         .cta-actions {
@@ -2123,25 +2140,25 @@
         .cta-final .btn-primary-solid {
           min-height: 54px;
           padding: 0.95rem 1.25rem;
-          border-color: #fff;
-          background: #fff;
-          color: var(--sage-900);
+          border-color: var(--sage-900);
+          background: var(--sage-900);
+          color: #fff;
         }
 
         .cta-final .btn-primary-solid:hover {
-          background: var(--sage-100);
+          background: var(--sage-700);
         }
 
         .cta-final .button-secondary {
           min-height: 54px;
           padding: 0.95rem 1.25rem;
-          border-color: rgba(255, 255, 255, 0.32);
-          background: transparent;
-          color: #fff;
+          border-color: var(--line-strong);
+          background: var(--surface);
+          color: var(--ink-900);
         }
 
         .cta-final .button-secondary:hover {
-          background: rgba(255, 255, 255, 0.08);
+          background: var(--paper-100);
         }
 
         .site-footer {
@@ -2162,7 +2179,7 @@
         .footer-brand {
           color: var(--ink-900);
           font-size: 1.05rem;
-          font-weight: 750;
+          font-weight: 600;
           letter-spacing: -0.04em;
         }
 
@@ -2216,9 +2233,22 @@
           }
 
           .payments-integration {
-            padding: 3.5rem clamp(1rem, 5vw, 3.5rem);
+            padding: 6.5rem max(1rem, calc((100vw - var(--container)) / 2));
             grid-template-columns: 1fr;
-            text-align: center;
+          }
+
+          .payments-content {
+            text-align: left;
+          }
+
+          .payment-methods-grid {
+            justify-content: flex-start;
+          }
+
+          .partner-lockup,
+          .payments-content h2,
+          .payments-content > p {
+            margin-inline: 0;
           }
 
           .security-copy {
@@ -2228,7 +2258,12 @@
 
         @media (max-width: 820px) {
           .hero-commercial {
-            padding-top: 8.6rem;
+            padding-top: 8rem;
+          }
+
+          .section-shell,
+          .proof-strip {
+            width: min(calc(100% - 3rem), var(--container));
           }
 
           .proof-strip ul {
@@ -2250,9 +2285,13 @@
             border-bottom: 0;
           }
 
+          .capability-grid {
+            grid-template-columns: 1fr;
+          }
+
           .capability-card:nth-child(n) {
-            grid-column: span 12;
-            min-height: 280px;
+            grid-column: auto;
+            min-height: 230px;
           }
         }
 
@@ -2260,6 +2299,930 @@
           html {
             scroll-padding-top: 76px;
           }
+
+          .nav-shell {
+            width: calc(100% - 1.5rem);
+            min-height: 68px;
+          }
+
+          .logo-icon {
+            width: 44px;
+            height: 44px;
+            flex-basis: 44px;
+          }
+
+          .nav-links {
+            gap: 0.45rem;
+          }
+
+          .btn-login,
+          .btn-signup {
+            min-height: 44px;
+            padding-inline: 0.75rem;
+            font-size: 0.84rem;
+          }
+
+          .hero-commercial {
+            padding: 7.4rem 1.25rem 4.25rem;
+          }
+
+          .hero-commercial::before {
+            top: 30rem;
+            width: 100%;
+          }
+
+          .hero-grid {
+            gap: 2.75rem;
+          }
+
+          .hero-commercial h1 {
+            font-size: clamp(2.5rem, 11vw, 3.3rem);
+            line-height: 1.04;
+          }
+
+          .hero-commercial .hero-lead {
+            margin-top: 1.3rem;
+            font-size: 1rem;
+            line-height: 1.65;
+          }
+
+          .hero-commercial .hero-note {
+            align-items: flex-start;
+            font-size: 0.84rem;
+            line-height: 1.5;
+          }
+
+          .hero-actions {
+            align-items: stretch;
+          }
+
+          .hero-actions .button-primary,
+          .hero-actions .button-secondary {
+            flex: 1 1 100%;
+          }
+
+          .product-preview-wrap::before {
+            display: none;
+          }
+
+          .product-preview {
+            border-radius: 9px;
+          }
+
+          .preview-topbar {
+            min-height: 50px;
+            padding-inline: 0.85rem;
+          }
+
+          .preview-canvas {
+            grid-template-columns: 1fr;
+            padding: 0.75rem;
+          }
+
+          .agenda-panel {
+            grid-row: auto;
+            padding: 0.85rem;
+          }
+
+          .preview-panel-head span,
+          .mini-label {
+            font-size: 0.72rem;
+          }
+
+          .preview-panel-head strong {
+            font-size: 0.9rem;
+          }
+
+          .session-time,
+          .session-copy strong {
+            font-size: 0.76rem;
+          }
+
+          .session-copy span {
+            font-size: 0.7rem;
+          }
+
+          .note-panel p,
+          .finance-panel p {
+            font-size: 0.76rem;
+          }
+
+          .dictation-pill,
+          .finance-value span {
+            font-size: 0.7rem;
+          }
+
+          .section-shell,
+          .proof-strip {
+            width: calc(100% - 2.5rem);
+          }
+
+          .section-heading h2,
+          .workflow-copy h2,
+          .security-copy h2,
+          .cta-final h2,
+          .payments-content h2 {
+            font-size: clamp(2rem, 9vw, 2.65rem);
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+          }
+
+          .section-heading > p,
+          .workflow-copy > p,
+          .security-copy > p,
+          .payments-content > p {
+            font-size: 1rem;
+            line-height: 1.65;
+          }
+
+          .workflow-section,
+          .feature-showcase,
+          .security-section {
+            padding-block: 4.5rem;
+          }
+
+          .workflow-grid,
+          .security-container {
+            gap: 2.5rem;
+          }
+
+          .workflow-step {
+            padding-block: 1.45rem;
+            grid-template-columns: 2.5rem minmax(0, 1fr);
+            gap: 0.85rem;
+          }
+
+          .step-number,
+          .security-list-icon {
+            width: 36px;
+            height: 36px;
+          }
+
+          .capability-card:nth-child(n) {
+            min-height: auto;
+            padding: 1.35rem;
+          }
+
+          .capability-card h3 {
+            margin-top: 2rem;
+            padding-top: 0;
+            font-size: 1.45rem;
+            line-height: 1.18;
+          }
+
+          .capability-card p {
+            font-size: 0.95rem;
+          }
+
+          .capability-tags li {
+            font-size: 0.75rem;
+          }
+
+          .payments-integration {
+            width: 100%;
+            margin: 0;
+            padding: 4.5rem 1.25rem;
+            border-radius: 0;
+          }
+
+          .security-list li {
+            padding-block: 1.25rem;
+            grid-template-columns: 36px minmax(0, 1fr);
+            gap: 0.85rem;
+          }
+
+          .security-list p {
+            font-size: 0.95rem;
+          }
+
+          .cta-final {
+            width: calc(100% - 2rem);
+            margin-block: 4.5rem;
+            padding: 3.25rem 1.25rem;
+            border-radius: 9px;
+          }
+
+          .cta-actions {
+            align-items: stretch;
+          }
+
+          .cta-actions a {
+            flex: 1 1 100%;
+          }
+
+          .footer-shell {
+            width: calc(100% - 2.5rem);
+            align-items: flex-start;
+            flex-direction: column;
+          }
+        }
+
+        @media (max-width: 430px) {
+          .btn-login {
+            display: none;
+          }
+
+          .hero-commercial {
+            padding-inline: 1rem;
+          }
+
+          .hero-commercial h1 {
+            font-size: clamp(2.35rem, 11.5vw, 2.75rem);
+          }
+
+          .eyebrow,
+          .section-kicker {
+            font-size: 0.72rem;
+            letter-spacing: 0.09em;
+          }
+
+          .proof-strip ul {
+            grid-template-columns: 1fr;
+          }
+
+          .proof-strip li {
+            min-height: 48px;
+            justify-content: flex-start;
+            border-right: 0;
+            border-bottom: 1px solid var(--line-soft) !important;
+          }
+
+          .proof-strip li:last-child {
+            border-bottom: 0 !important;
+          }
+
+          .session-list li {
+            grid-template-columns: 2.7rem minmax(0, 1fr) auto;
+          }
+
+          .session-copy span {
+            overflow: visible;
+            white-space: normal;
+            line-height: 1.35;
+          }
+
+          .note-panel,
+          .finance-panel {
+            display: none;
+          }
+
+          .payment-methods-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+          }
+
+          .method-tag {
+            width: 100%;
+          }
+
+          .partner-lockup {
+            transform: none;
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          html {
+            scroll-behavior: auto;
+          }
+
+          *,
+          *::before,
+          *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+          }
+        }
+    </style>
+    <style id="verdme-conversion-iteration">
+        /* Iteración comercial: más claridad, ritmo y respuesta sin tocar el checkout de Wompi. */
+        .site-nav {
+          background: rgba(246, 246, 243, 0.94);
+        }
+
+        .nav-shell {
+          min-height: 72px;
+        }
+
+        .logo-wordmark {
+          display: inline;
+        }
+
+        .nav-menu a {
+          position: relative;
+          padding-block: 1.55rem;
+        }
+
+        .nav-menu a::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 1.05rem;
+          left: 0;
+          height: 1px;
+          background: var(--sage-700);
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 180ms ease;
+        }
+
+        .nav-menu a:hover::after,
+        .nav-menu a:focus-visible::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+
+        .hero-commercial {
+          padding: 8.4rem 1rem 4.7rem;
+          background:
+            radial-gradient(circle at 83% 23%, rgba(226, 231, 224, 0.72), transparent 25rem),
+            var(--paper-50);
+        }
+
+        .hero-grid {
+          grid-template-columns: minmax(0, 0.88fr) minmax(460px, 1.12fr);
+          gap: clamp(2.75rem, 5.5vw, 5.75rem);
+        }
+
+        .hero-commercial h1 {
+          max-width: 660px;
+          font-size: clamp(3.15rem, 5.1vw, 4.75rem);
+          line-height: 0.98;
+        }
+
+        .hero-commercial .hero-lead {
+          max-width: 590px;
+          margin-top: 1.45rem;
+        }
+
+        .hero-actions {
+          margin-top: 1.75rem;
+        }
+
+        .hero-assurances {
+          margin: 1.2rem 0 0;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.65rem 1.1rem;
+          list-style: none;
+        }
+
+        .hero-assurances li {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.42rem;
+          color: var(--ink-700);
+          font-size: 0.82rem;
+          line-height: 1.4;
+        }
+
+        .hero-assurances svg {
+          width: 17px;
+          height: 17px;
+          flex: 0 0 17px;
+          color: var(--sage-700);
+        }
+
+        .product-preview-wrap {
+          perspective: 1200px;
+        }
+
+        .product-preview {
+          transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+        }
+
+        .product-preview-wrap:hover .product-preview,
+        .product-preview-wrap:focus-within .product-preview {
+          border-color: rgba(49, 91, 67, 0.48);
+          box-shadow: 0 24px 56px rgba(36, 41, 38, 0.1);
+          transform: translateY(-4px) rotateX(0.6deg);
+        }
+
+        .preview-continuity {
+          margin: 0;
+          padding: 0;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          border-top: 1px solid var(--line-soft);
+          background: #fff;
+          list-style: none;
+        }
+
+        .preview-continuity li {
+          min-width: 0;
+          padding: 0.8rem 0.7rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.45rem;
+          border-right: 1px solid var(--line-soft);
+          color: var(--ink-700);
+          font-size: 0.66rem;
+          font-weight: 600;
+          text-align: center;
+          transition: background-color 160ms ease, color 160ms ease;
+        }
+
+        .preview-continuity li:last-child {
+          border-right: 0;
+        }
+
+        .preview-continuity li::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          flex: 0 0 6px;
+          border-radius: 999px;
+          background: var(--sage-500);
+        }
+
+        .preview-continuity li:hover {
+          background: var(--sage-100);
+          color: var(--sage-900);
+        }
+
+        .proof-strip {
+          width: 100%;
+          max-width: none;
+          padding: 1rem max(1rem, calc((100vw - var(--container)) / 2));
+          border-color: var(--sage-900);
+          background: var(--sage-900);
+        }
+
+        .proof-strip ul {
+          width: min(100%, var(--container));
+          margin: 0 auto;
+        }
+
+        .proof-strip li {
+          min-height: 36px;
+          border-color: rgba(255, 255, 255, 0.18);
+          color: rgba(255, 255, 255, 0.86);
+          font-size: 0.82rem;
+        }
+
+        .proof-strip svg {
+          color: #C7D9CC;
+        }
+
+        .workflow-section {
+          padding-block: 6.6rem;
+        }
+
+        .workflow-grid {
+          grid-template-columns: minmax(0, 0.68fr) minmax(540px, 1.32fr);
+          gap: clamp(3rem, 7vw, 7rem);
+        }
+
+        .workflow-step {
+          position: relative;
+          padding: 1.55rem 0;
+          transition: padding-left 180ms ease, background-color 180ms ease;
+        }
+
+        .workflow-step::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 2px;
+          background: var(--sage-500);
+          transform: scaleY(0);
+          transition: transform 180ms ease;
+        }
+
+        .workflow-step:hover,
+        .workflow-step:focus-within {
+          padding-left: 1rem;
+          background: linear-gradient(90deg, rgba(226, 231, 224, 0.5), transparent 76%);
+        }
+
+        .workflow-step:hover::after,
+        .workflow-step:focus-within::after {
+          transform: scaleY(1);
+        }
+
+        .feature-showcase {
+          padding-block: 6.6rem;
+          background: #EEF1EC;
+        }
+
+        .capability-grid {
+          margin-top: 2.5rem;
+          background: rgba(255, 255, 255, 0.46);
+        }
+
+        .capability-card {
+          min-height: 248px;
+          padding: clamp(1.35rem, 2.6vw, 1.9rem);
+          transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+        }
+
+        .capability-card:hover,
+        .capability-card:focus-within {
+          z-index: 1;
+          background: #fff;
+          box-shadow: 0 18px 38px rgba(36, 41, 38, 0.08);
+          transform: translateY(-3px);
+        }
+
+        .capability-card h3 {
+          margin-top: 2.15rem;
+          padding-top: 0;
+          font-size: clamp(1.35rem, 2.1vw, 1.72rem);
+        }
+
+        .capability-card p {
+          margin-top: 0.7rem;
+          font-size: 1rem;
+        }
+
+        .workflow-step p,
+        .security-list p {
+          font-size: 1rem;
+        }
+
+        .payments-integration {
+          padding-block: 6.9rem;
+          background:
+            linear-gradient(90deg, rgba(226, 231, 224, 0.22), transparent 34%),
+            var(--surface);
+        }
+
+        .payments-content {
+          position: sticky;
+          top: 108px;
+          align-self: start;
+        }
+
+        .payment-methods-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 0;
+          border-top: 1px solid var(--line-soft);
+        }
+
+        .method-tag {
+          min-height: 43px;
+          padding: 0.72rem 0;
+          border: 0;
+          border-bottom: 1px solid var(--line-soft);
+          border-radius: 0;
+          background: transparent;
+          font-size: 0.84rem;
+        }
+
+        .security-section {
+          padding-block: 6.6rem;
+        }
+
+        .security-copy,
+        .security-list {
+          text-align: left;
+        }
+
+        .security-list li {
+          transition: padding-left 180ms ease, background-color 180ms ease;
+        }
+
+        .security-list li:hover,
+        .security-list li:focus-within {
+          padding-left: 0.75rem;
+          background: rgba(255, 255, 255, 0.28);
+        }
+
+        .cta-final {
+          width: 100%;
+          max-width: none;
+          margin: 0;
+          padding: 6.8rem max(1rem, calc((100vw - var(--container)) / 2));
+          border: 0;
+          border-radius: 0;
+          display: block;
+          background:
+            linear-gradient(118deg, rgba(255, 255, 255, 0.035), transparent 42%),
+            var(--sage-900);
+          color: #fff;
+          text-align: left;
+        }
+
+        .cta-final-shell {
+          width: min(100%, var(--container));
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: minmax(0, 1.12fr) minmax(360px, 0.88fr);
+          align-items: end;
+          gap: clamp(3rem, 8vw, 8rem);
+        }
+
+        .cta-final .section-kicker {
+          margin: 0 0 1.2rem;
+          color: #C7D9CC;
+        }
+
+        .cta-final .section-kicker::before {
+          background: #C7D9CC;
+        }
+
+        .cta-final h2 {
+          max-width: 720px;
+          margin: 0;
+          color: #fff;
+        }
+
+        .cta-final-copy > p,
+        .cta-final-action > p {
+          color: rgba(255, 255, 255, 0.72);
+          font-size: 1rem;
+          line-height: 1.7;
+        }
+
+        .cta-final-copy > p {
+          max-width: 610px;
+          margin: 1.1rem 0 0;
+        }
+
+        .cta-final-action > p {
+          margin: 0 0 1.25rem;
+        }
+
+        .cta-final .cta-actions {
+          margin-top: 0;
+          justify-content: flex-start;
+        }
+
+        .cta-final .btn-primary-solid {
+          border-color: #fff;
+          background: #fff;
+          color: var(--sage-900);
+        }
+
+        .cta-final .btn-primary-solid:hover {
+          border-color: var(--sage-100);
+          background: var(--sage-100);
+        }
+
+        .cta-final .button-secondary {
+          border-color: rgba(255, 255, 255, 0.34);
+          background: transparent;
+          color: #fff;
+        }
+
+        .cta-final .button-secondary:hover {
+          border-color: rgba(255, 255, 255, 0.64);
+          background: rgba(255, 255, 255, 0.08);
+        }
+
+        .site-footer {
+          padding-top: 2rem;
+          background: var(--paper-50);
+        }
+
+        @supports (animation-timeline: view()) {
+          .workflow-copy,
+          .workflow-list,
+          .section-heading,
+          .capability-grid,
+          .payments-content,
+          .security-copy,
+          .security-list,
+          .cta-final-shell {
+            animation: verdme-reveal linear both;
+            animation-timeline: view();
+            animation-range: entry 8% cover 30%;
+          }
+        }
+
+        @keyframes verdme-reveal {
+          from {
+            opacity: 0;
+            transform: translateY(22px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @media (max-width: 1100px) {
+          .payments-content {
+            position: static;
+          }
+
+          .cta-final-shell {
+            grid-template-columns: 1fr;
+            align-items: start;
+            gap: 2.5rem;
+          }
+
+          .cta-final-action {
+            max-width: 650px;
+          }
+        }
+
+        @media (max-width: 940px) {
+          .hero-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .hero-copy {
+            max-width: 720px;
+          }
+
+          .product-preview-wrap {
+            width: min(100%, 720px);
+          }
+
+          .workflow-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        @media (max-width: 820px) {
+          .hero-commercial {
+            padding-top: 7.6rem;
+          }
+
+          .proof-strip {
+            padding-inline: 1.5rem;
+          }
+
+          .proof-strip li {
+            border-color: rgba(255, 255, 255, 0.16);
+          }
+
+          .capability-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+
+        @media (max-width: 680px) {
+          .nav-shell {
+            min-height: 66px;
+          }
+
+          .logo-wordmark {
+            display: inline;
+            font-size: 1.08rem;
+          }
+
+          .hero-commercial {
+            padding: 7.15rem 1.15rem 3.7rem;
+          }
+
+          .hero-grid {
+            gap: 2.2rem;
+          }
+
+          .hero-commercial h1 {
+            font-size: clamp(2.65rem, 11vw, 3.25rem);
+            line-height: 1;
+          }
+
+          .hero-assurances {
+            display: grid;
+            gap: 0.55rem;
+          }
+
+          .hero-commercial .preview-caption {
+            display: none;
+          }
+
+          .workflow-section,
+          .feature-showcase,
+          .security-section {
+            padding-block: 4rem;
+          }
+
+          .workflow-grid,
+          .security-container {
+            gap: 2rem;
+          }
+
+          .workflow-step {
+            padding-block: 1.15rem;
+          }
+
+          .workflow-step:hover,
+          .workflow-step:focus-within {
+            padding-left: 0.55rem;
+          }
+
+          .capability-grid {
+            margin-top: 2rem;
+            grid-template-columns: 1fr;
+          }
+
+          .capability-card:nth-child(n) {
+            min-height: auto;
+            padding: 1.25rem;
+            display: grid;
+            grid-template-columns: 44px minmax(0, 1fr);
+            align-content: start;
+            column-gap: 0.9rem;
+          }
+
+          .capability-icon {
+            width: 44px;
+            height: 44px;
+            grid-row: 1 / span 2;
+          }
+
+          .capability-card h3 {
+            grid-column: 2;
+            margin-top: 0;
+            font-size: 1.3rem;
+          }
+
+          .capability-card p {
+            grid-column: 2;
+            margin-top: 0.6rem;
+            line-height: 1.58;
+          }
+
+          .payments-integration {
+            padding-block: 4.2rem;
+          }
+
+          .payments-content h2 {
+            font-size: clamp(2rem, 9vw, 2.5rem);
+          }
+
+          .security-list li:hover,
+          .security-list li:focus-within {
+            padding-left: 0.4rem;
+          }
+
+          .cta-final {
+            width: 100%;
+            padding: 4rem 1.25rem;
+          }
+
+          .cta-final-shell {
+            gap: 1.75rem;
+          }
+
+          .cta-final .cta-actions a {
+            flex-basis: 100%;
+          }
+        }
+
+        @media (max-width: 430px) {
+          .logo-icon {
+            width: 40px;
+            height: 40px;
+            flex-basis: 40px;
+          }
+
+          .btn-signup {
+            padding-inline: 0.7rem;
+            font-size: 0.78rem;
+          }
+
+          .hero-commercial h1 {
+            font-size: clamp(2.45rem, 11vw, 2.8rem);
+          }
+
+          .hero-commercial h1 span {
+            margin-top: 0.14em;
+          }
+
+          .preview-continuity li {
+            min-height: 52px;
+            padding: 0.5rem 0.3rem;
+            font-size: 0.61rem;
+            line-height: 1.25;
+          }
+
+          .preview-continuity li:last-child {
+            border-right: 0;
+          }
+
+          .proof-strip li {
+            color: rgba(255, 255, 255, 0.9);
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .workflow-copy,
+          .workflow-list,
+          .section-heading,
+          .capability-grid,
+          .payments-content,
+          .security-copy,
+          .security-list,
+          .cta-final-shell,
+          .product-preview,
+          .workflow-step,
+          .capability-card,
+          .security-list li {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+          }
+        }
     </style>
 </head>
 <body>
@@ -2310,19 +3273,25 @@
         <header class="hero hero-commercial" id="inicio">
             <div class="hero-grid">
                 <div class="hero-copy">
-                    <p class="eyebrow">Gestión clínica para psicólogos independientes</p>
-                    <h1>Tu consultorio en orden.<span>Tu atención donde importa.</span></h1>
-                    <p class="hero-lead">Verdme reúne agenda, procesos clínicos, notas, consentimientos y cobros en un mismo flujo. Menos información dispersa; más continuidad antes, durante y después de cada sesión.</p>
+                    <p class="eyebrow">Para psicólogos independientes</p>
+                    <h1>Menos información dispersa.<span>Más continuidad en tu práctica.</span></h1>
+                    <p class="hero-lead">Verdme conecta agenda, procesos clínicos, notas, consentimientos y cobros para que puedas seguir el hilo antes, durante y después de cada sesión.</p>
 
                     <div class="hero-actions">
                         <a href="mailto:support@verdme.com?subject=Quiero%20conocer%20Verdme&amp;body=Hola%2C%20quiero%20conocer%20Verdme%20para%20mi%20pr%C3%A1ctica%20profesional.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A" class="button-primary">Solicitar acceso</a>
                         <a href="#flujo" class="button-secondary">Ver cómo funciona</a>
                     </div>
 
-                    <p class="hero-note">
-                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>
-                        Tú mantienes el criterio clínico y el control de cada registro.
-                    </p>
+                    <ul class="hero-assurances" aria-label="Aspectos clave de Verdme">
+                        <li>
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>
+                            Tú conservas el criterio clínico.
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>
+                            Los pagos llegan a tu cuenta Wompi.
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="product-preview-wrap" aria-label="Vista ilustrativa de la agenda de Verdme">
@@ -2380,6 +3349,11 @@
                                 <p>Paquete de sesiones · cuota 2 de 4</p>
                             </section>
                         </div>
+                        <ol class="preview-continuity" aria-label="Continuidad del trabajo en Verdme">
+                            <li>Agenda preparada</li>
+                            <li>Registro en contexto</li>
+                            <li>Cobro definido</li>
+                        </ol>
                     </div>
                     <p class="preview-caption">Vista ilustrativa basada en funcionalidades disponibles en Verdme.</p>
                 </div>
@@ -2388,19 +3362,19 @@
 
         <section class="proof-strip" aria-label="Áreas que conecta Verdme">
             <ul>
-                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Agenda y sesiones</li>
-                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h11l3 3v15H5V3Z"/><path d="M9 11h6M9 15h6M9 7h3"/></svg>Notas y adjuntos</li>
-                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 20c.4-4 2.4-6 6-6s5.6 2 6 6M15 15c3 0 5 1.6 6 5"/></svg>Procesos clínicos</li>
-                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>Finanzas y cobros</li>
+                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Agenda, sesiones y procesos</li>
+                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h11l3 3v15H5V3Z"/><path d="M9 11h6M9 15h6M9 7h3"/></svg>Notas con contexto clínico</li>
+                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>Cobros con tu cuenta Wompi</li>
+                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>Accesos visibles y configurables</li>
             </ul>
         </section>
 
         <section class="workflow-section" id="flujo">
             <div class="section-shell workflow-grid">
                 <div class="workflow-copy">
-                    <p class="section-kicker">Continuidad, no más pestañas</p>
-                    <h2>Un flujo sereno para el trabajo real del consultorio.</h2>
-                    <p>Cada sesión deja decisiones clínicas y administrativas. Verdme mantiene esos pasos conectados para que puedas retomarlos con contexto.</p>
+                    <p class="section-kicker">Un solo hilo de trabajo</p>
+                    <h2>De la agenda al cobro, sin perder el contexto.</h2>
+                    <p>Cada sesión deja decisiones clínicas y administrativas. Verdme las mantiene conectadas para que sepas qué pasó y qué sigue.</p>
                 </div>
 
                 <ol class="workflow-list">
@@ -2432,9 +3406,9 @@
         <section class="feature-showcase" id="funcionalidades">
             <div class="section-shell">
                 <div class="section-heading">
-                    <p class="section-kicker">Funcionalidades que ya existen</p>
-                    <h2>Todo el consultorio conectado por proceso clínico.</h2>
-                    <p>Sin promesas mágicas: herramientas concretas para organizar el contexto, documentar tu criterio y mantener claros los pendientes.</p>
+                    <p class="section-kicker">Lo esencial, en contexto</p>
+                    <h2>Herramientas que acompañan cada proceso clínico.</h2>
+                    <p>Organiza la información, documenta con tu propio criterio y mantén visibles los pendientes del consultorio.</p>
                 </div>
 
                 <div class="capability-grid">
@@ -2442,36 +3416,32 @@
                         <span class="capability-icon">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h11l3 3v15H5V3Z"/><path d="M9 11h6M9 15h6M9 7h3"/></svg>
                         </span>
-                        <h3>Notas que conservan su contexto.</h3>
-                        <p>Crea notas por sesión, paciente o ambos. Usa dictado, lectura en voz alta, formato, adjuntos y anotaciones para trabajar el registro a tu manera.</p>
-                        <ul class="capability-tags"><li>Dictado por voz</li><li>Adjuntos</li><li>Historial y filtros</li></ul>
+                        <h3>Notas siempre en contexto.</h3>
+                        <p>Crea notas por sesión o paciente. Dicta, da formato, adjunta archivos y consulta el historial sin perder su contexto.</p>
                     </article>
 
                     <article class="capability-card">
                         <span class="capability-icon">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 20c.4-4 2.4-6 6-6s5.6 2 6 6M15 15c3 0 5 1.6 6 5"/></svg>
                         </span>
-                        <h3>Procesos individuales o con varios participantes.</h3>
-                        <p>Reúne motivo de consulta, sesiones, estado clínico, planes terapéuticos y línea de tiempo para no perder la continuidad.</p>
-                        <ul class="capability-tags"><li>Estado clínico</li><li>Planes terapéuticos</li></ul>
+                        <h3>Procesos con uno o varios participantes.</h3>
+                        <p>Reúne participantes, motivo de consulta, sesiones, estado clínico, plan terapéutico y línea de tiempo en un solo proceso.</p>
                     </article>
 
                     <article class="capability-card">
                         <span class="capability-icon">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18H6z"/><path d="M9 7h6M9 11h6M9 15h4"/><path d="m15 18 1.4 1.4L19 16.8"/></svg>
                         </span>
-                        <h3>Consentimientos visibles cuando los necesitas.</h3>
-                        <p>Registra el documento, su firma y vigencia; asócialo a los procesos correspondientes y consulta su historial.</p>
-                        <ul class="capability-tags"><li>Vigencia</li><li>Historial</li><li>Descarga protegida</li></ul>
+                        <h3>Consentimientos a la vista.</h3>
+                        <p>Registra el documento, su fecha de firma y vigencia; asócialo a los procesos y consulta su historial cuando lo necesites.</p>
                     </article>
 
                     <article class="capability-card">
                         <span class="capability-icon">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/><path d="M18 3v3"/></svg>
                         </span>
-                        <h3>Finanzas ligadas a la atención, no a una hoja aparte.</h3>
-                        <p>Define valores por sesión, crea paquetes, organiza planes por cuotas, registra pagos y devoluciones, y entiende qué está pagado o por cobrar.</p>
-                        <ul class="capability-tags"><li>Sesiones</li><li>Paquetes</li><li>Cuotas</li><li>Trazabilidad</li></ul>
+                        <h3>Finanzas conectadas a la atención.</h3>
+                        <p>Define valores, crea paquetes o cuotas, registra pagos y devoluciones, y ve con claridad qué está pagado o pendiente.</p>
                     </article>
                 </div>
             </div>
@@ -2509,11 +3479,9 @@
             <p>Genera un link por el valor pendiente y compártelo por WhatsApp. Tu paciente paga en el checkout seguro de Wompi y <strong>Verdme actualiza el cobro y el saldo del proceso</strong>. El dinero llega directamente a tu cuenta Wompi: Verdme no lo recibe ni lo custodia.</p>
 
             <div class="payment-methods-grid">
-                <div class="method-tag">Sesiones individuales</div>
-                <div class="method-tag">Paquetes completos</div>
-                <div class="method-tag">Cuotas de paquete</div>
-                <div class="method-tag">Link directo a WhatsApp</div>
-                <div class="method-tag">Seguimiento de transacciones</div>
+                <div class="method-tag">Sesiones, paquetes y cuotas</div>
+                <div class="method-tag">Link listo para compartir por WhatsApp</div>
+                <div class="method-tag">Seguimiento del estado reportado por Wompi</div>
             </div>
         </div>
 
@@ -2645,13 +3613,19 @@
         </div>
     </section>
 
-    <section class="cta-final">
-        <p class="section-kicker">El siguiente paso puede ser simple</p>
-        <h2>Menos sistemas abiertos. Más continuidad en tu práctica.</h2>
-        <p>Cuéntanos cómo trabajas hoy y conoce si Verdme encaja en la forma en que llevas tu consultorio.</p>
-        <div class="cta-actions">
-            <a href="mailto:support@verdme.com?subject=Quiero%20conocer%20Verdme&amp;body=Hola%2C%20quiero%20conocer%20Verdme%20para%20mi%20pr%C3%A1ctica%20profesional.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A" class="btn-primary-solid">Solicitar acceso</a>
-            <a href="https://app.verdme.com" class="button-secondary">Ya uso Verdme</a>
+    <section class="cta-final" id="acceso">
+        <div class="cta-final-shell">
+            <div class="cta-final-copy">
+                <p class="section-kicker">Conoce Verdme en tu consultorio</p>
+                <h2>Tu práctica merece un sistema que mantenga el hilo.</h2>
+                <p>Cuéntanos cómo trabajas hoy y revisemos si Verdme encaja en la forma en que organizas tu atención.</p>
+            </div>
+            <div class="cta-final-action">
+                <div class="cta-actions">
+                    <a href="mailto:support@verdme.com?subject=Quiero%20conocer%20Verdme&amp;body=Hola%2C%20quiero%20conocer%20Verdme%20para%20mi%20pr%C3%A1ctica%20profesional.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A" class="btn-primary-solid">Solicitar acceso</a>
+                    <a href="https://app.verdme.com" class="button-secondary">Ya uso Verdme</a>
+                </div>
+            </div>
         </div>
     </section>
     </main>

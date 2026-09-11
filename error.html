@@ -3,204 +3,565 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página no encontrada | MindFlow</title>
+    <title>Página no encontrada | Verdme</title>
+    <meta name="description" content="La página que buscas no está disponible. Regresa a Verdme, inicia sesión o contacta soporte para continuar con tu práctica sin perder el hilo.">
+    <meta name="theme-color" content="#F6F6F3">
     <style>
-        /* =========================================
-           Variables CSS & Reset (Mismo estilo principal)
-        ========================================= */
         :root {
-            --primary: #4F46E5;
-            --primary-hover: #4338CA;
-            --bg-color: #F8FAFC;
-            --text-main: #0F172A;
-            --text-muted: #475569;
-            --accent-purple: #8B5CF6;
+            --paper: #F6F6F3;
+            --surface: #FFFFFF;
+            --sage-soft: #E2E7E0;
+            --sage-line: #D8DCD7;
+            --line-soft: #DFE4DE;
+            --forest: #315B43;
+            --forest-deep: #263C2E;
+            --ink: #242926;
+            --ink-muted: #5F675F;
+            --font-verdme: Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            --container: 1200px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
         }
 
         * {
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        html {
+            min-width: 320px;
+            background: var(--paper);
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
+            min-width: 320px;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--font-verdme);
+            font-size: 1rem;
             line-height: 1.6;
+            text-rendering: optimizeLegibility;
             -webkit-font-smoothing: antialiased;
-            overflow: hidden; /* Evita scroll innecesario en la página de error */
         }
 
-        /* =========================================
-           Navegación Superior
-        ========================================= */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.2rem 5%;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(12px);
+        a {
+            color: inherit;
+        }
+
+        ::selection {
+            background: var(--sage-line);
+            color: var(--forest-deep);
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--forest);
+            outline-offset: 3px;
+        }
+
+        .skip-link {
             position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            z-index: 100;
+            top: 0.7rem;
+            left: 0.7rem;
+            padding: 0.7rem 1rem;
+            border-radius: 6px;
+            background: var(--forest-deep);
+            color: #FFFFFF;
+            font-weight: 600;
+            text-decoration: none;
+            transform: translateY(-160%);
+            transition: transform 160ms ease;
+        }
+
+        .skip-link:focus {
+            transform: translateY(0);
+        }
+
+        .site-header {
+            position: relative;
+            z-index: 10;
+            border-bottom: 1px solid var(--sage-line);
+            background: rgba(246, 246, 243, 0.94);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        .nav-shell {
+            width: min(calc(100% - 2rem), var(--container));
+            min-height: 72px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--text-main);
-            letter-spacing: -0.5px;
-            text-decoration: none;
-        }
-        
-        .logo span { color: var(--primary); }
-
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
+            display: inline-flex;
             align-items: center;
-        }
-
-        .btn-login {
-            text-decoration: none;
-            color: var(--text-muted);
+            gap: 0.25rem;
+            color: var(--ink);
+            font-size: 1.35rem;
             font-weight: 600;
-            font-size: 0.95rem;
-            transition: color 0.2s;
+            letter-spacing: -0.035em;
+            text-decoration: none;
         }
 
-        .btn-login:hover { color: var(--primary); }
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+        }
 
-        /* =========================================
-           Sección de Error 404
-        ========================================= */
-        .error-section {
-            height: 100vh;
+        .logo-wordmark span {
+            color: var(--forest);
+        }
+
+        .login-link,
+        .button-primary,
+        .button-secondary {
+            min-height: 48px;
+            padding: 0.8rem 1rem;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 0.92rem;
+            font-weight: 600;
+            line-height: 1;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+        }
+
+        .login-link,
+        .button-secondary {
+            border: 1px solid var(--sage-line);
+            background: rgba(255, 255, 255, 0.62);
+            color: var(--ink);
+        }
+
+        .login-link:hover,
+        .button-secondary:hover {
+            border-color: var(--forest);
+            background: var(--surface);
+        }
+
+        .button-primary {
+            border: 1px solid var(--forest-deep);
+            background: var(--forest-deep);
+            color: #FFFFFF;
+        }
+
+        .button-primary:hover {
+            background: var(--forest);
+            transform: translateY(-1px);
+        }
+
+        .button-primary svg,
+        .button-secondary svg {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px;
+        }
+
+        .error-main {
+            flex: 1;
+            padding: clamp(3rem, 7vw, 6.5rem) 1rem;
+            display: grid;
+            align-items: center;
+            background:
+                linear-gradient(rgba(49, 91, 67, 0.028) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(49, 91, 67, 0.028) 1px, transparent 1px),
+                var(--paper);
+            background-size: 44px 44px;
+        }
+
+        .error-layout {
+            width: min(100%, var(--container));
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(300px, 0.72fr) minmax(0, 1.28fr);
+            border-top: 1px solid var(--sage-line);
+            border-bottom: 1px solid var(--sage-line);
+            background: var(--surface);
+        }
+
+        .error-visual {
+            min-height: 480px;
+            padding: clamp(2rem, 5vw, 4rem);
+            border-right: 1px solid var(--sage-line);
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 5%;
-            max-width: 800px;
-            margin: 0 auto;
+            justify-content: space-between;
+            overflow: hidden;
+            background: var(--sage-soft);
         }
 
         .error-code {
-            font-size: 8rem;
-            font-weight: 900;
-            line-height: 1;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--primary), var(--accent-purple));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: fadeInDown 0.6s ease-out;
+            color: var(--forest-deep);
+            font-size: clamp(7rem, 14vw, 12rem);
+            font-weight: 600;
+            letter-spacing: -0.08em;
+            line-height: 0.82;
+            animation: arrive 500ms ease-out both;
         }
 
-        .error-title {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            letter-spacing: -0.5px;
-            animation: fadeInUp 0.6s ease-out 0.1s both;
+        .route-status {
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .route-status p {
+            color: var(--ink-muted);
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .route-line {
+            display: grid;
+            grid-template-columns: 10px 1fr 32px;
+            align-items: center;
+            color: var(--forest);
+        }
+
+        .route-line::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 999px;
+            background: var(--forest);
+        }
+
+        .route-line > span {
+            height: 1px;
+            background: var(--forest);
+        }
+
+        .route-line svg {
+            width: 32px;
+            height: 32px;
+            padding: 7px;
+            border: 1px solid var(--forest);
+            border-radius: 999px;
+        }
+
+        .error-copy {
+            padding: clamp(2.4rem, 6vw, 5.5rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            animation: arrive 500ms ease-out 80ms both;
+        }
+
+        .kicker {
+            width: fit-content;
+            margin-bottom: 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            color: var(--forest);
+            font-size: 0.76rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            line-height: 1.4;
+            text-transform: uppercase;
+        }
+
+        .kicker::before {
+            content: "";
+            width: 24px;
+            height: 1px;
+            background: var(--forest);
+        }
+
+        h1 {
+            max-width: 690px;
+            color: var(--ink);
+            font-size: clamp(2.7rem, 5.5vw, 4.8rem);
+            font-weight: 600;
+            letter-spacing: -0.05em;
+            line-height: 1;
         }
 
         .error-description {
-            font-size: 1.15rem;
-            color: var(--text-muted);
-            margin-bottom: 2.5rem;
-            max-width: 500px;
-            animation: fadeInUp 0.6s ease-out 0.2s both;
+            max-width: 650px;
+            margin-top: 1.35rem;
+            color: var(--ink-muted);
+            font-size: 1.08rem;
+            line-height: 1.72;
         }
 
-        .error-ctas {
+        .error-actions {
+            margin-top: 2rem;
             display: flex;
-            gap: 1rem;
-            animation: fadeInUp 0.6s ease-out 0.3s both;
+            flex-wrap: wrap;
+            gap: 0.75rem;
         }
 
-        .btn-primary-large {
-            background: var(--text-main);
-            color: white;
-            padding: 0.9rem 2rem;
-            border-radius: 12px;
-            text-decoration: none;
-            font-size: 1rem;
+        .account-hint {
+            max-width: 610px;
+            margin-top: 1.35rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--line-soft);
+            color: var(--ink-muted);
+            font-size: 0.88rem;
+        }
+
+        .account-hint a {
+            color: var(--forest-deep);
             font-weight: 600;
-            transition: all 0.3s ease;
+            text-underline-offset: 3px;
         }
 
-        .btn-primary-large:hover {
-            background: #000;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        .site-footer {
+            padding: 0 1rem 1.7rem;
         }
 
-        .btn-secondary-large {
-            background: white;
-            color: var(--text-main);
-            padding: 0.9rem 2rem;
-            border-radius: 12px;
+        .footer-shell {
+            width: min(100%, var(--container));
+            margin: 0 auto;
+            padding-top: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.25rem;
+            color: var(--ink-muted);
+            font-size: 0.8rem;
+        }
+
+        .footer-shell a {
             text-decoration: none;
-            font-size: 1rem;
-            font-weight: 600;
-            border: 1px solid #E2E8F0;
-            transition: all 0.3s ease;
         }
 
-        .btn-secondary-large:hover {
-            border-color: #CBD5E1;
-            background: #F8FAFC;
+        .footer-shell a:hover {
+            color: var(--ink);
         }
 
-        /* =========================================
-           Animaciones
-        ========================================= */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+        @keyframes arrive {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .error-code { font-size: 6rem; }
-            .error-title { font-size: 2rem; }
-            .error-ctas { flex-direction: column; width: 100%; max-width: 300px; }
-            .btn-primary-large, .btn-secondary-large { width: 100%; text-align: center; }
+        @media (max-width: 820px) {
+            .error-main {
+                padding-block: 3.5rem;
+            }
+
+            .error-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .error-visual {
+                min-height: 220px;
+                border-right: 0;
+                border-bottom: 1px solid var(--sage-line);
+                flex-direction: row;
+                align-items: end;
+                gap: 2rem;
+            }
+
+            .error-code {
+                font-size: clamp(6rem, 24vw, 9rem);
+            }
+
+            .route-status {
+                width: min(260px, 45%);
+            }
+
+            .error-copy {
+                padding: 3.25rem clamp(1.5rem, 7vw, 3.5rem);
+            }
+
+            h1 {
+                font-size: clamp(2.65rem, 9vw, 4rem);
+            }
+        }
+
+        @media (max-width: 520px) {
+            .nav-shell {
+                min-height: 66px;
+            }
+
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+                flex-basis: 40px;
+            }
+
+            .logo {
+                font-size: 1.08rem;
+            }
+
+            .login-link {
+                min-height: 44px;
+                padding-inline: 0.75rem;
+                font-size: 0.82rem;
+            }
+
+            .error-main {
+                padding: 2rem 1rem 3rem;
+                align-items: start;
+            }
+
+            .error-visual {
+                min-height: 164px;
+                padding: 1.5rem;
+                align-items: center;
+            }
+
+            .error-code {
+                font-size: clamp(5rem, 27vw, 7rem);
+            }
+
+            .route-status {
+                width: 42%;
+            }
+
+            .route-status p {
+                font-size: 0.7rem;
+                letter-spacing: 0.06em;
+            }
+
+            .error-copy {
+                padding: 2.5rem 1.25rem;
+            }
+
+            .kicker {
+                margin-bottom: 1rem;
+                font-size: 0.7rem;
+                letter-spacing: 0.09em;
+            }
+
+            h1 {
+                font-size: clamp(2.5rem, 12vw, 3.05rem);
+            }
+
+            .error-description {
+                margin-top: 1.1rem;
+                font-size: 1rem;
+                line-height: 1.65;
+            }
+
+            .error-actions {
+                margin-top: 1.6rem;
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .button-primary,
+            .button-secondary {
+                width: 100%;
+            }
+
+            .footer-shell {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
         }
     </style>
 </head>
 <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- Navegación -->
-    <nav>
-        <!-- Al hacer clic en el logo, regresará a la landing -->
-        <a href="/index.html" class="logo">Mind<span>Flow</span></a>
-        <div class="nav-links">
-            <a href="/login" class="btn-login">Iniciar sesión</a>
-        </div>
-    </nav>
+    <header class="site-header">
+        <div class="nav-shell">
+            <a class="logo" href="/index.html" aria-label="Verdme, volver al inicio">
+                <svg class="logo-icon" aria-hidden="true" width="64" height="64" viewBox="0 0 400 400">
+                    <defs>
+                        <linearGradient id="errorLogoLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#2B6645"/>
+                            <stop offset="100%" stop-color="#1F4A34"/>
+                        </linearGradient>
+                        <linearGradient id="errorLogoRight" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#BDDCC9"/>
+                            <stop offset="100%" stop-color="#327A51"/>
+                        </linearGradient>
+                        <linearGradient id="errorLogoCircle" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#D9B978"/>
+                            <stop offset="100%" stop-color="#8A6229"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="216" r="132" fill="#BDDCC9" opacity="0.28"/>
+                    <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#errorLogoLeft)"/>
+                    <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#errorLogoRight)"/>
+                    <circle cx="200" cy="92" r="30" fill="url(#errorLogoCircle)"/>
+                    <circle cx="200" cy="92" r="46" fill="none" stroke="#BDDCC9" stroke-width="3"/>
+                </svg>
+                <span class="logo-wordmark">Verd<span>me</span></span>
+            </a>
 
-    <!-- Contenido 404 -->
-    <main class="error-section">
-        <div class="error-code">404</div>
-        <h1 class="error-title">Parece que perdimos el hilo de esta sesión.</h1>
-        <p class="error-description">La página que intentas consultar no existe, ha cambiado de nombre o fue movida. Regresemos a un lugar seguro.</p>
-        
-        <div class="error-ctas">
-            <!-- Asegúrate de que este enlace apunte a la raíz de tu bucket/dominio -->
-            <a href="/index.html" class="btn-primary-large">Volver al inicio</a>
-            <a href="mailto:soporte@tudominio.com" class="btn-secondary-large">Contactar soporte</a>
+            <a href="https://app.verdme.com" class="login-link">Iniciar sesión</a>
         </div>
+    </header>
+
+    <main class="error-main" id="contenido">
+        <section class="error-layout" aria-labelledby="error-title">
+            <div class="error-visual" aria-hidden="true">
+                <div class="error-code">404</div>
+                <div class="route-status">
+                    <p>Ruta no disponible</p>
+                    <div class="route-line">
+                        <span></span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 8 8 8M16 8l-8 8"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="error-copy">
+                <p class="kicker">Página no encontrada</p>
+                <h1 id="error-title">Esta página perdió el hilo.</h1>
+                <p class="error-description">No encontramos la dirección que abriste. Puede haber cambiado o ya no estar disponible. Vuelve a Verdme y continúa desde un lugar conocido.</p>
+
+                <div class="error-actions">
+                    <a href="/index.html" class="button-primary">
+                        Volver al inicio
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M14 7l5 5-5 5"/></svg>
+                    </a>
+                    <a href="mailto:support@verdme.com?subject=Necesito%20ayuda%20con%20Verdme" class="button-secondary">
+                        Contactar soporte
+                    </a>
+                </div>
+
+                <p class="account-hint">Si buscabas tu espacio de trabajo, puedes <a href="https://app.verdme.com">abrir Verdme e iniciar sesión</a>.</p>
+            </div>
+        </section>
     </main>
 
+    <footer class="site-footer">
+        <div class="footer-shell">
+            <span>Verdme · Gestión clínica para psicólogos.</span>
+            <a href="mailto:support@verdme.com">support@verdme.com</a>
+        </div>
+    </footer>
 </body>
 </html>

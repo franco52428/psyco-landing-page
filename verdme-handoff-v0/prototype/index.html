@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang=es>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Verdme</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f6f6f3;color:#242926;font:14px Arial}.app{display:grid;grid-template-columns:210px 330px 1fr;min-height:100vh}.side,.directory{border-right:1px solid #d8dcd7;background:#fafaf8;padding:32px 22px}.logo{height:42px;margin:3px 0 61px;display:flex;align-items:center}.logo img{display:block;width:148px;height:auto;max-height:42px;object-fit:contain;object-position:left center}.nav div{padding:14px;margin:7px 0}.nav .active,.person.active{background:#e2e7e0}.directory{padding:38px 15px}.head{display:flex;justify-content:space-between;padding:0 10px 25px;font:22px Georgia}.new{font:12px Arial;color:#365943;font-weight:bold}.search{border-bottom:1px solid #d8dcd7;padding:13px 10px;color:#7c847e}.person{padding:17px 12px;border-bottom:1px solid #e1e4df}.person b,.person small{display:block}.person small,.muted{color:#717970;margin-top:6px}.main{padding:31px 58px}.top{text-align:right}.btn{border:1px solid #bfc5bf;border-radius:6px;padding:10px 14px;background:#fff;font-weight:bold;margin-left:8px}.dark,.save{background:#263c2e!important;color:#fff}.back{margin-top:-34px;width:38px;height:38px;border:1px solid #d2d7d1;border-radius:50%;display:grid;place-items:center}.intro{margin:58px 20px 34px}.intro h1{font:34px Georgia;margin:0 0 12px}.facts{display:flex;gap:48px;margin-top:34px}.fact{padding-left:22px;border-left:1px solid #d8dcd7;color:#717970;font-size:12px}.fact b{display:block;font-size:14px;color:#242926;margin-top:6px}.sections{max-width:1020px}.section{background:#fff;border:1px solid #d8dcd7;border-radius:9px}.section-head{display:grid;grid-template-columns:1fr auto auto;gap:16px;align-items:center;padding:22px 25px;cursor:pointer}.section-head h2{font-size:16px;margin:0 0 5px}.section-head p{margin:0;color:#757d76;font-size:13px}.badge{font-size:12px;background:#edf0eb;padding:8px 10px;border-radius:16px}.chev{font-size:17px}.contents{border-top:1px solid #e1e4df;padding:0 25px}.row{display:grid;grid-template-columns:250px 1fr auto;align-items:center;min-height:62px;border-bottom:1px solid #e6e8e4;cursor:pointer}.row:hover,.row.selected{background:#f4f6f2}.label{color:#6c746e}.value{font-weight:500}.empty{color:#8a908b;font-weight:normal}.edit{display:none;border:0;background:transparent;font-size:18px;cursor:pointer}.selected .edit{display:block}.inline{width:100%;padding:9px;border:1px solid #aab1aa;border-radius:4px;font:14px Arial}.actions{display:flex;gap:8px}.save,.cancel{padding:8px 11px;border-radius:4px;border:0;font-weight:bold}.cancel{background:transparent;color:#667068}@media(max-width:900px){.app{grid-template-columns:1fr}.side,.directory{display:none}.main{padding:24px}.row{grid-template-columns:1fr auto}.value{grid-column:1}.section-head{grid-template-columns:1fr auto auto}}</style>
+<style>.logo{height:56px;margin:0 0 53px}.logo img{width:142px;max-height:56px}</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&display=swap');body,button,input,textarea,.head,.new,.inline,.btn,.save,.cancel{font-family:'Bricolage Grotesque',Arial,sans-serif!important}.intro h1{font-family:'Bricolage Grotesque',Arial,sans-serif;font-weight:600;letter-spacing:-.045em}.head{font-weight:600;letter-spacing:-.025em}.section-head h2,.person b{font-weight:600}.section-head p,.person small,.muted,.search,.label{font-weight:400}.value{font-weight:500}</style>
+<body>
+<main class=app>
+<aside class=side>
+<div class=logo><img src="brand/verdme-lockup-temporal.png" alt="Verdme"></div>
+<nav class=nav>
+<div class=active>Pacientes</div>
+<div>Agenda</div>
+<div>Procesos clínicos</div>
+<div>Cobros y finanzas</div>
+<div>Biblioteca</div>
+<div>Reportes</div>
+</nav>
+</aside>
+<section class=directory>
+<div class=head>Pacientes <span class=new>＋ Nuevo paciente</span>
+</div>
+<div class=search>⌕　Buscar paciente…</div>
+<div class="person active">
+<b>Mariana Hurtado</b>
+<small>Terapia de pareja</small>
+</div>
+<div class=person>
+<b>Camilo Pérez</b>
+<small>Proceso individual</small>
+</div>
+<div class=person>
+<b>Diego López</b>
+<small>Proceso individual</small>
+</div>
+<div class=person>
+<b>Laura Torres</b>
+<small>Proceso individual</small>
+</div>
+</section>
+<section class=main>
+<div class=top>
+<button class="btn dark">Nueva nota</button>
+<button class=btn>Programar sesión</button>
+</div>
+<div class=back>←</div>
+<header class=intro>
+<h1>Mariana Hurtado</h1>
+<div class=muted>Paciente desde jul 2026 · Terapia de pareja</div>
+<div class=facts>
+<div class=fact>Última sesión<b>21 jul 2026</b>
+</div>
+<div class=fact>Próxima sesión<b>Sin programar</b>
+</div>
+</div>
+</header>
+<article class=section>
+<header class=section-head id=toggle>
+<div>
+<h2>Información personal</h2>
+<p>Contacto, documentos, consentimiento y datos personalizados</p>
+</div>
+<span class=badge>Consentimiento pendiente</span>
+<span class=chev>⌃</span>
+</header>
+<div class=contents id=contents>
+<div id=rows>
+</div>
+</div>
+</article>
+<article class="section clinical-wire">
+<header class="section-head">
+<div>
+<h2>Información clínica</h2>
+<p>Procesos clínicos vinculados a Mariana</p>
+</div>
+<span class="chev">⌄</span>
+</header>
+<div class="process-list">
+<div class="process-row" tabindex="0">
+<div>
+<span class="process-name">Terapia de pareja</span>
+<span class="process-meta">Iniciado en jul 2026 · Última sesión: 21 jul 2026</span>
+</div>
+<div class="process-right"><span class="state">Activo</span><span class="link-process">Ver proceso →</span></div>
+</div>
+<div class="process-row" tabindex="0">
+<div>
+<span class="process-name">Ansiedad laboral</span>
+<span class="process-meta">Iniciado en feb 2026 · Última sesión: 14 may 2026</span>
+</div>
+<div class="process-right"><span class="state pause">Pausado</span><span class="link-process">Ver proceso →</span></div>
+</div>
+<div class="associate">＋ Vincular proceso</div>
+</div>
+</article>
+<article class="section billing-wire">
+<header class="section-head">
+<div>
+<h2>Resumen financiero</h2>
+<p>Situación general de dinero de Mariana</p>
+</div>
+<span class="chev">⌄</span>
+</header>
+<div class="billing-content">
+<div class="money-grid">
+<div class="money-item"><span class="money-label">Cobrado</span><span class="money-value">$1.200.000</span></div>
+<div class="money-item"><span class="money-label">Por cobrar</span><span class="money-value">$240.000</span></div>
+<div class="money-item"><span class="money-label">Por definir</span><span class="money-value">2 sesiones</span></div>
+</div>
+<p class="money-help">Resumen desde el inicio del paciente. Las sesiones por definir aún no representan un cobro.</p>
+<button class="patient-finance-link" type="button">Ver cobros de Mariana <span>→</span></button>
+<div class="finance-config">
+<div class="finance-row"><strong>Valor acordado por sesión</strong><span>$200.000</span></div>
+<div class="packages-title"><strong>Paquetes de sesiones</strong></div>
+<div class="package-item"><b>Paquete marzo</b><small>Terapia de pareja · 0 de 4 sesiones usadas</small><div class="package-bottom"><span>Saldo del paquete: $400.000</span><button class="package-link" type="button">Ver paquete →</button></div></div>
+</div>
+</div>
+</article>
+</section>
+</main>
+<script>const data=[['Alias','Mariana Hurtado'],['Correo de contacto','mariana.hurtado@email.com'],['Nombres','Mariana'],['Apellidos','Hurtado'],['Teléfonos de contacto','+57 300 000 0000'],['Fecha de nacimiento','No disponible'],['Dirección','No disponible']];let sel=null,editing=null;let box=document.querySelector('#rows');function draw(){box.innerHTML='';data.forEach((d,i)=>{let r=document.createElement('div');r.className='row '+(sel===i?'selected':'');let v=editing===i?`<input class=inline value="${d[1]=='No disponible'?'':d[1]}">`:`<span class="value ${d[1]=='No disponible'?'empty':''}">${d[1]}</span>`;let act=editing===i?`<span class=actions>
+<button class=save>Guardar</button>
+<button class=cancel>Cancelar</button>
+</span>`:`<button class=edit aria-label=Editar>✎</button>`;r.innerHTML=`<span class=label>${d[0]}</span>${v}${act}`;r.onclick=e=>{if(!e.target.closest('button')&&!e.target.closest('input')&&editing===null){sel=i;draw()}};if(editing===i){r.querySelector('.save').onclick=()=>{let v=r.querySelector('input').value.trim();if(v)data[i][1]=v;editing=null;sel=null;draw()};r.querySelector('.cancel').onclick=()=>{editing=null;sel=null;draw()}}else r.querySelector('.edit').onclick=e=>{e.stopPropagation();editing=i;sel=i;draw()};box.append(r)})}draw();document.querySelector('#toggle').onclick=()=>{let x=document.querySelector('#contents');x.style.display=x.style.display==='none'?'block':'none';document.querySelector('.chev').textContent=x.style.display==='none'?'⌄':'⌃'}</script>
+<script>document.addEventListener('DOMContentLoaded',()=>{const rows=document.querySelector('#rows');const group=document.createElement('div');group.innerHTML='<div class="row extra">
+<span class="label">Consentimientos</span>
+<span class="value empty">Sin consentimientos</span>
+<button class="edit" aria-label="Registrar consentimiento">＋</button>
+</div>
+<div class="row extra">
+<span class="label">Contactos de emergencia</span>
+<span class="value empty">Sin contactos registrados</span>
+<button class="edit" aria-label="Registrar contacto">＋</button>
+</div>
+<div class="row extra">
+<span class="label">Datos personalizados</span>
+<span class="value empty">Sin datos personalizados</span>
+<button class="edit" aria-label="Registrar dato">＋</button>
+</div>';rows.append(group);group.querySelectorAll('.extra').forEach(r=>r.onclick=()=>r.classList.toggle('selected'))})</script>
+<style>.clinical-wire{margin-top:14px}.clinical-wire .section-head{cursor:default}.process-list{border-top:1px solid #e1e4df;padding:0 25px}.process-row{display:grid;grid-template-columns:1fr auto;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #e6e8e4;cursor:pointer}.process-row:last-child{border:0}.process-row:hover{background:#f4f6f2}.process-name{font-weight:600}.process-meta{display:block;color:#747d76;font-size:13px;margin-top:6px}.process-right{display:flex;align-items:center;gap:12px}.state{font-size:11px;letter-spacing:.06em;text-transform:uppercase;border-radius:12px;padding:5px 8px;background:#e5eee4;color:#2d5d3c}.state.pause{background:#ededeb;color:#667068}.link-process{font-size:13px;color:#365943;font-weight:bold}.associate{padding:16px 0 20px;text-align:right;color:#365943;font-size:13px;font-weight:bold}.process-note{padding:16px 25px 0;color:#7a827b;font-size:12px}</style>
+<script>document.addEventListener('DOMContentLoaded',()=>{if(document.querySelector('.clinical-wire'))return;let personal=document.querySelector('.section');if(!personal)return;let clinical=document.createElement('article');clinical.className='section clinical-wire';clinical.innerHTML='<header class="section-head">
+<div>
+<h2>Información clínica</h2>
+<p>Procesos clínicos vinculados a Mariana</p>
+</div>
+<span class="badge">2 procesos</span>
+<span class="chev">⌃</span>
+</header>
+<div class="process-list">
+<div class="process-row" tabindex="0">
+<div>
+<span class="process-name">Terapia de pareja</span>
+<span class="process-meta">Iniciado en jul 2026 · Última sesión: 21 jul 2026</span>
+</div>
+<div class="process-right">
+<span class="state">Activo</span>
+<span class="link-process">Ver proceso →</span>
+</div>
+</div>
+<div class="process-row" tabindex="0">
+<div>
+<span class="process-name">Ansiedad laboral</span>
+<span class="process-meta">Iniciado en feb 2026 · Última sesión: 14 may 2026</span>
+</div>
+<div class="process-right">
+<span class="state pause">Pausado</span>
+<span class="link-process">Ver proceso →</span>
+</div>
+</div>
+<div class="associate">＋ Vincular proceso</div>
+</div>
+</article>';personal.after(clinical)})</script>
+<style>.badge,.state,.link-process{display:none!important}.section-head{grid-template-columns:1fr auto!important}.section-head .chev{display:block!important}.section-head{cursor:pointer!important}.process-list{display:none}.section.is-open .process-list{display:block}.section.is-open .chev{transform:rotate(180deg)}</style>
+<script>document.addEventListener('DOMContentLoaded',()=>{const personal=document.querySelector('.section');const pContent=document.querySelector('#contents');if(pContent)pContent.style.display='none';document.querySelectorAll('.section').forEach(s=>{const h=s.querySelector('.section-head');if(!h)return;h.onclick=()=>{if(s===personal){pContent.style.display=pContent.style.display==='none'?'block':'none';s.classList.toggle('is-open',pContent.style.display==='block')}else{s.classList.toggle('is-open')}}})})</script>
+<style>.top{display:none}.main{padding-top:24px}.back{margin-top:0}.intro{margin:24px 20px 26px}.facts{margin-top:26px}</style>
+<style>.billing-wire{margin-top:14px}.billing-wire .section-head{cursor:pointer}.billing-content{display:none;border-top:1px solid #e1e4df;padding:0 25px}.billing-wire.is-open .billing-content{display:block}.money-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:23px 0}.money-item{padding:0 20px;border-right:1px solid #e3e6e1}.money-item:first-child{padding-left:0}.money-item:last-child{border:0}.money-label{display:block;color:#737b75;font-size:13px;margin-bottom:8px}.money-value{font-size:21px;font-weight:600;color:#242926}.money-help{margin:0 0 20px;color:#7c847e;font-size:12px}@media(max-width:700px){.money-grid{grid-template-columns:1fr}.money-item{padding:14px 0;border-right:0;border-bottom:1px solid #e3e6e1}.money-item:last-child{border:0}}</style>
+<script>document.addEventListener('DOMContentLoaded',()=>{if(document.querySelector('.billing-wire'))return;let clinical=[...document.querySelectorAll('.section')].find(x=>x.querySelector('.clinical-wire'))||document.querySelector('.clinical-wire');if(!clinical)return;let bill=document.createElement('article');bill.className='section billing-wire';bill.innerHTML='<header class="section-head">
+<div>
+<h2>Resumen de cobros</h2>
+<p>Situación general de dinero de Mariana</p>
+</div>
+<span class="chev">⌄</span>
+</header>
+<div class="billing-content">
+<div class="money-grid">
+<div class="money-item">
+<span class="money-label">Cobrado</span>
+<span class="money-value">$1.200.000</span>
+</div>
+<div class="money-item">
+<span class="money-label">Por cobrar</span>
+<span class="money-value">$240.000</span>
+</div>
+<div class="money-item">
+<span class="money-label">Por definir</span>
+<span class="money-value">2 sesiones</span>
+</div>
+</div>
+<p class="money-help">Resumen desde el inicio del paciente. Las sesiones por definir aún no representan un cobro.</p>
+</div>';clinical.after(bill);bill.querySelector('.section-head').onclick=()=>bill.classList.toggle('is-open')})</script>
+<style>.patient-finance-link{display:inline-flex;align-items:center;gap:8px;margin:0 0 22px;padding:0;border:0;background:transparent;color:#315c43;font:600 13px Arial;cursor:pointer}.patient-finance-link:hover{text-decoration:underline}</style>
+<script>document.addEventListener('DOMContentLoaded',()=>{const content=document.querySelector('.billing-content');if(!content||content.querySelector('.patient-finance-link'))return;const link=document.createElement('button');link.className='patient-finance-link';link.type='button';link.innerHTML='Ver cobros de Mariana <span>→</span>';link.onclick=()=>{};content.append(link)})</script>
+<script>document.addEventListener('DOMContentLoaded',()=>{const intro=document.querySelector('.intro');if(!intro)return;const subtitle=intro.querySelector('.muted');if(subtitle)subtitle.textContent='Desde julio del 2026';const facts=intro.querySelector('.facts');if(facts)facts.remove()})</script>
+<style>.manage-modal{position:fixed;inset:0;display:none;place-items:center;background:rgba(23,30,25,.32);z-index:20}.manage-modal.open{display:grid}.manage-card{width:min(620px,calc(100vw - 32px));max-height:80vh;overflow:auto;background:#fff;border-radius:12px;padding:26px;box-shadow:0 18px 56px rgba(0,0,0,.18)}.manage-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e2e5e0;padding-bottom:17px}.manage-top h3{margin:0;font-size:18px}.icon-close{border:0;background:transparent;font-size:22px;cursor:pointer}.manage-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:22px}.minor-btn{border:1px solid #cbd1ca;background:white;border-radius:6px;padding:9px 12px;font-weight:600}.major-btn{border:0;background:#263c2e;color:#fff;border-radius:6px;padding:9px 12px;font-weight:600}.entry{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid #edf0eb}.entry:last-child{border:0}.entry strong{display:block}.entry span{color:#737b75;font-size:13px;display:block;margin-top:4px}.entry button{border:0;background:transparent;color:#315c43;font-weight:bold;cursor:pointer}.form-view{padding-top:20px}.form-view label{display:block;color:#6c746e;font-size:13px;margin:14px 0 6px}.form-view input,.form-view textarea{width:100%;padding:10px;border:1px solid #bfc7be;border-radius:5px;font:14px Arial}.form-view textarea{min-height:72px;resize:vertical}.row.extra{cursor:pointer}</style>
+<script>document.addEventListener('DOMContentLoaded',()=>setTimeout(()=>{const contacts=[{name:'Laura Gómez',relation:'Hermana',phone:'+57 300 456 7812',email:'laura@email.com',note:''}];const custom=[{key:'Ocupación',value:'Arquitecta'},{key:'Ciudad',value:'Bogotá'}];let activeType=null;const modal=document.createElement('div');modal.className='manage-modal';modal.innerHTML='<div class="manage-card">
+<div class="manage-top">
+<h3>
+</h3>
+<button class="icon-close">×</button>
+</div>
+<div class="manage-body">
+</div>
+</div>';document.body.append(modal);const close=()=>modal.classList.remove('open');modal.querySelector('.icon-close').onclick=close;modal.onclick=e=>{if(e.target===modal)close()};function renderList(){const a=activeType==='contacts'?contacts:custom;const title=activeType==='contacts'?'Contactos de emergencia':'Datos personalizados';modal.querySelector('h3').textContent=title;let html='<div class="manage-list">';if(a.length)html+=a.map((x,i)=>activeType==='contacts'?`<div class="entry">
+<div>
+<strong>${x.name}</strong>
+<span>${x.relation} · ${x.phone}</span>
+</div>
+<button data-edit="${i}">Editar</button>
+</div>`:`<div class="entry">
+<div>
+<strong>${x.key}</strong>
+<span>${x.value}</span>
+</div>
+<button data-edit="${i}">Editar</button>
+</div>`).join('');else html+='<p class="muted">Aún no hay registros.</p>';html+=`</div>
+<div class="manage-actions">
+<button class="major-btn" data-add>＋ Agregar ${activeType==='contacts'?'contacto':'dato'}</button>
+</div>`;modal.querySelector('.manage-body').innerHTML=html;modal.querySelector('[data-add]').onclick=()=>renderForm();modal.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>renderForm(+b.dataset.edit));}function renderForm(i){const item=(activeType==='contacts'?contacts:custom)[i]||{};const isContact=activeType==='contacts';modal.querySelector('.manage-body').innerHTML=isContact?`<div class="form-view">
+<label>Nombre</label>
+<input id=f1 value="${item.name||''}">
+<label>Parentesco</label>
+<input id=f2 value="${item.relation||''}">
+<label>Teléfono</label>
+<input id=f3 value="${item.phone||''}">
+<label>Correo</label>
+<input id=f4 value="${item.email||''}">
+<label>Campo adicional</label>
+<textarea id=f5>${item.note||''}</textarea>
+<div class="manage-actions">
+<button class="minor-btn" data-back>Cancelar</button>
+<button class="major-btn" data-save>Guardar</button>
+</div>
+</div>`:`<div class="form-view">
+<label>Clave</label>
+<input id=f1 value="${item.key||''}">
+<label>Valor</label>
+<textarea id=f2>${item.value||''}</textarea>
+<div class="manage-actions">
+<button class="minor-btn" data-back>Cancelar</button>
+<button class="major-btn" data-save>Guardar</button>
+</div>
+</div>`;modal.querySelector('[data-back]').onclick=renderList;modal.querySelector('[data-save]').onclick=()=>{const a=activeType==='contacts'?contacts:custom;const next=isContact?{name:document.querySelector('#f1').value,relation:document.querySelector('#f2').value,phone:document.querySelector('#f3').value,email:document.querySelector('#f4').value,note:document.querySelector('#f5').value}:{key:document.querySelector('#f1').value,value:document.querySelector('#f2').value};if(i===undefined)a.push(next);else a[i]=next;refreshRows();renderList()}}function refreshRows(){document.querySelectorAll('.row.extra').forEach(r=>{const l=r.querySelector('.label')?.textContent;if(l==='Contactos de emergencia')r.querySelector('.value').textContent=contacts.length===1?`${contacts[0].name} · ${contacts[0].relation}`:`${contacts.length} contactos registrados`;if(l==='Datos personalizados')r.querySelector('.value').textContent=custom.length===1?`${custom[0].key}: ${custom[0].value}`:`${custom.length} datos personalizados`})}function open(t){activeType=t;renderList();modal.classList.add('open')}document.querySelectorAll('.row.extra').forEach(r=>{const label=r.querySelector('.label')?.textContent;if(label==='Contactos de emergencia')r.addEventListener('click',e=>{e.stopImmediatePropagation();open('contacts')},true);if(label==='Datos personalizados')r.addEventListener('click',e=>{e.stopImmediatePropagation();open('custom')},true)});refreshRows()} ,0))</script>
+<style>.finance-config{border-top:1px solid #e1e4df;margin-top:2px}.finance-row{display:grid;grid-template-columns:1fr auto;align-items:center;padding:16px 0;border-bottom:1px solid #e7e9e5}.finance-row strong{font-size:14px}.finance-row span{font-size:14px}.packages-title{display:flex;justify-content:space-between;align-items:center;padding:21px 0 10px}.packages-title strong{font-size:14px}.package-item{padding:15px 0;border-top:1px solid #e7e9e5}.package-item b{display:block}.package-item small{display:block;color:#737b75;margin-top:5px}.package-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:13px}.package-bottom span{font-weight:600}.package-link{border:0;background:transparent;padding:0;color:#315c43;font-weight:600;cursor:pointer}.package-modal{position:fixed;inset:0;display:none;place-items:center;background:rgba(23,30,25,.32);z-index:25}.package-modal.open{display:grid}.package-card{width:min(570px,calc(100vw - 32px));background:#fff;border-radius:12px;padding:26px;box-shadow:0 18px 56px rgba(0,0,0,.18)}.package-card header{display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;border-bottom:1px solid #e1e4df}.package-card h3{margin:0;font-size:19px}.package-card button.close-package{border:0;background:transparent;font-size:22px;cursor:pointer}.package-data{margin:8px 0}.package-data div{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #edf0eb}.package-data span{color:#737b75}.package-foot{display:flex;justify-content:flex-end;margin-top:21px}.package-foot button{border:0;border-radius:6px;background:#263c2e;color:#fff;padding:10px 14px;font-weight:600}</style>
+<script>document.addEventListener('DOMContentLoaded',()=>setTimeout(()=>{const content=document.querySelector('.billing-content');if(!content||content.querySelector('.finance-config'))return;const config=document.createElement('div');config.className='finance-config';config.innerHTML='<div class="finance-row">
+<strong>Valor acordado por sesión</strong>
+<span>$200.000</span>
+</div>
+<div class="packages-title">
+<strong>Paquetes de sesiones</strong>
+</div>
+<div class="package-item">
+<b>Paquete marzo</b>
+<small>Terapia de pareja · 0 de 4 sesiones usadas</small>
+<div class="package-bottom">
+<span>Saldo del paquete: $400.000</span>
+<button class="package-link">Ver paquete →</button>
+</div>
+</div>';const hint=content.querySelector('.money-help');if(hint)hint.before(config);else content.append(config);const modal=document.createElement('div');modal.className='package-modal';modal.innerHTML='<div class="package-card">
+<header>
+<div>
+<h3>Paquete marzo</h3>
+<span class="muted">Terapia de pareja</span>
+</div>
+<button class="close-package">×</button>
+</header>
+<div class="package-data">
+<div>
+<span>Sesiones usadas</span>
+<b>0 de 4</b>
+</div>
+<div>
+<span>Sesiones disponibles</span>
+<b>4</b>
+</div>
+<div>
+<span>Valor total del paquete</span>
+<b>$400.000</b>
+</div>
+<div>
+<span>Pagos recibidos</span>
+<b>$0</b>
+</div>
+<div>
+<span>Monto adeudado</span>
+<b>$400.000</b>
+</div>
+<div>
+<span>Estado</span>
+<b>Activo</b>
+</div>
+</div>
+<div class="package-foot">
+<button>Cerrar</button>
+</div>
+</div>';document.body.append(modal);const close=()=>modal.classList.remove('open');modal.querySelector('.close-package').onclick=close;modal.querySelector('.package-foot button').onclick=close;modal.onclick=e=>{if(e.target===modal)close()};config.querySelector('.package-link').onclick=()=>modal.classList.add('open')},0))</script>
+<style>
+.row.extra{display:none}.collection-row{cursor:pointer}.collection-row:hover{background:#f4f6f2}.collection-action{border:0;background:transparent;color:#315c43;font:600 13px Arial;cursor:pointer}.collection-action:hover{text-decoration:underline}.personal-modal{position:fixed;inset:0;display:none;place-items:center;background:rgba(23,30,25,.32);z-index:30}.personal-modal.open{display:grid}.personal-modal .manage-card{width:min(620px,calc(100vw - 32px))}.collection-empty{color:#7d857f;font-size:14px;padding:18px 0}.collection-tools{display:flex;gap:13px;align-items:center}.collection-tools button{border:0;background:transparent;padding:0;color:#315c43;font:600 13px Arial;cursor:pointer}.collection-tools button.remove{color:#7c6459}.collection-form{padding-top:3px}.collection-form label{display:block;color:#6c746e;font-size:13px;margin:15px 0 6px}.collection-form input,.collection-form textarea{width:100%;padding:10px;border:1px solid #bfc7be;border-radius:5px;font:14px Arial}.collection-form textarea{min-height:72px;resize:vertical}
+</style>
+<script>
+const personalCollections={contacts:[{name:'Laura Gómez',relation:'Hermana',phone:'+57 300 456 7812',email:'laura@email.com',note:''}],custom:[{key:'Ocupación',value:'Arquitecta'},{key:'Ciudad',value:'Bogotá'}]};
+const personalModal=document.createElement('div');personalModal.className='personal-modal';personalModal.innerHTML='<div class="manage-card"><div class="manage-top"><h3></h3><button class="icon-close" type="button">×</button></div><div class="manage-body"></div></div>';document.body.append(personalModal);
+const collectionTitle=type=>type==='contacts'?'Contactos de emergencia':'Datos personalizados';const collectionSummary=type=>{const items=personalCollections[type];if(!items.length)return 'Sin registros';if(type==='contacts')return items.length===1?items[0].name+' · '+items[0].relation:items.length+' contactos registrados';return items.length===1?items[0].key+': '+items[0].value:items.length+' datos personalizados'};
+function updateCollectionRows(){document.querySelectorAll('[data-collection]').forEach(row=>{const type=row.dataset.collection;row.querySelector('.value').textContent=collectionSummary(type)})}
+function openCollection(type){personalModal.dataset.type=type;renderCollectionList(type);personalModal.classList.add('open')}
+function renderCollectionList(type){const items=personalCollections[type];personalModal.querySelector('h3').textContent=collectionTitle(type);let html='<div class="manage-list">';if(!items.length){html+='<p class="collection-empty">Aún no hay registros.</p>'}else{html+=items.map((item,index)=>type==='contacts'?'<div class="entry"><div><strong>'+item.name+'</strong><span>'+item.relation+' · '+item.phone+'</span></div><div class="collection-tools"><button data-edit="'+index+'">Editar</button><button class="remove" data-remove="'+index+'">Quitar</button></div></div>':'<div class="entry"><div><strong>'+item.key+'</strong><span>'+item.value+'</span></div><div class="collection-tools"><button data-edit="'+index+'">Editar</button><button class="remove" data-remove="'+index+'">Quitar</button></div></div>').join('')}html+='</div><div class="manage-actions"><button class="major-btn" data-add type="button">＋ Agregar '+(type==='contacts'?'contacto':'dato')+'</button></div>';const body=personalModal.querySelector('.manage-body');body.innerHTML=html;body.querySelector('[data-add]').onclick=()=>renderCollectionForm(type);body.querySelectorAll('[data-edit]').forEach(button=>button.onclick=()=>renderCollectionForm(type,+button.dataset.edit));body.querySelectorAll('[data-remove]').forEach(button=>button.onclick=()=>{personalCollections[type].splice(+button.dataset.remove,1);updateCollectionRows();renderCollectionList(type)})}
+function renderCollectionForm(type,index){const item=personalCollections[type][index]||{};personalModal.querySelector('h3').textContent=(index===undefined?'Agregar ':'Editar ')+(type==='contacts'?'contacto':'dato personalizado');const body=personalModal.querySelector('.manage-body');body.innerHTML=type==='contacts'?'<div class="collection-form"><label>Nombre</label><input id="pc-name" value="'+(item.name||'')+'"><label>Parentesco</label><input id="pc-relation" value="'+(item.relation||'')+'"><label>Teléfono</label><input id="pc-phone" value="'+(item.phone||'')+'"><label>Correo</label><input id="pc-email" value="'+(item.email||'')+'"><label>Campo adicional</label><textarea id="pc-note">'+(item.note||'')+'</textarea><div class="manage-actions"><button class="minor-btn" data-back type="button">Cancelar</button><button class="major-btn" data-save type="button">Guardar</button></div></div>':'<div class="collection-form"><label>Clave</label><input id="pc-key" value="'+(item.key||'')+'"><label>Valor</label><textarea id="pc-value">'+(item.value||'')+'</textarea><div class="manage-actions"><button class="minor-btn" data-back type="button">Cancelar</button><button class="major-btn" data-save type="button">Guardar</button></div></div>';body.querySelector('[data-back]').onclick=()=>renderCollectionList(type);body.querySelector('[data-save]').onclick=()=>{const next=type==='contacts'?{name:document.querySelector('#pc-name').value.trim(),relation:document.querySelector('#pc-relation').value.trim(),phone:document.querySelector('#pc-phone').value.trim(),email:document.querySelector('#pc-email').value.trim(),note:document.querySelector('#pc-note').value.trim()}:{key:document.querySelector('#pc-key').value.trim(),value:document.querySelector('#pc-value').value.trim()};if(index===undefined)personalCollections[type].push(next);else personalCollections[type][index]=next;updateCollectionRows();renderCollectionList(type)}}
+personalModal.querySelector('.icon-close').onclick=()=>personalModal.classList.remove('open');personalModal.onclick=e=>{if(e.target===personalModal)personalModal.classList.remove('open')};
+function appendCollectionRow(type,label,action){const row=document.createElement('div');row.className='row collection-row';row.dataset.collection=type;row.innerHTML='<span class="label">'+label+'</span><span class="value">'+collectionSummary(type)+'</span><button class="collection-action" type="button">'+action+'</button>';row.onclick=()=>openCollection(type);row.querySelector('button').onclick=e=>{e.stopPropagation();openCollection(type)};document.querySelector('#rows').append(row)}
+appendCollectionRow('contacts','Contactos de emergencia','Gestionar');appendCollectionRow('custom','Datos personalizados','Ver detalle');
+</script>
+<style>
+/* Dossier continuo: capa visual únicamente. Conserva el contenido y el comportamiento existentes. */
+.main{background:#fff}
+.sections{max-width:1020px;background:transparent;border-top:1px solid #dfe4de}
+.section,.clinical-wire,.billing-wire{margin-top:0!important;background:transparent!important;border:0!important;border-radius:0!important;border-bottom:1px solid #dfe4de!important;box-shadow:none!important}
+.section-head{padding:21px 0!important}
+.contents,.process-list,.billing-content{padding-left:0!important;padding-right:0!important;background:transparent!important}
+.contents,.process-list,.billing-content{border-top:1px solid #e7ebe6!important}
+.process-row:hover,.row:hover,.row.selected{background:#f5f8f4}
+</style>
+<style>
+/* Íconos de sección: adición visual; no altera datos, estructura ni interacción. */
+.section-heading-with-icon{display:flex;align-items:center;gap:10px}
+.section-heading-icon{display:inline-flex;flex:0 0 19px;color:#315b43}
+.section-heading-icon svg{display:block;width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{setTimeout(()=>{
+ const icons={
+  'Información personal':'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"></circle><path d="M4 21c0-4.1 3.6-7 8-7s8 2.9 8 7"></path></svg>',
+  'Información clínica':'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h11a2 2 0 0 1 2 2v15a1 1 0 0 1-1.6.8L12 17.5l-4.4 3.3A1 1 0 0 1 6 20V5a2 2 0 0 1 2-2"></path><path d="M10 8h4M10 11h4"></path><path d="m14.5 15.5 4-4 1.5 1.5-4 4-2 .5z"></path></svg>',
+  'Resumen financiero':'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"></path><path d="M4 9h16"></path><path d="M15 14h4"></path><circle cx="16" cy="14" r=".7" fill="currentColor" stroke="none"></circle></svg>'
+ };
+ document.querySelectorAll('.section-head h2').forEach(h2=>{
+  if(h2.dataset.iconReady||!icons[h2.textContent.trim()])return;
+  h2.dataset.iconReady='true';h2.classList.add('section-heading-with-icon');
+  h2.insertAdjacentHTML('afterbegin','<span class="section-heading-icon">'+icons[h2.textContent.trim()]+'</span>');
+ });
+},0)});
+</script>
+<style>
+/* Avatares botánicos: adición visual localizada a la lista de pacientes. */
+.directory .person{position:relative;min-height:78px;padding:14px 12px 14px 84px;display:flex;flex-direction:column;justify-content:center}
+.patient-leaf-avatar{position:absolute;left:13px;top:50%;width:54px;height:70px;object-fit:contain;transform:translateY(-50%);mix-blend-mode:multiply;pointer-events:none}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const patientLeaves=['avatars/leaf-mariana-alpha.png','avatars/leaf-camilo-alpha.png','avatars/leaf-diego-alpha.png','avatars/leaf-laura-alpha.png'];
+ document.querySelectorAll('.directory .person').forEach((person,index)=>{
+  if(person.querySelector('.patient-leaf-avatar'))return;
+  const image=document.createElement('img');
+  image.className='patient-leaf-avatar';
+  image.src=patientLeaves[index];
+  image.alt='';
+  image.setAttribute('aria-hidden','true');
+  person.prepend(image);
+ });
+});
+</script>
+<style>
+/* Cabecera de contexto: capa visual aislada sobre la ficha actual. */
+.intro.patient-context-header{position:relative;isolation:isolate;overflow:hidden;min-height:164px;margin:20px 0 28px;padding:28px 34px 30px;background:#f1f4ef;border:1px solid #dfe5dd;box-shadow:inset 4px 0 0 #315b43}
+.intro.patient-context-header::before{content:"";position:absolute;inset:0;z-index:0;opacity:.42;background-image:linear-gradient(rgba(49,91,67,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(49,91,67,.08) 1px,transparent 1px);background-size:36px 36px;pointer-events:none}
+.intro.patient-context-header::after{content:"";position:absolute;inset:0;z-index:1;background:url('art/mariana-context-cover.png') right center/auto 100% no-repeat;opacity:.72;pointer-events:none}
+.intro.patient-context-header h1,.intro.patient-context-header .muted{position:relative;z-index:2}
+.intro.patient-context-header .muted{max-width:48%}
+.context-tech{position:absolute;z-index:3;display:block;pointer-events:none}
+.context-node{width:6px;height:6px;border-radius:50%;background:#315b43;box-shadow:0 0 0 3px rgba(241,244,239,.7)}
+.context-node-a{top:31px;right:300px}.context-node-b{bottom:32px;right:142px}
+.context-ticks{top:27px;right:226px;width:18px;height:28px;border-top:1px solid rgba(49,91,67,.52);border-bottom:1px solid rgba(49,91,67,.52)}
+.context-ticks::before,.context-ticks::after{content:"";position:absolute;right:0;width:10px;border-top:1px solid rgba(49,91,67,.52)}
+.context-ticks::before{top:8px}.context-ticks::after{bottom:8px}
+@media(max-width:700px){.intro.patient-context-header{padding:24px;min-height:150px}.intro.patient-context-header::after{background-size:auto 88%;opacity:.52}.intro.patient-context-header .muted{max-width:65%}.context-node-a{right:138px}.context-node-b{right:42px}.context-ticks{right:86px}}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const intro=document.querySelector('.intro');
+ if(!intro||intro.dataset.contextHeaderReady)return;
+ intro.dataset.contextHeaderReady='true';
+ intro.classList.add('patient-context-header');
+ intro.insertAdjacentHTML('beforeend','<span class="context-tech context-node context-node-a" aria-hidden="true"></span><span class="context-tech context-node context-node-b" aria-hidden="true"></span><span class="context-tech context-ticks" aria-hidden="true"></span>');
+});
+</script>
+<style>
+/* Señales de contexto: refuerzan la capa tecnológica sin cambiar el contenido de la ficha. */
+.intro.patient-context-header::before{opacity:.78;background-image:linear-gradient(rgba(49,91,67,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(49,91,67,.12) 1px,transparent 1px);background-size:38px 38px}
+.intro.patient-context-header .context-node{width:8px;height:8px;background:#315b43;box-shadow:0 0 0 3px rgba(241,244,239,.82)}
+.intro.patient-context-header .context-node-a{top:30px;right:298px}.intro.patient-context-header .context-node-b{bottom:27px;right:118px}
+.intro.patient-context-header .context-ticks{top:110px;left:49%;right:auto;width:25px;height:22px;border-color:rgba(49,91,67,.68)}
+.intro.patient-context-header .context-ticks::before,.intro.patient-context-header .context-ticks::after{width:14px;border-color:rgba(49,91,67,.68)}
+.context-signal-network{position:absolute;z-index:3;left:47%;top:42px;width:40%;height:82px;overflow:visible;pointer-events:none}
+.context-signal-network path{fill:none;stroke:#315b43;stroke-width:1.35;stroke-linecap:round;opacity:.58}
+.context-signal-network .signal-branch{stroke-width:1;opacity:.28}
+.context-signal-network circle{fill:#315b43;stroke:#f1f4ef;stroke-width:3}
+@media(max-width:700px){.intro.patient-context-header::before{opacity:.62}.context-signal-network{left:51%;top:46px;width:47%;opacity:.68}.intro.patient-context-header .context-ticks{left:48%;top:112px}.intro.patient-context-header .context-node-a{right:130px}.intro.patient-context-header .context-node-b{right:44px}}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const intro=document.querySelector('.intro.patient-context-header');
+ if(!intro||intro.querySelector('.context-signal-network'))return;
+ intro.insertAdjacentHTML('beforeend','<svg class="context-signal-network" viewBox="0 0 320 82" aria-hidden="true"><path d="M12 57 C47 31 67 66 102 41 S156 20 185 48 S244 62 302 22"></path><path class="signal-branch" d="M102 41 C124 57 142 64 164 70"></path><path class="signal-branch" d="M185 48 C209 31 228 19 250 13"></path><circle cx="12" cy="57" r="4"></circle><circle cx="102" cy="41" r="4"></circle><circle cx="185" cy="48" r="4"></circle><circle cx="302" cy="22" r="4"></circle></svg>');
+});
+</script>
+<style>
+/* Procesos clínicos v1: vista aislada. No modifica la ficha ni el directorio de Pacientes. */
+.nav div:nth-child(2),.nav div:nth-child(4),.nav div:nth-child(5),.nav div:nth-child(6){display:none}
+.nav div[data-view]{cursor:pointer}
+.nav div[data-view]:focus-visible,.clinical-process-item:focus-visible{outline:2px solid #315b43;outline-offset:2px}
+.app.processes-active>.directory,.app.processes-active>.main{display:none}
+.processes-directory,.processes-main{display:none}
+.app.processes-active>.processes-directory,.app.processes-active>.processes-main{display:block}
+.processes-directory{grid-column:2;padding:38px 15px;border-right:1px solid #d8dcd7;background:#fafaf8}
+.processes-main{grid-column:3;min-width:0;padding:24px 58px;background:#f6f6f3}
+.processes-back{margin:0;width:38px;height:38px;border:1px solid #d2d7d1;border-radius:50%;display:grid;place-items:center}
+.processes-context{position:relative;overflow:hidden;min-height:164px;margin:20px 0 28px;padding:28px 34px 30px;background:#f1f4ef;border:1px solid #dfe5dd;box-shadow:inset 4px 0 0 #315b43}
+.processes-context::before{content:"";position:absolute;inset:0;opacity:.58;background-image:linear-gradient(rgba(49,91,67,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(49,91,67,.10) 1px,transparent 1px);background-size:38px 38px;pointer-events:none}
+.processes-context h1{position:relative;z-index:1;margin:0;color:#242926;font-size:34px;font-weight:600;letter-spacing:-.045em}
+.clinical-process-item{padding:17px 12px;border-bottom:1px solid #e1e4df;cursor:pointer;outline:none}
+.clinical-process-item:hover,.clinical-process-item.active{background:#e2e7e0}
+.clinical-process-item b,.clinical-process-item small{display:block}
+.clinical-process-item b{font-weight:600}
+.clinical-process-item small{color:#717970;margin-top:6px}
+@media(max-width:900px){.processes-directory,.processes-main{display:none!important}}
+</style>
+<section class="processes-directory" aria-label="Directorio de procesos clínicos" hidden>
+  <div class="head">Procesos clínicos <span class="new">＋ Nuevo proceso</span></div>
+  <div class="search">⌕　Buscar proceso…</div>
+  <div class="clinical-process-item active" tabindex="0">
+    <b>Proceso clínico de Camilo Pérez</b>
+    <small>Camilo Pérez</small>
+  </div>
+  <div class="clinical-process-item" tabindex="0">
+    <b>Terapia de pareja</b>
+    <small>Mariana Hurtado</small>
+  </div>
+  <div class="clinical-process-item" tabindex="0">
+    <b>Proceso clínico de Diego López</b>
+    <small>Diego López</small>
+  </div>
+  <div class="clinical-process-item" tabindex="0">
+    <b>Proceso clínico de Mariana Páez</b>
+    <small>Mariana Páez</small>
+  </div>
+  <div class="clinical-process-item" tabindex="0">
+    <b>Ansiedad laboral</b>
+    <small>Mariana Hurtado</small>
+  </div>
+</section>
+<section class="processes-main" aria-label="Detalle del proceso clínico">
+  <div class="processes-back" aria-hidden="true">←</div>
+  <header class="processes-context"><h1>Proceso clínico de Camilo Pérez</h1></header>
+  <div class="process-sections" aria-label="Información del proceso">
+    <details><summary>⌁ <span>Contexto del proceso<small>Participantes, motivo de consulta, inicio y estado</small></span><i>⌄</i></summary><div class="process-detail"><p><label>Participantes</label><b>Camilo Pérez</b></p><p><label>Motivo de consulta</label><b>Ansiedad relacionada con el entorno laboral</b></p><p><label>Iniciado</label><b>12 de julio de 2026</b></p><p><label>Estado</label><b>Activo</b></p></div></details>
+    <details><summary>✎ <span>Notas<small>Registro clínico de este proceso</small></span><em>+ Nueva nota</em><i>⌄</i></summary><div class="process-detail"><p><label>12 sep. 2026 · Sesión</label><b>Acuerdos iniciales de comunicación y próximos focos de trabajo.</b></p><p><label>10 sep. 2026 · Nota del proceso</label><b>Hipótesis y preguntas a revisar en el próximo encuentro.</b></p></div></details>
+    <details><summary>◌ <span>Estado clínico<small>Hipótesis, objetivos y observaciones</small></span><i>⌄</i></summary><div class="process-detail"><p><label>Hipótesis actual</label><b>Ansiedad asociada a exigencia laboral.</b></p><p><label>Objetivos clínicos</label><b>Fortalecer recursos de regulación emocional.</b></p><p><label>Riesgos</label><b>Sin riesgos registrados</b></p></div></details>
+    <details><summary>▤ <span>Planes terapéuticos<small>Objetivos, intervenciones e indicadores</small></span><em>+ Nuevo plan</em><i>⌄</i></summary><div class="process-detail"><p><label>Objetivos</label><b>Identificar detonantes laborales y fortalecer recursos.</b></p><p><label>Intervenciones planeadas</label><b>Registro de situaciones y práctica entre sesiones.</b></p><p><label>Indicadores de progreso</label><b>Identifica patrones de activación y usa recursos acordados.</b></p></div></details>
+    <details><summary>▣ <span>Sesiones<small>Agenda y registro de sesiones del proceso</small></span><em>Programar sesión</em><i>⌄</i></summary><div class="process-detail"><p><label>Próxima sesión</label><b>18 sep. 2026 · 4:00 p. m.</b></p><p><label>Última sesión</label><b>12 sep. 2026 · Nota registrada</b></p><p><label>Sesión anterior</label><b>05 sep. 2026 · Sin nota</b></p><a>Ver sesiones en Agenda →</a></div></details>
+    <a class="process-finance-link">Ver cobros de este proceso →</a>
+  </div>
+</section>
+<script>
+/* Navegación aislada: conserva Pacientes en el DOM y solo cambia qué vista se muestra. */
+document.addEventListener('DOMContentLoaded',()=>{
+ const app=document.querySelector('.app');
+ const nav=[...document.querySelectorAll('.nav div')];
+ const patientsNav=nav.find(item=>item.textContent.trim()==='Pacientes');
+ const processesNav=nav.find(item=>item.textContent.trim()==='Procesos clínicos');
+ const processesDirectory=document.querySelector('.processes-directory');
+ const processesMain=document.querySelector('.processes-main');
+ const processesTitle=document.querySelector('.processes-context h1');
+ if(!app||!patientsNav||!processesNav||!processesDirectory||!processesMain)return;
+ /* Los dos paneles pertenecen al mismo grid de la app; Pacientes no se reestructura. */
+ app.append(processesDirectory,processesMain);
+ patientsNav.dataset.view='patients';
+ processesNav.dataset.view='processes';
+ patientsNav.tabIndex=0;
+ processesNav.tabIndex=0;
+ const showPatients=()=>{
+   app.classList.remove('processes-active');
+   processesDirectory.hidden=true;
+   patientsNav.classList.add('active');
+   processesNav.classList.remove('active');
+ };
+ const showProcesses=()=>{
+   app.classList.add('processes-active');
+   processesDirectory.hidden=false;
+   patientsNav.classList.remove('active');
+   processesNav.classList.add('active');
+ };
+ const activate=(handler)=>({key})=>{if(key==='Enter'||key===' '){handler();}};
+ patientsNav.addEventListener('click',showPatients);
+ processesNav.addEventListener('click',showProcesses);
+ patientsNav.addEventListener('keydown',activate(showPatients));
+ processesNav.addEventListener('keydown',activate(showProcesses));
+ document.querySelectorAll('.clinical-process-item').forEach(item=>{
+   const choose=()=>{
+     document.querySelectorAll('.clinical-process-item').forEach(other=>other.classList.toggle('active',other===item));
+     if(processesTitle)processesTitle.textContent=item.querySelector('b').textContent;
+   };
+   item.addEventListener('click',choose);
+   item.addEventListener('keydown',activate(choose));
+ });
+});
+</script>
+<style>
+/* Viñetas de dossier: solo afectan el directorio de Procesos clínicos. */
+.processes-directory .clinical-process-item{position:relative;min-height:78px;padding:14px 12px 14px 84px;display:flex;flex-direction:column;justify-content:center}
+.process-dossier-avatar{position:absolute;left:13px;top:50%;width:54px;height:70px;object-fit:contain;transform:translateY(-50%);pointer-events:none}
+/* Secciones exclusivas de Procesos: misma gramática lineal sin tocar Pacientes. */
+.process-sections{margin-top:36px;border-top:1px solid #d9dfd8}.processes-main{background:#fff}
+.process-sections details{border-bottom:1px solid #d9dfd8}
+.process-sections summary{list-style:none;display:flex;align-items:center;gap:12px;padding:21px 0;color:#285a43;font-size:16px;cursor:pointer}
+.process-sections summary::-webkit-details-marker{display:none}.process-sections summary span{color:#202925;font-weight:600;flex:1}.process-sections summary small{display:block;color:#757d76;font-size:13px;font-weight:400;margin-top:5px}.process-sections summary em{font-style:normal;color:#365943;font-size:13px;font-weight:600}.process-sections summary i{font-style:normal;color:#202925;font-size:17px}.process-sections details[open] summary i{transform:rotate(180deg)}.process-detail{padding:0 0 0 0;color:#536058;font-size:14px}.process-detail p{display:grid;grid-template-columns:250px 1fr;gap:20px;align-items:center;min-height:62px;margin:0;padding:0;border-top:1px solid #e6e8e4;line-height:1.45}.process-detail label{color:#6c746e;font-weight:400}.process-detail b{font-weight:500;color:#242926}.process-detail a,.process-finance-link{color:#365943;font-weight:600;cursor:pointer}.process-finance-link{display:inline-block;padding:20px 0;font-size:13px}
+</style>
+<script>
+/* Misma firma de dossier para todos los procesos; no interviene la vista de Pacientes. */
+document.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('.processes-directory .clinical-process-item').forEach(item=>{
+  if(item.querySelector('.process-dossier-avatar'))return;
+  const image=document.createElement('img');
+  image.className='process-dossier-avatar';
+  image.src='process-assets/process-dossier-signal.png';
+  image.alt='';
+  image.setAttribute('aria-hidden','true');
+  item.prepend(image);
+ });
+});
+</script>
+<section class="agenda-main" aria-label="Agenda">
+<h1>Agenda</h1><div class="agenda-tabs"><button type="button" class="agenda-tab active" id="agenda-tab-sessions">Sesiones</button><button type="button" class="agenda-tab" id="agenda-tab-calendar">Calendario</button></div>
+<div id="agenda-sessions-view">
+<div class="agenda-filters">
+ <label>Paciente<select id="agenda-patient"><option value="all">Todos</option></select></label>
+ <label>Proceso<select id="agenda-process"><option value="all">Todos los procesos</option></select></label>
+ <label>Rango<select id="agenda-range"><option value="upcoming">Próximas</option><option value="today">Hoy</option><option value="past">Pasadas</option><option value="all">Todas</option></select></label>
+</div>
+<div class="agenda-list" id="agenda-list" aria-live="polite"></div>
+</div>
+<div class="agenda-calendar-view" id="agenda-calendar-view" hidden>
+ <div class="agenda-calendar-tools">
+  <label class="agenda-date-picker"><span aria-hidden="true">▣</span><select id="agenda-calendar-date" aria-label="Fecha seleccionada"><option value="2026-09-08">Mar 8 de septiembre</option><option value="2026-09-15">Mar 15 de septiembre</option><option value="2026-09-22">Mar 22 de septiembre</option></select></label>
+  <button type="button" class="agenda-calendar-nav" id="agenda-calendar-prev" aria-label="Semana anterior">‹</button><button type="button" class="agenda-calendar-nav" id="agenda-calendar-next" aria-label="Semana siguiente">›</button>
+  <strong id="agenda-calendar-period">7 – 13 de septiembre de 2026</strong>
+ </div>
+ <div class="agenda-week" aria-label="Calendario semanal"><div class="agenda-week-head" id="agenda-week-head"></div><div class="agenda-week-body"><div class="agenda-week-hours" id="agenda-week-hours"></div><div class="agenda-week-columns" id="agenda-week-columns"></div></div></div>
+</div></section>
+<style>
+.nav div:nth-child(2){display:block!important}.agenda-main{display:none;grid-column:2/4;background:#fff;padding:48px 58px;min-height:100vh}.app.agenda-active>.side{grid-column:1}.app.agenda-active>.directory,.app.agenda-active>.main,.app.agenda-active>.processes-directory,.app.agenda-active>.processes-main{display:none}.app.agenda-active>.agenda-main{display:block}.agenda-main h1{margin:0 0 18px;font-size:34px;letter-spacing:-.045em}.agenda-tabs{display:flex;gap:4px;margin-bottom:26px}.agenda-tab{padding:9px 24px;border:1px solid #d8dcd7;border-radius:6px;background:#fff;color:#28312d;font:14px 'Bricolage Grotesque',Arial;cursor:pointer}.agenda-tab.active{background:#315b43;color:#fff;border-color:#315b43}.agenda-filters{display:flex;gap:10px;border-bottom:1px solid #dfe4de;padding-bottom:20px}.agenda-filters label{display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #d8dcd7;border-radius:5px;padding:0 12px;font:14px 'Bricolage Grotesque',Arial;color:#28312d}.agenda-filters select{appearance:auto;border:0;background:transparent;padding:10px 0;font:14px 'Bricolage Grotesque',Arial;color:#28312d;outline:0}.agenda-list{max-width:1040px}.agenda-list h2{margin:28px 0 0;padding:0 0 14px;border-bottom:1px solid #dfe4de;color:#315b43;font-size:13px;letter-spacing:.08em}.agenda-list p{display:grid;grid-template-columns:180px 1.2fr 1.5fr 120px 18px;gap:16px;align-items:center;min-height:62px;margin:0;border-bottom:1px solid #e6e8e4;font-size:14px}.agenda-list time{color:#435049}.agenda-list b{font-weight:500}.agenda-list span{color:#4f5c54}.agenda-list em{color:#315b43;font-style:normal;font-size:13px}.agenda-list em.mut{color:#818982}.agenda-list i{font-style:normal;color:#315b43;font-size:24px}.agenda-empty{padding:28px 0;color:#6d756f}.agenda-calendar-tools{display:grid;grid-template-columns:auto auto auto 1fr;align-items:center;gap:10px;border-bottom:1px solid #dfe4de;padding-bottom:20px}.agenda-date-picker{display:flex;align-items:center;gap:8px;border:1px solid #d8dcd7;border-radius:6px;padding:0 12px;color:#28312d}.agenda-date-picker select{border:0;background:transparent;padding:10px 0;font:14px 'Bricolage Grotesque',Arial;color:#28312d;outline:0}.agenda-calendar-nav{width:38px;height:38px;border:1px solid #d8dcd7;border-radius:50%;background:#fff;color:#28312d;font:25px/1 Arial;cursor:pointer}.agenda-calendar-tools strong{justify-self:center;font-size:22px;letter-spacing:-.025em}.agenda-week{margin-top:24px;border:1px solid #dfe4de}.agenda-week-head{display:grid;grid-template-columns:64px repeat(7,1fr);min-height:76px;border-bottom:1px solid #dfe4de}.agenda-week-head div{display:flex;flex-direction:column;align-items:center;justify-content:center;border-left:1px solid #e3e6e2;font-size:11px;letter-spacing:.08em;color:#4c554f}.agenda-week-head b{margin-top:7px;font-size:26px;letter-spacing:-.04em;color:#202925}.agenda-week-head .selected{background:#e6f0e8;color:#315b43}.agenda-week-head .selected b{color:#315b43}.agenda-week-body{display:grid;grid-template-columns:64px 1fr;height:660px}.agenda-week-hours{position:relative;border-right:1px solid #e3e6e2;color:#566058;font-size:11px}.agenda-week-hours span{position:absolute;left:10px;transform:translateY(-50%);white-space:nowrap}.agenda-week-columns{display:grid;grid-template-columns:repeat(7,1fr)}.agenda-week-column{position:relative;border-left:1px solid #e3e6e2;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 59px,#e3e6e2 60px)}.agenda-week-column:first-child{border-left:0}.agenda-calendar-event{position:absolute;left:6px;right:6px;padding:8px 24px 8px 9px;border:0;border-radius:6px;background:#e2f0e5;color:#202925;text-align:left;font-family:'Bricolage Grotesque',Arial;cursor:pointer}.agenda-calendar-event b{display:block;font-size:13px;line-height:1.2}.agenda-calendar-event span{display:block;margin-top:4px;color:#496555;font-size:12px;line-height:1.2}.agenda-calendar-event i{position:absolute;right:9px;top:50%;font-style:normal;font-size:18px;transform:translateY(-50%);color:#315b43}
+</style>
+<script>document.addEventListener('DOMContentLoaded',()=>{const app=document.querySelector('.app'),agenda=document.querySelector('.agenda-main');if(app&&agenda)app.append(agenda);const n=[...document.querySelectorAll('.nav div')],a=n.find(x=>x.textContent.trim()==='Agenda'),p=n.find(x=>x.textContent.trim()==='Pacientes'),q=n.find(x=>x.textContent.trim()==='Procesos clínicos');if(!a)return;const show=()=>{app.classList.add('agenda-active');a.classList.add('active');p.classList.remove('active');q.classList.remove('active')};a.onclick=show;a.tabIndex=0;a.onkeydown=e=>{if(e.key==='Enter'||e.key===' ')show()};[p,q].forEach(x=>x.addEventListener('click',()=>app.classList.remove('agenda-active')));
+const sessions=[
+{g:'HOY · LUNES 8 DE SEPTIEMBRE',r:'upcoming',t:'4:00 – 5:00 p. m.',people:'Mariana Hurtado + Camilo Pérez',patients:['Mariana Hurtado','Camilo Pérez'],process:'Terapia de pareja',note:1},
+{g:'HOY · LUNES 8 DE SEPTIEMBRE',r:'upcoming',t:'5:30 – 6:30 p. m.',people:'Camilo Pérez',patients:['Camilo Pérez'],process:'Proceso clínico de Camilo Pérez',note:0},
+{g:'MAÑANA · MARTES 9 DE SEPTIEMBRE',r:'upcoming',t:'9:00 – 10:00 a. m.',people:'Laura Gómez',patients:['Laura Gómez'],process:'Proceso clínico de Laura Gómez',note:0},
+{g:'MAÑANA · MARTES 9 DE SEPTIEMBRE',r:'upcoming',t:'11:00 a. m. – 12:00 p. m.',people:'Andrés Torres',patients:['Andrés Torres'],process:'Proceso clínico de Andrés Torres',note:1},
+{g:'MAÑANA · MARTES 9 DE SEPTIEMBRE',r:'upcoming',t:'3:00 – 4:00 p. m.',people:'Valentina Ríos',patients:['Valentina Ríos'],process:'Proceso clínico de Valentina Ríos',note:0},
+{g:'JUEVES 11 DE SEPTIEMBRE',r:'upcoming',t:'9:00 – 10:00 a. m.',people:'Diego López',patients:['Diego López'],process:'Proceso clínico de Diego López',note:1},
+{g:'JUEVES 11 DE SEPTIEMBRE',r:'upcoming',t:'4:00 – 5:00 p. m.',people:'Mariana Hurtado',patients:['Mariana Hurtado'],process:'Proceso clínico de Mariana Hurtado',note:0},
+{g:'LUNES 15 DE SEPTIEMBRE',r:'upcoming',t:'10:00 – 11:00 a. m.',people:'Mariana Hurtado + Camilo Pérez',patients:['Mariana Hurtado','Camilo Pérez'],process:'Terapia de pareja',note:0},
+{g:'VIERNES 19 DE SEPTIEMBRE',r:'upcoming',t:'2:00 – 3:00 p. m.',people:'Camilo Pérez',patients:['Camilo Pérez'],process:'Proceso clínico de Camilo Pérez',note:0},
+{g:'AYER · DOMINGO 7 DE SEPTIEMBRE',r:'past',t:'10:00 – 11:00 a. m.',people:'Diego López',patients:['Diego López'],process:'Proceso clínico de Diego López',note:1},
+{g:'VIERNES 5 DE SEPTIEMBRE',r:'past',t:'3:00 – 4:00 p. m.',people:'Mariana Hurtado',patients:['Mariana Hurtado'],process:'Proceso clínico de Mariana Hurtado',note:1},
+{g:'MIÉRCOLES 3 DE SEPTIEMBRE',r:'past',t:'5:00 – 6:00 p. m.',people:'Mariana Hurtado + Camilo Pérez',patients:['Mariana Hurtado','Camilo Pérez'],process:'Terapia de pareja',note:1}
+];
+const patient=document.querySelector('#agenda-patient'),process=document.querySelector('#agenda-process'),range=document.querySelector('#agenda-range'),list=document.querySelector('#agenda-list');
+const unique=(values)=>[...new Set(values)].sort((x,y)=>x.localeCompare(y,'es'));
+unique(sessions.flatMap(x=>x.patients)).forEach(x=>patient.insertAdjacentHTML('beforeend',`<option value="${x}">${x}</option>`));
+unique(sessions.map(x=>x.process)).forEach(x=>process.insertAdjacentHTML('beforeend',`<option value="${x}">${x}</option>`));
+const render=()=>{const shown=sessions.filter(x=>(range.value==='all'||range.value==='today'?(range.value!=='today'||x.g.startsWith('HOY')):x.r===range.value)&&(patient.value==='all'||x.patients.includes(patient.value))&&(process.value==='all'||x.process===process.value));let last='';list.innerHTML=shown.length?shown.map(x=>`${x.g!==last?(last=x.g,`<h2>${x.g}</h2>`):''}<p><time>${x.t}</time><b>${x.people}</b><span>${x.process}</span><em class="${x.note?'':'mut'}">${x.note?'Nota registrada':'Sin nota'}</em><i>›</i></p>`).join(''):'<div class="agenda-empty">No hay sesiones para estos filtros.</div>'};[patient,process,range].forEach(x=>x.addEventListener('change',render));render();
+const sessionsView=document.querySelector('#agenda-sessions-view'),calendarView=document.querySelector('#agenda-calendar-view'),sessionsTab=document.querySelector('#agenda-tab-sessions'),calendarTab=document.querySelector('#agenda-tab-calendar'),calendarDate=document.querySelector('#agenda-calendar-date'),calendarHead=document.querySelector('#agenda-week-head'),calendarHours=document.querySelector('#agenda-week-hours'),calendarColumns=document.querySelector('#agenda-week-columns'),calendarPeriod=document.querySelector('#agenda-calendar-period');
+const calendarSessions=[
+ {date:'2026-09-07',hour:16,duration:60,people:'Mariana Hurtado + Camilo Pérez',process:'Terapia de pareja'},
+ {date:'2026-09-07',hour:17.5,duration:60,people:'Camilo Pérez',process:'Proceso clínico de Camilo Pérez'},
+ {date:'2026-09-08',hour:9,duration:60,people:'Laura Gómez',process:'Proceso clínico de Laura Gómez'},
+ {date:'2026-09-08',hour:11,duration:60,people:'Andrés Torres',process:'Proceso clínico de Andrés Torres'},
+ {date:'2026-09-10',hour:9,duration:60,people:'Diego López',process:'Proceso clínico de Diego López'},
+ {date:'2026-09-10',hour:16,duration:60,people:'Mariana Hurtado',process:'Proceso clínico de Mariana Hurtado'},
+ {date:'2026-09-15',hour:10,duration:60,people:'Mariana Hurtado + Camilo Pérez',process:'Terapia de pareja'},
+ {date:'2026-09-19',hour:14,duration:60,people:'Camilo Pérez',process:'Proceso clínico de Camilo Pérez'}
+];
+const monthNames=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],weekdays=['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'];
+const dateAtNoon=value=>new Date(`${value}T12:00:00`),toKey=date=>date.toISOString().slice(0,10),mondayOf=date=>{const copy=new Date(date);copy.setDate(copy.getDate()-((copy.getDay()+6)%7));return copy};
+const renderCalendar=()=>{const selected=dateAtNoon(calendarDate.value),monday=mondayOf(selected),sunday=new Date(monday);sunday.setDate(monday.getDate()+6);calendarPeriod.textContent=`${monday.getDate()} – ${sunday.getDate()} de ${monthNames[sunday.getMonth()]} de ${sunday.getFullYear()}`;calendarHead.innerHTML='<div></div>';calendarColumns.innerHTML='';calendarHours.innerHTML='';for(let hour=8;hour<=19;hour++){const label=document.createElement('span');label.style.top=`${(hour-8)*60}px`;label.textContent=`${hour>12?hour-12:hour}:00 ${hour>=12?'p. m.':'a. m.'}`;calendarHours.append(label)}for(let index=0;index<7;index++){const day=new Date(monday);day.setDate(monday.getDate()+index);const head=document.createElement('div');if(toKey(day)===toKey(selected))head.className='selected';head.innerHTML=`<span>${weekdays[day.getDay()]}</span><b>${day.getDate()}</b>`;calendarHead.append(head);const column=document.createElement('div');column.className='agenda-week-column';calendarSessions.filter(session=>session.date===toKey(day)).forEach(session=>{const event=document.createElement('button');event.type='button';event.className='agenda-calendar-event';event.style.top=`${(session.hour-8)*60+4}px`;event.style.height=`${session.duration-8}px`;event.setAttribute('aria-label',`${session.people}, ${session.process}`);event.innerHTML=`<b>${session.people}</b><span>${session.process}</span><i>›</i>`;column.append(event)});calendarColumns.append(column)}};
+const showSessions=()=>{sessionsView.hidden=false;calendarView.hidden=true;sessionsTab.classList.add('active');calendarTab.classList.remove('active')},showCalendar=()=>{sessionsView.hidden=true;calendarView.hidden=false;sessionsTab.classList.remove('active');calendarTab.classList.add('active');renderCalendar()};sessionsTab.addEventListener('click',showSessions);calendarTab.addEventListener('click',showCalendar);calendarDate.addEventListener('change',renderCalendar);document.querySelector('#agenda-calendar-prev').addEventListener('click',()=>{const next=new Date(dateAtNoon(calendarDate.value));next.setDate(next.getDate()-7);const key=toKey(next);if([...calendarDate.options].some(option=>option.value===key)){calendarDate.value=key;renderCalendar()}});document.querySelector('#agenda-calendar-next').addEventListener('click',()=>{const next=new Date(dateAtNoon(calendarDate.value));next.setDate(next.getDate()+7);const key=toKey(next);if([...calendarDate.options].some(option=>option.value===key)){calendarDate.value=key;renderCalendar()}});renderCalendar();});</script>
+</body>
+</html>
