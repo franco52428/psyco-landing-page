@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verdme | El asistente del psicólogo independiente</title>
+    <title>Verdme | Tu consultorio en orden</title>
+    <meta name="description" content="Agenda, procesos clínicos, notas y cobros con Wompi en un solo lugar para darle continuidad a tu práctica psicológica.">
+    <meta name="theme-color" content="#f3f6f2">
     <style>
         /* =========================================
            Variables CSS & Reset
@@ -1057,109 +1059,225 @@
             .method-tag { font-size: 0.76rem; }
         }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- Navegación -->
-    <nav>
-        <div class="logo" aria-label="Verdme">
-            <svg class="logo-icon" aria-hidden="true" width="64" height="64" viewBox="0 0 400 400">
-                <defs>
-                    <linearGradient id="landingLogoLeft" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#065F46"/>
-                        <stop offset="100%" stop-color="#022C22"/>
-                    </linearGradient>
-                    <linearGradient id="landingLogoRight" x1="0%" y1="100%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#6EE7B7"/>
-                        <stop offset="100%" stop-color="#059669"/>
-                    </linearGradient>
-                    <linearGradient id="landingLogoCircle" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#FCD34D"/>
-                        <stop offset="100%" stop-color="#92400E"/>
-                    </linearGradient>
-                    <filter id="landingLogoShadow" x="-30%" y="-30%" width="160%" height="170%">
-                        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
-                    </filter>
-                </defs>
-                <g filter="url(#landingLogoShadow)">
-                    <circle cx="200" cy="216" r="132" fill="#6EE7B7" opacity="0.20"/>
+    <nav class="site-nav" aria-label="Navegación principal">
+        <div class="nav-shell">
+            <a class="logo" href="#inicio" aria-label="Verdme, ir al inicio">
+                <svg class="logo-icon" aria-hidden="true" width="64" height="64" viewBox="0 0 400 400">
+                    <defs>
+                        <linearGradient id="landingLogoLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#2B6645"/>
+                            <stop offset="100%" stop-color="#1F4A34"/>
+                        </linearGradient>
+                        <linearGradient id="landingLogoRight" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#BDDCC9"/>
+                            <stop offset="100%" stop-color="#327A51"/>
+                        </linearGradient>
+                        <linearGradient id="landingLogoCircle" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#D9B978"/>
+                            <stop offset="100%" stop-color="#8A6229"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="216" r="132" fill="#BDDCC9" opacity="0.28"/>
                     <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#landingLogoLeft)"/>
                     <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#landingLogoRight)"/>
-                    <path d="M 288 148 L 250 148 L 247 154 L 291 154 Z" fill="#FFFFFF" opacity="0.45"/>
-                </g>
-                <g filter="url(#landingLogoShadow)">
                     <circle cx="200" cy="92" r="30" fill="url(#landingLogoCircle)"/>
-                    <circle cx="200" cy="92" r="46" fill="none" stroke="#34D399" stroke-width="3"/>
-                </g>
-            </svg>
-            <span class="logo-wordmark">Verd<span>me</span></span>
-        </div>
-        <div class="nav-links">
-            <a href="https://app.verdme.com" class="btn-login">Iniciar sesión</a>
-            <a href="mailto:info@imdiamedica?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Verdme&body=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20detalles%20sobre%20Verdme.%0D%0A%0D%0A%2D%2D%2D%20Por%20favor%20completa%20tus%20datos%20aqu%C3%AD%20%2D%2D%2D%0D%0A%0D%0ANombre%3A%20%0D%0AEspecialidad%20%C3%B3%20%C3%81rea%3A%20%0D%0ACiudad%20o%20Pa%C3%ADs%3A%20%0D%0ADudas%20que%20me%20gustar%C3%ADa%20resolver%3A%20%0D%0A" class="btn-signup">Probar gratis</a>
+                    <circle cx="200" cy="92" r="46" fill="none" stroke="#BDDCC9" stroke-width="3"/>
+                </svg>
+                <span class="logo-wordmark">Verd<span>me</span></span>
+            </a>
+
+            <div class="nav-menu" aria-label="Secciones de la página">
+                <a href="#flujo">Cómo te ayuda</a>
+                <a href="#funcionalidades">Funcionalidades</a>
+                <a href="#cobros">Cobros con Wompi</a>
+                <a href="#seguridad">Seguridad</a>
+            </div>
+
+            <div class="nav-links">
+                <a href="https://app.verdme.com" class="btn-login">Iniciar sesión</a>
+                <a href="mailto:support@verdme.com?subject=Quiero%20conocer%20Verdme&amp;body=Hola%2C%20quiero%20conocer%20Verdme%20para%20mi%20pr%C3%A1ctica%20profesional.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A" class="btn-signup">Solicitar acceso</a>
+            </div>
         </div>
     </nav>
 
-    <!-- 1. Hero Section -->
-    <header class="hero">
-        <div class="badge">El ecosistema clínico diseñado para terapeutas humanos.</div>
-        <h1>Menos tiempo en la pantalla.<br><span>Más presencia con tus pacientes.</span></h1>
-        <p>Libérate de la carga administrativa y de la redacción tediosa de historias clínicas. Verdme organiza tu consultorio y potencia tus análisis con inteligencia clínica, para que te concentres únicamente en transformar vidas.</p>
-        
-        <div class="hero-ctas">
-            <a href="mailto:info@imdiamedica?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Verdme&body=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20detalles%20sobre%20Verdme.%0D%0A%0D%0A%2D%2D%2D%20Por%20favor%20completa%20tus%20datos%20aqu%C3%AD%20%2D%2D%2D%0D%0A%0D%0ANombre%3A%20%0D%0AEspecialidad%20%C3%B3%20%C3%81rea%3A%20%0D%0ACiudad%20o%20Pa%C3%ADs%3A%20%0D%0ADudas%20que%20me%20gustar%C3%ADa%20resolver%3A%20%0D%0A" class="btn-primary-large">Comenzar mi prueba gratuita (Sin tarjetas)</a>
-            <p class="trust-text">Únete a la nueva era de la psicoterapia digital.</p>
-        </div>
-    </header>
+    <main id="contenido">
+        <header class="hero hero-commercial" id="inicio">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Gestión clínica para psicólogos independientes</p>
+                    <h1>Tu consultorio en orden.<span>Tu atención donde importa.</span></h1>
+                    <p class="hero-lead">Verdme reúne agenda, procesos clínicos, notas, consentimientos y cobros en un mismo flujo. Menos información dispersa; más continuidad antes, durante y después de cada sesión.</p>
 
-    <!-- 2. Sección de Dolor / Empatía -->
-    <section class="pain-section">
-        <div class="pain-container">
-            <h2>Estudiaste para escuchar y guiar, no para rellenar formularios.</h2>
-            <p>Pasar horas transcribiendo notas, persiguiendo consentimientos informados y estructurando complejas historias clínicas drena la energía que tus pacientes necesitan de ti. El papeleo maluco no debería interponerse entre tú y tu propósito.</p>
-        </div>
-    </section>
+                    <div class="hero-actions">
+                        <a href="mailto:support@verdme.com?subject=Quiero%20conocer%20Verdme&amp;body=Hola%2C%20quiero%20conocer%20Verdme%20para%20mi%20pr%C3%A1ctica%20profesional.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A" class="button-primary">Solicitar acceso</a>
+                        <a href="#flujo" class="button-secondary">Ver cómo funciona</a>
+                    </div>
 
-    <!-- 3. Sección de Propuesta de Valor / Características -->
-    <div class="features-header">
-        <h2>Tu intuición clínica, amplificada.</h2>
-        <p>No reemplazamos tu criterio; te damos las herramientas para llevarlo al siguiente nivel. Descubre cómo Verdme se convierte en tu copiloto silencioso.</p>
-    </div>
+                    <p class="hero-note">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>
+                        Tú mantienes el criterio clínico y el control de cada registro.
+                    </p>
+                </div>
 
-    <section class="features">
-        
-        <!-- Bloque 1 -->
-        <div class="feature-card card-voice">
-            <div class="icon-wrapper">🎙️</div>
-            <h3>Historias clínicas en minutos, no en horas.</h3>
-            <p>Habla de forma natural al terminar tu sesión. Nuestra tecnología interpreta tus palabras y genera borradores de notas, resúmenes y la papelería clínica con la estructura legal requerida. Tú solo revisas, editas y firmas.</p>
-        </div>
+                <div class="product-preview-wrap" aria-label="Vista ilustrativa de la agenda de Verdme">
+                    <div class="product-preview">
+                        <div class="preview-topbar">
+                            <div class="preview-brand">
+                                <span class="preview-brand-mark">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4v8l6 8V12l-6-8Z"/><path d="M18 4v8l-6 8V12l6-8Z"/></svg>
+                                </span>
+                                <strong>Verdme</strong>
+                            </div>
+                            <div class="preview-user"><strong>Mi consultorio</strong><span>MC</span></div>
+                        </div>
 
-        <!-- Bloque 2 -->
-        <div class="feature-card card-ai">
-            <div class="icon-wrapper">🧠</div>
-            <h3>Conexiones más profundas entre sesiones.</h3>
-            <p>Deja que el sistema consolide el historial de tu paciente. Recibe resúmenes inteligentes, alertas de focos de trabajo prioritarios y sugerencias de recursos psicológicos basados en tus propias notas. Nunca pierdas el hilo de un proceso.</p>
-        </div>
+                        <div class="preview-canvas">
+                            <section class="preview-panel agenda-panel" aria-label="Agenda ilustrativa">
+                                <div class="preview-panel-head">
+                                    <div><span>Hoy</span><strong>Tu agenda clínica</strong></div>
+                                    <span class="preview-count">3</span>
+                                </div>
+                                <ul class="session-list">
+                                    <li>
+                                        <span class="session-time">9:00</span>
+                                        <span class="session-copy"><strong>Consulta individual</strong><span>Proceso activo · documentada</span></span>
+                                        <i class="status-dot is-ready" aria-label="Documentada"></i>
+                                    </li>
+                                    <li class="is-next">
+                                        <span class="session-time">11:30</span>
+                                        <span class="session-copy"><strong>Proceso de pareja</strong><span>2 participantes · consentimiento al día</span></span>
+                                        <i class="status-dot is-ready" aria-label="Consentimiento al día"></i>
+                                    </li>
+                                    <li>
+                                        <span class="session-time">16:00</span>
+                                        <span class="session-copy"><strong>Consulta individual</strong><span>Sesión incluida en paquete</span></span>
+                                        <i class="status-dot" aria-label="Próxima sesión"></i>
+                                    </li>
+                                </ul>
+                            </section>
 
-        <!-- Bloque 3 -->
-        <div class="feature-card card-process">
-            <div class="icon-wrapper">📂</div>
-            <h3>Expedientes verdaderamente dinámicos.</h3>
-            <p>Centraliza historias, documentos adjuntos, tareas y consentimientos firmados en un solo lugar seguro. Además, agrupa pacientes bajo un mismo "Proceso Clínico", la solución perfecta para terapias de pareja o familiares.</p>
-        </div>
+                            <section class="preview-panel note-panel" aria-label="Nota clínica ilustrativa">
+                                <span class="mini-label">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 1 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M9 21h6"/></svg>
+                                    Nota clínica
+                                </span>
+                                <p>Dicta, edita y organiza el registro dentro de su contexto clínico.</p>
+                                <span class="dictation-pill">Dictado disponible</span>
+                            </section>
 
-        <!-- Bloque 4 -->
-        <div class="feature-card card-calendar">
-            <div class="icon-wrapper">📊</div>
-            <h3>Cuentas claras y finanzas organizadas.</h3>
-            <p>Trazabilidad financiera sin salir de tu consultorio virtual. Define valores por sesión, organiza paquetes, revisa tu balance general y mantén el historial contable de cada paciente perfectamente conciliado y sin dolores de cabeza.</p>
-        </div>
+                            <section class="preview-panel finance-panel" aria-label="Cobro ilustrativo">
+                                <span class="mini-label">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 9h18M7 15h3"/></svg>
+                                    Próxima cuota
+                                </span>
+                                <div class="finance-value"><strong>$120.000</strong><span>Por cobrar</span></div>
+                                <p>Paquete de sesiones · cuota 2 de 4</p>
+                            </section>
+                        </div>
+                    </div>
+                    <p class="preview-caption">Vista ilustrativa basada en funcionalidades disponibles en Verdme.</p>
+                </div>
+            </div>
+        </header>
 
-    </section>
+        <section class="proof-strip" aria-label="Áreas que conecta Verdme">
+            <ul>
+                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Agenda y sesiones</li>
+                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h11l3 3v15H5V3Z"/><path d="M9 11h6M9 15h6M9 7h3"/></svg>Notas y adjuntos</li>
+                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 20c.4-4 2.4-6 6-6s5.6 2 6 6M15 15c3 0 5 1.6 6 5"/></svg>Procesos clínicos</li>
+                <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>Finanzas y cobros</li>
+            </ul>
+        </section>
+
+        <section class="workflow-section" id="flujo">
+            <div class="section-shell workflow-grid">
+                <div class="workflow-copy">
+                    <p class="section-kicker">Continuidad, no más pestañas</p>
+                    <h2>Un flujo sereno para el trabajo real del consultorio.</h2>
+                    <p>Cada sesión deja decisiones clínicas y administrativas. Verdme mantiene esos pasos conectados para que puedas retomarlos con contexto.</p>
+                </div>
+
+                <ol class="workflow-list">
+                    <li class="workflow-step">
+                        <span class="step-number">01</span>
+                        <div>
+                            <h3>Antes de la sesión</h3>
+                            <p>Consulta tu agenda, el proceso, los participantes, el estado del consentimiento y la información que ya registraste.</p>
+                        </div>
+                    </li>
+                    <li class="workflow-step">
+                        <span class="step-number">02</span>
+                        <div>
+                            <h3>Al documentar</h3>
+                            <p>Escribe o dicta la nota, dale formato, añade archivos o anotaciones y asóciala a la sesión y al paciente correctos.</p>
+                        </div>
+                    </li>
+                    <li class="workflow-step">
+                        <span class="step-number">03</span>
+                        <div>
+                            <h3>Después de atender</h3>
+                            <p>Actualiza el estado o plan del proceso, define el cobro y revisa qué sesiones o cuotas siguen pendientes.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="feature-showcase" id="funcionalidades">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <p class="section-kicker">Funcionalidades que ya existen</p>
+                    <h2>Todo el consultorio conectado por proceso clínico.</h2>
+                    <p>Sin promesas mágicas: herramientas concretas para organizar el contexto, documentar tu criterio y mantener claros los pendientes.</p>
+                </div>
+
+                <div class="capability-grid">
+                    <article class="capability-card">
+                        <span class="capability-icon">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h11l3 3v15H5V3Z"/><path d="M9 11h6M9 15h6M9 7h3"/></svg>
+                        </span>
+                        <h3>Notas que conservan su contexto.</h3>
+                        <p>Crea notas por sesión, paciente o ambos. Usa dictado, lectura en voz alta, formato, adjuntos y anotaciones para trabajar el registro a tu manera.</p>
+                        <ul class="capability-tags"><li>Dictado por voz</li><li>Adjuntos</li><li>Historial y filtros</li></ul>
+                    </article>
+
+                    <article class="capability-card">
+                        <span class="capability-icon">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 20c.4-4 2.4-6 6-6s5.6 2 6 6M15 15c3 0 5 1.6 6 5"/></svg>
+                        </span>
+                        <h3>Procesos individuales o con varios participantes.</h3>
+                        <p>Reúne motivo de consulta, sesiones, estado clínico, planes terapéuticos y línea de tiempo para no perder la continuidad.</p>
+                        <ul class="capability-tags"><li>Estado clínico</li><li>Planes terapéuticos</li></ul>
+                    </article>
+
+                    <article class="capability-card">
+                        <span class="capability-icon">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18H6z"/><path d="M9 7h6M9 11h6M9 15h4"/><path d="m15 18 1.4 1.4L19 16.8"/></svg>
+                        </span>
+                        <h3>Consentimientos visibles cuando los necesitas.</h3>
+                        <p>Registra el documento, su firma y vigencia; asócialo a los procesos correspondientes y consulta su historial.</p>
+                        <ul class="capability-tags"><li>Vigencia</li><li>Historial</li><li>Descarga protegida</li></ul>
+                    </article>
+
+                    <article class="capability-card">
+                        <span class="capability-icon">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/><path d="M18 3v3"/></svg>
+                        </span>
+                        <h3>Finanzas ligadas a la atención, no a una hoja aparte.</h3>
+                        <p>Define valores por sesión, crea paquetes, organiza planes por cuotas, registra pagos y devoluciones, y entiende qué está pagado o por cobrar.</p>
+                        <ul class="capability-tags"><li>Sesiones</li><li>Paquetes</li><li>Cuotas</li><li>Trazabilidad</li></ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
     <!-- Módulo Destacado de Pagos Integrados -->
-    <section class="payments-integration">
+    <section class="payments-integration" id="cobros">
         <svg width="0" height="0" aria-hidden="true" focusable="false" style="position: absolute; overflow: hidden;">
             <defs>
                 <symbol id="wompi-wordmark" viewBox="0 0 1982 997">
@@ -1186,7 +1304,7 @@
             </div>
 
             <div class="payments-badge">Finanzas y cobros con Wompi</div>
-            <h2>Cobra sesiones, paquetes y cuotas sin salir de Verdme.</h2>
+            <h2>Cobra sesiones, paquetes y cuotas desde Verdme.</h2>
             <p>Genera un link por el valor pendiente y compártelo por WhatsApp. Tu paciente paga en el checkout seguro de Wompi y <strong>Verdme actualiza el cobro y el saldo del proceso</strong>. El dinero llega directamente a tu cuenta Wompi: Verdme no lo recibe ni lo custodia.</p>
 
             <div class="payment-methods-grid">
@@ -1194,7 +1312,7 @@
                 <div class="method-tag">Paquetes completos</div>
                 <div class="method-tag">Cuotas de paquete</div>
                 <div class="method-tag">Link directo a WhatsApp</div>
-                <div class="method-tag">Seguimiento automático</div>
+                <div class="method-tag">Seguimiento de transacciones</div>
             </div>
         </div>
 
@@ -1282,24 +1400,73 @@
                     </div>
                 </div>
             </div>
+            <p class="wompi-checkout-note">Ejemplo ilustrativo del checkout de Wompi. Los medios disponibles dependen de la configuración y disponibilidad del comercio.</p>
         </div>
     </section>
 
-    <!-- 4. Sección de Seguridad y Ética -->
-    <section class="security-section">
+    <section class="security-section" id="seguridad">
         <div class="security-container">
-            <div class="security-icon">🔐</div>
-            <h2>Tu secreto profesional, resguardado por ingeniería.</h2>
-            <p>Sabemos que la confianza es la base de tu práctica. Por eso, toda la información de tus pacientes viaja y se almacena bajo estrictos estándares de cifrado de grado corporativo, con respaldos automáticos las 24 horas del día. Tu tranquilidad y la de ellos es nuestra prioridad absoluta.</p>
+            <div class="security-copy">
+                <p class="section-kicker">Control de acceso</p>
+                <h2>Saber quién entra también es parte del cuidado.</h2>
+                <p>Verdme te da visibilidad sobre los accesos a tu cuenta y opciones concretas para protegerla sin convertir la seguridad en una barrera diaria.</p>
+            </div>
+
+            <ul class="security-list">
+                <li>
+                    <span class="security-list-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>
+                    </span>
+                    <div>
+                        <h3>Opciones de acceso</h3>
+                        <p>Configura passkey, contraseña o código TOTP según las opciones habilitadas para tu cuenta.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="security-list-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+                    </span>
+                    <div>
+                        <h3>Sesiones visibles</h3>
+                        <p>Revisa dispositivos, navegadores, ubicación aproximada y actividad reciente desde el centro de seguridad.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="security-list-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 7h10v10H7z"/><path d="m9 9 6 6M15 9l-6 6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+                    </span>
+                    <div>
+                        <h3>Acción ante algo inusual</h3>
+                        <p>Cierra sesiones activas o reporta una sesión sospechosa para conservar el control de tu cuenta.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 
-    <!-- 5. Sección de Cierre / CTA Final -->
     <section class="cta-final">
-        <h2>Devuélvele el enfoque a lo que realmente importa: el ser humano.</h2>
-        <p>Automatiza la burocracia de tu consultorio y redescubre el placer de tu profesión con las herramientas más avanzadas del mercado.</p>
-        <a href="mailto:info@imdiamedica?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Verdme&body=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20detalles%20sobre%20Verdme.%0D%0A%0D%0A%2D%2D%2D%20Por%20favor%20completa%20tus%20datos%20aqu%C3%AD%20%2D%2D%2D%0D%0A%0D%0ANombre%3A%20%0D%0AEspecialidad%20%C3%B3%20%C3%81rea%3A%20%0D%0ACiudad%20o%20Pa%C3%ADs%3A%20%0D%0ADudas%20que%20me%20gustar%C3%ADa%20resolver%3A%20%0D%0A" class="btn-primary-solid">Crear mi cuenta gratis ahora</a>
+        <p class="section-kicker">El siguiente paso puede ser simple</p>
+        <h2>Menos sistemas abiertos. Más continuidad en tu práctica.</h2>
+        <p>Cuéntanos cómo trabajas hoy y conoce si Verdme encaja en la forma en que llevas tu consultorio.</p>
+        <div class="cta-actions">
+            <a href="mailto:support@verdme.com?subject=Quiero%20conocer%20Verdme&amp;body=Hola%2C%20quiero%20conocer%20Verdme%20para%20mi%20pr%C3%A1ctica%20profesional.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A" class="btn-primary-solid">Solicitar acceso</a>
+            <a href="https://app.verdme.com" class="button-secondary">Ya uso Verdme</a>
+        </div>
     </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-shell">
+            <div>
+                <div class="footer-brand">Verd<span>me</span></div>
+                <p class="footer-copy">Gestión clínica para psicólogos independientes.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:support@verdme.com">Contacto</a>
+                <a href="https://app.verdme.com">Iniciar sesión</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
