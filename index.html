@@ -4322,27 +4322,6 @@
             font-size: clamp(1.02rem, 1.45vw, 1.16rem);
             line-height: 1.6;
         }
-        .clinical-capabilities {
-            margin: 1.5rem 0 0;
-            padding: 0;
-            display: grid;
-            gap: 0.72rem;
-            list-style: none;
-        }
-        .clinical-capabilities li {
-            padding-left: 1rem;
-            border-left: 2px solid var(--line-strong);
-            color: var(--ink-700);
-            font-size: 0.91rem;
-            line-height: 1.4;
-        }
-        .clinical-capabilities strong {
-            display: block;
-            margin-bottom: 0.1rem;
-            color: var(--ink-900);
-            font-size: 0.96rem;
-            font-weight: 600;
-        }
         .clinical-preview-wrap {
             min-width: 0;
             margin: 0;
@@ -4594,7 +4573,6 @@
             .clinical-showcase-shell { max-width: 950px; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
             .clinical-showcase-copy { max-width: 760px; }
             .clinical-preview-wrap { width: min(100%, 680px); margin-inline: auto; transform: none; }
-            .clinical-capabilities { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         }
         @media (max-width: 900px) {
             .clinical-preview { grid-template-columns: 31% minmax(0, 1fr); font-size: 11px; }
@@ -4604,7 +4582,6 @@
         @media (max-width: 640px) {
             .clinical-showcase { min-height: 0; padding-block: 3.5rem; }
             .clinical-showcase-copy h2 { font-size: clamp(2rem, 8vw, 2.6rem); }
-            .clinical-capabilities { grid-template-columns: minmax(0, 1fr); gap: 0.7rem; }
             .clinical-preview { aspect-ratio: auto; display: block; font-size: 12px; }
             .clinical-directory { border-right: 0; }
             .clinical-directory-head { height: auto; padding: 1.2em; gap: 1.2em; }
@@ -5762,13 +5739,7 @@
                 <div class="clinical-showcase-copy">
                     <p class="section-kicker">Procesos clínicos</p>
                     <h2 id="clinical-showcase-title">Conserva el hilo de cada proceso clínico.</h2>
-                    <p>De una sesión a la siguiente, Verdme reúne lo que has registrado para que retomes el contexto, reconozcas lo pendiente y decidas cómo continuar con tu propio criterio.</p>
-                    <ul class="clinical-capabilities">
-                        <li><strong>Contexto antes de cada sesión</strong>Participantes, motivo de consulta, sesiones y notas se encuentran en el mismo proceso.</li>
-                        <li><strong>Evolución a la vista</strong>La línea de tiempo y el estado clínico muestran lo que ha cambiado.</li>
-                        <li><strong>Un plan fácil de retomar</strong>Objetivos, intervenciones e indicadores de progreso acompañan el seguimiento.</li>
-                        <li><strong>Menos información dispersa</strong>Acuerdos de cobro, paquetes y cuotas quedan vinculados al proceso.</li>
-                    </ul>
+                    <p>Verdme reúne en cada proceso las sesiones, notas, evolución, plan terapéutico y acuerdos de cobro. Así llegas a cada encuentro con el contexto a mano, identificas lo pendiente y decides cómo continuar con tu propio criterio.</p>
                 </div>
 
                 <figure class="clinical-preview-wrap" id="notas" aria-label="Vista ilustrativa de procesos clínicos y notas en Verdme">
