@@ -113,12 +113,14 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 
 - Ancho máximo general: 1180–1240 px.
 - Diseñar primero para 360–430 px y escalar hasta escritorio.
-- Secciones con 88–128 px verticales en escritorio y 64–80 px en móvil.
+- Secciones editoriales con 88–128 px verticales en escritorio y 64–80 px en móvil. Las demostraciones de producto que caben en un pantallazo pueden usar 32–52 px en escritorio y descontar la altura de la barra fija del alto visible.
 - Mantener grandes zonas de aire y alineación consistente.
 - En escritorio, la primera vista debe incluir el titular, la vista de producto y los cuatro accesos a agenda/procesos, notas, cobros y seguridad. Estos accesos deben enlazar a contenido existente dentro de la página.
+- El menú principal sigue el orden real de la landing: Procesos clínicos, Pacientes, Finanzas, Pagos online y Seguridad. En tablet y móvil, ofrecer los mismos destinos en un menú nativo accesible sin JavaScript; mantener visible la acción de solicitar acceso.
 - Cuando la altura de pantalla lo permita, el hero puede ocupar el alto visible y distribuir el aire alrededor del texto y la vista de producto; dejar que el contenido determine la altura en ventanas bajas, sin recortarlo.
 - Usar los radios del producto como referencia: 14 px pequeño, 16 px medio, 18 px grande, 24 px amplio y 12 px para acciones. Reservar círculos y pastillas para controles o estados que los necesiten.
 - Priorizar divisores de 1 px y cambios sutiles de superficie. Usar sombras suaves de baja opacidad para dar profundidad a elementos elevados.
+- Alternar con sutileza papel frío y superficie blanco hielo entre módulos consecutivos, usando divisores finos para señalar el cambio sin fragmentar el recorrido.
 - No convertir cada contenido en una tarjeta. Preferir secciones editoriales, listas lineales, superficies blancas y demostraciones de producto separadas por aire o líneas finas.
 - Las retículas, patrones y señales tecnológicas deben permanecer tenues y subordinadas al contenido.
 

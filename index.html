@@ -5457,6 +5457,129 @@
             }
         }
     </style>
+    <style id="verdme-navigation-rhythm">
+        .nav-menu {
+            gap: clamp(0.85rem, 1.4vw, 1.4rem);
+        }
+
+        .nav-menu a {
+            white-space: nowrap;
+        }
+
+        .nav-mobile {
+            display: none;
+            flex: 0 0 auto;
+        }
+
+        .nav-mobile summary {
+            min-width: 44px;
+            min-height: 44px;
+            padding: 0.55rem 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            border: 1px solid var(--line-strong);
+            border-radius: 12px;
+            background: var(--surface);
+            color: var(--ink-900);
+            font-size: 0.9rem;
+            font-weight: 600;
+            line-height: 1;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .nav-mobile summary::-webkit-details-marker { display: none; }
+        .nav-mobile summary svg { width: 20px; height: 20px; stroke-linecap: round; }
+        .nav-mobile[open] summary { background: var(--sage-100); border-color: var(--sage-500); }
+
+        .nav-mobile-panel {
+            position: fixed;
+            z-index: 1001;
+            top: 4.95rem;
+            right: 1rem;
+            width: min(20rem, calc(100vw - 2rem));
+            padding: 0.45rem;
+            display: grid;
+            border: 1px solid var(--line-soft);
+            border-radius: 16px;
+            background: var(--surface);
+            box-shadow: 0 16px 40px rgba(39, 48, 49, 0.14);
+        }
+
+        .nav-mobile:not([open]) .nav-mobile-panel { display: none; }
+
+        .nav-mobile-panel a {
+            min-height: 44px;
+            padding: 0.65rem 0.85rem;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            color: var(--ink-900);
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-mobile-panel a:hover,
+        .nav-mobile-panel a:focus-visible {
+            background: var(--sage-100);
+        }
+
+        .nav-mobile-login { display: none !important; }
+
+        .patient-showcase {
+            border-top: 1px solid var(--line-soft);
+            background: radial-gradient(circle at 18% 42%, rgba(229, 235, 234, 0.6), transparent 28rem), var(--surface);
+        }
+
+        .finance-showcase,
+        #cobros.payments-integration {
+            border-top: 1px solid var(--line-soft);
+        }
+
+        @media (min-width: 1201px) {
+            .clinical-showcase,
+            .patient-showcase,
+            .finance-showcase {
+                min-height: calc(100svh - 92px);
+                padding-block: clamp(2rem, 4vh, 3.25rem);
+            }
+        }
+
+        @media (min-width: 821px) {
+            .security-section { padding-block: clamp(3.5rem, 5.5vh, 5rem); }
+            .cta-final { padding-block: clamp(4rem, 6vh, 5.5rem); }
+        }
+
+        @media (max-width: 1100px) {
+            .nav-mobile { display: block; }
+            .nav-shell { gap: clamp(0.6rem, 1.6vw, 1.2rem); }
+            .nav-links { margin-left: auto; }
+        }
+
+        @media (max-width: 680px) {
+            .nav-mobile summary { width: 44px; padding: 0; }
+            .nav-mobile summary span {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap;
+                border: 0;
+            }
+            .nav-mobile-panel { top: 4.55rem; }
+        }
+
+        @media (max-width: 430px) {
+            .nav-shell { gap: 0.5rem; }
+            .nav-mobile-login { display: flex !important; border-top: 1px solid var(--line-soft); }
+        }
+    </style>
 </head>
 <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -5491,9 +5614,25 @@
             <div class="nav-menu" aria-label="Secciones de la página">
                 <a href="#procesos">Procesos clínicos</a>
                 <a href="#pacientes">Pacientes</a>
+                <a href="#finanzas">Finanzas</a>
                 <a href="#cobros">Pagos online</a>
                 <a href="#seguridad">Seguridad</a>
             </div>
+
+            <details class="nav-mobile">
+                <summary>
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                    <span>Menú</span>
+                </summary>
+                <div class="nav-mobile-panel">
+                    <a href="#procesos">Procesos clínicos</a>
+                    <a href="#pacientes">Pacientes</a>
+                    <a href="#finanzas">Finanzas</a>
+                    <a href="#cobros">Pagos online</a>
+                    <a href="#seguridad">Seguridad</a>
+                    <a class="nav-mobile-login" href="https://app.verdme.com">Iniciar sesión</a>
+                </div>
+            </details>
 
             <div class="nav-links">
                 <a href="https://app.verdme.com" class="btn-login">Iniciar sesión</a>
