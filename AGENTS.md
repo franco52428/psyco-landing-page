@@ -71,54 +71,39 @@ El tono es humano, sereno, directo y profesional.
 
 ## Fuente de verdad visual
 
-La referencia visual de la landing es el paquete [`verdme-handoff-v0`](./verdme-handoff-v0/README.md). Debe traducirse a la landing como una gramática visual; no se debe copiar literalmente el HTML, el CSS, los datos ni los flujos del prototipo.
+La identidad visual vigente de la landing es **Verdme Invierno**, el tema predeterminado `verdme-winter` de `psyco-web`. Consultar los tokens de `:root[data-theme="verdme-winter"]` y los tokens globales de tipografía, radios y sombras en [`../psyco-web/app/globals.css`](../psyco-web/app/globals.css). La fuente y su licencia están en [`../psyco-web/public/fonts/bricolage-grotesque/`](../psyco-web/public/fonts/bricolage-grotesque/). Si el tema cambia, revisar la implementación vigente antes de actualizar esta guía y después `index.html`.
 
-Consultar el paquete en este orden:
+El paquete [`verdme-handoff-v0`](./verdme-handoff-v0/README.md) conserva contexto histórico de producto y diseño. Sus valores cromáticos verde bosque, radios pequeños y prototipo visual ya no definen la identidad de la landing. Sus mocks no aprueban nuevas funcionalidades, rutas, datos ni comportamientos. Toda capacidad comercial sigue sujeta a `features.md`.
 
-1. [`decisions/ui-direction.md`](./verdme-handoff-v0/decisions/ui-direction.md) para la intención y los principios visuales.
-2. [`theme-draft/token-inventory.md`](./verdme-handoff-v0/theme-draft/token-inventory.md) para los tokens cromáticos de referencia.
-3. [`prototype/index.html`](./verdme-handoff-v0/prototype/index.html) para comparar densidad, jerarquía, líneas y ritmo.
-4. [`requirements/identity-brief-from-didier.md`](./verdme-handoff-v0/requirements/identity-brief-from-didier.md) para tipografía, iconografía, estados y accesibilidad.
-5. [`decisions/implementation-boundaries.md`](./verdme-handoff-v0/decisions/implementation-boundaries.md) y [`decisions/ux-proposals.md`](./verdme-handoff-v0/decisions/ux-proposals.md) para distinguir estilo aprobado de propuestas que requieren revisión.
-
-El handoff es una referencia de trabajo, no una identidad final ni una autorización para cambiar funcionalidades. Sus mocks no aprueban nuevas rutas, filtros, asociaciones, datos, APIs ni comportamientos. La landing solo adopta su dirección de estilo y debe seguir describiendo exclusivamente lo respaldado por `features.md`.
-
-## Dirección visual Verdme v0
+## Dirección visual Verdme Invierno
 
 ### Principios
 
 - Humano, clínico, sobrio y claro; nunca hospitalario.
-- Ordenado y confiable, no burocrático ni financiero.
-- Editorial, luminoso y con ritmo pausado.
-- Light-first. La profundidad se crea con tonos cálidos, líneas finas y espacio, no con negro puro ni sombras pesadas.
-- El verde bosque funciona como acción, selección y señal; no como relleno dominante.
-- La botánica aporta identidad de forma contextual y ocasional; no es decoración repetida ni iconografía para cada acción.
-- La capa tecnológica se comunica mediante estructura, orden, señales y retículas sutiles; evitar la estética genérica de IA.
+- Editorial y luminoso, con el mismo aire frío y sereno del producto.
+- Base azul pizarra para navegación y acciones; superficies blanco hielo y grises verdosos para lectura y jerarquía.
+- Líneas finas, cambios suaves de superficie y sombras discretas como en el producto.
+- La botánica, si aparece, es contextual y ocasional; no sustituye la iconografía funcional.
+- La capa tecnológica se comunica mediante estructura y retículas tenues, sin estética genérica de IA.
 
 ### Tokens base
 
-- Fondo de aplicación: `#F6F6F3`.
-- Superficie: `#FFFFFF`.
-- Texto principal: `#242926`.
-- Texto secundario: `#6C746E`.
-- Verde principal: `#315B43`.
-- Verde profundo: `#263C2E`.
-- Selección suave: `#E2E7E0`.
-- Verde de evento o señal suave: `#E2F0E5`.
-- Línea suave: `#DFE4DE`.
-- Línea de control: `#D8DCD7`.
+- Fondo de aplicación y papel: `#F4F7F6`; superficie de lectura: `#FCFDFD`; tarjeta blanca: `#FFFFFF`.
+- Papel frío más profundo: `#E5EBEA`; fondo del cuerpo: `#F8FAF9`.
+- Texto principal: `#273031`; texto secundario: `#5D6C6D`.
+- Acción y navegación profunda: `#26383A`; acción o selección media: `#465D60`; acento suave: `#8AA1A2`.
+- Línea suave: `#DCE6E4`; línea marcada: `#B4C7C6`; borde de control: `#B8C9C8`.
+- Selección suave: `#DCE8E7`; cubierta o bloque tenue: `#E8EFEE`.
 
-Estos valores son la referencia vigente para la landing, pero el inventario del handoff sigue marcado como borrador. No inventar escalas adicionales ni presentar estos tokens como un `theme-delivery.json` definitivo. Para texto secundario que deba funcionar tanto sobre papel como sobre sage suave, usar la corrección accesible `#5F675F`, que conserva la intención del token y supera 4.5:1 en esas superficies. Los colores semánticos de éxito, información, advertencia y error deben conservar contraste y significado; no tomar como definitivos los valores ilustrativos del brief.
-
-Los colores oficiales de Wompi se reservan para el módulo de co-marca y su reproducción visual. No deben contaminar la identidad general de Verdme.
+Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, no un tema nuevo. Usar colores semánticos solo con el significado y contraste adecuados. Los colores oficiales de Wompi se reservan para su módulo de co-marca y checkout.
 
 ### Tipografía
 
-- La referencia tipográfica es **Bricolage Grotesque**, con pesos 400, 500 y 600, aplicada como una sola familia global.
-- No cargar Google Fonts, CDN ni otra fuente remota. Bricolage Grotesque solo puede usarse cuando exista un WOFF2 local con licencia compatible y pueda incorporarse sin romper el carácter autocontenido de la landing.
-- Mientras esa entrega esté pendiente, usar una única pila de sistema: `Arial`, `ui-sans-serif`, `system-ui`, `-apple-system`, `BlinkMacSystemFont`, `Segoe UI`, `sans-serif`.
+- Usar **Bricolage Grotesque Variable**, la fuente de `psyco-web`, con pesos 400, 500 y 600 y una sola familia para la landing.
+- Incrustar en `index.html` los WOFF2 necesarios para el contenido en español como `data:` URI dentro de `@font-face`, con atribución SIL Open Font License 1.1. No cargar Google Fonts, CDN ni archivos de fuente separados. Mantener una pila de sistema como fallback.
+- La tipografía interna del checkout de Wompi conserva su apariencia aprobada y queda excluida de la fuente global de la landing.
 - Usar pesos moderados. Reservar 600 para titulares y énfasis; evitar bloques completos en negrita y no introducir otra familia para títulos.
-- Titular principal fluido entre 2.6 y 4.8 rem, con interlineado compacto, tracking negativo sutil y espacio suficiente.
+- Titular principal fluido entre 2.35 y 3.2 rem, con interlineado compacto y tracking negativo sutil. Debe mantener una proporción equilibrada con la vista de producto y el resto del hero al 100% de zoom.
 - Texto de lectura entre 1 y 1.2 rem, con 1.55–1.75 de interlineado.
 - No usar mayúsculas sostenidas salvo etiquetas breves con tracking amplio.
 
@@ -128,16 +113,17 @@ Los colores oficiales de Wompi se reservan para el módulo de co-marca y su repr
 - Diseñar primero para 360–430 px y escalar hasta escritorio.
 - Secciones con 88–128 px verticales en escritorio y 64–80 px en móvil.
 - Mantener grandes zonas de aire y alineación consistente.
-- Usar radios moderados. Como referencia del prototipo: 5–6 px en controles, 9 px en secciones y hasta 12 px en modales; reservar círculos y pastillas para controles o estados que realmente lo necesiten.
-- Priorizar divisores de 1 px y cambios sutiles de superficie. Las sombras deben ser mínimas y excepcionales, principalmente para capas flotantes.
+- En escritorio, la primera vista debe incluir el titular, CTA, vista de producto y los cuatro accesos a agenda/procesos, notas, cobros y seguridad. Estos accesos deben enlazar a contenido existente dentro de la página.
+- Usar los radios del producto como referencia: 14 px pequeño, 16 px medio, 18 px grande, 24 px amplio y 12 px para acciones. Reservar círculos y pastillas para controles o estados que los necesiten.
+- Priorizar divisores de 1 px y cambios sutiles de superficie. Usar sombras suaves de baja opacidad para dar profundidad a elementos elevados.
 - No convertir cada contenido en una tarjeta. Preferir secciones editoriales, listas lineales, superficies blancas y demostraciones de producto separadas por aire o líneas finas.
 - Las retículas, patrones y señales tecnológicas deben permanecer tenues y subordinadas al contenido.
 
 ### Componentes y estados
 
-- CTA primario con fondo `#263C2E`, texto blanco, mínimo 48 px de alto y contraste AA; `#315B43` puede usarse para hover, selección o señal según el contexto.
-- CTA secundario con fondo transparente o blanco y borde `#D8DCD7`.
-- Links, inputs y controles con foco visible de 2 px en `#315B43` y offset suficiente.
+- CTA primario con fondo `#26383A`, texto claro, mínimo 48 px de alto y contraste AA; `#465D60` puede usarse en hover y selección.
+- CTA secundario con fondo `#FCFDFD` o transparente y borde `#B8C9C8`.
+- Links, inputs y controles con foco visible de 2 px en `#465D60` y offset suficiente.
 - Estados de producto usan color más texto o icono; nunca solo color.
 - Controles táctiles de mínimo 44 × 44 px.
 - Iconos lineales, sobrios y consistentes. No usar emojis como iconografía de interfaz.
@@ -145,9 +131,10 @@ Los colores oficiales de Wompi se reservan para el módulo de co-marca y su repr
 ### Imágenes y mockups
 
 - Priorizar UI realista construida con HTML/CSS o capturas verificadas del producto.
+- La vista ilustrativa de agenda del hero toma como referencia estructural [`img/agenda.png`](./img/agenda.png): marco de navegador, navegación lateral, cabecera, pestañas, selector de día, sesiones, estados, avisos y acciones. Conservar esa riqueza visual sin reutilizar nombres ni datos de la captura y sin depender del PNG para renderizar la landing.
 - Los mockups ilustrativos solo muestran funciones presentes en `features.md`.
 - No inventar métricas, nombres reales, historiales clínicos ni testimonios.
-- Usar el prototipo del handoff para evaluar proporción, densidad y jerarquía; no reutilizar directamente su HTML, CSS, datos mock, caracteres Unicode ni recursos PNG como implementación o iconografía de sistema.
+- Usar la interfaz real de `psyco-web` con el tema invierno como referencia para proporción, densidad y jerarquía. No reutilizar datos privados ni depender de capturas externas.
 - Si aparecen Pacientes, Procesos o Agenda, conservar su lenguaje visual diferenciado: hojas suaves para personas, señal estructurada para procesos y datos en primer plano para agenda. No repetir estos motivos como ornamento general de todas las secciones.
 - Todo icono operativo debe ser SVG lineal, usar `currentColor`, mantener una geometría consistente y estar incrustado en `index.html`.
 
@@ -208,7 +195,7 @@ Un cambio comercial está listo cuando:
 
 1. Toda capacidad está respaldada por [features.md](./features.md).
 2. La jerarquía conduce a un CTA principal sin distracciones.
-3. El resultado visual sigue la dirección Verdme v0 del handoff: fondo cálido, superficie blanca, verde bosque como señal, líneas finas, radios moderados y botánica contenida.
+3. El resultado visual sigue Verdme Invierno de `psyco-web`: papel frío, superficie blanco hielo, texto azul pizarra, navegación profunda, selección gris verdosa, líneas finas y radios del producto.
 4. No hay emojis como iconos, ornamento botánico repetido, claims absolutos ni promesas de IA no verificadas.
 5. Funciona sin desbordes a 360, 390, 768, 1280 y 1440 px.
 6. Teclado, foco, contraste, headings y landmarks son coherentes.
