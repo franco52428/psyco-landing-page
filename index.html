@@ -3694,7 +3694,7 @@
 
         .preview-app {
             display: grid;
-            grid-template-columns: 112px minmax(0, 1fr);
+            grid-template-columns: 14.3% minmax(0, 1fr);
             flex: 1 1 auto;
         }
 
@@ -4413,6 +4413,358 @@
             }
         }
     </style>
+    <style id="clinical-showcase-styles">
+        .clinical-showcase {
+            position: relative;
+            min-height: 100svh;
+            padding: clamp(3rem, 6vh, 5rem) 0;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: radial-gradient(circle at 84% 42%, rgba(229, 235, 234, 0.9), transparent 28rem), var(--app-background);
+        }
+
+        .clinical-showcase::before {
+            position: absolute;
+            inset: 8% 0 auto auto;
+            width: min(52vw, 44rem);
+            height: 75%;
+            background-image: linear-gradient(rgba(49, 91, 67, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(49, 91, 67, 0.035) 1px, transparent 1px);
+            background-size: 42px 42px;
+            mask-image: linear-gradient(90deg, transparent, #000 25%, #000 70%, transparent);
+            content: "";
+            pointer-events: none;
+        }
+
+        .clinical-showcase-shell {
+            position: relative;
+            width: min(calc(100% - 2rem), 1360px);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(350px, 0.62fr) minmax(0, 1.38fr);
+            align-items: center;
+            gap: clamp(2rem, 2.5vw, 3rem);
+        }
+
+        .clinical-showcase-copy { min-width: 0; }
+        .clinical-showcase-copy .section-kicker { margin-bottom: 0.5rem; }
+        .clinical-showcase-copy h2 {
+            margin: 0;
+            color: var(--ink-900);
+            font-size: clamp(2.4rem, 3.2vw, 3.2rem);
+            font-weight: 600;
+            letter-spacing: -0.045em;
+            line-height: 1.06;
+        }
+        .clinical-showcase-copy > p:last-of-type {
+            margin: 1.35rem 0 0;
+            color: var(--ink-700);
+            font-size: clamp(1.02rem, 1.45vw, 1.16rem);
+            line-height: 1.6;
+        }
+        .clinical-capabilities {
+            margin: 1.5rem 0 0;
+            padding: 0;
+            display: grid;
+            gap: 0.72rem;
+            list-style: none;
+        }
+        .clinical-capabilities li {
+            padding-left: 1rem;
+            border-left: 2px solid var(--line-strong);
+            color: var(--ink-700);
+            font-size: 0.91rem;
+            line-height: 1.4;
+        }
+        .clinical-capabilities strong {
+            display: block;
+            margin-bottom: 0.1rem;
+            color: var(--ink-900);
+            font-size: 0.96rem;
+            font-weight: 600;
+        }
+        .clinical-preview-wrap {
+            min-width: 0;
+            margin: 0;
+            align-self: center;
+            container: clinical-preview / inline-size;
+            transform: translateY(0.75rem);
+        }
+        .clinical-preview {
+            display: grid;
+            grid-template-columns: 14.3% 21.4% minmax(0, 1fr);
+            aspect-ratio: 2940 / 1450;
+            overflow: hidden;
+            border: 1px solid var(--line-soft);
+            border-radius: 18px;
+            background: #FCFDFD;
+            box-shadow: 0 14px 38px rgba(39, 48, 49, 0.1);
+            color: #273031;
+            font-size: clamp(8px, 1.03cqw, 13px);
+            line-height: 1.25;
+        }
+        .clinical-symbols { position: absolute; width: 0; height: 0; overflow: hidden; }
+        .clinical-preview svg:not(.clinical-brand-mark) {
+            width: 1.2em;
+            height: 1.2em;
+            flex: none;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        .clinical-preview .clinical-symbols { width: 0; height: 0; }
+        .clinical-directory {
+            min-width: 0;
+            position: relative;
+            border-right: 1px solid #DCE6E4;
+            background: #FCFDFD;
+        }
+        .clinical-directory-head {
+            height: 21.3%;
+            min-height: 0;
+            padding: 2.1em 1.35em 0.8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .clinical-directory-title,
+        .clinical-directory-search {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.4em;
+        }
+        .clinical-directory-title strong { font-size: 1.55em; line-height: 1.03; }
+        .clinical-directory-title span,
+        .clinical-directory-search span { display: inline-flex; align-items: center; gap: 0.35em; }
+        .clinical-directory-title span { font-weight: 600; white-space: nowrap; }
+        .clinical-directory-search {
+            padding-bottom: 0.45em;
+            border-bottom: 1px solid #B4C7C6;
+            color: #5D6C6D;
+            white-space: nowrap;
+        }
+        .clinical-directory-search > span { overflow: hidden; text-overflow: ellipsis; }
+        .clinical-directory-collapse {
+            position: absolute;
+            z-index: 2;
+            top: 2em;
+            right: -1.1em;
+            width: 2.2em;
+            height: 2.2em;
+            display: grid;
+            place-items: center;
+            border: 1px solid #DCE6E4;
+            border-radius: 50%;
+            background: #FFFFFF;
+            box-shadow: 0 2px 9px rgba(39, 48, 49, 0.12);
+            color: #465D60;
+        }
+        .clinical-directory-list { height: 78.7%; display: grid; grid-template-rows: repeat(4, 1fr); }
+        .clinical-directory-item {
+            min-height: 0;
+            padding: 0.6em 1.35em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.35em;
+            border-top: 1px solid #DCE6E4;
+            color: #5D6C6D;
+            white-space: nowrap;
+        }
+        .clinical-directory-item.is-selected { border-radius: 0.8em; background: #E5F0F1; }
+        .clinical-directory-item strong { overflow: hidden; color: #273031; font-size: 1.15em; text-overflow: ellipsis; }
+        .clinical-directory-item span { display: flex; align-items: center; gap: 0.45em; overflow: hidden; text-overflow: ellipsis; }
+        .clinical-detail { min-width: 0; display: flex; flex-direction: column; background: #FCFDFD; }
+        .clinical-cover {
+            position: relative;
+            isolation: isolate;
+            height: 18.3%;
+            flex: 0 0 18.3%;
+            padding: 1.15em 4.2em;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            border-bottom: 1px solid #C8D7D5;
+            background-color: #E6EDEC;
+            background-image: radial-gradient(circle at 78% 18%, rgb(111 137 140 / 9%), transparent 26%), linear-gradient(112deg, #F4F7F6 0%, #DFE9E7 100%);
+        }
+        .clinical-cover::before {
+            position: absolute;
+            z-index: 0;
+            inset: 0;
+            background-image: linear-gradient(rgba(49, 91, 67, 0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(49, 91, 67, 0.12) 1px, transparent 1px);
+            background-size: 3.75% 24%;
+            opacity: 0.78;
+            mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45) 35%, #000 65%);
+            content: "";
+            pointer-events: none;
+        }
+        .clinical-cover::after {
+            position: absolute;
+            z-index: 1;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(246, 247, 244, 0.99), rgba(246, 247, 244, 0.93) 48%, rgba(238, 242, 237, 0.42) 72%, rgba(238, 242, 237, 0.08));
+            content: "";
+            pointer-events: none;
+        }
+        .clinical-cover-copy { position: relative; z-index: 4; min-width: 0; width: 72%; }
+        .clinical-cover-title { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5em; }
+        .clinical-cover-title strong { font-size: 2em; font-weight: 600; letter-spacing: -0.035em; line-height: 1.12; }
+        .clinical-cover-title em {
+            padding: 0.1em 0.55em;
+            border: 1px solid #DCE6E4;
+            border-radius: 0.35em;
+            background: #EDF5F4;
+            color: #465D60;
+            font-size: 0.78em;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+        }
+        .clinical-cover-copy > span { margin-top: 0.55em; display: flex; align-items: center; gap: 0.4em; color: #5F7071; }
+        .clinical-cover-art {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: calc(93% - 5em) !important;
+            height: 100% !important;
+            opacity: 0.4;
+            mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3) 35%, #000 70%);
+            pointer-events: none;
+        }
+        .clinical-cover-art path { fill: none; stroke: #315B43; stroke-width: 1.35; opacity: 0.58; vector-effect: non-scaling-stroke; }
+        .clinical-cover-art .clinical-signal-branch { stroke-width: 1; opacity: 0.28; }
+        .clinical-cover-art .clinical-signal-halo { stroke: #F1F4EF; stroke-width: 14; opacity: 1; }
+        .clinical-cover-art .clinical-signal-dot { stroke: #315B43; stroke-width: 8; opacity: 1; }
+        .clinical-cover-node {
+            position: absolute;
+            z-index: 3;
+            width: 0.5em;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: #315B43;
+            box-shadow: 0 0 0 0.2em rgba(241, 244, 239, 0.82);
+            opacity: 0.22;
+            pointer-events: none;
+        }
+        .clinical-cover-node-a { top: 18%; right: 29%; }
+        .clinical-cover-node-b { right: 11.5%; bottom: 16%; }
+        .clinical-cover-book {
+            position: absolute;
+            z-index: 3;
+            top: 50%;
+            right: 7%;
+            width: auto;
+            height: 70%;
+            max-width: 6em;
+            object-fit: contain;
+            filter: saturate(0.72) contrast(0.94);
+            mix-blend-mode: multiply;
+            opacity: 0.88;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        .clinical-detail-body { min-height: 0; padding: 1.5em 4.2em 2em; overflow: hidden; }
+        .clinical-tabs {
+            min-height: 3.2em;
+            display: flex;
+            align-items: flex-start;
+            gap: 2em;
+            overflow: hidden;
+            border-bottom: 1px solid #B4C7C6;
+            color: #5D6C6D;
+            font-size: 1.03em;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .clinical-tabs span { min-height: 3.2em; display: inline-flex; align-items: flex-start; padding-top: 0.25em; }
+        .clinical-tabs .is-active { border-bottom: 2px solid #8AA1A2; color: #465D60; }
+        .clinical-note-action { min-height: 4.8em; display: flex; align-items: center; justify-content: flex-end; gap: 0.45em; color: #465D60; font-weight: 600; }
+        .clinical-note-card {
+            overflow: hidden;
+            border: 1px solid #DCE6E4;
+            border-radius: 1em;
+            background: #FFFFFF;
+            box-shadow: 0 4px 12px rgba(39, 48, 49, 0.08);
+        }
+        .clinical-note-card + .clinical-note-card { margin-top: 1.15em; }
+        .clinical-note-card-head {
+            min-height: 4.5em;
+            padding: 0 1.45em;
+            display: flex;
+            align-items: center;
+            gap: 0.65em;
+            background: #F9FBFA;
+            color: #465D60;
+            font-size: 1.02em;
+            font-weight: 600;
+        }
+        .clinical-note-card-head > svg:last-child { margin-left: auto; }
+        .clinical-note-entry {
+            min-height: 5.05em;
+            margin: 0 1.45em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.8em;
+            border-top: 1px solid #E5EBEA;
+        }
+        .clinical-note-entry > div:first-child { min-width: 0; }
+        .clinical-note-entry strong { display: flex; align-items: center; gap: 0.45em; font-weight: 600; }
+        .clinical-note-entry small { margin-top: 0.55em; display: flex; align-items: center; gap: 0.4em; color: #5D6C6D; font-size: 0.9em; }
+        .clinical-note-entry-actions { display: flex; align-items: center; gap: 1.4em; color: #5D6C6D; white-space: nowrap; }
+        .clinical-note-entry-actions span { display: flex; align-items: center; gap: 0.4em; }
+        .clinical-preview-caption { margin: 0.65rem 0 0; color: var(--ink-700); font-size: 0.75rem; text-align: center; }
+
+        @container clinical-preview (max-width: 900px) {
+            .clinical-directory-title span { font-size: 0; }
+            .clinical-directory-title span svg { width: 1rem; height: 1rem; }
+            .clinical-directory-search { font-size: 0.85em; }
+            .clinical-directory-item { font-size: 0.9em; }
+            .clinical-cover-title strong { font-size: 1.8em; }
+            .clinical-tabs { gap: 1.4em; font-size: 0.95em; }
+            .clinical-detail-body { padding-inline: 2.7em; }
+        }
+        @media (max-width: 1100px) {
+            .clinical-showcase { padding-block: 2rem; }
+            .clinical-showcase-shell { max-width: 950px; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+            .clinical-showcase-copy { max-width: 760px; }
+            .clinical-preview-wrap { width: min(100%, 680px); margin-inline: auto; transform: none; }
+            .clinical-capabilities { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (max-width: 900px) {
+            .clinical-preview { grid-template-columns: 31% minmax(0, 1fr); font-size: 11px; }
+            .clinical-directory-collapse { display: none; }
+            .clinical-cover { padding-inline: 2.7em; }
+        }
+        @media (max-width: 640px) {
+            .clinical-showcase { min-height: 0; padding-block: 3.5rem; }
+            .clinical-showcase-copy h2 { font-size: clamp(2rem, 8vw, 2.6rem); }
+            .clinical-capabilities { grid-template-columns: minmax(0, 1fr); gap: 0.7rem; }
+            .clinical-preview { aspect-ratio: auto; display: block; font-size: 12px; }
+            .clinical-directory { border-right: 0; }
+            .clinical-directory-head { height: auto; padding: 1.2em; gap: 1.2em; }
+            .clinical-directory-list { height: auto; display: block; }
+            .clinical-directory-item { display: none; }
+            .clinical-directory-item.is-selected { min-height: 5.4em; display: flex; }
+            .clinical-directory-item.is-selected span:nth-of-type(n + 3) { display: none; }
+            .clinical-cover { height: 7.2em; padding-inline: 1.4em; }
+            .clinical-cover-title strong { font-size: 1.5em; }
+            .clinical-detail-body { padding: 1.2em; overflow: visible; }
+            .clinical-tabs { gap: 1.3em; min-height: 3em; font-size: 0.9em; }
+            .clinical-tabs span { min-height: 3em; }
+            .clinical-tabs span:nth-child(n + 4) { display: none; }
+            .clinical-note-action { min-height: 3.8em; }
+            .clinical-note-card:nth-of-type(n + 3) { display: none; }
+            .clinical-note-card-head { min-height: 4em; }
+            .clinical-note-entry { min-height: 4.5em; }
+            .clinical-note-entry-actions span:last-child { display: none; }
+        }
+    </style>
     <style id="patient-showcase-styles">
         .patient-showcase {
             position: relative;
@@ -4439,12 +4791,12 @@
 
         .patient-showcase-shell {
             position: relative;
-            width: min(calc(100% - 2rem), 1320px);
+            width: min(calc(100% - 2rem), 1360px);
             margin: 0 auto;
             display: grid;
-            grid-template-columns: minmax(0, 1.4fr) minmax(290px, 0.6fr);
+            grid-template-columns: minmax(0, 1.5fr) minmax(290px, 0.5fr);
             align-items: center;
-            gap: clamp(2rem, 3vw, 3.5rem);
+            gap: clamp(2rem, 2.5vw, 3rem);
         }
 
         .patient-showcase-heading {
@@ -4495,7 +4847,7 @@
             background: #FCFDFD;
             box-shadow: 0 14px 38px rgba(39, 48, 49, 0.1);
             color: #273031;
-            font-size: clamp(10px, 1.03cqw, 14px);
+            font-size: clamp(8px, 1.03cqw, 14px);
             line-height: 1.25;
         }
 
@@ -4527,6 +4879,22 @@
             flex-direction: column;
             background: #26383A;
             color: #F4F7F6;
+        }
+
+        .agenda-ui-nav {
+            font-size: clamp(9px, 1.05cqw, 13px);
+        }
+
+        @container agenda-preview (max-width: 700px) {
+            .agenda-ui-nav {
+                padding-inline: 0.8em;
+                font-size: 8px;
+            }
+
+            .agenda-ui-nav .patient-nav-brand {
+                gap: 0.5em;
+                font-size: 1.2em;
+            }
         }
 
         .patient-nav-brand {
@@ -4580,8 +4948,25 @@
 
         .patient-directory {
             min-width: 0;
+            position: relative;
             border-right: 1px solid #DCE6E4;
             background: #FCFDFD;
+        }
+
+        .patient-directory-collapse {
+            position: absolute;
+            z-index: 3;
+            top: 2em;
+            right: -1.1em;
+            width: 2.2em;
+            height: 2.2em;
+            display: grid;
+            place-items: center;
+            border: 1px solid #DCE6E4;
+            border-radius: 50%;
+            background: #FFFFFF;
+            box-shadow: 0 2px 9px rgba(39, 48, 49, 0.12);
+            color: #465D60;
         }
 
         .patient-directory-head {
@@ -4634,7 +5019,7 @@
 
         .patient-directory-card {
             min-height: 0;
-            padding: 0.75em 1.25em;
+            padding: 0.55em 1.25em;
             display: grid;
             grid-template-columns: 4.2em minmax(0, 1fr);
             align-items: center;
@@ -4663,13 +5048,13 @@
         .patient-directory-copy {
             min-width: 0;
             display: grid;
-            gap: 0.28em;
+            gap: 0.18em;
             color: #5D6C6D;
-            font-size: 0.95em;
+            font-size: 0.9em;
         }
 
         .patient-directory-copy strong {
-            margin-bottom: 0.25em;
+            margin-bottom: 0.18em;
             overflow: hidden;
             color: #273031;
             font-size: 1.2em;
@@ -4722,13 +5107,13 @@
         }
 
         .patient-context-head.preview-workspace-head strong {
-            font-size: 2.8em;
+            font-size: 2.2em;
         }
 
         .patient-context-head.preview-workspace-head > div span {
             max-width: none;
             margin-top: 0.3em;
-            font-size: 1.25em;
+            font-size: 1em;
         }
 
         .patient-detail-body {
@@ -4738,18 +5123,18 @@
         }
 
         .patient-detail-tabs {
-            min-height: 3.4em;
+            min-height: 2.5em;
             display: flex;
             align-items: flex-start;
             gap: 2.4em;
             border-bottom: 1px solid #B4C7C6;
             color: #5D6C6D;
-            font-size: 1.12em;
+            font-size: 1em;
             font-weight: 600;
         }
 
         .patient-detail-tabs span {
-            min-height: 3.4em;
+            min-height: 2.5em;
             display: inline-flex;
             align-items: flex-start;
             gap: 0.55em;
@@ -4811,14 +5196,14 @@
         }
 
         .patient-process-heading {
-            margin-top: 2.3em;
-            min-height: 2.8em;
+            margin-top: 2em;
+            min-height: 2.4em;
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
             gap: 1em;
             border-bottom: 1px solid #E5EBEA;
-            font-size: 1.12em;
+            font-size: 1em;
             font-weight: 600;
         }
 
@@ -4893,7 +5278,7 @@
             text-align: center;
         }
 
-        @media (max-width: 1100px) {
+        @media (max-width: 1200px) {
             .patient-showcase-shell {
                 max-width: 950px;
                 grid-template-columns: minmax(0, 1fr);
@@ -4904,22 +5289,6 @@
             .patient-preview-wrap { grid-column: 1; grid-row: 2; }
         }
 
-        @container patient-preview (max-width: 920px) {
-            .patient-preview { aspect-ratio: 16 / 9; }
-            .patient-directory-card { padding-block: 0.4em; }
-            .patient-directory-copy { gap: 0.15em; }
-            .patient-directory-copy strong { margin-bottom: 0.1em; }
-            .patient-detail-body { padding-top: 1.2em; }
-            .patient-detail-tabs,
-            .patient-detail-tabs span { min-height: 3em; }
-            .patient-summary { margin-top: 1.3em; }
-            .patient-summary-row { min-height: 3.5em; }
-            .patient-process-heading { margin-top: 1.2em; min-height: 2.4em; }
-            .patient-process-card { margin-top: 0.8em; }
-            .patient-process-card-head,
-            .patient-process-card-row { min-height: 3.4em; }
-        }
-
         @media (max-width: 900px) {
             .patient-preview {
                 aspect-ratio: 16 / 9;
@@ -4928,6 +5297,8 @@
             }
 
             .patient-nav { display: none; }
+            .product-preview.preview-ui .preview-app { grid-template-columns: minmax(0, 1fr); }
+            .patient-directory-collapse { display: none; }
             .patient-directory-head { padding-top: 1.6em; }
             .patient-directory-card { padding-inline: 0.8em; }
             .patient-directory-copy { font-size: 0.88em; }
@@ -5228,7 +5599,7 @@
             </a>
 
             <div class="nav-menu" aria-label="Secciones de la página">
-                <a href="#flujo">Cómo te ayuda</a>
+                <a href="#procesos">Procesos clínicos</a>
                 <a href="#funcionalidades">Funcionalidades</a>
                 <a href="#cobros">Cobros con Wompi</a>
                 <a href="#seguridad">Seguridad</a>
@@ -5278,6 +5649,7 @@
                                 <symbol id="preview-icon-chevron" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></symbol>
                                 <symbol id="preview-icon-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
                                 <symbol id="preview-icon-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+                                <symbol id="preview-icon-logout" viewBox="0 0 24 24"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5M13 8l4 4-4 4M8 12h9"/></symbol>
                             </defs>
                         </svg>
                         <div class="preview-browser">
@@ -5293,14 +5665,16 @@
                             </div>
                         </div>
                         <div class="preview-app">
-                            <aside class="preview-sidebar">
-                                <span class="preview-sidebar-brand"><span class="preview-brand-symbol"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#34575A"/><path d="m9 12 11 21V23l-6-11Z" fill="#2FA874"/><path d="m31 12-11 21V23l6-11Z" fill="#8BD3A7"/><circle cx="20" cy="8" r="4" fill="#D7AE61"/></svg></span> Verdme</span>
-                                <span class="preview-sidebar-item is-active"><svg viewBox="0 0 24 24"><use href="#preview-icon-calendar"></use></svg>Agenda</span>
-                                <span class="preview-sidebar-item"><svg viewBox="0 0 24 24"><use href="#preview-icon-person"></use></svg>Pacientes</span>
-                                <span class="preview-sidebar-item"><svg viewBox="0 0 24 24"><use href="#preview-icon-process"></use></svg>Procesos clínicos</span>
-                                <span class="preview-sidebar-item"><svg viewBox="0 0 24 24"><use href="#preview-icon-grid"></use></svg>Dashboard</span>
-                                <span class="preview-sidebar-item"><svg viewBox="0 0 24 24"><use href="#preview-icon-wallet"></use></svg>Finanzas</span>
-                                <span class="preview-sidebar-bottom"><svg viewBox="0 0 24 24"><use href="#preview-icon-settings"></use></svg>Ajustes</span>
+                            <aside class="patient-nav agenda-ui-nav">
+                                <div class="patient-nav-brand"><span class="preview-brand-symbol"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#34575A" stroke="none"/><path d="m9 12 11 21V23l-6-11Z" fill="#2FA874" stroke="none"/><path d="m31 12-11 21V23l6-11Z" fill="#8BD3A7" stroke="none"/><circle cx="20" cy="8" r="4" fill="#D7AE61" stroke="none"/></svg></span>Verdme</div>
+                                <div class="patient-nav-menu">
+                                    <span class="patient-nav-item is-active"><svg viewBox="0 0 24 24"><use href="#preview-icon-calendar"></use></svg>Agenda</span>
+                                    <span class="patient-nav-item"><svg viewBox="0 0 24 24"><use href="#preview-icon-person"></use></svg>Pacientes</span>
+                                    <span class="patient-nav-item"><svg viewBox="0 0 24 24"><use href="#preview-icon-process"></use></svg>Procesos clínicos</span>
+                                    <span class="patient-nav-item"><svg viewBox="0 0 24 24"><use href="#preview-icon-grid"></use></svg>Dashboard</span>
+                                    <span class="patient-nav-item"><svg viewBox="0 0 24 24"><use href="#preview-icon-wallet"></use></svg>Finanzas</span>
+                                </div>
+                                <div class="patient-nav-foot"><span><svg viewBox="0 0 24 24"><use href="#preview-icon-settings"></use></svg>Ajustes</span><span><svg viewBox="0 0 24 24"><use href="#preview-icon-logout"></use></svg>Cerrar sesión</span></div>
                             </aside>
                             <div class="preview-workspace">
                                 <div class="preview-workspace-head">
@@ -5354,6 +5728,83 @@
             </div>
         </header>
 
+        <section class="clinical-showcase" id="procesos" aria-labelledby="clinical-showcase-title">
+            <div class="clinical-showcase-shell">
+                <div class="clinical-showcase-copy">
+                    <p class="section-kicker">Procesos clínicos</p>
+                    <h2 id="clinical-showcase-title">Conserva el hilo de cada proceso clínico.</h2>
+                    <p>De una sesión a la siguiente, Verdme reúne lo que has registrado para que retomes el contexto, reconozcas lo pendiente y decidas cómo continuar con tu propio criterio.</p>
+                    <ul class="clinical-capabilities">
+                        <li><strong>Contexto antes de cada sesión</strong>Participantes, motivo de consulta, sesiones y notas se encuentran en el mismo proceso.</li>
+                        <li><strong>Evolución a la vista</strong>La línea de tiempo y el estado clínico muestran lo que ha cambiado.</li>
+                        <li><strong>Un plan fácil de retomar</strong>Objetivos, intervenciones e indicadores de progreso acompañan el seguimiento.</li>
+                        <li><strong>Menos información dispersa</strong>Acuerdos de cobro, paquetes y cuotas quedan vinculados al proceso.</li>
+                    </ul>
+                </div>
+
+                <figure class="clinical-preview-wrap" aria-label="Vista ilustrativa de procesos clínicos y notas en Verdme">
+                    <div class="clinical-preview" aria-hidden="true">
+                        <svg class="clinical-symbols" width="0" height="0" aria-hidden="true"><defs>
+                            <symbol id="clinical-icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h3M14 14h3"/></symbol>
+                            <symbol id="clinical-icon-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 21c.3-4.3 2.7-6.5 7-6.5s6.7 2.2 7 6.5"/></symbol>
+                            <symbol id="clinical-icon-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c.4-3.7 2.2-5.5 6-5.5s5.6 1.8 6 5.5M16 5a3 3 0 0 1 0 6M17 14.5c2.5.2 3.8 1.9 4 5.5"/></symbol>
+                            <symbol id="clinical-icon-process" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="12" r="2"/><circle cx="6" cy="19" r="2"/><path d="M8 5h7a3 3 0 0 1 3 3v2M16 12H9a3 3 0 0 0-3 3v2"/></symbol>
+                            <symbol id="clinical-icon-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+                            <symbol id="clinical-icon-wallet" viewBox="0 0 24 24"><path d="M4 6h15a2 2 0 0 1 2 2v12H4a2 2 0 0 1-2-2V7a3 3 0 0 1 3-3h12"/><path d="M15 12h6v4h-6a2 2 0 0 1 0-4Z"/></symbol>
+                            <symbol id="clinical-icon-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="m10 2-.5 2.2-2.1 1.2-2.2-.7-2 3.4 1.7 1.5v2.4l-1.7 1.5 2 3.4 2.2-.7 2.1 1.2L10 20h4l.5-2.2 2.1-1.2 2.2.7 2-3.4-1.7-1.5V10l1.7-1.5-2-3.4-2.2.7-2.1-1.2L14 2h-4Z"/></symbol>
+                            <symbol id="clinical-icon-logout" viewBox="0 0 24 24"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5M13 8l4 4-4 4M8 12h9"/></symbol>
+                            <symbol id="clinical-icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+                            <symbol id="clinical-icon-filter" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8L3 5Z"/></symbol>
+                            <symbol id="clinical-icon-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+                            <symbol id="clinical-icon-folder" viewBox="0 0 24 24"><path d="M3 6h7l2 2h9v11H3V6Z"/></symbol>
+                            <symbol id="clinical-icon-no-session" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M5 5l14 16"/></symbol>
+                            <symbol id="clinical-icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+                            <symbol id="clinical-icon-note" viewBox="0 0 24 24"><path d="M5 3h11l3 3v15H5V3Z"/><path d="M9 11h6M9 15h6M9 7h3"/></symbol>
+                            <symbol id="clinical-icon-edit" viewBox="0 0 24 24"><path d="M12 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="m16 4 4 4-8 8-4 1 1-4 8-8Z"/></symbol>
+                            <symbol id="clinical-icon-chevron" viewBox="0 0 24 24"><path d="m6 14 6-6 6 6"/></symbol>
+                        </defs></svg>
+
+                        <aside class="patient-nav clinical-ui-nav">
+                            <div class="patient-nav-brand"><span class="preview-brand-symbol"><svg class="clinical-brand-mark" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#34575A"/><path d="m9 12 11 21V23l-6-11Z" fill="#2FA874"/><path d="m31 12-11 21V23l6-11Z" fill="#8BD3A7"/><circle cx="20" cy="8" r="4" fill="#D7AE61"/></svg></span>Verdme</div>
+                            <div class="patient-nav-menu">
+                                <span class="patient-nav-item"><svg><use href="#clinical-icon-calendar"></use></svg>Agenda</span>
+                                <span class="patient-nav-item"><svg><use href="#clinical-icon-person"></use></svg>Pacientes</span>
+                                <span class="patient-nav-item is-active"><svg><use href="#clinical-icon-process"></use></svg>Procesos clínicos</span>
+                                <span class="patient-nav-item"><svg><use href="#clinical-icon-grid"></use></svg>Dashboard</span>
+                                <span class="patient-nav-item"><svg><use href="#clinical-icon-wallet"></use></svg>Finanzas</span>
+                            </div>
+                            <div class="patient-nav-foot"><span><svg><use href="#clinical-icon-settings"></use></svg>Ajustes</span><span><svg><use href="#clinical-icon-logout"></use></svg>Cerrar sesión</span></div>
+                        </aside>
+
+                        <div class="clinical-directory">
+                            <div class="clinical-directory-head"><div class="clinical-directory-title"><strong>Procesos<br>clínicos</strong><span><svg><use href="#clinical-icon-plus"></use></svg>Registrar</span></div><div class="clinical-directory-search"><span><svg><use href="#clinical-icon-search"></use></svg>Buscar proceso o alias</span><svg><use href="#clinical-icon-filter"></use></svg></div></div>
+                            <span class="clinical-directory-collapse"><svg viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg></span>
+                            <div class="clinical-directory-list">
+                                <div class="clinical-directory-item is-selected"><strong>Proceso clínico de Alba</strong><span><svg><use href="#clinical-icon-people"></use></svg>Alba</span><span><svg><use href="#clinical-icon-folder"></use></svg>Activo</span><span><svg><use href="#clinical-icon-calendar"></use></svg>Siguiente sesión: 25 sept · 2:00 p. m.</span><span><svg><use href="#clinical-icon-clock"></use></svg>Última sesión: 31 ago</span></div>
+                                <div class="clinical-directory-item"><strong>Proceso clínico de Nora</strong><span><svg><use href="#clinical-icon-people"></use></svg>Nora</span><span><svg><use href="#clinical-icon-folder"></use></svg>Activo</span><span><svg><use href="#clinical-icon-no-session"></use></svg>Sin sesión programada</span><span><svg><use href="#clinical-icon-clock"></use></svg>Última sesión: 8 sept</span></div>
+                                <div class="clinical-directory-item"><strong>Proceso clínico de Luz</strong><span><svg><use href="#clinical-icon-people"></use></svg>Luz</span><span><svg><use href="#clinical-icon-folder"></use></svg>Pausado</span><span><svg><use href="#clinical-icon-no-session"></use></svg>Sin sesión programada</span><span><svg><use href="#clinical-icon-clock"></use></svg>Última sesión: 22 jul</span></div>
+                                <div class="clinical-directory-item"><strong>Proceso de Alba y Río</strong><span><svg><use href="#clinical-icon-people"></use></svg>Alba y Río</span><span><svg><use href="#clinical-icon-folder"></use></svg>Activo</span><span><svg><use href="#clinical-icon-no-session"></use></svg>Sin sesión programada</span><span><svg><use href="#clinical-icon-clock"></use></svg>Última sesión: 28 ago</span></div>
+                            </div>
+                        </div>
+
+                        <div class="clinical-detail">
+                            <div class="clinical-cover">
+                                <svg class="clinical-cover-art" viewBox="0 0 320 82" preserveAspectRatio="none" aria-hidden="true"><path d="M-4 81 C38 80 66 64 102 52 S152 34 185 42 S252 44 324 16"/><path class="clinical-signal-branch" d="M102 52 C124 62 142 68 164 74"/><path class="clinical-signal-branch" d="M185 42 C209 30 228 20 250 12"/><path class="clinical-signal-halo" d="M102 52h0"/><path class="clinical-signal-dot" d="M102 52h0"/><path class="clinical-signal-halo" d="M185 42h0"/><path class="clinical-signal-dot" d="M185 42h0"/></svg><span class="clinical-cover-node clinical-cover-node-a" aria-hidden="true"></span><span class="clinical-cover-node clinical-cover-node-b" aria-hidden="true"></span>
+                                <div class="clinical-cover-copy"><div class="clinical-cover-title"><strong>Proceso clínico de Alba</strong><em>ACTIVO</em></div><span><svg><use href="#clinical-icon-people"></use></svg>Alba</span></div><img class="clinical-cover-book" src="data:image/png;base64,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" alt="" aria-hidden="true">
+                            </div>
+                            <div class="clinical-detail-body">
+                                <div class="clinical-tabs"><span>Resumen</span><span>Pacientes</span><span>Sesiones</span><span class="is-active">Notas clínicas</span><span>Plan terapéutico</span><span>Finanzas</span></div>
+                                <div class="clinical-note-action"><svg><use href="#clinical-icon-edit"></use></svg>Escribir nota</div>
+                                <div class="clinical-note-card"><div class="clinical-note-card-head"><svg><use href="#clinical-icon-calendar"></use></svg>Sesión · 27/07/2026, 5:00 p. m.<svg><use href="#clinical-icon-chevron"></use></svg></div><div class="clinical-note-entry"><div><strong><svg><use href="#clinical-icon-person"></use></svg>Alba</strong><small><svg><use href="#clinical-icon-clock"></use></svg>Actualizada el 23/09/2026</small></div><div class="clinical-note-entry-actions"><span><svg><use href="#clinical-icon-note"></use></svg>Ver nota</span><span><svg><use href="#clinical-icon-calendar"></use></svg>Ver sesión</span></div></div><div class="clinical-note-entry"><div><strong><svg><use href="#clinical-icon-person"></use></svg>Alba</strong><small><svg><use href="#clinical-icon-clock"></use></svg>Actualizada el 27/07/2026</small></div><div class="clinical-note-entry-actions"><span><svg><use href="#clinical-icon-note"></use></svg>Ver nota</span><span><svg><use href="#clinical-icon-calendar"></use></svg>Ver sesión</span></div></div></div>
+                                <div class="clinical-note-card"><div class="clinical-note-card-head"><svg><use href="#clinical-icon-calendar"></use></svg>Sesión · 31/08/2026, 2:00 p. m.<svg><use href="#clinical-icon-chevron"></use></svg></div><div class="clinical-note-entry"><div><strong><svg><use href="#clinical-icon-person"></use></svg>Alba</strong><small><svg><use href="#clinical-icon-clock"></use></svg>Actualizada el 02/09/2026</small></div><div class="clinical-note-entry-actions"><span><svg><use href="#clinical-icon-note"></use></svg>Ver nota</span><span><svg><use href="#clinical-icon-calendar"></use></svg>Ver sesión</span></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption class="clinical-preview-caption">Vista ilustrativa del seguimiento de procesos clínicos en Verdme.</figcaption>
+                </figure>
+            </div>
+        </section>
+
         <section class="patient-showcase" id="pacientes" aria-labelledby="patient-showcase-title">
             <div class="patient-showcase-shell">
                 <div class="patient-showcase-heading">
@@ -5402,6 +5853,7 @@
                                 <div class="patient-directory-title"><strong>Pacientes</strong><span><svg><use href="#patient-icon-plus"></use></svg>Registrar</span></div>
                                 <div class="patient-directory-search"><span><svg><use href="#patient-icon-search"></use></svg>Buscar paciente</span><svg><use href="#patient-icon-filter"></use></svg></div>
                             </div>
+                            <span class="patient-directory-collapse"><svg viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg></span>
                             <div class="patient-directory-list">
                                 <div class="patient-directory-card is-selected"><span class="patient-leaf patient-leaf-a"></span><div class="patient-directory-copy"><strong>Alba</strong><span class="is-warning"><svg><use href="#patient-icon-warning"></use></svg>Consentimiento pendiente</span><span><svg><use href="#patient-icon-no-session"></use></svg>Siguiente sesión</span><small>Sin sesión programada</small><span><svg><use href="#patient-icon-calendar-clock"></use></svg>Última sesión</span><small>hace 2 semanas · 8 sept</small></div></div>
                                 <div class="patient-directory-card"><span class="patient-leaf patient-leaf-b"></span><div class="patient-directory-copy"><strong>Nora</strong><span class="is-overdue"><svg><use href="#patient-icon-warning"></use></svg>Consentimiento vencido</span><span><svg><use href="#patient-icon-no-session"></use></svg>Siguiente sesión</span><small>Sin sesión programada</small><span><svg><use href="#patient-icon-calendar-clock"></use></svg>Última sesión</span><small>hace 2 meses · 22 jul</small></div></div>
