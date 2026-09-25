@@ -1127,7 +1127,7 @@
         }
 
         .nav-shell {
-          width: min(calc(100% - 2rem), var(--container));
+          width: min(calc(100% - 2rem), 1320px);
           min-height: 76px;
           margin: 0 auto;
           display: flex;
@@ -1158,28 +1158,10 @@
           color: var(--sage-700);
         }
 
-        .nav-menu {
-          display: flex;
-          align-items: center;
-          gap: 1.6rem;
-        }
-
-        .nav-menu a {
-          color: var(--ink-700);
-          font-size: 0.9rem;
-          font-weight: 500;
-          text-decoration: none;
-          transition: color 150ms ease;
-        }
-
-        .nav-menu a:hover {
-          color: var(--ink-900);
-        }
-
         .nav-links {
           display: flex;
           align-items: center;
-          gap: 0.65rem;
+          gap: 1.35rem;
         }
 
         .btn-login,
@@ -1642,7 +1624,7 @@
           margin: 0;
           padding: 0;
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(5, minmax(0, 1fr));
           list-style: none;
         }
 
@@ -2122,7 +2104,7 @@
           padding-top: 1.6rem;
           border-top: 1px solid var(--line-strong);
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           justify-content: space-between;
           gap: 1.5rem;
         }
@@ -2144,10 +2126,42 @@
           font-size: 0.8rem;
         }
 
+        .footer-copyright {
+          display: block;
+          margin-top: 0.4rem;
+          color: var(--ink-700);
+          font-size: 0.75rem;
+          line-height: 1.4;
+        }
+
+        .footer-contact {
+          display: flex;
+          flex-direction: column;
+          gap: 0.35rem;
+        }
+
+        .footer-contact-label {
+          color: var(--ink-900);
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+
+        .footer-contact a {
+          color: var(--ink-700);
+          font-size: 0.8rem;
+          text-decoration-color: var(--sage-500);
+          text-underline-offset: 0.2em;
+        }
+
+        .footer-contact a:hover {
+          color: var(--sage-900);
+        }
+
         .footer-links {
           display: flex;
-          align-items: center;
-          gap: 1rem;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 0.5rem;
         }
 
         .footer-links a {
@@ -2159,10 +2173,6 @@
         }
 
         @media (max-width: 1100px) {
-          .nav-menu {
-            display: none;
-          }
-
           .hero-grid,
           .workflow-grid,
           .security-container {
@@ -2226,12 +2236,12 @@
             border-bottom: 1px solid var(--line-soft);
           }
 
-          .proof-strip li:nth-child(2) {
+          .proof-strip li:nth-child(2n) {
             border-right: 0;
           }
 
-          .proof-strip li:nth-child(3),
-          .proof-strip li:nth-child(4) {
+          .proof-strip li:last-child {
+            grid-column: 1 / -1;
             border-bottom: 0;
           }
 
@@ -2545,30 +2555,6 @@
           display: inline;
         }
 
-        .nav-menu a {
-          position: relative;
-          padding-block: 1.55rem;
-        }
-
-        .nav-menu a::after {
-          content: "";
-          position: absolute;
-          right: 0;
-          bottom: 1.05rem;
-          left: 0;
-          height: 1px;
-          background: var(--sage-700);
-          transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 180ms ease;
-        }
-
-        .nav-menu a:hover::after,
-        .nav-menu a:focus-visible::after {
-          transform: scaleX(1);
-          transform-origin: left;
-        }
-
         .hero-commercial {
           padding: 8.4rem 1rem 4.7rem;
           background:
@@ -2832,7 +2818,7 @@
           margin: 0 auto;
           display: grid;
           grid-template-columns: minmax(0, 1.12fr) minmax(360px, 0.88fr);
-          align-items: end;
+          align-items: center;
           gap: clamp(3rem, 8vw, 8rem);
         }
 
@@ -2869,7 +2855,7 @@
 
         .cta-final .cta-actions {
           margin-top: 0;
-          justify-content: flex-start;
+          justify-content: center;
         }
 
         .cta-final .btn-primary-solid {
@@ -4141,12 +4127,15 @@
         @media (min-width: 1101px) {
             #cobros.payments-integration {
                 min-height: calc(100svh - 92px);
+                grid-template-columns: minmax(560px, 1.3fr) minmax(300px, 0.7fr);
                 padding-block: clamp(1.5rem, 3vh, 2.5rem);
                 gap: clamp(1.5rem, 3vw, 3rem);
             }
 
             #cobros .payments-content {
                 position: static;
+                grid-column: 2;
+                grid-row: 1;
                 align-self: center;
             }
 
@@ -4162,6 +4151,8 @@
             #cobros .payments-content > p { line-height: 1.55; }
 
             #cobros .payments-visual {
+                grid-column: 1;
+                grid-row: 1;
                 gap: 0.5rem;
                 zoom: 0.68;
             }
@@ -5435,41 +5426,66 @@
         }
     </style>
     <style id="verdme-navigation-rhythm">
-        .nav-menu {
-            gap: clamp(0.85rem, 1.4vw, 1.4rem);
-        }
-
-        .nav-menu a {
+        .site-nav .btn-login {
+            min-height: 44px;
+            padding-inline: 0.25rem;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            color: var(--ink-900);
+            font-size: 0.9rem;
+            font-weight: 500;
+            line-height: 1;
             white-space: nowrap;
         }
 
+        .site-nav .btn-login:hover {
+            border: 0;
+            background: transparent;
+            color: var(--sage-700);
+        }
+
+        .site-nav .btn-login:focus-visible {
+            outline: 2px solid var(--sage-700);
+            outline-offset: 3px;
+        }
+
         .nav-mobile {
-            display: none;
+            display: block;
             flex: 0 0 auto;
+            position: relative;
+            margin-left: auto;
         }
 
         .nav-mobile summary {
             min-width: 44px;
             min-height: 44px;
-            padding: 0.55rem 0.75rem;
+            padding: 0.55rem 0.25rem;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            border: 1px solid var(--line-strong);
-            border-radius: 12px;
-            background: var(--surface);
+            gap: 0.35rem;
+            border: 0;
+            background: transparent;
             color: var(--ink-900);
             font-size: 0.9rem;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 1;
             list-style: none;
             cursor: pointer;
         }
 
         .nav-mobile summary::-webkit-details-marker { display: none; }
-        .nav-mobile summary svg { width: 20px; height: 20px; stroke-linecap: round; }
-        .nav-mobile[open] summary { background: var(--sage-100); border-color: var(--sage-500); }
+        .nav-mobile summary svg { width: 18px; height: 18px; stroke-linecap: round; }
+        .nav-mobile summary .nav-mobile-burger { display: none; }
+        .nav-mobile summary:hover,
+        .nav-mobile[open] summary { color: var(--sage-700); }
+        .nav-mobile summary:focus-visible {
+            outline: 2px solid var(--sage-700);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
 
         .nav-mobile-panel {
             position: fixed;
@@ -5477,12 +5493,19 @@
             top: 4.95rem;
             right: 1rem;
             width: min(20rem, calc(100vw - 2rem));
+            max-height: calc(100svh - 5.5rem);
             padding: 0.45rem;
             display: grid;
-            border: 1px solid var(--line-soft);
+            overflow-y: auto;
             border-radius: 16px;
             background: var(--surface);
             box-shadow: 0 16px 40px rgba(39, 48, 49, 0.14);
+        }
+
+        .nav-mobile-panel ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
         }
 
         .nav-mobile:not([open]) .nav-mobile-panel { display: none; }
@@ -5525,19 +5548,28 @@
             }
         }
 
+        @media (min-width: 1101px) {
+            .nav-mobile-panel {
+                position: absolute;
+                top: calc(100% + 0.55rem);
+                right: 0;
+                left: auto;
+            }
+        }
+
         @media (min-width: 821px) {
             .security-section { padding-block: clamp(3.5rem, 5.5vh, 5rem); }
             .cta-final { padding-block: clamp(4rem, 6vh, 5.5rem); }
         }
 
         @media (max-width: 1100px) {
-            .nav-mobile { display: block; }
             .nav-shell { gap: clamp(0.6rem, 1.6vw, 1.2rem); }
-            .nav-links { margin-left: auto; }
         }
 
         @media (max-width: 680px) {
             .nav-mobile summary { width: 44px; padding: 0; }
+            .nav-mobile summary .nav-mobile-burger { display: block; }
+            .nav-mobile summary .nav-mobile-chevron { display: none; }
             .nav-mobile summary span {
                 position: absolute;
                 width: 1px;
@@ -5555,6 +5587,204 @@
         @media (max-width: 430px) {
             .nav-shell { gap: 0.5rem; }
             .nav-mobile-login { display: flex !important; border-top: 1px solid var(--line-soft); }
+        }
+    </style>
+    <style id="verdme-pricing">
+        .pricing-section {
+            min-height: calc(100svh - 72px);
+            padding: clamp(3.5rem, 6vh, 5rem) 1rem;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid var(--line-soft);
+            background: var(--app-background);
+        }
+
+        .pricing-shell {
+            width: min(100%, 1200px);
+            margin: 0 auto;
+        }
+
+        .pricing-heading {
+            max-width: 740px;
+            margin: 0 auto 1.8rem;
+            text-align: center;
+        }
+
+        .pricing-heading .section-kicker {
+            justify-content: center;
+        }
+
+        .pricing-heading h2 {
+            margin: 0;
+            color: var(--ink-900);
+            font-size: clamp(1.85rem, 3vw, 2.35rem);
+            font-weight: 600;
+            letter-spacing: -0.035em;
+            line-height: 1.1;
+        }
+
+        .pricing-heading > p:last-child {
+            margin: 0.9rem auto 0;
+            color: var(--ink-700);
+            font-size: 1.04rem;
+            line-height: 1.6;
+        }
+
+        .pricing-card {
+            display: grid;
+            grid-template-columns: minmax(0, 1.35fr) minmax(310px, 0.65fr);
+            overflow: hidden;
+            border: 1px solid var(--line-soft);
+            border-radius: 18px;
+            background: var(--surface);
+            box-shadow: 0 16px 38px -28px rgba(39, 48, 49, 0.24);
+        }
+
+        .pricing-card-main,
+        .pricing-card-aside {
+            padding: clamp(1.5rem, 3vw, 2.5rem);
+        }
+
+        .pricing-plan-heading {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .pricing-plan-label,
+        .pricing-period-label {
+            margin: 0;
+            color: var(--sage-700);
+            font-size: 0.74rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .pricing-plan-heading h3 {
+            margin: 0.25rem 0 0;
+            color: var(--ink-900);
+            font-size: 1.55rem;
+            font-weight: 600;
+            line-height: 1.15;
+        }
+
+        .pricing-plan-badge {
+            padding: 0.42rem 0.7rem;
+            border-radius: 999px;
+            background: var(--sage-100);
+            color: var(--sage-900);
+            font-size: 0.76rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .pricing-plan-intro {
+            margin: 0.9rem 0 1.35rem;
+            color: var(--ink-700);
+            font-size: 0.97rem;
+            line-height: 1.55;
+        }
+
+        .pricing-features {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.7rem 1.1rem;
+            list-style: none;
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            color: var(--ink-900);
+            font-size: 0.9rem;
+            line-height: 1.35;
+        }
+
+        .pricing-features li::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            flex: 0 0 8px;
+            border-radius: 50%;
+            background: var(--sage-700);
+        }
+
+        .pricing-card-aside {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-left: 1px solid var(--line-soft);
+            background: var(--paper-100);
+        }
+
+        .pricing-amount {
+            margin: 0.35rem 0 0;
+            color: var(--ink-900);
+            font-size: clamp(2.25rem, 3.6vw, 3rem);
+            font-weight: 600;
+            letter-spacing: -0.05em;
+            line-height: 1;
+        }
+
+        .pricing-amount span {
+            display: block;
+            margin-top: 0.42rem;
+            color: var(--ink-700);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0;
+        }
+
+        .pricing-conditions {
+            margin: 1.4rem 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .pricing-conditions li {
+            padding: 0.65rem 0;
+            border-top: 1px solid var(--line-soft);
+            color: var(--ink-700);
+            font-size: 0.88rem;
+            line-height: 1.45;
+        }
+
+        .pricing-legal {
+            margin: 1rem 0 0;
+            color: var(--ink-700);
+            font-size: 0.78rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .pricing-legal a {
+            color: var(--sage-900);
+            text-underline-offset: 0.2em;
+        }
+
+        .pricing-legal a:focus-visible {
+            outline: 2px solid var(--sage-700);
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 760px) {
+            .pricing-section { min-height: 0; }
+            .pricing-card { grid-template-columns: 1fr; }
+            .pricing-card-aside { border-top: 1px solid var(--line-soft); border-left: 0; }
+        }
+
+        @media (max-width: 520px) {
+            .pricing-section { padding-block: 3.5rem; }
+            .pricing-heading { text-align: left; }
+            .pricing-heading .section-kicker { justify-content: flex-start; }
+            .pricing-plan-heading { flex-wrap: wrap; }
+            .pricing-features { grid-template-columns: 1fr; }
+            .pricing-legal { text-align: left; }
         }
     </style>
 </head>
@@ -5588,32 +5818,29 @@
                 <span class="logo-wordmark">Verd<span>me</span></span>
             </a>
 
-            <div class="nav-menu" aria-label="Secciones de la página">
-                <a href="#procesos">Procesos clínicos</a>
-                <a href="#pacientes">Pacientes</a>
-                <a href="#finanzas">Finanzas</a>
-                <a href="#cobros">Pagos online</a>
-                <a href="#seguridad">Seguridad</a>
-            </div>
-
             <details class="nav-mobile">
                 <summary>
-                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-                    <span>Menú</span>
+                    <span>Funcionalidades</span>
+                    <svg class="nav-mobile-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 9 6 6 6-6"/></svg>
+                    <svg class="nav-mobile-burger" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
                 </summary>
                 <div class="nav-mobile-panel">
-                    <a href="#procesos">Procesos clínicos</a>
-                    <a href="#pacientes">Pacientes</a>
-                    <a href="#finanzas">Finanzas</a>
-                    <a href="#cobros">Pagos online</a>
-                    <a href="#seguridad">Seguridad</a>
+                    <ul>
+                        <li><a href="#inicio">Agenda</a></li>
+                        <li><a href="#procesos">Procesos clínicos</a></li>
+                        <li><a href="#pacientes">Pacientes</a></li>
+                        <li><a href="#finanzas">Finanzas</a></li>
+                        <li><a href="#cobros">Pagos online</a></li>
+                        <li><a href="#seguridad">Seguridad</a></li>
+                        <li><a href="#planes">Planes y precios</a></li>
+                    </ul>
                     <a class="nav-mobile-login" href="https://app.verdme.com">Iniciar sesión</a>
                 </div>
             </details>
 
             <div class="nav-links">
                 <a href="https://app.verdme.com" class="btn-login">Iniciar sesión</a>
-                <a href="mailto:support@verdme.com?subject=Quiero%20conocer%20Verdme&amp;body=Hola%2C%20quiero%20conocer%20Verdme%20para%20mi%20pr%C3%A1ctica%20profesional.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A" class="btn-signup">Solicitar acceso</a>
+                <a href="mailto:info@verdme.com?subject=Quiero%20hablar%20con%20un%20asesor%20de%20Verdme&amp;body=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20para%20conocer%20Verdme%20y%20resolver%20mis%20dudas.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A" class="btn-signup">Hablar con un asesor</a>
             </div>
         </div>
     </nav>
@@ -5724,12 +5951,13 @@
                 </figure>
             </div>
 
-            <div class="proof-strip" role="group" aria-label="Áreas que conecta Verdme">
+            <div class="proof-strip" role="group" aria-label="Explora los módulos de Verdme">
                 <ul>
-                    <li><a href="#procesos"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Agenda, sesiones y procesos</a></li>
-                    <li><a href="#notas"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h11l3 3v15H5V3Z"/><path d="M9 11h6M9 15h6M9 7h3"/></svg>Notas con contexto clínico</a></li>
-                    <li><a href="#cobros"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>Recibe pagos online</a></li>
-                    <li><a href="#seguridad"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>Accesos visibles y configurables</a></li>
+                    <li><a href="#procesos"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="18" r="2"/><path d="M7 6h7a5 5 0 0 1 0 10H7M7 18h7"/></svg>Procesos clínicos</a></li>
+                    <li><a href="#pacientes"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="7.5" r="3.5"/><path d="M5 21c.3-4.3 2.7-6.5 7-6.5s6.7 2.2 7 6.5"/></svg>Gestión de pacientes</a></li>
+                    <li><a href="#finanzas"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18M16 15h2"/></svg>Finanzas del consultorio</a></li>
+                    <li><a href="#cobros"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>Pagos online</a></li>
+                    <li><a href="#seguridad"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>Seguridad en varios niveles</a></li>
                 </ul>
             </div>
         </header>
@@ -6099,17 +6327,60 @@
         </div>
     </section>
 
+    <section class="pricing-section" id="planes" aria-labelledby="pricing-title">
+        <div class="pricing-shell">
+            <div class="pricing-heading">
+                <p class="section-kicker">Planes y precios</p>
+                <h2 id="pricing-title">Un plan claro para tu práctica.</h2>
+                <p>Conoce lo que incluye y cuánto pagas. Activa y cancela tu licencia por tu cuenta desde Verdme cuando quieras, sin permanencia, trabas ni costos ocultos.</p>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card-main">
+                    <div class="pricing-plan-heading">
+                        <div>
+                            <p class="pricing-plan-label">Plan actual</p>
+                            <h3>Basic</h3>
+                        </div>
+                        <span class="pricing-plan-badge">Características incluidas</span>
+                    </div>
+                    <p class="pricing-plan-intro">Con tu licencia Basic tienes acceso a:</p>
+                    <ul class="pricing-features">
+                        <li>Gestión de pacientes</li>
+                        <li>Gestión de agenda</li>
+                        <li>Procesos clínicos</li>
+                        <li>Historia clínica</li>
+                        <li>Cobros online a pacientes</li>
+                        <li>Módulo de finanzas</li>
+                        <li>Cifrado de datos clínicos y seguridad</li>
+                        <li>Acceso al sistema 24/7</li>
+                    </ul>
+                </div>
+                <div class="pricing-card-aside">
+                    <p class="pricing-period-label">Suscripción mensual</p>
+                    <p class="pricing-amount">$99.000 <span>COP al mes</span></p>
+                    <ul class="pricing-conditions">
+                        <li>Un cobro mensual recurrente, sin anualidad.</li>
+                        <li>Activas y cancelas tu licencia desde Verdme.</li>
+                        <li>Sin permanencia, penalidades por cancelar ni costos ocultos.</li>
+                        <li>Al cancelar, conservas el acceso hasta terminar el periodo pagado.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="pricing-legal">El periodo ya pagado no tiene devolución automática. Consulta los <a href="https://app.verdme.com/legal/subscriptions/terms">términos de la suscripción</a> y las <a href="https://app.verdme.com/legal/subscriptions/cancellation-refund">condiciones de cancelación</a>.</p>
+        </div>
+    </section>
+
     <section class="cta-final" id="acceso">
         <div class="cta-final-shell">
             <div class="cta-final-copy">
-                <p class="section-kicker">Conoce Verdme en tu consultorio</p>
-                <h2>Tu práctica merece un sistema que mantenga el hilo.</h2>
-                <p>Cuéntanos cómo trabajas hoy y revisemos si Verdme encaja en la forma en que organizas tu atención.</p>
+                <p class="section-kicker">Conversemos sobre tu práctica</p>
+                <h2>Habla con un asesor de Verdme.</h2>
+                <p>Cuéntanos cómo trabajas hoy y qué te gustaría organizar mejor. Un asesor puede mostrarte Verdme, resolver tus dudas y ayudarte a evaluar si encaja con tu práctica.</p>
             </div>
             <div class="cta-final-action">
                 <div class="cta-actions">
-                    <a href="mailto:support@verdme.com?subject=Quiero%20conocer%20Verdme&amp;body=Hola%2C%20quiero%20conocer%20Verdme%20para%20mi%20pr%C3%A1ctica%20profesional.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A" class="btn-primary-solid">Solicitar acceso</a>
-                    <a href="https://app.verdme.com" class="button-secondary">Ya uso Verdme</a>
+                    <a href="mailto:info@verdme.com?subject=Quiero%20hablar%20con%20un%20asesor%20de%20Verdme&amp;body=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20para%20conocer%20Verdme%20y%20resolver%20mis%20dudas.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A" class="btn-primary-solid">Hablar con un asesor</a>
                 </div>
             </div>
         </div>
@@ -6121,13 +6392,40 @@
             <div>
                 <div class="footer-brand">Verd<span>me</span></div>
                 <p class="footer-copy">Gestión clínica para psicólogos independientes.</p>
+                <small class="footer-copyright">© 2026 Verdme. Todos los derechos reservados.</small>
+            </div>
+            <div class="footer-contact">
+                <span class="footer-contact-label">Contacto</span>
+                <a href="mailto:info@verdme.com">Información y asesoría: info@verdme.com</a>
+                <a href="mailto:support@verdme.com">Soporte: support@verdme.com</a>
             </div>
             <div class="footer-links">
-                <a href="mailto:support@verdme.com">Contacto</a>
+                <a href="mailto:info@verdme.com?subject=Quiero%20hablar%20con%20un%20asesor%20de%20Verdme&amp;body=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20para%20conocer%20Verdme%20y%20resolver%20mis%20dudas.%0A%0ANombre%3A%0ACiudad%3A%0ADudas%20o%20necesidades%3A">Hablar con un asesor</a>
                 <a href="https://app.verdme.com">Iniciar sesión</a>
             </div>
         </div>
     </footer>
 
+    <script>
+        (() => {
+            const menu = document.querySelector('.nav-mobile');
+            if (!menu) return;
+
+            document.addEventListener('click', (event) => {
+                if (menu.open && !menu.contains(event.target)) menu.open = false;
+            });
+
+            menu.querySelectorAll('.nav-mobile-panel a').forEach((link) => {
+                link.addEventListener('click', () => { menu.open = false; });
+            });
+
+            menu.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && menu.open) {
+                    menu.open = false;
+                    menu.querySelector('summary').focus();
+                }
+            });
+        })();
+    </script>
 </body>
 </html>

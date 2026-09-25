@@ -167,6 +167,26 @@ Evidencia principal:
 
 Regla comercial: hablar de control de acceso, visibilidad de sesiones y cifrado solo para los datos sensibles verificados arriba. No prometer certificaciones, cumplimiento regulatorio, cifrado total de historias clínicas, respaldos 24/7, disponibilidad garantizada o “seguridad de grado corporativo” sin evidencia específica y vigente.
 
+### Plan y licencia
+
+- El plan actual es **Basic por $99.000 COP al mes**, según confirmación expresa del responsable del producto el 2026-09-25 y la documentación de suscripciones de `psyco-web` en `main` (`5ba2133`). La app consulta el importe vigente a Mercado Pago y muestra las condiciones antes de autorizar el pago.
+- El responsable del producto definió el 2026-09-25 las características que deben listarse en Basic: gestión de pacientes, gestión de agenda, procesos clínicos, historia clínica, cobros online a pacientes, módulo de finanzas, cifrado y seguridad de datos, y acceso al sistema 24/7. Es una lista comercial de prestaciones incluidas, no un recuento de módulos técnicos.
+- “Historia clínica” se refiere al expediente clínico unificado, los registros y las notas que organiza el profesional; no a la generación automática de una historia. “Cifrado” se limita a los datos clínicos sensibles verificados arriba. “Acceso al sistema 24/7” describe que la licencia permite usar Verdme a cualquier hora; no equivale a un SLA ni a disponibilidad ininterrumpida garantizada.
+- Es una suscripción mensual sin anualidad ni permanencia. No hay cargos ocultos ni penalidad por cancelar, según confirmación del responsable del producto.
+- El usuario activa su suscripción y consulta o administra su licencia, pagos, medio de pago y cancelación de forma autónoma desde Verdme. La cancelación está disponible en **Ajustes → Licencia**.
+- La cancelación confirmada detiene renovaciones futuras; el acceso continúa hasta terminar el periodo pagado. El periodo pagado no tiene devolución automática y cancelar no elimina pacientes ni datos clínicos.
+
+Evidencia principal:
+
+- `psyco-web/components/subscriptions/plans-experience.tsx`
+- `psyco-web/components/subscriptions/license-management.tsx`
+- `psyco-web/lib/i18n.ts` (textos de oferta, licencia y condiciones legales)
+- `psyco-web/app/plans/page.tsx`
+- `psyco-web/documentation/features/saas-subscriptions-entitlements/release-checklist.md`
+- `psyco-api/src/subscription-billing/services/subscription-catalog.service.ts` (nombres de los siete módulos)
+
+Regla comercial: mostrar $99.000 COP/mes como el precio actual confirmado por el responsable del producto y comunicar la activación y cancelación autónomas, sin permanencia, penalidad por cancelar, trabas ni costos ocultos. Presentar la lista de características confirmada arriba, sin llamarlas a todas módulos. No presentar otros planes, descuentos, prueba gratuita ni anualidad. Explicar la cancelación y el periodo pagado sin insinuar una devolución automática.
+
 ### Experiencia transversal
 
 - Diseño adaptable a escritorio y móvil.
@@ -196,7 +216,7 @@ No se encontraron en `origin/main` del frontend auditado pruebas suficientes par
 - conciliación bancaria ajena a los registros manuales y a la información reportada por Wompi;
 - certificaciones de seguridad o cumplimiento normativo específicas;
 - cifrado generalizado fuera del alcance específico verificado arriba, o copias de seguridad con alcances o frecuencias que puedan prometerse públicamente;
-- prueba gratuita, precio, permanencia, SLA o condiciones comerciales no documentadas.
+- prueba gratuita, otros precios, SLA o condiciones comerciales no documentadas.
 
 ## Reglas de actualización
 
