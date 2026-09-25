@@ -141,6 +141,8 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 - En una sesión futura de esa vista, mostrar las acciones verificadas **Ver detalles**, **Reprogramar** y **Cancelar sesión**; mantenerlas legibles también cuando la vista se estrecha.
 - En las acciones del mock de Agenda, **Editar/Reprogramar** usa el icono `SquarePen` y **Cancelar sesión** usa `Trash2`, como `SessionsDirectoryList` en `psyco-web`.
 - Debajo del título de cada proceso en la lista de sesiones, mostrar los alias ficticios de los pacientes citados. Mantener las acciones de una sesión en la misma línea en escritorio cuando haya espacio suficiente.
+- La demostración de Pacientes sigue la composición real del producto: menú lateral, directorio con hojas y estados, encabezado contextual Invierno, pestañas, resumen de consentimiento y procesos vinculados. Construirla a escala con HTML/CSS, usar alias ficticios y adaptar sus paneles para móvil sin depender de una captura.
+- La sección de Pacientes retoma la composición editorial del hero en espejo: demostración del producto a la izquierda y mensaje a la derecha en escritorio; en tamaños estrechos, apilar el texto antes de la demostración y simplificar el detalle interno para conservar legibilidad.
 - Los mockups ilustrativos solo muestran funciones presentes en `features.md`.
 - No inventar métricas, nombres reales, historiales clínicos ni testimonios.
 - Usar la interfaz real de `psyco-web` con el tema invierno como referencia para proporción, densidad y jerarquía. No reutilizar datos privados ni depender de capturas externas.
