@@ -1396,6 +1396,7 @@
 
         .product-preview-wrap {
           min-width: 0;
+          width: calc(100% + clamp(2rem, 5vw, 5rem));
           position: relative;
         }
 
@@ -1403,7 +1404,6 @@
           content: "";
           position: absolute;
           inset: 1.1rem -1rem -1rem 1.1rem;
-          border: 1px solid var(--line-soft);
           border-radius: 12px;
           background: var(--paper-100);
         }
@@ -1412,10 +1412,17 @@
           position: relative;
           z-index: 1;
           overflow: hidden;
-          border: 1px solid var(--line-strong);
+          border: 0;
           border-radius: 12px;
-          background: rgba(255, 255, 255, 0.96);
-          box-shadow: 0 1px 2px rgba(36, 41, 38, 0.04);
+          background: transparent;
+          box-shadow: none;
+        }
+
+        .product-preview-image {
+          display: block;
+          width: 100%;
+          height: auto;
+          transform: scale(1.05);
         }
 
         .preview-topbar {
@@ -2684,21 +2691,6 @@
           color: var(--sage-700);
         }
 
-        .product-preview-wrap {
-          perspective: 1200px;
-        }
-
-        .product-preview {
-          transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
-        }
-
-        .product-preview-wrap:hover .product-preview,
-        .product-preview-wrap:focus-within .product-preview {
-          border-color: rgba(49, 91, 67, 0.48);
-          box-shadow: 0 24px 56px rgba(36, 41, 38, 0.1);
-          transform: translateY(-4px) rotateX(0.6deg);
-        }
-
         .preview-continuity {
           margin: 0;
           padding: 0;
@@ -3421,68 +3413,11 @@
                     </ul>
                 </div>
 
-                <div class="product-preview-wrap" aria-label="Vista ilustrativa de la agenda de Verdme">
+                <div class="product-preview-wrap" aria-label="Vista de la agenda de Verdme">
                     <div class="product-preview">
-                        <div class="preview-topbar">
-                            <div class="preview-brand">
-                                <span class="preview-brand-mark">
-                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4v8l6 8V12l-6-8Z"/><path d="M18 4v8l-6 8V12l6-8Z"/></svg>
-                                </span>
-                                <strong>Verdme</strong>
-                            </div>
-                            <div class="preview-user"><strong>Mi consultorio</strong><span>MC</span></div>
-                        </div>
-
-                        <div class="preview-canvas">
-                            <section class="preview-panel agenda-panel" aria-label="Agenda ilustrativa">
-                                <div class="preview-panel-head">
-                                    <div><span>Hoy</span><strong>Tu agenda clínica</strong></div>
-                                    <span class="preview-count">3</span>
-                                </div>
-                                <ul class="session-list">
-                                    <li>
-                                        <span class="session-time">9:00</span>
-                                        <span class="session-copy"><strong>Consulta individual</strong><span>Proceso activo · documentada</span></span>
-                                        <i class="status-dot is-ready" aria-label="Documentada"></i>
-                                    </li>
-                                    <li class="is-next">
-                                        <span class="session-time">11:30</span>
-                                        <span class="session-copy"><strong>Proceso de pareja</strong><span>2 participantes · consentimiento al día</span></span>
-                                        <i class="status-dot is-ready" aria-label="Consentimiento al día"></i>
-                                    </li>
-                                    <li>
-                                        <span class="session-time">16:00</span>
-                                        <span class="session-copy"><strong>Consulta individual</strong><span>Sesión incluida en paquete</span></span>
-                                        <i class="status-dot" aria-label="Próxima sesión"></i>
-                                    </li>
-                                </ul>
-                            </section>
-
-                            <section class="preview-panel note-panel" aria-label="Nota clínica ilustrativa">
-                                <span class="mini-label">
-                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 1 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M9 21h6"/></svg>
-                                    Nota clínica
-                                </span>
-                                <p>Dicta, edita y organiza el registro dentro de su contexto clínico.</p>
-                                <span class="dictation-pill">Dictado disponible</span>
-                            </section>
-
-                            <section class="preview-panel finance-panel" aria-label="Cobro ilustrativo">
-                                <span class="mini-label">
-                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 9h18M7 15h3"/></svg>
-                                    Próxima cuota
-                                </span>
-                                <div class="finance-value"><strong>$120.000</strong><span>Por cobrar</span></div>
-                                <p>Paquete de sesiones · cuota 2 de 4</p>
-                            </section>
-                        </div>
-                        <ol class="preview-continuity" aria-label="Continuidad del trabajo en Verdme">
-                            <li>Agenda preparada</li>
-                            <li>Registro en contexto</li>
-                            <li>Cobro definido</li>
-                        </ol>
+                        <img class="product-preview-image" src="img/agenda.png" width="3164" height="1952" alt="Agenda clínica de Verdme con sesiones y accesos a sus detalles" fetchpriority="high" decoding="async">
                     </div>
-                    <p class="preview-caption">Vista ilustrativa basada en funcionalidades disponibles en Verdme.</p>
+                    <p class="preview-caption">Vista de la agenda clínica en Verdme.</p>
                 </div>
             </div>
         </header>
