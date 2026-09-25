@@ -112,7 +112,6 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 - Ancho máximo general: 1180–1240 px.
 - Diseñar primero para 360–430 px y escalar hasta escritorio.
 - Secciones con 88–128 px verticales en escritorio y 64–80 px en móvil.
-- La sección de cuatro capacidades puede usar menos espacio vertical en escritorio para mostrar juntos su encabezado y la cuadrícula 2 × 2 a zoom del 100%, sin recortar contenido ni reducir la legibilidad.
 - Mantener grandes zonas de aire y alineación consistente.
 - En escritorio, la primera vista debe incluir el titular, la vista de producto y los cuatro accesos a agenda/procesos, notas, cobros y seguridad. Estos accesos deben enlazar a contenido existente dentro de la página.
 - Cuando la altura de pantalla lo permita, el hero puede ocupar el alto visible y distribuir el aire alrededor del texto y la vista de producto; dejar que el contenido determine la altura en ventanas bajas, sin recortarlo.

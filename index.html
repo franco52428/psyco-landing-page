@@ -5600,7 +5600,7 @@
 
             <div class="nav-menu" aria-label="Secciones de la página">
                 <a href="#procesos">Procesos clínicos</a>
-                <a href="#funcionalidades">Funcionalidades</a>
+                <a href="#pacientes">Pacientes</a>
                 <a href="#cobros">Cobros con Wompi</a>
                 <a href="#seguridad">Seguridad</a>
             </div>
@@ -5720,7 +5720,7 @@
 
             <div class="proof-strip" role="group" aria-label="Áreas que conecta Verdme">
                 <ul>
-                    <li><a href="#flujo"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Agenda, sesiones y procesos</a></li>
+                    <li><a href="#procesos"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Agenda, sesiones y procesos</a></li>
                     <li><a href="#notas"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h11l3 3v15H5V3Z"/><path d="M9 11h6M9 15h6M9 7h3"/></svg>Notas con contexto clínico</a></li>
                     <li><a href="#cobros"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>Cobros con tu cuenta Wompi</a></li>
                     <li><a href="#seguridad"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>Accesos visibles y configurables</a></li>
@@ -5742,7 +5742,7 @@
                     </ul>
                 </div>
 
-                <figure class="clinical-preview-wrap" aria-label="Vista ilustrativa de procesos clínicos y notas en Verdme">
+                <figure class="clinical-preview-wrap" id="notas" aria-label="Vista ilustrativa de procesos clínicos y notas en Verdme">
                     <div class="clinical-preview" aria-hidden="true">
                         <svg class="clinical-symbols" width="0" height="0" aria-hidden="true"><defs>
                             <symbol id="clinical-icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h3M14 14h3"/></symbol>
@@ -5951,84 +5951,6 @@
                     </div>
                     <figcaption class="finance-preview-caption">Vista ilustrativa de Finanzas y Cobros en Verdme.</figcaption>
                 </figure>
-            </div>
-        </section>
-
-        <section class="workflow-section" id="flujo">
-            <div class="section-shell workflow-grid">
-                <div class="workflow-copy">
-                    <p class="section-kicker">Un solo hilo de trabajo</p>
-                    <h2>De la agenda al cobro, sin perder el contexto.</h2>
-                    <p>Cada sesión deja decisiones clínicas y administrativas. Verdme las mantiene conectadas para que sepas qué pasó y qué sigue.</p>
-                </div>
-
-                <ol class="workflow-list">
-                    <li class="workflow-step">
-                        <span class="step-number">01</span>
-                        <div>
-                            <h3>Antes de la sesión</h3>
-                            <p>Consulta tu agenda, el proceso, los participantes, el estado del consentimiento y la información que ya registraste.</p>
-                        </div>
-                    </li>
-                    <li class="workflow-step">
-                        <span class="step-number">02</span>
-                        <div>
-                            <h3>Al documentar</h3>
-                            <p>Escribe o dicta la nota, dale formato, añade archivos o anotaciones y asóciala a la sesión y al paciente correctos.</p>
-                        </div>
-                    </li>
-                    <li class="workflow-step">
-                        <span class="step-number">03</span>
-                        <div>
-                            <h3>Después de atender</h3>
-                            <p>Actualiza el estado o plan del proceso, define el cobro y revisa qué sesiones o cuotas siguen pendientes.</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <section class="feature-showcase" id="funcionalidades">
-            <div class="section-shell">
-                <div class="section-heading">
-                    <p class="section-kicker">Lo esencial, en contexto</p>
-                    <h2>Herramientas que acompañan cada proceso clínico.</h2>
-                    <p>Organiza la información, documenta con tu propio criterio y mantén visibles los pendientes del consultorio.</p>
-                </div>
-
-                <div class="capability-grid">
-                    <article class="capability-card" id="notas">
-                        <span class="capability-icon">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h11l3 3v15H5V3Z"/><path d="M9 11h6M9 15h6M9 7h3"/></svg>
-                        </span>
-                        <h3>Notas siempre en contexto.</h3>
-                        <p>Crea notas por sesión o paciente. Dicta, da formato, adjunta archivos y consulta el historial sin perder su contexto.</p>
-                    </article>
-
-                    <article class="capability-card">
-                        <span class="capability-icon">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 20c.4-4 2.4-6 6-6s5.6 2 6 6M15 15c3 0 5 1.6 6 5"/></svg>
-                        </span>
-                        <h3>Procesos con uno o varios participantes.</h3>
-                        <p>Reúne participantes, motivo de consulta, sesiones, estado clínico, plan terapéutico y línea de tiempo en un solo proceso.</p>
-                    </article>
-
-                    <article class="capability-card">
-                        <span class="capability-icon">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18H6z"/><path d="M9 7h6M9 11h6M9 15h4"/><path d="m15 18 1.4 1.4L19 16.8"/></svg>
-                        </span>
-                        <h3>Consentimientos a la vista.</h3>
-                        <p>Registra el documento, su fecha de firma y vigencia; asócialo a los procesos y consulta su historial cuando lo necesites.</p>
-                    </article>
-
-                    <article class="capability-card">
-                        <span class="capability-icon">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/><path d="M18 3v3"/></svg>
-                        </span>
-                        <h3>Finanzas conectadas a la atención.</h3>
-                        <p>Define valores, crea paquetes o cuotas, registra pagos y devoluciones, y ve con claridad qué está pagado o pendiente.</p>
-                    </article>
-                </div>
             </div>
         </section>
 
