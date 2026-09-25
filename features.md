@@ -175,6 +175,7 @@ Regla comercial: hablar de control de acceso, visibilidad de sesiones y cifrado 
 - Es una suscripción mensual sin anualidad ni permanencia. No hay cargos ocultos ni penalidad por cancelar, según confirmación del responsable del producto.
 - El usuario activa su suscripción y consulta o administra su licencia, pagos, medio de pago y cancelación de forma autónoma desde Verdme. La cancelación está disponible en **Ajustes → Licencia**.
 - La cancelación confirmada detiene renovaciones futuras; el acceso continúa hasta terminar el periodo pagado. El periodo pagado no tiene devolución automática y cancelar no elimina pacientes ni datos clínicos.
+- Según la política confirmada por el responsable del producto el 2026-09-25, la información permanece disponible para reactivación autónoma durante un año desde la confirmación de la cancelación. Al reactivar dentro de ese plazo, el profesional retoma su información como la dejó. Después de ese año, debe solicitar a soporte la recuperación de la información; este plazo de acceso autónomo no sustituye los deberes legales de conservación aplicables.
 
 Evidencia principal:
 

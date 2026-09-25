@@ -5592,7 +5592,7 @@
     <style id="verdme-pricing">
         .pricing-section {
             min-height: calc(100svh - 72px);
-            padding: clamp(3.5rem, 6vh, 5rem) 1rem;
+            padding: clamp(3rem, 5.5vh, 4.5rem) 1rem;
             display: flex;
             align-items: center;
             border-top: 1px solid var(--line-soft);
@@ -5600,19 +5600,16 @@
         }
 
         .pricing-shell {
-            width: min(100%, 1200px);
+            width: min(100%, 1080px);
             margin: 0 auto;
         }
 
         .pricing-heading {
-            max-width: 740px;
-            margin: 0 auto 1.8rem;
-            text-align: center;
+            max-width: 730px;
+            margin: 0 0 1.75rem;
         }
 
-        .pricing-heading .section-kicker {
-            justify-content: center;
-        }
+        .pricing-heading .section-kicker { margin-bottom: 0.75rem; }
 
         .pricing-heading h2 {
             margin: 0;
@@ -5620,146 +5617,151 @@
             font-size: clamp(1.85rem, 3vw, 2.35rem);
             font-weight: 600;
             letter-spacing: -0.035em;
-            line-height: 1.1;
+            line-height: 1.12;
         }
 
         .pricing-heading > p:last-child {
-            margin: 0.9rem auto 0;
+            margin: 0.75rem 0 0;
             color: var(--ink-700);
-            font-size: 1.04rem;
+            font-size: 1rem;
             line-height: 1.6;
         }
 
         .pricing-card {
-            display: grid;
-            grid-template-columns: minmax(0, 1.35fr) minmax(310px, 0.65fr);
             overflow: hidden;
-            border: 1px solid var(--line-soft);
-            border-radius: 18px;
+            border: 1px solid var(--line-strong);
+            border-radius: 20px;
             background: var(--surface);
-            box-shadow: 0 16px 38px -28px rgba(39, 48, 49, 0.24);
+            box-shadow: 0 16px 36px -32px rgba(39, 48, 49, 0.28);
         }
 
-        .pricing-card-main,
-        .pricing-card-aside {
-            padding: clamp(1.5rem, 3vw, 2.5rem);
-        }
-
-        .pricing-plan-heading {
+        .pricing-card-top {
+            min-height: 126px;
+            padding: 1.75rem clamp(1.5rem, 3vw, 2.25rem);
+            border-bottom: 1px solid var(--line-soft);
             display: flex;
-            align-items: flex-start;
+            align-items: flex-end;
             justify-content: space-between;
-            gap: 1rem;
+            gap: 1.5rem;
+            background: linear-gradient(110deg, rgba(229, 235, 234, 0.44), transparent 70%), var(--surface);
         }
 
-        .pricing-plan-label,
-        .pricing-period-label {
-            margin: 0;
+        .pricing-plan-label {
+            margin: 0 0 0.35rem;
             color: var(--sage-700);
             font-size: 0.74rem;
             font-weight: 600;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
         }
 
         .pricing-plan-heading h3 {
-            margin: 0.25rem 0 0;
-            color: var(--ink-900);
-            font-size: 1.55rem;
-            font-weight: 600;
-            line-height: 1.15;
-        }
-
-        .pricing-plan-badge {
-            padding: 0.42rem 0.7rem;
-            border-radius: 999px;
-            background: var(--sage-100);
-            color: var(--sage-900);
-            font-size: 0.76rem;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-
-        .pricing-plan-intro {
-            margin: 0.9rem 0 1.35rem;
-            color: var(--ink-700);
-            font-size: 0.97rem;
-            line-height: 1.55;
-        }
-
-        .pricing-features {
             margin: 0;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 0.7rem 1.1rem;
-            list-style: none;
-        }
-
-        .pricing-features li {
-            display: flex;
-            align-items: center;
-            gap: 0.65rem;
             color: var(--ink-900);
-            font-size: 0.9rem;
-            line-height: 1.35;
-        }
-
-        .pricing-features li::before {
-            content: "";
-            width: 8px;
-            height: 8px;
-            flex: 0 0 8px;
-            border-radius: 50%;
-            background: var(--sage-700);
-        }
-
-        .pricing-card-aside {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border-left: 1px solid var(--line-soft);
-            background: var(--paper-100);
+            font-size: 1.9rem;
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            line-height: 1;
         }
 
         .pricing-amount {
-            margin: 0.35rem 0 0;
+            margin: 0;
             color: var(--ink-900);
-            font-size: clamp(2.25rem, 3.6vw, 3rem);
+            font-size: clamp(2.2rem, 3.4vw, 2.8rem);
             font-weight: 600;
             letter-spacing: -0.05em;
             line-height: 1;
+            white-space: nowrap;
         }
 
         .pricing-amount span {
             display: block;
-            margin-top: 0.42rem;
+            margin-top: 0.4rem;
             color: var(--ink-700);
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 500;
             letter-spacing: 0;
+            text-align: right;
         }
 
+        .pricing-card-body {
+            display: grid;
+            grid-template-columns: minmax(0, 1.6fr) minmax(290px, 0.9fr);
+        }
+
+        .pricing-card-main,
+        .pricing-card-aside {
+            min-width: 0;
+            padding: 1.8rem clamp(1.5rem, 3vw, 2.25rem) 2rem;
+        }
+
+        .pricing-card-aside {
+            border-left: 1px solid var(--line-soft);
+            background: var(--paper-100);
+        }
+
+        .pricing-content-title {
+            margin: 0 0 0.9rem;
+            color: var(--ink-900);
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            line-height: 1.35;
+        }
+
+        .pricing-features,
         .pricing-conditions {
-            margin: 1.4rem 0 0;
+            margin: 0;
             padding: 0;
             list-style: none;
         }
 
-        .pricing-conditions li {
-            padding: 0.65rem 0;
-            border-top: 1px solid var(--line-soft);
-            color: var(--ink-700);
+        .pricing-features {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            column-gap: 1.5rem;
+        }
+
+        .pricing-features li {
+            min-height: 48px;
+            padding: 0.55rem 0;
+            border-bottom: 1px solid var(--line-soft);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--ink-900);
             font-size: 0.88rem;
+            line-height: 1.35;
+        }
+
+        .pricing-features li:nth-last-child(-n + 2) { border-bottom: 0; }
+
+        .pricing-features li::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            flex: 0 0 7px;
+            border-radius: 50%;
+            background: var(--sage-700);
+            box-shadow: 0 0 0 5px var(--sage-100);
+        }
+
+        .pricing-conditions li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid var(--line-soft);
+            color: var(--ink-700);
+            font-size: 0.86rem;
             line-height: 1.45;
         }
 
+        .pricing-conditions li:first-child { padding-top: 0; }
+        .pricing-conditions li:last-child { padding-bottom: 0; border-bottom: 0; }
+
         .pricing-legal {
-            margin: 1rem 0 0;
+            margin: 0.9rem 0 0;
             color: var(--ink-700);
             font-size: 0.78rem;
             line-height: 1.6;
-            text-align: center;
         }
 
         .pricing-legal a {
@@ -5772,19 +5774,30 @@
             outline-offset: 3px;
         }
 
-        @media (max-width: 760px) {
+        @media (max-width: 900px) {
             .pricing-section { min-height: 0; }
-            .pricing-card { grid-template-columns: 1fr; }
+            .pricing-card-body { grid-template-columns: 1fr; }
             .pricing-card-aside { border-top: 1px solid var(--line-soft); border-left: 0; }
         }
 
-        @media (max-width: 520px) {
+        @media (min-width: 901px) and (max-height: 780px) {
+            .pricing-section { padding-block: 2rem; }
+            .pricing-heading { margin-bottom: 1.2rem; }
+            .pricing-card-top { min-height: 108px; padding-block: 1.3rem; }
+            .pricing-card-main,
+            .pricing-card-aside { padding-block: 1.25rem 1.4rem; }
+            .pricing-features li { min-height: 43px; padding-block: 0.4rem; }
+            .pricing-conditions li { padding-block: 0.52rem; }
+        }
+
+        @media (max-width: 600px) {
             .pricing-section { padding-block: 3.5rem; }
-            .pricing-heading { text-align: left; }
-            .pricing-heading .section-kicker { justify-content: flex-start; }
-            .pricing-plan-heading { flex-wrap: wrap; }
+            .pricing-card-top { min-height: 0; align-items: flex-start; flex-direction: column; gap: 1rem; }
+            .pricing-amount span { text-align: left; }
             .pricing-features { grid-template-columns: 1fr; }
-            .pricing-legal { text-align: left; }
+            .pricing-features li:nth-last-child(2) { border-bottom: 1px solid var(--line-soft); }
+            .pricing-card-main,
+            .pricing-card-aside { padding: 1.5rem; }
         }
     </style>
 </head>
@@ -6336,38 +6349,39 @@
             </div>
 
             <div class="pricing-card">
-                <div class="pricing-card-main">
+                <div class="pricing-card-top">
                     <div class="pricing-plan-heading">
-                        <div>
-                            <p class="pricing-plan-label">Plan actual</p>
-                            <h3>Basic</h3>
-                        </div>
-                        <span class="pricing-plan-badge">Características incluidas</span>
+                        <p class="pricing-plan-label">Plan mensual</p>
+                        <h3>Basic</h3>
                     </div>
-                    <p class="pricing-plan-intro">Con tu licencia Basic tienes acceso a:</p>
-                    <ul class="pricing-features">
-                        <li>Gestión de pacientes</li>
-                        <li>Gestión de agenda</li>
-                        <li>Procesos clínicos</li>
-                        <li>Historia clínica</li>
-                        <li>Cobros online a pacientes</li>
-                        <li>Módulo de finanzas</li>
-                        <li>Cifrado de datos clínicos y seguridad</li>
-                        <li>Acceso al sistema 24/7</li>
-                    </ul>
+                    <p class="pricing-amount">$99.000 <span>COP / mes</span></p>
                 </div>
-                <div class="pricing-card-aside">
-                    <p class="pricing-period-label">Suscripción mensual</p>
-                    <p class="pricing-amount">$99.000 <span>COP al mes</span></p>
-                    <ul class="pricing-conditions">
-                        <li>Un cobro mensual recurrente, sin anualidad.</li>
-                        <li>Activas y cancelas tu licencia desde Verdme.</li>
-                        <li>Sin permanencia, penalidades por cancelar ni costos ocultos.</li>
-                        <li>Al cancelar, conservas el acceso hasta terminar el periodo pagado.</li>
-                    </ul>
+                <div class="pricing-card-body">
+                    <div class="pricing-card-main">
+                        <h4 class="pricing-content-title">Características incluidas</h4>
+                        <ul class="pricing-features">
+                            <li>Gestión de pacientes</li>
+                            <li>Gestión de agenda</li>
+                            <li>Procesos clínicos</li>
+                            <li>Historia clínica</li>
+                            <li>Cobros online a pacientes</li>
+                            <li>Módulo de finanzas</li>
+                            <li>Cifrado de datos clínicos y seguridad</li>
+                            <li>Acceso al sistema 24/7</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card-aside">
+                        <h4 class="pricing-content-title">Tu licencia, a tu ritmo</h4>
+                        <ul class="pricing-conditions">
+                            <li>Cobro mensual recurrente, sin anualidad.</li>
+                            <li>Activas y cancelas desde Verdme.</li>
+                            <li>Sin permanencia, penalidades ni costos ocultos.</li>
+                            <li>Conservas el acceso hasta terminar el periodo pagado.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <p class="pricing-legal">El periodo ya pagado no tiene devolución automática. Consulta los <a href="https://app.verdme.com/legal/subscriptions/terms">términos de la suscripción</a> y las <a href="https://app.verdme.com/legal/subscriptions/cancellation-refund">condiciones de cancelación</a>.</p>
+            <p class="pricing-legal">Consulta los <a href="https://app.verdme.com/legal/subscriptions/v5/terms">términos de la suscripción</a> y las <a href="https://app.verdme.com/legal/subscriptions/v5/cancellation-refund">condiciones de cancelación y conservación de tu información</a>.</p>
         </div>
     </section>
 
