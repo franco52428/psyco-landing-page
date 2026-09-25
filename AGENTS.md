@@ -30,7 +30,7 @@ El objetivo primario es que una persona interesada solicite acceso o una demostr
 - CTA primario: “Solicitar acceso” o “Conocer Verdme”.
 - CTA secundario: “Iniciar sesión” o “Ver cómo funciona”.
 - No decir “gratis”, “sin tarjeta”, “crear cuenta ahora” ni publicar precios sin una condición comercial vigente y documentada.
-- Mantener un CTA primario claro en navegación, hero y cierre; no competir con múltiples acciones equivalentes.
+- Mantener un CTA primario claro en navegación y cierre; el hero presenta el producto y sus cuatro accesos internos sin botones adicionales.
 
 ## Arquitectura del mensaje
 
@@ -112,8 +112,10 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 - Ancho máximo general: 1180–1240 px.
 - Diseñar primero para 360–430 px y escalar hasta escritorio.
 - Secciones con 88–128 px verticales en escritorio y 64–80 px en móvil.
+- La sección de cuatro capacidades puede usar menos espacio vertical en escritorio para mostrar juntos su encabezado y la cuadrícula 2 × 2 a zoom del 100%, sin recortar contenido ni reducir la legibilidad.
 - Mantener grandes zonas de aire y alineación consistente.
-- En escritorio, la primera vista debe incluir el titular, CTA, vista de producto y los cuatro accesos a agenda/procesos, notas, cobros y seguridad. Estos accesos deben enlazar a contenido existente dentro de la página.
+- En escritorio, la primera vista debe incluir el titular, la vista de producto y los cuatro accesos a agenda/procesos, notas, cobros y seguridad. Estos accesos deben enlazar a contenido existente dentro de la página.
+- Cuando la altura de pantalla lo permita, el hero puede ocupar el alto visible y distribuir el aire alrededor del texto y la vista de producto; dejar que el contenido determine la altura en ventanas bajas, sin recortarlo.
 - Usar los radios del producto como referencia: 14 px pequeño, 16 px medio, 18 px grande, 24 px amplio y 12 px para acciones. Reservar círculos y pastillas para controles o estados que los necesiten.
 - Priorizar divisores de 1 px y cambios sutiles de superficie. Usar sombras suaves de baja opacidad para dar profundidad a elementos elevados.
 - No convertir cada contenido en una tarjeta. Preferir secciones editoriales, listas lineales, superficies blancas y demostraciones de producto separadas por aire o líneas finas.
@@ -132,6 +134,13 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 
 - Priorizar UI realista construida con HTML/CSS o capturas verificadas del producto.
 - La vista ilustrativa de agenda del hero toma como referencia estructural [`img/agenda.png`](./img/agenda.png): marco de navegador, navegación lateral, cabecera, pestañas, selector de día, sesiones, estados, avisos y acciones. Conservar esa riqueza visual sin reutilizar nombres ni datos de la captura y sin depender del PNG para renderizar la landing.
+- El encabezado de Agenda debe seguir el `PsycoContextHeader` de `psyco-web`: fondo Invierno, retícula tenue, línea de señal, título y descripción a la izquierda y hojas del recurso `public/images/patient-context-cover.png` a la derecha. Incrustar ese recurso en `index.html` para mantener la landing autocontenida.
+- Escalar las hojas del encabezado con `background-size: auto 100%` y `background-position: right center`, como en la app. La línea de señal debe reservar a la derecha un ancho proporcional a 1,3 veces la altura del encabezado para no atravesar el área de hojas.
+- En escritorio, presentar la vista ilustrativa en un marco 16:9 suficientemente amplio para reconocer la interfaz real. Ajustar la cantidad de filas visibles a ese formato sin cortar las acciones ni comprimir en exceso sus controles; en móvil, permitir más altura si hace falta para conservar legibilidad.
+- Conservar el aire de la aplicación entre el encabezado contextual, las pestañas, los controles de fecha y la lista de sesiones al escalar el mock; no resolver el formato apilando estos bloques sin separación.
+- En una sesión futura de esa vista, mostrar las acciones verificadas **Ver detalles**, **Reprogramar** y **Cancelar sesión**; mantenerlas legibles también cuando la vista se estrecha.
+- En las acciones del mock de Agenda, **Editar/Reprogramar** usa el icono `SquarePen` y **Cancelar sesión** usa `Trash2`, como `SessionsDirectoryList` en `psyco-web`.
+- Debajo del título de cada proceso en la lista de sesiones, mostrar los alias ficticios de los pacientes citados. Mantener las acciones de una sesión en la misma línea en escritorio cuando haya espacio suficiente.
 - Los mockups ilustrativos solo muestran funciones presentes en `features.md`.
 - No inventar métricas, nombres reales, historiales clínicos ni testimonios.
 - Usar la interfaz real de `psyco-web` con el tema invierno como referencia para proporción, densidad y jerarquía. No reutilizar datos privados ni depender de capturas externas.
