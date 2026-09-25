@@ -40,7 +40,7 @@ Cada página debe construir el argumento en este orden:
 2. **Contexto:** nombrar el costo de la dispersión sin dramatizar ni culpabilizar.
 3. **Mecanismo:** explicar cómo Verdme conecta agenda, procesos, notas y cobros.
 4. **Prueba de producto:** mostrar interfaces y flujos que existen en `main`.
-5. **Diferenciador:** explicar con precisión la integración de cobros con Wompi.
+5. **Diferenciador:** explicar que el psicólogo puede recibir pagos de sus clientes online y gestionar los cobros desde Verdme.
 6. **Confianza:** presentar controles de acceso y trazabilidad verificados, sin absolutos.
 7. **Conversión:** cerrar con una invitación concreta y de bajo riesgo.
 
@@ -66,6 +66,7 @@ El tono es humano, sereno, directo y profesional.
 - “Dictado por voz” significa insertar texto hablado; no significa interpretar ni redactar clínicamente.
 - “Compartir por WhatsApp” significa abrir el enlace listo para compartir; no significa envío automático.
 - “Seguimiento de Wompi” se refiere a estados e información reportada por la integración.
+- En la sección de pagos online, abrir con el beneficio: el psicólogo recibe pagos de sus clientes online y gestiona los cobros desde Verdme. El detalle puede explicar los distintos medios disponibles y la actualización automática de pagos y estados reportados en las finanzas de Verdme; no presentarlo como integración con contabilidad externa. Reservar la explicación del proveedor de pagos para el momento de habilitar la función; la marca puede permanecer en las vistas ilustrativas y el checkout aprobado. Usar links, saldos y estados como respaldo del beneficio, sin presentar el mensaje como una secuencia de pasos, insinuar que Verdme recibe fondos ni prometer registro de pagos fuera de lo reportado por la integración.
 - Evitar métricas, testimonios, logos de clientes, premios o sellos sin evidencia aprobada.
 - Evitar resultados médicos, clínicos, legales o financieros garantizados.
 
@@ -95,7 +96,7 @@ El paquete [`verdme-handoff-v0`](./verdme-handoff-v0/README.md) conserva context
 - Línea suave: `#DCE6E4`; línea marcada: `#B4C7C6`; borde de control: `#B8C9C8`.
 - Selección suave: `#DCE8E7`; cubierta o bloque tenue: `#E8EFEE`.
 
-Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, no un tema nuevo. Usar colores semánticos solo con el significado y contraste adecuados. Los colores oficiales de Wompi se reservan para su módulo de co-marca y checkout.
+Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, no un tema nuevo. Usar colores semánticos solo con el significado y contraste adecuados. Los colores oficiales de Wompi se reservan para el checkout ilustrativo.
 
 ### Tipografía
 
@@ -103,7 +104,8 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 - Incrustar en `index.html` los WOFF2 necesarios para el contenido en español como `data:` URI dentro de `@font-face`, con atribución SIL Open Font License 1.1. No cargar Google Fonts, CDN ni archivos de fuente separados. Mantener una pila de sistema como fallback.
 - La tipografía interna del checkout de Wompi conserva su apariencia aprobada y queda excluida de la fuente global de la landing.
 - Usar pesos moderados. Reservar 600 para titulares y énfasis; evitar bloques completos en negrita y no introducir otra familia para títulos.
-- Titular principal fluido entre 2.35 y 3.2 rem, con interlineado compacto y tracking negativo sutil. Debe mantener una proporción equilibrada con la vista de producto y el resto del hero al 100% de zoom.
+- Titular principal fluido entre 2.15 y 2.8 rem en escritorio, y entre 2 y 2.25 rem en móvil, con interlineado compacto y tracking negativo sutil. Debe mantener una proporción equilibrada con la vista de producto y el resto del hero al 100% de zoom.
+- Títulos de secciones comerciales entre 1.85 y 2.4 rem en escritorio, y entre 1.7 y 2 rem en móvil. Usar una misma escala en Procesos, Pacientes, Finanzas, Cobros, Seguridad y el cierre; conservar la tipografía propia de las vistas ilustrativas del producto.
 - Texto de lectura entre 1 y 1.2 rem, con 1.55–1.75 de interlineado.
 - No usar mayúsculas sostenidas salvo etiquetas breves con tracking amplio.
 
@@ -144,6 +146,9 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 - La demostración de Pacientes sigue la composición real del producto: menú lateral, directorio con hojas y estados, encabezado contextual Invierno, pestañas, resumen de consentimiento y procesos vinculados. Construirla a escala con HTML/CSS, usar alias ficticios y adaptar sus paneles para móvil sin depender de una captura.
 - La sección de Pacientes retoma la composición editorial del hero en espejo: demostración del producto a la izquierda y mensaje a la derecha en escritorio. Conservar la proporción y los espacios de la aplicación entre encabezado, pestañas, resumen y procesos al escalar la vista; en tamaños estrechos, apilar el texto antes de la demostración y simplificar el detalle interno para conservar legibilidad.
 - La demostración de Finanzas va después de Pacientes y coloca el mensaje a la izquierda y la interfaz a la derecha en escritorio. Reproducir a escala el encabezado de Finanzas, estado de Wompi, resumen mensual y movimientos con datos ficticios coherentes. Explicar la automatización con precisión: el resumen se calcula a partir de registros y los estados de Wompi dependen de la integración; otros pagos requieren registro manual.
+- La sección de pagos online debe presentar el mensaje y la demostración completos en un pantallazo de escritorio, considerando la barra fija. Ajustar el espacio exterior y escalar uniformemente el contenedor visual según la altura disponible; preservar el interior del checkout aprobado.
+- En esa sección, el rótulo y el beneficio principal abren directamente el mensaje; no añadir una franja de logos Verdme–Wompi encima del titular.
+- Mantener el bloque de pagos conciso: rótulo, titular, un párrafo y el checkout ilustrativo. No repetir el mensaje en una lista de beneficios debajo del párrafo.
 - En las vistas ilustrativas de Agenda, Procesos clínicos, Pacientes y Finanzas, conservar el mismo menú principal de la aplicación: marca, cinco destinos, sección activa, Ajustes y Cerrar sesión, con proporciones y espaciados equivalentes al escalarlo.
 - Los mockups ilustrativos solo muestran funciones presentes en `features.md`.
 - No inventar métricas, nombres reales, historiales clínicos ni testimonios.

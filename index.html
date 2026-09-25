@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verdme | Continuidad para tu práctica</title>
-    <meta name="description" content="Conecta agenda, procesos clínicos, notas, consentimientos y cobros con Wompi para dar continuidad a tu práctica psicológica en un solo lugar.">
+    <meta name="description" content="Verdme reúne agenda, procesos clínicos y notas para tu práctica psicológica. Recibe pagos de tus clientes online y gestiona los cobros desde la app.">
     <meta name="theme-color" content="#F4F7F6">
     <style>
         /* =========================================
@@ -339,42 +339,6 @@
             position: relative;
             z-index: 2;
         }
-
-        .partner-lockup {
-            width: fit-content;
-            display: flex;
-            align-items: center;
-            gap: 0.35rem;
-            margin-bottom: 1rem;
-        }
-
-        .verdme-mini {
-            font-size: 1.15rem;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-        }
-
-        .verdme-mini span { color: var(--primary); }
-
-        .integration-mark {
-            color: #94A3B8;
-            font-size: 1.1rem;
-            font-weight: 400;
-        }
-
-        .wompi-safe-zone {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.7rem 0.75rem;
-        }
-
-        .wompi-wordmark {
-            width: 180px;
-            height: 91px;
-        }
-
-        .partner-lockup .wompi-wordmark { color: #2C2A29; }
 
         .payments-badge {
             color: var(--primary);
@@ -1026,7 +990,6 @@
         @media (max-width: 1100px) {
             .payments-integration { grid-template-columns: 1fr; text-align: center; padding: 3.5rem 5%; }
             .payment-methods-grid { justify-content: center; }
-            .partner-lockup { margin-inline: auto; }
             .payments-content h2,
             .payments-content > p { margin-inline: auto; }
             .payments-visual { width: 100%; }
@@ -1191,8 +1154,7 @@
           flex: 0 0 48px;
         }
 
-        .logo-wordmark span,
-        .verdme-mini span {
+        .logo-wordmark span {
           color: var(--sage-700);
         }
 
@@ -1950,10 +1912,6 @@
           mask-image: linear-gradient(90deg, black, transparent 68%);
         }
 
-        .partner-lockup {
-          margin-bottom: 0.8rem;
-        }
-
         .payments-badge {
           color: var(--sage-700);
           letter-spacing: 0.08em;
@@ -2238,7 +2196,6 @@
             justify-content: flex-start;
           }
 
-          .partner-lockup,
           .payments-content h2,
           .payments-content > p {
             margin-inline: 0;
@@ -2557,10 +2514,6 @@
 
           .method-tag {
             width: 100%;
-          }
-
-          .partner-lockup {
-            transform: none;
           }
         }
 
@@ -3189,133 +3142,6 @@
             transform: none !important;
           }
         }
-    </style>
-    <style>
-        /* Mensaje de la publicidad dentro de la composicion original del landing. */
-        #cobros .partner-lockup {
-            display: inline-flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 16px;
-            width: fit-content;
-            max-width: 100%;
-            min-height: 44px;
-            margin: 0 0 24px;
-            padding: 0;
-            background: transparent;
-            border: 0;
-            border-radius: 0;
-            box-shadow: none;
-        }
-
-        #cobros .partner-lockup .verdme-mini {
-            display: inline-flex;
-            align-items: center;
-            gap: 2px;
-            flex: none;
-            margin: 0;
-            padding: 0;
-            color: #273031;
-            font-size: 26px;
-            line-height: 1;
-            font-weight: 600;
-            letter-spacing: -1px;
-        }
-
-        #cobros .partner-lockup .payments-brand-icon {
-            display: block;
-            flex: none;
-            width: 40px;
-            height: 40px;
-        }
-
-        #cobros .partner-lockup .payments-brand-name {
-            color: #273031;
-            white-space: nowrap;
-        }
-
-        #cobros .partner-lockup .payments-brand-name span {
-            color: #465D60;
-        }
-
-        #cobros .partner-lockup .integration-mark {
-            display: block;
-            flex: 0 0 1px;
-            width: 1px;
-            height: 28px;
-            margin: 0;
-            padding: 0;
-            background: #B8C9C8;
-            border: 0;
-            font-size: 0;
-            transform: none;
-        }
-
-        #cobros .partner-lockup .wompi-safe-zone {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex: 0 0 116px;
-            width: 116px;
-            min-width: 0;
-            height: 44px;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background: transparent;
-            border: 0;
-            border-radius: 0;
-        }
-
-        /* Compensa solo el margen transparente del SVG, sin recortar sus trazados. */
-        #cobros .partner-lockup .wompi-wordmark {
-            position: static;
-            display: block;
-            flex: none;
-            width: 168px;
-            max-width: none;
-            height: 84.51px;
-            margin: 0;
-            padding: 0;
-            transform: none;
-        }
-
-        @media (max-width: 640px) {
-            #cobros .partner-lockup {
-                gap: 12px;
-                margin-bottom: 20px;
-            }
-
-            #cobros .partner-lockup .verdme-mini {
-                font-size: 23px;
-            }
-
-            #cobros .partner-lockup .payments-brand-icon {
-                width: 36px;
-                height: 36px;
-            }
-
-            #cobros .partner-lockup .integration-mark {
-                height: 24px;
-            }
-
-            #cobros .partner-lockup .wompi-safe-zone {
-                flex-basis: 104px;
-                width: 104px;
-                height: 40px;
-            }
-
-            #cobros .partner-lockup .wompi-wordmark {
-                width: 150px;
-                height: 75.45px;
-            }
-        }
-
-        #cobros #payments-ad-title span {
-            display: block;
-            color: #465D60;
-        }
-
     </style>
     <style id="verdme-winter-identity">
         /* Fuente del producto, incrustada para que index.html funcione por sí solo.
@@ -4308,18 +4134,52 @@
             background: var(--app-background);
         }
 
-        #cobros .partner-lockup .verdme-mini,
-        #cobros .partner-lockup .payments-brand-name {
-            color: var(--ink-900);
+        #cobros .payments-content > p {
+            margin-bottom: 0;
         }
 
-        #cobros .partner-lockup .payments-brand-name span,
-        #cobros #payments-ad-title span {
-            color: var(--sage-700);
+        @media (min-width: 1101px) {
+            #cobros.payments-integration {
+                min-height: calc(100svh - 92px);
+                padding-block: clamp(1.5rem, 3vh, 2.5rem);
+                gap: clamp(1.5rem, 3vw, 3rem);
+            }
+
+            #cobros .payments-content {
+                position: static;
+                align-self: center;
+            }
+
+            #cobros .payments-content h2 {
+                font-size: clamp(2rem, 3vw, 2.65rem);
+                margin-bottom: 0.75rem;
+            }
+
+            #cobros .payments-badge {
+                margin-bottom: 0.55rem;
+            }
+
+            #cobros .payments-content > p { line-height: 1.55; }
+
+            #cobros .payments-visual {
+                gap: 0.5rem;
+                zoom: 0.68;
+            }
         }
 
-        #cobros .partner-lockup .integration-mark {
-            background: var(--line-strong);
+        @media (min-width: 1101px) and (max-height: 900px) {
+            #cobros .payments-visual { zoom: 0.6; }
+        }
+
+        @media (min-width: 1101px) and (max-height: 800px) {
+            #cobros .payments-visual { zoom: 0.53; }
+
+            #cobros .payments-badge { margin-bottom: 0.45rem; }
+            #cobros .payments-content h2 { font-size: 2.25rem; }
+        }
+
+        @media (min-width: 1101px) and (max-height: 720px) {
+            #cobros .payments-visual { zoom: 0.48; }
         }
 
         @media (min-width: 941px) {
@@ -5567,6 +5427,36 @@
             .finance-ui-table-top { padding-inline: 0.8em; }
         }
     </style>
+    <style id="verdme-heading-scale">
+        :root {
+            --heading-hero: clamp(2.15rem, 3vw, 2.8rem);
+            --heading-section: clamp(1.85rem, 2.5vw, 2.4rem);
+        }
+
+        .hero-commercial h1 {
+            font-size: var(--heading-hero);
+            line-height: 1.1;
+            letter-spacing: -0.035em;
+        }
+
+        .clinical-showcase-copy h2,
+        .patient-showcase-heading h2,
+        .finance-showcase-copy h2,
+        #cobros .payments-content h2,
+        .security-copy h2,
+        .cta-final h2 {
+            font-size: var(--heading-section);
+            line-height: 1.12;
+            letter-spacing: -0.035em;
+        }
+
+        @media (max-width: 640px) {
+            :root {
+                --heading-hero: clamp(2rem, 7.4vw, 2.25rem);
+                --heading-section: clamp(1.7rem, 6.4vw, 2rem);
+            }
+        }
+    </style>
 </head>
 <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -5601,7 +5491,7 @@
             <div class="nav-menu" aria-label="Secciones de la página">
                 <a href="#procesos">Procesos clínicos</a>
                 <a href="#pacientes">Pacientes</a>
-                <a href="#cobros">Cobros con Wompi</a>
+                <a href="#cobros">Pagos online</a>
                 <a href="#seguridad">Seguridad</a>
             </div>
 
@@ -5627,7 +5517,7 @@
                         </li>
                         <li>
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>
-                            Los pagos llegan a tu cuenta Wompi.
+                            Tus clientes pueden pagar online.
                         </li>
                     </ul>
                 </div>
@@ -5722,7 +5612,7 @@
                 <ul>
                     <li><a href="#procesos"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Agenda, sesiones y procesos</a></li>
                     <li><a href="#notas"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h11l3 3v15H5V3Z"/><path d="M9 11h6M9 15h6M9 7h3"/></svg>Notas con contexto clínico</a></li>
-                    <li><a href="#cobros"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>Cobros con tu cuenta Wompi</a></li>
+                    <li><a href="#cobros"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>Recibe pagos online</a></li>
                     <li><a href="#seguridad"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>Accesos visibles y configurables</a></li>
                 </ul>
             </div>
@@ -5893,7 +5783,7 @@
                 <div class="finance-showcase-copy">
                     <p class="section-kicker">Gestión financiera automatizada</p>
                     <h2 id="finance-showcase-title">Tus finanzas, organizadas automáticamente.</h2>
-                    <p>Verdme calcula el resumen de ingresos y cuentas por cobrar de tus sesiones y paquetes. Con Wompi conectado, también actualiza los estados que reporta la integración; los demás pagos puedes registrarlos tú.</p>
+                    <p>Verdme calcula el resumen de ingresos y cuentas por cobrar de tus sesiones y paquetes. Cuando habilitas los pagos online, también actualiza los estados que reporta la integración; los demás pagos puedes registrarlos tú.</p>
                 </div>
 
                 <figure class="finance-preview-wrap" aria-label="Vista ilustrativa de las finanzas y los cobros de Verdme">
@@ -5958,14 +5848,6 @@
     <section class="payments-integration" id="cobros" aria-labelledby="payments-ad-title">
         <svg width="0" height="0" aria-hidden="true" focusable="false" style="position: absolute; overflow: hidden;">
             <defs>
-                <symbol id="wompi-wordmark" viewBox="0 0 1982 997">
-                    <path d="M932.523 372.678L876.633 585.149C859.416 588.061 840.244 588.703 819.117 585.149L780.129 442.538L740.486 585.149C722.94 588.387 704.423 588.703 683.625 585.149L627.408 372.678C645.608 368.799 663.153 369.125 680.044 372.678L716.434 522.407L751.524 372.678C769.069 369.125 789.868 368.799 808.058 372.678L850.3 523.058L879.866 372.678C898.066 368.799 915.928 369.125 932.502 372.678H932.523Z" fill="#2C2A29"/>
-                    <path d="M929.163 503.65C929.163 451.905 964.254 419.566 1013.96 419.566C1063.67 419.566 1098.76 453.198 1098.76 503.65C1098.76 554.103 1065.3 588.06 1013.96 588.06C962.627 588.06 929.163 554.755 929.163 503.65ZM1049.71 503.65C1049.71 477.136 1036.72 461.608 1013.96 461.608C991.211 461.608 978.218 477.136 978.218 503.65C978.218 530.165 991.538 546.018 1013.96 546.018C1036.39 546.018 1049.71 531.468 1049.71 503.65Z" fill="#2C2A29"/>
-                    <path d="M1368.76 469.695V584.824H1320.35V486.842C1320.35 469.705 1309.3 460.969 1289.81 460.969C1280.71 460.969 1271.94 462.914 1264.78 465.815C1267.38 472.933 1268.68 480.691 1268.68 489.102V584.824H1220.27V486.842C1220.27 469.705 1209.22 460.969 1189.73 460.969C1182.27 460.969 1175.11 461.936 1168.93 463.555V584.824H1119.87L1120.2 440.92C1139.7 427.337 1170.23 419.904 1195.9 419.904C1216.37 419.904 1233.92 426.696 1246.59 437.693C1263.17 427.022 1286.24 419.904 1305.73 419.904C1341.14 419.904 1368.76 438.66 1368.76 469.705V469.695Z" fill="#2C2A29"/>
-                    <path d="M1562.48 509.15C1562.48 553.127 1541.69 588.062 1492.62 588.062C1477.67 588.062 1461.43 583.215 1447.78 573.827V633.657C1436.73 642.383 1411.72 649.501 1398.71 649.501V432.509C1414.63 425.077 1440.63 419.894 1467.6 419.894C1526.41 419.894 1562.47 451.906 1562.47 509.15H1562.48ZM1513.74 503.326C1513.74 479.398 1500.74 458.698 1470.52 458.698C1463.7 458.698 1455.9 459.349 1447.78 460.643V545.053C1454.28 546.346 1462.08 547.313 1471.82 547.313C1497.82 547.313 1513.74 535.349 1513.74 503.336V503.326Z" fill="#2C2A29"/>
-                    <path d="M1583.27 373.32C1583.27 359.737 1594.65 348.425 1608.3 348.425C1621.94 348.425 1633.64 359.422 1633.64 373.32C1633.64 387.218 1622.26 398.226 1608.3 398.226C1594.33 398.226 1583.27 387.229 1583.27 373.32ZM1583.93 424.424C1590.75 421.512 1599.2 419.893 1608.62 419.893C1618.05 419.893 1626.17 421.512 1632.99 424.424V584.824H1583.93V424.424Z" fill="#2C2A29"/>
-                    <path d="M567.674 375.38V434.411C567.674 437.954 565.942 441.287 563.037 443.337L506.408 483.255C506.408 483.255 506.355 483.287 506.334 483.308C503.715 485.19 502.067 488.113 501.813 491.288C501.782 491.592 501.771 491.897 501.771 492.202V583.12C501.771 586.137 499.31 588.587 496.278 588.587H492.106C490.152 588.587 488.345 587.546 487.363 585.874L429.424 487.009C429.424 487.009 429.403 486.967 429.382 486.956C428.115 484.875 424.872 485.768 424.872 488.228V583.12C424.872 586.137 422.411 588.587 419.379 588.587H415.207C413.252 588.587 411.446 587.546 410.464 585.874L350.18 483.024C348.722 480.554 347.962 477.736 347.962 474.866V375.38C347.962 372.352 350.423 369.913 353.455 369.913H357.627C359.571 369.913 361.377 370.943 362.37 372.615L420.308 471.481C421.565 473.625 424.861 472.742 424.861 470.261V375.38C424.861 372.352 427.322 369.913 430.354 369.913H434.526C436.47 369.913 438.276 370.943 439.269 372.615L497.208 471.481C498.465 473.625 501.76 472.742 501.76 470.261V418.379C501.76 413.122 504.317 408.192 508.626 405.153L557.196 370.912C558.125 370.26 559.234 369.913 560.375 369.913H562.181C565.213 369.913 567.674 372.352 567.674 375.38Z" fill="#2C2A29"/>
-                </symbol>
                 <symbol id="wompi-symbol" viewBox="0 0 1001 997">
                     <path d="M824.843 191.763V366.083C824.843 376.546 819.728 386.387 811.149 392.441L643.924 510.321C643.924 510.321 643.768 510.414 643.706 510.476C635.97 516.033 631.104 524.664 630.355 534.039C630.262 534.94 630.23 535.84 630.23 536.74V805.222C630.23 814.132 622.962 821.366 614.01 821.366H601.689C595.918 821.366 590.584 818.292 587.683 813.356L416.59 521.404C416.59 521.404 416.527 521.28 416.465 521.249C412.722 515.102 403.146 517.741 403.146 525.005V805.222C403.146 814.132 395.878 821.366 386.925 821.366H374.604C368.833 821.366 363.499 818.292 360.598 813.356L182.58 509.638C178.276 502.342 176.03 494.022 176.03 485.546V191.763C176.03 182.822 183.298 175.619 192.25 175.619H204.571C210.311 175.619 215.645 178.662 218.577 183.598L389.67 475.55C393.382 481.883 403.115 479.275 403.115 471.948V191.763C403.115 182.822 410.382 175.619 419.335 175.619H431.656C437.396 175.619 442.73 178.662 445.662 183.598L616.755 475.55C620.467 481.883 630.199 479.275 630.199 471.948V318.739C630.199 303.216 637.748 288.656 650.475 279.684L793.9 178.568C796.645 176.644 799.92 175.619 803.289 175.619H808.623C817.575 175.619 824.843 182.822 824.843 191.763Z" fill="#2C2A29"/>
                 </symbol>
@@ -5973,64 +5855,10 @@
         </svg>
 
         <div class="payments-content">
-            <div class="partner-lockup" role="img" aria-label="Verdme integrado con Wompi">
-                <span class="verdme-mini" aria-hidden="true">
-                    <svg class="payments-brand-icon" width="40" height="40" viewBox="0 0 400 400" aria-hidden="true">
-                        <defs>
-                            <linearGradient id="wompiLockupVerdmeLeft" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#2B6645"/>
-                                <stop offset="100%" stop-color="#1F4A34"/>
-                            </linearGradient>
-                            <linearGradient id="wompiLockupVerdmeRight" x1="0%" y1="100%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#BDDCC9"/>
-                                <stop offset="100%" stop-color="#327A51"/>
-                            </linearGradient>
-                            <linearGradient id="wompiLockupVerdmeCircle" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#D9B978"/>
-                                <stop offset="100%" stop-color="#8A6229"/>
-                            </linearGradient>
-                        </defs>
-                        <circle cx="200" cy="216" r="132" fill="#BDDCC9" opacity="0.28"/>
-                        <path d="M 112 148 L 200 312 L 200 241.18 L 150 148 Z" fill="url(#wompiLockupVerdmeLeft)"/>
-                        <path d="M 288 148 L 200 312 L 200 241.18 L 250 148 Z" fill="url(#wompiLockupVerdmeRight)"/>
-                        <circle cx="200" cy="92" r="30" fill="url(#wompiLockupVerdmeCircle)"/>
-                        <circle cx="200" cy="92" r="46" fill="none" stroke="#BDDCC9" stroke-width="3"/>
-                    </svg>
-                    <span class="payments-brand-name">Verd<span>me</span></span>
-                </span>
-                <span class="integration-mark" aria-hidden="true"></span>
-                <span class="wompi-safe-zone" aria-hidden="true">
-                    <svg class="wompi-wordmark" viewBox="0 0 1982 997" aria-hidden="true"><use href="#wompi-wordmark" width="1982" height="997"></use></svg>
-                </span>
-            </div>
-
             <div class="payments-badge">Cobros para tu consultorio</div>
-            <h2 id="payments-ad-title">De tu sesión <span>al link de pago.</span></h2>
-            <p>Cobra <strong>sesiones, paquetes y cuotas</strong> con Wompi, desde Verdme.</p>
+            <h2 id="payments-ad-title">Verdme te permite recibir pagos de tus clientes online.</h2>
+            <p>Tus clientes pueden pagar con distintos medios disponibles. Verdme sincroniza automáticamente los pagos y estados reportados con las finanzas de tu consultorio, para que veas lo recibido y lo pendiente en la misma app.</p>
 
-            <ol class="workflow-list" role="list" aria-label="Cómo funcionan los cobros con Wompi">
-                <li class="workflow-step">
-                    <span class="step-number" aria-hidden="true">01</span>
-                    <div>
-                        <h3>Genera el link</h3>
-                        <p>Por el valor que necesitas cobrar.</p>
-                    </div>
-                </li>
-                <li class="workflow-step">
-                    <span class="step-number" aria-hidden="true">02</span>
-                    <div>
-                        <h3>Compártelo por WhatsApp</h3>
-                        <p>Tu paciente paga en Wompi.</p>
-                    </div>
-                </li>
-                <li class="workflow-step">
-                    <span class="step-number" aria-hidden="true">03</span>
-                    <div>
-                        <h3>El pago se registra solo</h3>
-                        <p>Verdme lo registra y marca el cobro asociado como pagado.</p>
-                    </div>
-                </li>
-            </ol>
         </div>
 
         <div class="payments-visual">
@@ -6117,7 +5945,7 @@
                     </div>
                 </div>
             </div>
-            <p class="wompi-checkout-note">Ejemplo ilustrativo del checkout de Wompi. Los medios disponibles dependen de la configuración y disponibilidad del comercio.</p>
+            <p class="wompi-checkout-note">Ejemplo ilustrativo de la pantalla de pago. Los medios disponibles dependen de la configuración y disponibilidad del comercio.</p>
         </div>
     </section>
 
