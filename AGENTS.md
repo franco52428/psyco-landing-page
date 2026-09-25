@@ -67,6 +67,7 @@ El tono es humano, sereno, directo y profesional.
 - “Compartir por WhatsApp” significa abrir el enlace listo para compartir; no significa envío automático.
 - “Seguimiento de Wompi” se refiere a estados e información reportada por la integración.
 - En la sección de pagos online, abrir con el beneficio: el psicólogo recibe pagos de sus clientes online y gestiona los cobros desde Verdme. El detalle puede explicar los distintos medios disponibles y la actualización automática de pagos y estados reportados en las finanzas de Verdme; no presentarlo como integración con contabilidad externa. Reservar la explicación del proveedor de pagos para el momento de habilitar la función; la marca puede permanecer en las vistas ilustrativas y el checkout aprobado. Usar links, saldos y estados como respaldo del beneficio, sin presentar el mensaje como una secuencia de pasos, insinuar que Verdme recibe fondos ni prometer registro de pagos fuera de lo reportado por la integración.
+- En Seguridad, comunicar la protección en varios niveles: métodos de acceso para la cuenta, cifrado de los datos clínicos sensibles verificados en `features.md` y control de sesiones. La continuidad se expresa como información organizada para retomar el trabajo, sin prometer disponibilidad permanente, respaldos ni protección absoluta.
 - Evitar métricas, testimonios, logos de clientes, premios o sellos sin evidencia aprobada.
 - Evitar resultados médicos, clínicos, legales o financieros garantizados.
 

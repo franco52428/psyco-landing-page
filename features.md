@@ -154,6 +154,7 @@ Reglas comerciales:
 - Centro de sesiones con dispositivo, navegador, ubicación aproximada, última actividad y nivel de riesgo informado por el servicio.
 - Cierre de sesiones activas y reporte de una sesión como sospechosa.
 - Historial de sesiones de seguridad.
+- El backend cifra notas clínicas, detalles sensibles de pacientes y archivos almacenados. Esta afirmación se limita a esos datos; no implica que todos los datos de la aplicación estén cifrados ni una garantía de disponibilidad.
 
 Evidencia principal:
 
@@ -162,8 +163,9 @@ Evidencia principal:
 - `app/settings/security/**`
 - `app/security/security-center-client-page.tsx`
 - `lib/services/security.ts`
+- Auditoría puntual de `psyco-api` en `main` (`b978825`): `src/crypto/crypto.service.ts`, `src/clinical-notes/clinical-note.repository.ts`, `src/patients/patient-detail.repository.ts`, `src/file-storage/file-crypto.service.ts` y `src/file-storage/file-storage.service.ts`.
 
-Regla comercial: hablar de control de acceso y visibilidad de sesiones. No prometer certificaciones, cumplimiento regulatorio, cifrado total de historias clínicas, respaldos 24/7, disponibilidad garantizada o “seguridad de grado corporativo” sin evidencia específica y vigente.
+Regla comercial: hablar de control de acceso, visibilidad de sesiones y cifrado solo para los datos sensibles verificados arriba. No prometer certificaciones, cumplimiento regulatorio, cifrado total de historias clínicas, respaldos 24/7, disponibilidad garantizada o “seguridad de grado corporativo” sin evidencia específica y vigente.
 
 ### Experiencia transversal
 
@@ -193,7 +195,7 @@ No se encontraron en `origin/main` del frontend auditado pruebas suficientes par
 - facturación electrónica o integración tributaria;
 - conciliación bancaria ajena a los registros manuales y a la información reportada por Wompi;
 - certificaciones de seguridad o cumplimiento normativo específicas;
-- cifrado y copias de seguridad con alcances o frecuencias que puedan prometerse públicamente;
+- cifrado generalizado fuera del alcance específico verificado arriba, o copias de seguridad con alcances o frecuencias que puedan prometerse públicamente;
 - prueba gratuita, precio, permanencia, SLA o condiciones comerciales no documentadas.
 
 ## Reglas de actualización
