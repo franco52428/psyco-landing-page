@@ -1,0 +1,44 @@
+<svg class="logo-icon" aria-hidden="true" width="64" height="64" viewBox="0 0 400 400">
+    <defs>
+        <!-- Degradado para el arce rojo intenso -->
+        <linearGradient id="autumnMapleRed" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#C53030"/>
+            <stop offset="100%" stop-color="#7B241C"/>
+        </linearGradient>
+        
+        <!-- Degradado para el arce naranja profundo -->
+        <linearGradient id="autumnMapleOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E36C21"/>
+            <stop offset="100%" stop-color="#A16207"/>
+        </linearGradient>
+        
+        <!-- Degradado para el arce dorado rico -->
+        <linearGradient id="autumnMapleGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F2BF3A"/>
+            <stop offset="100%" stop-color="#D69116"/>
+        </linearGradient>
+        
+        <!-- Sombra cálida y dramática para otoño -->
+        <filter id="autumnMapleLogoShadow" x="-30%" y="-30%" width="160%" height="170%">
+            <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#4B1F0D" flood-opacity="0.30"/>
+        </filter>
+    </defs>
+    
+    <g filter="url(#autumnMapleLogoShadow)">
+        <!-- Círculo de fondo ámbar suave -->
+        <circle cx="200" cy="216" r="132" fill="#FFFBEB" opacity="0.10"/>
+        
+        <!-- Trío de hojas de arce estilizadas y entrelazadas -->
+        
+        <!-- Hoja central roja intensa -->
+        <path d="M 200 320 C 120 310, 80 210, 130 140 C 170 170, 200 230, 200 320 Z" fill="url(#autumnMapleRed)"/>
+        <!-- Nervadura central arce rojo -->
+        <path d="M 200 320 C 180 270, 160 200, 130 140" stroke="#B03A2E" stroke-width="1.5" fill="none" opacity="0.5"/>
+        
+        <!-- Hoja izquierda naranja profunda -->
+        <path d="M 180 330 C 100 270, 80 160, 160 110 C 200 140, 190 230, 180 330 Z" fill="url(#autumnMapleOrange)" opacity="0.9"/>
+        
+        <!-- Hoja derecha dorada rica -->
+        <path d="M 220 330 C 300 270, 320 160, 240 110 C 200 140, 210 230, 220 330 Z" fill="url(#autumnMapleGold)" opacity="0.9"/>
+    </g>
+</svg>

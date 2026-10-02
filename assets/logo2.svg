@@ -1,0 +1,54 @@
+<svg class="logo-icon" aria-hidden="true" width="64" height="64" viewBox="0 0 400 400">
+    <defs>
+        <!-- Degradado para la hoja izquierda (Verde Bosque Profundo) -->
+        <linearGradient id="leafDarkProf" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1E4D2B"/>
+            <stop offset="100%" stop-color="#153A22"/>
+        </linearGradient>
+        
+        <!-- Degradado para la hoja derecha (Crema Suave/Lino) -->
+        <linearGradient id="leafLightProf" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F5F1E6"/>
+            <stop offset="100%" stop-color="#EBDBC4"/>
+        </linearGradient>
+        
+        <!-- Degradado para el sol/círculo superior (Oro Ámbar) -->
+        <linearGradient id="sunCircleProf" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E9C46A"/>
+            <stop offset="100%" stop-color="#DFA61F"/>
+        </linearGradient>
+        
+        <!-- Sombra Refinada y más Suave -->
+        <filter id="logoShadowProf" x="-30%" y="-30%" width="160%" height="170%">
+            <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.18"/>
+        </filter>
+    </defs>
+    
+    <!-- Elementos del cuerpo del logo con sombra -->
+    <g filter="url(#logoShadowProf)">
+        <!-- Círculo de fondo tenue refinado -->
+        <circle cx="200" cy="216" r="132" fill="#D4EDDA" opacity="0.12"/>
+        
+        <!-- Hojas con formas limpias y geométricas -->
+        
+        <!-- Hoja Izquierda (Verde Profundo) -->
+        <!-- Una forma más limpia y simétrica con menos puntos de control -->
+        <path d="M195 345 C130 330, 90 230, 110 150 C150 170, 180 240, 195 345 Z" fill="url(#leafDarkProf)"/>
+        <!-- Nervadura central hoja izquierda: una sola línea limpia -->
+        <line x1="195" y1="345" x2="110" y2="150" stroke="#102B18" stroke-width="1.5" opacity="0.4"/>
+        
+        <!-- Hoja Derecha (Crema) -->
+        <!-- Una forma limpia y simétrica, cuidadosamente equilibrada con la izquierda -->
+        <path d="M185 355 C160 250, 190 140, 270 90 C310 130, 290 230, 185 355 Z" fill="url(#leafLightProf)"/>
+        <!-- Nervadura central hoja derecha: una sola línea limpia -->
+        <line x1="185" y1="355" x2="270" y2="90" stroke="#D1BDA2" stroke-width="1.5" opacity="0.4"/>
+    </g>
+    
+    <!-- Elementos superiores (Sol) con sombra -->
+    <g filter="url(#logoShadowProf)">
+        <!-- Sol/Círculo central con degradado de oro ámbar -->
+        <circle cx="200" cy="92" r="30" fill="url(#sunCircleProf)"/>
+        <!-- Anillo exterior con un color esmeralda refinado y un trazo más fino -->
+        <circle cx="200" cy="92" r="46" fill="none" stroke="#1B8049" stroke-width="2.5"/>
+    </g>
+</svg>

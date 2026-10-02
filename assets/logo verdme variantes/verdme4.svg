@@ -1,0 +1,51 @@
+<svg class="logo-icon" aria-hidden="true" width="64" height="64" viewBox="0 0 400 400">
+    <defs>
+        <!-- Degradado para el arce verde (Nueva Variante) -->
+        <linearGradient id="springMapleGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4ADE80"/> <!-- Verde brillante fresh -->
+            <stop offset="100%" stop-color="#166534"/> <!-- Verde bosque profundo -->
+        </linearGradient>
+        
+        <!-- Degradado para el arce naranja (Nueva Variante, similar al anterior) -->
+        <linearGradient id="autumnMapleOrangeVariant" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F97316"/> <!-- Naranja ardiente -->
+            <stop offset="100%" stop-color="#A16207"/> <!-- Naranja quemado profundo -->
+        </linearGradient>
+        
+        <!-- Degradado para las nervaduras coppery/bronze (Para ambas hojas) -->
+        <linearGradient id="leafVeinBronze" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E4A757"/> <!-- Oro cobrizo claro -->
+            <stop offset="100%" stop-color="#92400E"/> <!-- Bronce oscuro -->
+        </linearGradient>
+        
+        <!-- Sombra cálida y dramática -->
+        <filter id="leafVariantShadow" x="-30%" y="-30%" width="160%" height="170%">
+            <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#4B1F0D" flood-opacity="0.30"/>
+        </filter>
+    </defs>
+    
+    <g filter="url(#leafVariantShadow)">
+        <!-- Círculo de fondo ámbar suave (Igual al original) -->
+        <circle cx="200" cy="216" r="132" fill="#FFFBEB" opacity="0.10"/>
+        
+        <!-- Dos hojas principales detailed de primavera y otoño forming una 'V' -->
+        
+        <!-- Hoja Izquierda (Base) con degradado verde -->
+        <path d="M 195 345 C 90 335, 40 220, 85 130 C 140 160, 180 250, 195 345 Z" fill="url(#springMapleGreen)"/>
+        <!-- Nervaduras detailed coppery/bronze -->
+        <g opacity="0.6">
+            <path d="M 195 345 C 180 270, 160 200, 130 140" stroke="url(#leafVeinBronze)" stroke-width="2.5" fill="none"/>
+            <path d="M 160 280 C 150 250, 130 220, 110 180" stroke="#92400E" stroke-width="1.5" fill="none"/>
+            <path d="M 175 240 C 165 210, 145 180, 125 140" stroke="#92400E" stroke-width="1.5" fill="none"/>
+        </g>
+        
+        <!-- Hoja Derecha (Base) con degradado naranja -->
+        <path d="M 185 355 C 150 240, 180 120, 270 70 C 340 140, 310 270, 185 355 Z" fill="url(#autumnMapleOrangeVariant)"/>
+        <!-- Nervaduras detailed coppery/bronze -->
+        <g opacity="0.6">
+            <path d="M 185 355 C 200 280, 230 210, 260 150" stroke="url(#leafVeinBronze)" stroke-width="2.5" fill="none"/>
+            <path d="M 210 290 C 220 260, 240 230, 260 190" stroke="#92400E" stroke-width="1.5" fill="none"/>
+            <path d="M 225 250 C 235 220, 255 190, 275 150" stroke="#92400E" stroke-width="1.5" fill="none"/>
+        </g>
+    </g>
+</svg>

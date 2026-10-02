@@ -1,0 +1,51 @@
+<svg class="logo-icon" aria-hidden="true" width="64" height="64" viewBox="0 0 400 400">
+    <defs>
+        <!-- Degradado para el arce rojo intenso -->
+        <linearGradient id="autumnMapleRed" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#C53030"/>
+            <stop offset="100%" stop-color="#7B241C"/>
+        </linearGradient>
+        
+        <!-- Degradado para el arce naranja profundo -->
+        <linearGradient id="autumnMapleOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E36C21"/>
+            <stop offset="100%" stop-color="#A16207"/>
+        </linearGradient>
+        
+        <!-- Degradado para el arce dorado rico -->
+        <linearGradient id="autumnMapleGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F2BF3A"/>
+            <stop offset="100%" stop-color="#D69116"/>
+        </linearGradient>
+        
+        <!-- Sombra cálida y dramática para otoño -->
+        <filter id="autumnMapleLogoShadow" x="-30%" y="-30%" width="160%" height="170%">
+            <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#4B1F0D" flood-opacity="0.30"/>
+        </filter>
+    </defs>
+    
+    <g filter="url(#autumnMapleLogoShadow)">
+        <!-- Círculo de fondo ámbar suave -->
+        <circle cx="200" cy="216" r="132" fill="#FFFBEB" opacity="0.10"/>
+        
+        <!-- Dos hojas principales detalladas de otoño formando una 'V' -->
+        
+        <!-- Hoja Izquierda (Base) con degradado rojo intenso -->
+        <path d="M 195 345 C 90 335, 40 220, 85 130 C 140 160, 180 250, 195 345 Z" fill="url(#autumnMapleRed)"/>
+        <!-- Nervaduras detalladas palmeadas (Principal Dorada, Secundarias Rojas) -->
+        <g opacity="0.6">
+            <path d="M 195 345 C 180 270, 160 200, 130 140" stroke="url(#autumnMapleGold)" stroke-width="2.5" fill="none"/> <!-- Principal Dorada -->
+            <path d="M 160 280 C 150 250, 130 220, 110 180" stroke="#7B241C" stroke-width="1.5" fill="none"/>
+            <path d="M 175 240 C 165 210, 145 180, 125 140" stroke="#7B241C" stroke-width="1.5" fill="none"/>
+        </g>
+        
+        <!-- Hoja Derecha (Base) con degradado naranja profundo -->
+        <path d="M 185 355 C 150 240, 180 120, 270 70 C 340 140, 310 270, 185 355 Z" fill="url(#autumnMapleOrange)"/>
+        <!-- Nervaduras detalladas palmeadas (Principal Dorada, Secundarias Naranjas/Marrones) -->
+        <g opacity="0.6">
+            <path d="M 185 355 C 200 280, 230 210, 260 150" stroke="url(#autumnMapleGold)" stroke-width="2.5" fill="none"/> <!-- Principal Dorada -->
+            <path d="M 210 290 C 220 260, 240 230, 260 190" stroke="#A16207" stroke-width="1.5" fill="none"/>
+            <path d="M 225 250 C 235 220, 255 190, 275 150" stroke="#A16207" stroke-width="1.5" fill="none"/>
+        </g>
+    </g>
+</svg>

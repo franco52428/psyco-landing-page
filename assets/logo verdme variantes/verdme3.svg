@@ -1,0 +1,35 @@
+<svg class="logo-icon" aria-hidden="true" width="64" height="64" viewBox="0 0 400 400">
+    <defs>
+        <!-- Degradado para la hoja izquierda (Verde oscuro) -->
+        <linearGradient id="leafDark" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#557564"/>
+            <stop offset="100%" stop-color="#2a4537"/>
+        </linearGradient>
+        
+        <!-- Degradado para la hoja derecha (Beige/Crema) -->
+        <linearGradient id="leafLight" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F3E9D2"/>
+            <stop offset="100%" stop-color="#D6C5A1"/>
+        </linearGradient>
+        
+        <!-- Sombra original -->
+        <filter id="landingLogoShadow" x="-30%" y="-30%" width="160%" height="170%">
+            <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.24"/>
+        </filter>
+    </defs>
+    
+    <g filter="url(#landingLogoShadow)">
+        <!-- Círculo de fondo tenue -->
+        <circle cx="200" cy="216" r="132" fill="#6EE7B7" opacity="0.15"/>
+        
+        <!-- Hoja Izquierda (Verde) -->
+        <path d="M 195 345 C 90 335, 40 220, 85 130 C 140 160, 180 250, 195 345 Z" fill="url(#leafDark)"/>
+        <!-- Nervadura central hoja izquierda -->
+        <path d="M 195 345 C 180 270, 140 200, 85 130" stroke="#1f3629" stroke-width="2" fill="none" opacity="0.6"/>
+        
+        <!-- Hoja Derecha (Beige) -->
+        <path d="M 185 355 C 150 240, 180 120, 270 70 C 340 140, 310 270, 185 355 Z" fill="url(#leafLight)" opacity="0.95"/>
+        <!-- Nervadura central hoja derecha -->
+        <path d="M 185 355 C 180 250, 220 150, 270 70" stroke="#B8A37C" stroke-width="2" fill="none" opacity="0.6"/>
+    </g>
+</svg>

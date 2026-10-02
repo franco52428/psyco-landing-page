@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none" role="img" aria-labelledby="verdme5-title verdme5-desc">
+  <title id="verdme5-title">Verdme — hojas en V</title>
+  <desc id="verdme5-desc">Dos hojas estilizadas, verde y naranja rojiza, convergen en una V y se unen a un círculo dorado en su base. Las nervaduras y el centro compartido construyen una marca compacta de continuidad. Logo vectorial con fondo transparente.</desc>
+  <defs>
+    <linearGradient id="verdme5-green" x1="70" y1="76" x2="200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AA1A2"/>
+      <stop offset="0.45" stop-color="#557564"/>
+      <stop offset="1" stop-color="#2A4537"/>
+    </linearGradient>
+    <linearGradient id="verdme5-autumn" x1="330" y1="76" x2="200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E36C21"/>
+      <stop offset="0.62" stop-color="#C53030"/>
+      <stop offset="1" stop-color="#7B241C"/>
+    </linearGradient>
+    <linearGradient id="verdme5-gold" x1="178" y1="288" x2="222" y2="348" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2BF3A"/>
+      <stop offset="1" stop-color="#D69116"/>
+    </linearGradient>
+  </defs>
+  <!-- Las hojas comparten una base; el círculo enlaza ambas en una sola silueta. -->
+  <path d="M200 304C111 286 49 189 58 66C152 91 205 182 200 304Z" fill="url(#verdme5-green)"/>
+  <path d="M200 304C289 286 351 189 342 66C248 91 195 182 200 304Z" fill="url(#verdme5-autumn)"/>
+  <!-- Una nervadura por hoja conserva la lectura botánica. -->
+  <path d="M91 117C130 173 169 239 194 288" stroke="#DCE6D5" stroke-width="6" stroke-linecap="round"/>
+  <path d="M309 117C270 173 231 239 206 288" stroke="#F2BF3A" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="200" cy="318" r="34" fill="url(#verdme5-gold)"/>
+</svg>
