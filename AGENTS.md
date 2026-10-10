@@ -130,7 +130,7 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 
 ### Componentes y estados
 
-- CTA primario y hover con fondo `#173C3B`, texto claro y contraste AA; `#465D60` se conserva para selección y acentos medios.
+- CTA primario con fondo `#173C3B`, texto claro y contraste AA; `#465D60` se conserva para hover, selección y acentos medios.
 - CTA secundario con fondo `#FCFDFD` o transparente y borde `#B8C9C8`.
 - Links, inputs y controles con foco visible de 2 px en `#465D60` y offset suficiente.
 - Estados de producto usan color más texto o icono; nunca solo color.
