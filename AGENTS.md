@@ -96,7 +96,7 @@ El paquete [`verdme-handoff-v0`](./verdme-handoff-v0/README.md) conserva context
 - Fondo de aplicación y papel: `#F4F7F6`; superficie de lectura: `#FCFDFD`; tarjeta blanca: `#FFFFFF`.
 - Papel frío más profundo: `#E5EBEA`; fondo del cuerpo: `#F8FAF9`.
 - Texto principal: `#273031`; texto secundario: `#5D6C6D`.
-- Acción y navegación profunda: `#26383A`; acción o selección media: `#465D60`; acento suave: `#8AA1A2`.
+- Acción y navegación profunda: `#173C3B`; acción o selección media: `#465D60`; acento suave: `#8AA1A2`.
 - Línea suave: `#DCE6E4`; línea marcada: `#B4C7C6`; borde de control: `#B8C9C8`.
 - Selección suave: `#DCE8E7`; cubierta o bloque tenue: `#E8EFEE`.
 
@@ -130,7 +130,7 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 
 ### Componentes y estados
 
-- CTA primario con fondo `#26383A`, texto claro, mínimo 48 px de alto y contraste AA; `#465D60` puede usarse en hover y selección.
+- CTA primario y hover con fondo `#173C3B`, texto claro y contraste AA; `#465D60` se conserva para selección y acentos medios.
 - CTA secundario con fondo `#FCFDFD` o transparente y borde `#B8C9C8`.
 - Links, inputs y controles con foco visible de 2 px en `#465D60` y offset suficiente.
 - Estados de producto usan color más texto o icono; nunca solo color.
