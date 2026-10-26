@@ -76,7 +76,7 @@ El tono es humano, sereno, directo y profesional.
 
 ## Fuente de verdad visual
 
-La identidad visual vigente de la landing es **Verdme Invierno**, el tema predeterminado `verdme-winter` de `psyco-web`. Consultar los tokens de `:root[data-theme="verdme-winter"]` y los tokens globales de tipografía, radios y sombras en [`../psyco-web/app/globals.css`](../psyco-web/app/globals.css). La fuente y su licencia están en [`../psyco-web/public/fonts/bricolage-grotesque/`](../psyco-web/public/fonts/bricolage-grotesque/). Si el tema cambia, revisar la implementación vigente antes de actualizar esta guía y después `index.html`.
+La identidad visual vigente de la landing es **Verdme Invierno**, el tema predeterminado `verdme-winter` de `psyco-web`. Consultar los tokens de `:root[data-theme="verdme-winter"]` en [`../psyco-web/app/winter-theme.css`](../psyco-web/app/winter-theme.css), y las superficies de navegación, tipografía, radios y sombras compartidos en [`../psyco-web/app/globals.css`](../psyco-web/app/globals.css). La landing fija `data-theme="verdme-winter"` y conserva una copia autocontenida de sus tokens en el bloque `verdme-winter-theme` de `index.html`. La fuente y su licencia están en [`../psyco-web/public/fonts/bricolage-grotesque/`](../psyco-web/public/fonts/bricolage-grotesque/). Si el tema cambia, revisar la implementación vigente antes de actualizar esta guía y después `index.html`.
 
 El paquete [`verdme-handoff-v0`](./verdme-handoff-v0/README.md) conserva contexto histórico de producto y diseño. Sus valores cromáticos verde bosque, radios pequeños y prototipo visual ya no definen la identidad de la landing. Sus mocks no aprueban nuevas funcionalidades, rutas, datos ni comportamientos. Toda capacidad comercial sigue sujeta a `features.md`.
 
@@ -121,7 +121,9 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 - Mantener grandes zonas de aire y alineación consistente.
 - En escritorio, la primera vista debe incluir el titular, la vista de producto y cinco accesos a las secciones destacadas: Procesos clínicos, Pacientes, Finanzas, Pagos online y Seguridad. Deben seguir ese orden y enlazar a contenido existente dentro de la página.
 - La navegación superior usa en escritorio el mismo ancho máximo de 1320 px que el hero para alinear el borde derecho de Hablar con un asesor con la vista ilustrativa de Agenda. Muestra la marca a la izquierda y, agrupados a la derecha, un desplegable nativo de Funcionalidades, Iniciar sesión como enlace de texto sin fondo ni borde y con la misma tipografía, peso y color del disparador, y Hablar con un asesor como única acción destacada. El disparador se presenta como texto de navegación con un chevrón, sin contorno de botón; el panel flota con una sombra discreta. El panel se alinea al borde derecho del disparador y se cierra al elegir una opción, hacer clic fuera o pulsar Escape. El desplegable reúne, en este orden, Agenda (inicio), Procesos clínicos, Pacientes, Finanzas, Pagos online, Seguridad y Planes y precios, con anclas a las secciones existentes. En móvil puede reducirse a un icono con nombre accesible; mantener visible la acción de hablar con un asesor.
-- Cuando la altura de pantalla lo permita, el hero puede ocupar el alto visible y distribuir el aire alrededor del texto y la vista de producto; dejar que el contenido determine la altura en ventanas bajas, sin recortarlo.
+- **Decisión de diseño persistente — secciones a pantalla completa (2026-10-25):** cada sección principal ocupa como mínimo una pantalla del visor. El hero usa `min-height: 100svh`; Procesos clínicos, Pacientes, Finanzas, Pagos online, Seguridad, Planes y el cierre de asesoría usan `min-height: calc(100svh - 72px)` para descontar el menú fijo. El footer conserva su altura natural.
+- Distribuir y centrar el contenido dentro de esa altura. El aire vertical es parte intencional de la composición: no compactar el hero ni reducir las secciones para mostrar el siguiente bloque antes, salvo petición explícita del usuario. Las propuestas sobre tipografía, marcos, sombras o controles deben respetar esta decisión.
+- Aplicar una altura mínima, nunca una altura fija que recorte el contenido. En móvil, con zoom o en ventanas bajas, permitir que la sección crezca lo necesario para mantener legibilidad, controles y contenido completos. Al modificar la altura del menú, actualizar el descuento de las secciones y comprobar los distintos tamaños.
 - Usar los radios del producto como referencia: 14 px pequeño, 16 px medio, 18 px grande, 24 px amplio y 12 px para acciones. Reservar círculos y pastillas para controles o estados que los necesiten.
 - Priorizar divisores de 1 px y cambios sutiles de superficie. Usar sombras suaves de baja opacidad para dar profundidad a elementos elevados.
 - Alternar con sutileza papel frío y superficie blanco hielo entre módulos consecutivos, usando divisores finos para señalar el cambio sin fragmentar el recorrido.
@@ -130,7 +132,7 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 
 ### Componentes y estados
 
-- CTA primario con fondo `#173C3B`, texto claro y contraste AA; `#465D60` se conserva para hover, selección y acentos medios.
+- CTA primario con fondo `#465D60`, hover `#3A5052` y texto `#FCFDFD`, como `--color-action-primary` del producto. El verde oscuro `#173C3B` se reserva para navegación y énfasis. Las superficies de navegación usan `#F1F6F2`, selección `#D6E9D8` y borde `#CBDCC9`, de los estilos Invierno compartidos de `psyco-web`.
 - CTA secundario con fondo `#FCFDFD` o transparente y borde `#B8C9C8`.
 - Links, inputs y controles con foco visible de 2 px en `#465D60` y offset suficiente.
 - Estados de producto usan color más texto o icono; nunca solo color.
@@ -138,6 +140,8 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 - Iconos lineales, sobrios y consistentes. No usar emojis como iconografía de interfaz.
 
 ### Imágenes y mockups
+
+- **Decisión de diseño persistente — ejemplos completos en móvil (2026-10-25):** todas las vistas de muestra conservan el mismo lienzo y contenido completos de escritorio también en móvil y tablet. Escalar proporcionalmente la vista entera dentro de su marco; no recortarla, ocultar menús, quitar filas, resumir tarjetas ni reorganizar su interfaz según el ancho del dispositivo. La página comercial sí adapta sus columnas y textos alrededor de las vistas. Mantener «Ampliar» visible en dispositivos móviles para abrir el ejemplo completo. Esta decisión prevalece sobre las recomendaciones generales de simplificar los mocks en móvil.
 
 - Priorizar UI realista construida con HTML/CSS o capturas verificadas del producto.
 - La vista ilustrativa de agenda del hero toma como referencia estructural [`img/agenda.png`](./img/agenda.png): marco de navegador, navegación lateral, cabecera, pestañas, selector de día, sesiones, estados, avisos y acciones. Conservar esa riqueza visual sin reutilizar nombres ni datos de la captura y sin depender del PNG para renderizar la landing.
