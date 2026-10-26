@@ -5807,14 +5807,6 @@
             .app-demo-finance-table-row > svg { display:none; }
         }
 
-        @media(min-width:641px) and (max-width:1100px) {
-            .app-demo-metrics { grid-template-columns:repeat(3,minmax(0,1fr)); }
-            .app-demo-metric-head { gap:10px; }
-            .app-demo-metric-head > svg { width:24px; height:24px; flex:none; }
-            .app-demo-metric-head strong { font-size:18px; }
-            .app-demo-patient-summary { grid-template-columns:1fr 1fr; }
-        }
-
         .current-product-demo.app-demo-patient { --demo-menu-width:80px; grid-template-columns:80px 330px minmax(0,1fr); }
         .current-product-demo.app-demo-finance { aspect-ratio:1440 / 1000; }
         .app-demo-patient .app-demo-context { min-height:0; padding:32px 28px 24px; }
@@ -5978,6 +5970,14 @@
                 padding-block:8px;
             }
         }
+        @media(min-width:641px) and (max-width:1100px) {
+            .app-demo-metrics { grid-template-columns:repeat(3,minmax(0,1fr)); }
+            .app-demo-metric-head { gap:10px; }
+            .app-demo-metric-head > svg { width:24px; height:24px; flex:none; }
+            .app-demo-metric-head strong { font-size:18px; }
+            .app-demo-patient-summary { grid-template-columns:1fr 1fr; }
+        }
+
     </style>
 
     <style id="product-example-viewer-styles">
