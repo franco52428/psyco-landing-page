@@ -76,7 +76,9 @@ El tono es humano, sereno, directo y profesional.
 
 ## Fuente de verdad visual
 
-La identidad visual vigente de la landing es **Verdme Invierno**, el tema predeterminado `verdme-winter` de `psyco-web`. Consultar los tokens de `:root[data-theme="verdme-winter"]` en [`../psyco-web/app/winter-theme.css`](../psyco-web/app/winter-theme.css), y las superficies de navegación, tipografía, radios y sombras compartidos en [`../psyco-web/app/globals.css`](../psyco-web/app/globals.css). La landing fija `data-theme="verdme-winter"` y conserva una copia autocontenida de sus tokens en el bloque `verdme-winter-theme` de `index.html`. La fuente y su licencia están en [`../psyco-web/public/fonts/bricolage-grotesque/`](../psyco-web/public/fonts/bricolage-grotesque/). Si el tema cambia, revisar la implementación vigente antes de actualizar esta guía y después `index.html`.
+La landing conserva su paleta y apariencia aprobadas anteriores a la actualización de tema (referencia: `index.html` del commit `cc709f5`). **Decisión del usuario, 2026-10-25:** conservar los textos y los ejemplos actualizados, y revertir únicamente el tema de la landing. No sincronizar los colores globales de la página con el tema actual de `psyco-web` ni modificar textos como parte de una actualización visual sin petición explícita.
+
+Los ejemplos sí reproducen el tema vigente de `psyco-web`: consultar [`../psyco-web/app/winter-theme.css`](../psyco-web/app/winter-theme.css) y las superficies y roles compartidos de [`../psyco-web/app/globals.css`](../psyco-web/app/globals.css). Mantener sus estilos acotados a las vistas y al visor, sin sobrescribir la paleta global de la landing. La fuente y su licencia están en [`../psyco-web/public/fonts/bricolage-grotesque/`](../psyco-web/public/fonts/bricolage-grotesque/).
 
 El paquete [`verdme-handoff-v0`](./verdme-handoff-v0/README.md) conserva contexto histórico de producto y diseño. Sus valores cromáticos verde bosque, radios pequeños y prototipo visual ya no definen la identidad de la landing. Sus mocks no aprueban nuevas funcionalidades, rutas, datos ni comportamientos. Toda capacidad comercial sigue sujeta a `features.md`.
 
@@ -132,7 +134,7 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 
 ### Componentes y estados
 
-- CTA primario con fondo `#465D60`, hover `#3A5052` y texto `#FCFDFD`, como `--color-action-primary` del producto. El verde oscuro `#173C3B` se reserva para navegación y énfasis. Las superficies de navegación usan `#F1F6F2`, selección `#D6E9D8` y borde `#CBDCC9`, de los estilos Invierno compartidos de `psyco-web`.
+- CTA primario con fondo `#173C3B`, texto claro y contraste AA; `#465D60` se conserva para hover, selección y acentos medios.
 - CTA secundario con fondo `#FCFDFD` o transparente y borde `#B8C9C8`.
 - Links, inputs y controles con foco visible de 2 px en `#465D60` y offset suficiente.
 - Estados de producto usan color más texto o icono; nunca solo color.
@@ -141,7 +143,7 @@ Estos son roles de referencia tomados del tema invierno vigente en `psyco-web`, 
 
 ### Imágenes y mockups
 
-- **Decisión de diseño persistente — ejemplos completos en móvil (2026-10-25):** todas las vistas de muestra conservan el mismo lienzo y contenido completos de escritorio también en móvil y tablet. Escalar proporcionalmente la vista entera dentro de su marco; no recortarla, ocultar menús, quitar filas, resumir tarjetas ni reorganizar su interfaz según el ancho del dispositivo. La página comercial sí adapta sus columnas y textos alrededor de las vistas. Mantener «Ampliar» visible en dispositivos móviles para abrir el ejemplo completo. Esta decisión prevalece sobre las recomendaciones generales de simplificar los mocks en móvil.
+- **Decisión de diseño persistente — ejemplos completos en móvil (2026-10-25):** todas las vistas de muestra conservan el mismo lienzo y contenido completos de escritorio también en móvil y tablet. Escalar proporcionalmente la vista entera dentro de su marco; no recortarla, ocultar menús, quitar filas, resumir tarjetas ni reorganizar su interfaz según el ancho del dispositivo. La página comercial sí adapta sus columnas y textos alrededor de las vistas. Los ejemplos se presentan directamente en la sección, sin controles «Ampliar» ni visor de pantalla completa, por decisión del usuario del 2026-10-25. Esta decisión prevalece sobre las recomendaciones generales de simplificar los mocks en móvil.
 
 - Priorizar UI realista construida con HTML/CSS o capturas verificadas del producto.
 - La vista ilustrativa de agenda del hero toma como referencia estructural [`img/agenda.png`](./img/agenda.png): marco de navegador, navegación lateral, cabecera, pestañas, selector de día, sesiones, estados, avisos y acciones. Conservar esa riqueza visual sin reutilizar nombres ni datos de la captura y sin depender del PNG para renderizar la landing.
