@@ -10,6 +10,7 @@ Este documento es la fuente de verdad comercial para la landing page. Su objetiv
 - Fecha de revisión: 2026-09-10.
 - Alcance: interfaz, contratos de servicios, rutas autenticadas, textos de producto y pruebas presentes en `psyco-web`.
 - Límite: esta revisión no certifica infraestructura, regulación, SLA, disponibilidad de terceros ni capacidades que existan solo en otros repositorios.
+- Revisión puntual de procesos con varios participantes y su vista Pacientes: `psyco-web/main`, commit `ec4413f`, 2026-10-25. Evidencia: `components/clinical-process-detail/participants-card/participants-card.tsx` y `lib/services/clinical-process-detail.ts`. Confirma la asociación y presentación de varios pacientes en un mismo proceso clínico.
 
 Cada cambio de mensaje comercial debe contrastarse con este archivo y, cuando sea necesario, volver a validarse contra el `main` vigente de `psyco-web`.
 
@@ -40,7 +41,7 @@ Evidencia principal en `psyco-web`:
 - Directorio y creación de pacientes.
 - Perfil de paciente con datos de contacto, campos personalizados y contactos de emergencia.
 - Asociación de pacientes a procesos clínicos.
-- Procesos con uno o varios participantes, útil para atención individual, de pareja o familiar sin prometer una metodología clínica específica.
+- Procesos con uno o varios participantes, útil para atención individual, de pareja, familiar o grupal sin prometer una metodología clínica específica.
 - Estados de proceso: activo, pausado y cerrado.
 - Motivo de consulta, fecha de inicio y línea de tiempo del proceso.
 - Estado clínico con hipótesis actual, diagnóstico, objetivos activos, estado emocional y riesgos.

@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>Revisión responsive Verdme</title>
+<style>body{margin:0;background:#dde5e4}iframe{border:0;height:900px;background:white}pre{position:fixed;top:0;right:0;width:450px;max-height:95vh;overflow:auto;background:#fff;padding:16px;font:12px monospace;pointer-events:none}</style>
+<iframe title="Landing en revisión" src="/"></iframe><pre>Preparando revisión…</pre>
+<script>
+const frame=document.querySelector('iframe'),width=Number(new URLSearchParams(location.search).get('width'))||768;
+frame.style.width=width+'px';document.querySelector('pre').style.left=(width+20)+'px';
+frame.addEventListener('load',async()=>{
+ const doc=frame.contentDocument,w=frame.contentWindow;await doc.fonts.ready;
+ const report=()=>{
+  const result={width:w.innerWidth,overflow:doc.documentElement.scrollWidth>w.innerWidth,examples:[...doc.querySelectorAll('.current-product-demo')].map(el=>{
+   const sample=el.querySelector('.app-demo-participant-name strong,.app-demo-patient-session-title strong,.app-demo-metric-head strong');const r=el.getBoundingClientRect();
+   return {width:Math.round(r.width),height:Math.round(r.height),sample:sample?.textContent,font:sample?parseFloat(w.getComputedStyle(sample).fontSize)*r.width/el.offsetWidth:null};
+  }),targets:[...doc.querySelectorAll('.footer-contact a,.footer-links a,.pricing-legal a')].map(el=>({text:el.textContent,height:Math.round(el.getBoundingClientRect().height)})),modal:{open:doc.querySelector('#example-viewer').open,width:doc.querySelector('#example-viewer').clientWidth,height:doc.querySelector('#example-viewer').clientHeight,controls:[...doc.querySelectorAll('#example-viewer button')].map(el=>el.textContent.trim())}};
+  document.querySelector('pre').textContent=JSON.stringify(result,null,2);
+ };
+ report();new MutationObserver(()=>requestAnimationFrame(report)).observe(doc.querySelector('#example-viewer'),{attributes:true,subtree:true,childList:true});
+});
+</script>
