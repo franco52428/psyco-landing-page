@@ -14,7 +14,38 @@ Este documento es la fuente de verdad comercial para la landing page. Su objetiv
 
 Cada cambio de mensaje comercial debe contrastarse con este archivo y, cuando sea necesario, volver a validarse contra el `main` vigente de `psyco-web`.
 
+## Auditoría de coherencia editorial — 2026-11-24
+
+- La revisión completa del copy de `index.html` unifica la audiencia como psicólogos independientes y centros de atención psicológica; usa “pacientes” y “sesiones” de forma consistente fuera del checkout aprobado.
+- La denominación “centro de atención psicológica” está respaldada por el uso público de la [Universidad de los Andes](https://cienciassociales.uniandes.edu.co/centro-de-atencion-psicologica/quienes-somos/) y la [UPB](https://upb.edu.co/centro-de-atecion-psicologica-medellin), consultadas el 2026-11-24. No es una forma jurídica ni un sinónimo de IPS: esas fuentes describen figuras de prestación diferentes. El término identifica la actividad; “equipo” describe la operación compartida.
+- Cambios de claridad: Procesos clínicos abarca atención individual, de pareja, familiar y grupal; Pacientes describe datos, consentimientos y procesos; Finanzas diferencia lo registrado y lo pendiente; Pagos online describe enlaces y actualización de estados; Atención en equipo explica agenda y accesos según función.
+- Se elimina del cierre la afirmación absoluta “Lo demás ya está en su lugar”. Se conserva la invitación a asesoría con un mensaje aplicable tanto a práctica independiente como a equipos.
+- No se modifican capacidades, interfaces de producto, checkout Wompi, precio, ocho prestaciones ni condiciones de Basic. El precio de Equipos continúa sujeto a cotización y los enlaces de condiciones bajo las tarjetas se identifican como los de Basic.
+
 ## Capacidades disponibles y promocionables
+
+### Psicólogos independientes y centros de atención psicológica
+
+- Verdme contempla espacios de trabajo independientes y de organización.
+- Las organizaciones reúnen profesionales vinculados y permiten administrar usuarios, roles y permisos, según los accesos habilitados.
+- La vista de pacientes de la organización permite buscar por nombre o documento y registrar pacientes con los permisos correspondientes. Su alcance administrativo no equivale a abrir la historia clínica.
+- Los usuarios autorizados pueden activar o desactivar profesionales vinculados y consultar las licencias contratadas, en uso y disponibles; la activación requiere capacidad disponible y la desactivación libera una licencia.
+- Los roles personalizables permiten separar las tareas de agenda y cobros del acceso clínico; por ejemplo, configurar recepción para agendar y registrar pagos sin habilitar la historia clínica. Es una posibilidad de configuración, no un rol predeterminado ni acceso clínico denegado para todos los miembros.
+- La agenda transversal permite coordinar las citas de los profesionales vinculados. La gestión de cobros y el registro de pagos de esas citas se habilitan mediante permisos específicos; “gestión centralizada de pagos” describe esas operaciones, sin afirmar que Verdme reciba o custodie fondos.
+- La landing se dirige a psicólogos independientes y centros de atención psicológica: equipos que prestan atención bajo una misma razón social, según la definición de audiencia confirmada por el responsable del producto el 2026-11-24.
+- “Centros de atención psicológica” es una denominación comercial de la audiencia; no afirma una categoría de habilitación sanitaria ni permite inferir tarifas o condiciones específicas para organizaciones.
+
+Verificación puntual: `psyco-web/main`, commit `9fc8fcb37c8d9f66051347724c7d9c2e29be633c`, 2026-11-24. Evidencia:
+
+- `components/workspace/workspace-selector.tsx` (espacios independientes y de organización).
+- `components/organization-management/organization-management-copy.ts` (profesionales vinculados, usuarios, roles y permisos).
+- `lib/services/organization-management.ts` (consulta de miembros y gestión de roles y asignaciones).
+- `components/cross-professional-agenda/cross-professional-agenda-page.tsx` y `components/cross-professional-agenda/cross-agenda-sessions.tsx` (agenda del equipo).
+- `components/finances/cross-professional-session-billing.test.tsx` y `components/organization-management/role-permission-concepts.ts` (permisos de cobros y pagos de otros profesionales).
+- `components/organization-patients/organization-patients-page.tsx`, `components/organization-patients/organization-patient-directory-source.ts` y `lib/services/organization-patients.ts` (búsqueda y registro de pacientes, con información general y permisos separados).
+- `components/organization-management/organization-members-panel.tsx` y `components/organization-management/organization-management-copy.ts` (activación, desactivación y capacidad de licencias).
+
+Mensaje vigente para la sección de centros, ajustado el 2026-11-24 a petición del responsable del producto para mantener el tono de la landing: “La gestión de tu equipo, en un mismo lugar.”. La auditoría editorial sustituye “Coordina tu centro” por un beneficio operativo concreto y usa “centros de atención psicológica” para la audiencia. Sus cuatro bloques presentan agenda del equipo, accesos según cada función, pacientes y pagos, y usuarios y licencias. No agrega capacidades: conserva las operaciones verificadas y el ejemplo de recepción con permisos administrativos separados de la historia clínica.
 
 ### Agenda y sesiones
 
@@ -35,6 +66,45 @@ Evidencia principal en `psyco-web`:
 - `components/sessions/editor.tsx`
 - `components/sessions/session-detail-view.tsx`
 - `lib/services/sessions.ts`
+
+### Captura de datos para RDA de Paciente y Consulta Externa
+
+El responsable del producto confirmó el 2026-11-24 que Verdme ya soporta datos de RDA del paciente y de consulta externa. La revisión de `psyco-web/main` (`9fc8fcb37c8d9f66051347724c7d9c2e29be633c`) verifica la captura de información en las fichas y sesiones:
+
+- Identificación del paciente, documento, nombres, nacimiento, contacto, residencia, información demográfica y datos de aseguramiento, con catálogos y campos marcados para RDA en la interfaz.
+- Antecedentes de problemas de salud, medicamentos y antecedentes familiares, con estado de información y detalles.
+- Datos clínicos por paciente dentro de la sesión: diagnósticos, alergias e intolerancias, factores de riesgo, incapacidades, formulación y órdenes, según funciones y permisos habilitados.
+- Guardado progresivo de información; los indicadores RDA de los formularios no obligan a completar todos los datos para guardar un registro.
+- Los registros clínicos estructurados tienen historial de revisiones; los permisos de consulta y edición se aplican por bloque.
+
+Evidencia adicional a las tarjetas de sesión: `components/patient-detail/patient-demographic-fields.tsx`, `patient-general-information-card.tsx`, `patient-antecedent-card.tsx`, `patient-antecedents-copy.ts`, `lib/services/patient-detail.ts`, `lib/services/patient-antecedents.ts`, `lib/i18n.ts` (indicación de campos RDA de Paciente), `lib/prescribed-medication-translations.ts` y `lib/service-request-translations.ts` (indicación de captura de datos para RDA de Consulta Externa).
+
+La [descripción oficial de Minsalud](https://www.minsalud.gov.co/ihce/rda/Paginas/inicio.aspx), consultada el 2026-11-24, identifica RDA de Paciente y de Consulta Externa y el nombre Resumen Digital de Atención. Esta fuente fundamenta la denominación, no certifica capacidades de Verdme. La landing comunica **registro de datos para RDA**, sin prometer cobertura exhaustiva de todos los requisitos del perfil, documentos RDA generados/validados/firmados, envío a Minsalud, aceptación en IHCE, integración operativa ni certificación de cumplimiento. El plan de interoperabilidad del repositorio sigue separando esas etapas; no usarlo como prueba de que ya estén disponibles.
+
+### Detalle de la atención y ficha clínica por sesión
+
+Verificación puntual de `psyco-web/main`, commit `9fc8fcb37c8d9f66051347724c7d9c2e29be633c`, 2026-11-24. La landing anterior solo describía agenda y notas; el producto también dispone de captura clínica estructurada.
+
+- La vista “Detalle de la atención” reúne notas y ficha clínica por paciente dentro de la sesión. La navegación separa los participantes y ofrece la nota general cuando corresponde.
+- Diagnósticos con descripción, códigos consultables en catálogos, distinción entre principal y relacionados y tipo de diagnóstico. La aplicación registra la información aportada por el profesional; no realiza diagnósticos automáticos.
+- Alergias e intolerancias con descripción, estado clínico, verificación y fecha de inicio cuando se registra.
+- Factores de riesgo registrados mediante catálogo o descripción, con estado de información.
+- Registro de información sobre incapacidades, con periodo y días cuando se consignan.
+- Registro de formulación con medicamentos, dosis, vías, duración e indicaciones cuando se consignan.
+- Registro de órdenes de procedimientos u otras tecnologías, con descripción y datos de clasificación cuando se consignan.
+- Historial de revisiones para los registros clínicos estructurados. No equivale a un historial de cambios palabra por palabra de todas las notas ni una garantía de inmutabilidad.
+- Consulta y edición controladas por permisos específicos para cada bloque; la vista solo muestra los bloques accesibles para el usuario.
+- Inicio y finalización de la atención. La acción de finalizar guarda la nota antes de cerrar la sesión; no implica firma electrónica ni envío de RDA.
+
+Evidencia principal:
+
+- `components/sessions/session-clinical-record-view.tsx` y `components/sessions/session-patient-navigation.tsx`.
+- `components/notes/clinical-notes-workspace.tsx` y `components/sessions/session-care-controls.tsx`.
+- `components/sessions/use-session-clinical-capture-access.ts`.
+- `components/diagnoses/session-diagnoses-card.tsx`, `diagnosis-contract.ts`, `diagnosis-code-field.tsx` y sus servicios de catálogo/guardado/historial.
+- Los contratos, tarjetas de sesión y servicios de historial de `components/allergy-intolerances/`, `components/risk-factors/`, `components/incapacities/`, `components/prescribed-medications/` y `components/service-requests/`.
+
+Regla comercial: destacar la información organizada por paciente y sesión, las notas y los registros estructurados bajo criterio del profesional. Describir incapacidades, formulación y órdenes como **registro de información**, según funciones habilitadas y alcance de la práctica; no atribuir a todos los psicólogos facultad para prescribir medicamentos o emitir incapacidades, ni prometer expedición de documentos, certificación, interoperabilidad o cumplimiento normativo a partir de estos campos. No afirmar que todas las capacidades nuevas forman parte de Basic sin una confirmación comercial específica. La sección usa una lista explicativa de categorías, no una pantalla ficticia ni datos clínicos de personas.
 
 ### Pacientes, procesos clínicos y seguimiento
 
@@ -100,6 +170,8 @@ Regla comercial: Verdme registra y organiza consentimientos. No afirmar que los 
 
 ### Finanzas, cobros y paquetes
 
+- La vista actual usa navegación lateral con Movimientos del mes, Todo lo que te deben, Sesiones sin valor de cobro y Wompi, según los permisos disponibles. En Movimientos del mes, el selector de mes acompaña al título; las tarjetas de Ingresos, Por cobrar y Sesiones muestran su desglose en listas compactas.
+- El directorio de movimientos separa Obligaciones de Pagos y devoluciones, con búsqueda por paciente o proceso, filtros de tipo y estado, y acciones por fila.
 - Resumen mensual de ingresos registrados, cuentas por cobrar y actividad de sesiones y paquetes.
 - Filtros de movimientos, cuentas por cobrar y pendientes de definición.
 - Acuerdos de cobro por proceso clínico.
@@ -111,6 +183,8 @@ Regla comercial: Verdme registra y organiza consentimientos. No afirmar que los 
 - Asociación de sesiones a paquetes y control separado de uso de sesiones y dinero recibido.
 - Planes de pago por cuotas con valor y fecha límite; seguimiento de próxima cuota, saldo y vencimiento.
 - Vista de pagos vencidos y próximos cobros.
+
+Verificación puntual del diseño de la vista ilustrativa: `psyco-web/main`, commit `9fc8fcb37c8d9f66051347724c7d9c2e29be633c`, 2026-11-24. Referencias: `components/finances/finances-client-page.tsx`, `components/finances/finances-navigation.module.css`, `components/ui/psyco-summary-metric-card.tsx`, `components/ui/psyco-data-table-card.tsx`, `components/ui/psyco-workspace-navigation-item.module.css`, `app/winter-theme.css` y `app/globals.css`. La demostración de la landing conserva el lienzo completo de escritorio al escalarlo y usa datos ficticios.
 
 Evidencia principal:
 
@@ -170,6 +244,8 @@ Regla comercial: hablar de control de acceso, visibilidad de sesiones y cifrado 
 
 ### Plan y licencia
 
+- Por decisión expresa del responsable del producto del 2026-11-24, la sección comercial presenta dos opciones: **Basic** para psicólogos independientes y **Equipos**, con cotización **A tu medida** para centros de atención psicológica. Equipos incluye todo lo de Basic para cada psicólogo, gestión centralizada de la agenda, gestión centralizada de cobros y pagos, y permisos personalizados para los usuarios vinculados. Esta aprobación no fija un precio para Equipos ni extiende automáticamente las condiciones de la suscripción Basic a una propuesta de equipo.
+- La composición aprobada toma como referencia únicamente el diseño de precios de `index-propuesta-4.html`: dos tarjetas, Basic clara y Equipos oscura, listas con marcas de verificación y acciones de asesoría y cotización. El contenido de esa propuesta no es una fuente independiente de capacidades o condiciones.
 - El plan actual es **Basic por $99.000 COP al mes**, según confirmación expresa del responsable del producto el 2026-09-25 y la documentación de suscripciones de `psyco-web` en `main` (`5ba2133`). La app consulta el importe vigente a Mercado Pago y muestra las condiciones antes de autorizar el pago.
 - El responsable del producto definió el 2026-09-25 las características que deben listarse en Basic: gestión de pacientes, gestión de agenda, procesos clínicos, historia clínica, cobros online a pacientes, módulo de finanzas, cifrado y seguridad de datos, y acceso al sistema 24/7. Es una lista comercial de prestaciones incluidas, no un recuento de módulos técnicos.
 - “Historia clínica” se refiere al expediente clínico unificado, los registros y las notas que organiza el profesional; no a la generación automática de una historia. “Cifrado” se limita a los datos clínicos sensibles verificados arriba. “Acceso al sistema 24/7” describe que la licencia permite usar Verdme a cualquier hora; no equivale a un SLA ni a disponibilidad ininterrumpida garantizada.
@@ -187,7 +263,7 @@ Evidencia principal:
 - `psyco-web/documentation/features/saas-subscriptions-entitlements/release-checklist.md`
 - `psyco-api/src/subscription-billing/services/subscription-catalog.service.ts` (nombres de los siete módulos)
 
-Regla comercial: mostrar $99.000 COP/mes como el precio actual confirmado por el responsable del producto y comunicar la activación y cancelación autónomas, sin permanencia, penalidad por cancelar, trabas ni costos ocultos. Presentar la lista de características confirmada arriba, sin llamarlas a todas módulos. No presentar otros planes, descuentos, prueba gratuita ni anualidad. Explicar la cancelación y el periodo pagado sin insinuar una devolución automática.
+Regla comercial: mostrar $99.000 COP/mes para Basic y comunicar su activación y cancelación autónomas, sin permanencia, penalidad por cancelar, trabas ni costos ocultos. Presentar su lista de características confirmada arriba, sin llamarlas a todas módulos. Equipos se presenta como A tu medida y dirige a cotizar con un asesor, sin inventar tarifas ni condiciones de contratación. No presentar otras ofertas, descuentos, prueba gratuita ni anualidad. Explicar la cancelación y el periodo pagado de Basic sin insinuar una devolución automática.
 
 ### Experiencia transversal
 

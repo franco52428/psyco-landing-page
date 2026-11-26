@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verdme | Continuidad para tu práctica</title>
-    <meta name="description" content="Verdme reúne agenda, procesos clínicos y notas para tu práctica psicológica. Recibe pagos de tus clientes online y gestiona los cobros desde la app.">
+    <title>Verdme | Gestión para psicólogos y equipos clínicos</title>
+    <meta name="description" content="Agenda, pacientes, notas y cobros para psicólogos independientes y centros de atención psicológica. Organiza tu práctica y el trabajo de tu equipo con Verdme.">
     <meta name="theme-color" content="#F4F7F6">
     <link rel="preconnect" href="https://app.verdme.com">
     <link rel="dns-prefetch" href="//app.verdme.com">
@@ -2080,90 +2080,28 @@
           background: var(--paper-100);
         }
 
-        .site-footer {
-          padding: 0 1rem 2rem;
+        /* Footer: composición aprobada de index-propuesta-7.html. */
+        .site-footer { padding:56px 0 40px; border-top:1px solid var(--line-soft); margin-top:clamp(48px,7vw,88px); background:var(--surface); }
+        .footer-container { max-width:1180px; margin:0 auto; padding:0 clamp(16px,3vw,32px); }
+        .footer-grid { display:grid; grid-template-columns:minmax(0,1.2fr) repeat(2,minmax(0,1fr)); gap:28px; }
+        .footer-grid > div { min-width:0; }
+        .site-footer h2 { margin:0 0 10px; color:var(--sage-900); font-size:15px; font-weight:600; letter-spacing:0; }
+        .site-footer p,.site-footer li { color:var(--ink-700); font-size:15px; line-height:1.6; }
+        .site-footer ul { margin:0; padding:0; display:grid; gap:2px; list-style:none; }
+        .site-footer a { min-height:44px; display:inline-flex; align-items:center; color:var(--sage-900); text-underline-offset:3px; }
+        .site-footer a:hover { color:var(--sage-700); }
+        .site-footer a:focus-visible { outline:2px solid var(--sage-700); outline-offset:3px; }
+        .site-footer .footer-brand { gap:8px; color:var(--sage-900); font-size:23px; font-weight:600; letter-spacing:-.02em; text-decoration:none; }
+        .footer-brand svg { width:30px; height:32px; flex:none; }
+        .footer-brand .footer-brand-accent { color:var(--sage-700); }
+        .site-footer .footer-copy { max-width:320px; margin:8px 0 0; }
+        .site-footer .footer-copyright { margin:28px 0 0; padding-top:20px; border-top:1px solid var(--line-soft); font-size:14px; }
+        @media (max-width:1023px) {
+            .footer-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
         }
-
-        .footer-shell {
-          width: min(100%, var(--container));
-          margin: 0 auto;
-          padding-top: 1.6rem;
-          border-top: 1px solid var(--line-strong);
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          gap: 1.5rem;
-        }
-
-        .footer-brand {
-          color: var(--ink-900);
-          font-size: 1.05rem;
-          font-weight: 600;
-          letter-spacing: -0.04em;
-        }
-
-        .footer-brand span {
-          color: var(--sage-700);
-        }
-
-        .footer-copy,
-        .footer-links a {
-          color: var(--ink-700);
-          font-size: 0.8rem;
-        }
-
-        .footer-copyright {
-          display: block;
-          margin-top: 0.4rem;
-          color: var(--ink-700);
-          font-size: 0.75rem;
-          line-height: 1.4;
-        }
-
-        .footer-contact {
-          display: flex;
-          flex-direction: column;
-          gap: 0.35rem;
-        }
-
-        .footer-contact-label {
-          color: var(--ink-900);
-          font-size: 0.8rem;
-          font-weight: 600;
-        }
-
-        .footer-contact a {
-          display: inline-flex;
-          align-items: center;
-          min-width: 44px;
-          min-height: 44px;
-          color: var(--ink-700);
-          font-size: 0.8rem;
-          text-decoration-color: var(--sage-500);
-          text-underline-offset: 0.2em;
-        }
-
-        .footer-contact a:hover {
-          color: var(--sage-900);
-        }
-
-        .footer-links {
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 0.5rem;
-        }
-
-        .footer-links a {
-          display: inline-flex;
-          align-items: center;
-          min-width: 44px;
-          min-height: 44px;
-          text-decoration: none;
-        }
-
-        .footer-links a:hover {
-          color: var(--ink-900);
+        @media (max-width:640px) {
+            .footer-grid { grid-template-columns:1fr; }
+            .site-footer .footer-brand { font-size:21px; }
         }
 
         @media (max-width: 1100px) {
@@ -2455,11 +2393,6 @@
             flex: 1 1 100%;
           }
 
-          .footer-shell {
-            width: calc(100% - 2.5rem);
-            align-items: flex-start;
-            flex-direction: column;
-          }
         }
 
         @media (max-width: 430px) {
@@ -2541,9 +2474,8 @@
           background: rgba(246, 246, 243, 0.94);
         }
 
-        .nav-shell {
-          min-height: 72px;
-        }
+        :root { --nav-content-height: 72px; --nav-height: calc(var(--nav-content-height) + 1px); }
+        .nav-shell { min-height: var(--nav-content-height); }
 
         .logo-wordmark {
           display: inline;
@@ -2874,11 +2806,6 @@
           background: rgba(255, 255, 255, 0.08);
         }
 
-        .site-footer {
-          padding-top: 2rem;
-          background: var(--paper-50);
-        }
-
         @supports (animation-timeline: view()) {
           .workflow-copy,
           .workflow-list,
@@ -2958,9 +2885,7 @@
         }
 
         @media (max-width: 680px) {
-          .nav-shell {
-            min-height: 66px;
-          }
+          :root { --nav-content-height: 66px; }
 
           .logo-wordmark {
             display: inline;
@@ -3251,8 +3176,7 @@
             background: rgba(244, 247, 246, 0.94);
         }
 
-        .logo,
-        .footer-brand {
+        .logo {
             letter-spacing: -0.045em;
         }
 
@@ -4074,10 +3998,6 @@
 
         .cta-final .section-kicker::before {
             background: #C2D0CF;
-        }
-
-        .site-footer {
-            background: var(--app-background);
         }
 
         #cobros .payments-content > p {
@@ -5319,222 +5239,63 @@
         }
     </style>
     <style id="verdme-pricing">
+        /* Dos opciones comerciales; composición de index-propuesta-4, paleta de la landing. */
         .pricing-section {
-            min-height: calc(100svh - 72px);
-            padding: clamp(3rem, 5.5vh, 4.5rem) 1rem;
-            display: flex;
-            align-items: center;
-            border-top: 1px solid var(--line-soft);
-            background: var(--app-background);
-        }
-
-        .pricing-shell {
-            width: min(100%, 1080px);
-            margin: 0 auto;
-        }
-
-        .pricing-heading {
-            max-width: 730px;
-            margin: 0 0 1.75rem;
-        }
-
-        .pricing-heading .section-kicker { margin-bottom: 0.75rem; }
-
-        .pricing-heading h2 {
-            margin: 0;
-            color: var(--ink-900);
-            font-size: clamp(1.85rem, 3vw, 2.35rem);
-            font-weight: 600;
-            letter-spacing: -0.035em;
-            line-height: 1.12;
-        }
-
-        .pricing-heading > p:last-child {
-            margin: 0.75rem 0 0;
-            color: var(--ink-700);
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .pricing-card {
-            overflow: hidden;
-            border: 1px solid var(--line-strong);
-            border-radius: 20px;
-            background: var(--surface);
-            box-shadow: 0 16px 36px -32px rgba(39, 48, 49, 0.28);
-        }
-
-        .pricing-card-top {
-            min-height: 126px;
-            padding: 1.75rem clamp(1.5rem, 3vw, 2.25rem);
-            border-bottom: 1px solid var(--line-soft);
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            gap: 1.5rem;
-            background: linear-gradient(110deg, rgba(229, 235, 234, 0.44), transparent 70%), var(--surface);
-        }
-
-        .pricing-plan-label {
-            margin: 0 0 0.35rem;
-            color: var(--sage-700);
-            font-size: 0.74rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-        }
-
-        .pricing-plan-heading h3 {
-            margin: 0;
-            color: var(--ink-900);
-            font-size: 1.9rem;
-            font-weight: 600;
-            letter-spacing: -0.04em;
-            line-height: 1;
-        }
-
-        .pricing-amount {
-            margin: 0;
-            color: var(--ink-900);
-            font-size: clamp(2.2rem, 3.4vw, 2.8rem);
-            font-weight: 600;
-            letter-spacing: -0.05em;
-            line-height: 1;
-            white-space: nowrap;
-        }
-
-        .pricing-amount span {
-            display: block;
-            margin-top: 0.4rem;
-            color: var(--ink-700);
-            font-size: 0.88rem;
-            font-weight: 500;
-            letter-spacing: 0;
-            text-align: right;
-        }
-
-        .pricing-card-body {
-            display: grid;
-            grid-template-columns: minmax(0, 1.6fr) minmax(290px, 0.9fr);
-        }
-
-        .pricing-card-main,
-        .pricing-card-aside {
-            min-width: 0;
-            padding: 1.8rem clamp(1.5rem, 3vw, 2.25rem) 2rem;
-        }
-
-        .pricing-card-aside {
-            border-left: 1px solid var(--line-soft);
-            background: var(--paper-100);
-        }
-
-        .pricing-content-title {
-            margin: 0 0 0.9rem;
-            color: var(--ink-900);
-            font-size: 0.95rem;
-            font-weight: 600;
-            letter-spacing: -0.01em;
-            line-height: 1.35;
-        }
-
-        .pricing-features,
-        .pricing-conditions {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .pricing-features {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            column-gap: 1.5rem;
-        }
-
-        .pricing-features li {
-            min-height: 48px;
-            padding: 0.55rem 0;
-            border-bottom: 1px solid var(--line-soft);
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            color: var(--ink-900);
-            font-size: 0.88rem;
-            line-height: 1.35;
-        }
-
-        .pricing-features li:nth-last-child(-n + 2) { border-bottom: 0; }
-
-        .pricing-features li::before {
-            content: "";
-            width: 7px;
-            height: 7px;
-            flex: 0 0 7px;
-            border-radius: 50%;
-            background: var(--sage-700);
-            box-shadow: 0 0 0 5px var(--sage-100);
-        }
-
-        .pricing-conditions li {
-            padding: 0.7rem 0;
-            border-bottom: 1px solid var(--line-soft);
-            color: var(--ink-700);
-            font-size: 0.86rem;
-            line-height: 1.45;
-        }
-
-        .pricing-conditions li:first-child { padding-top: 0; }
-        .pricing-conditions li:last-child { padding-bottom: 0; border-bottom: 0; }
-
-        .pricing-legal {
-            margin: 0.9rem 0 0;
-            color: var(--ink-700);
-            font-size: 0.78rem;
-            line-height: 1.6;
-        }
-
-        .pricing-legal p { margin:0 0 0.25rem; }
-        .pricing-legal-links { display:flex; flex-wrap:wrap; gap:4px 20px; }
-        .pricing-legal a {
-            display:inline-flex;
+            min-height:calc(100svh - 72px);
+            padding:clamp(3.5rem,7vh,5rem) 1rem;
+            display:flex;
             align-items:center;
-            min-width:44px;
-            min-height:44px;
-            max-width:100%;
-            padding-block:8px;
-            color: var(--sage-900);
-            text-underline-offset: 0.2em;
+            border-top:1px solid var(--line-soft);
+            background:var(--app-background);
         }
-
-        .pricing-legal a:focus-visible {
-            outline: 2px solid var(--sage-700);
-            outline-offset: 3px;
+        .pricing-shell { width:min(100%,1080px); margin:0 auto; }
+        .pricing-heading { max-width:730px; margin:0 0 1.75rem; }
+        .pricing-heading .section-kicker { margin-bottom:.75rem; }
+        .pricing-heading h2 { margin:0; color:var(--ink-900); font-size:clamp(1.85rem,3vw,2.35rem); font-weight:600; letter-spacing:-.035em; line-height:1.12; }
+        .pricing-heading > p:last-child { margin:.75rem 0 0; color:var(--ink-700); font-size:1rem; line-height:1.6; }
+        .pricing-plans { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:stretch; gap:20px; }
+        .pricing-card {
+            --plan-surface:var(--surface);
+            --plan-ink:var(--ink-900);
+            --plan-muted:var(--ink-700);
+            --plan-accent:var(--sage-700);
+            min-width:0;
+            padding:clamp(22px,3vw,36px);
+            display:flex;
+            flex-direction:column;
+            border:1px solid var(--line-soft);
+            border-radius:24px;
+            background:var(--plan-surface);
+            color:var(--plan-ink);
+            box-shadow:0 16px 36px -32px rgb(39 48 49 / 28%);
         }
-
-        @media (max-width: 900px) {
-            .pricing-section { min-height: 0; }
-            .pricing-card-body { grid-template-columns: 1fr; }
-            .pricing-card-aside { border-top: 1px solid var(--line-soft); border-left: 0; }
+        .pricing-card.is-team { --plan-surface:var(--sage-900); --plan-ink:#EAF1EF; --plan-muted:#C4D4D2; --plan-accent:#B4C7C6; border-color:var(--sage-900); }
+        .pricing-card h3 { margin:0 0 6px; color:var(--plan-ink); font-size:1.75rem; font-weight:600; letter-spacing:-.025em; line-height:1.2; }
+        .pricing-audience { margin:0; color:var(--plan-muted); font-size:1rem; line-height:1.5; }
+        .pricing-amount { margin:22px 0 6px; display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 8px; color:var(--plan-ink); line-height:1.2; }
+        .pricing-amount strong { font-size:clamp(2.2rem,4.2vw,3rem); font-weight:600; letter-spacing:-.04em; }
+        .pricing-amount span { color:var(--plan-muted); font-size:1rem; }
+        .pricing-features { margin:20px 0 22px; padding:0; display:grid; gap:10px; list-style:none; }
+        .pricing-features li { display:flex; align-items:flex-start; gap:10px; color:var(--plan-ink); font-size:1rem; line-height:1.45; }
+        .pricing-features svg { width:20px; height:20px; margin-top:2px; flex:none; fill:none; stroke:var(--plan-accent); stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+        .pricing-terms { margin:0 0 22px; color:var(--plan-muted); font-size:.9rem; line-height:1.55; }
+        .pricing-card .pricing-plan-action { min-height:48px; max-width:100%; margin-top:auto; padding:12px 20px; align-self:flex-start; display:inline-flex; align-items:center; justify-content:center; gap:10px; border-radius:12px; font-size:1rem; font-weight:500; line-height:1.4; text-align:center; white-space:normal; }
+        .pricing-plan-action svg { width:20px; height:20px; flex:none; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+        .pricing-card.is-team .pricing-plan-action { background:var(--surface); color:var(--sage-900); }
+        .pricing-card.is-team .pricing-plan-action:hover { background:#D6E9D8; }
+        .pricing-card .pricing-plan-action:focus-visible { outline:2px solid var(--plan-accent); outline-offset:4px; }
+        .pricing-card.is-team .pricing-plan-action:focus-visible { outline-color:#fff; }
+        .pricing-legal { margin:22px 0 0; color:var(--ink-700); font-size:.9rem; line-height:1.6; }
+        .pricing-legal p { margin:0 0 .25rem; }
+        .pricing-legal-links { display:flex; flex-wrap:wrap; gap:4px 20px; }
+        .pricing-legal a { display:inline-flex; align-items:center; min-width:44px; min-height:44px; max-width:100%; padding-block:8px; color:var(--sage-900); text-underline-offset:.2em; }
+        .pricing-legal a:focus-visible { outline:2px solid var(--sage-700); outline-offset:3px; }
+        @media (max-width:900px) {
+            .pricing-plans { grid-template-columns:1fr; }
         }
-
-        @media (min-width: 901px) and (max-height: 780px) {
-            .pricing-section { padding-block: 2rem; }
-            .pricing-heading { margin-bottom: 1.2rem; }
-            .pricing-card-top { min-height: 108px; padding-block: 1.3rem; }
-            .pricing-card-main,
-            .pricing-card-aside { padding-block: 1.25rem 1.4rem; }
-            .pricing-features li { min-height: 43px; padding-block: 0.4rem; }
-            .pricing-conditions li { padding-block: 0.52rem; }
-        }
-
-        @media (max-width: 600px) {
-            .pricing-section { padding-block: 3.5rem; }
-            .pricing-card-top { min-height: 0; align-items: flex-start; flex-direction: column; gap: 1rem; }
-            .pricing-amount span { text-align: left; }
-            .pricing-features { grid-template-columns: 1fr; }
-            .pricing-features li:nth-last-child(2) { border-bottom: 1px solid var(--line-soft); }
-            .pricing-card-main,
-            .pricing-card-aside { padding: 1.5rem; }
+        @media (max-width:600px) {
+            .pricing-heading { margin-bottom:1.5rem; }
+            .pricing-card { padding:24px; }
         }
     </style>
     <style id="proportional-illustrations">
@@ -5717,40 +5478,63 @@
         .app-demo-linked-dates strong { display:block; }
         .app-demo-linked-notice { margin:0 18px; padding:20px 0; display:flex; justify-content:space-between; gap:18px; border-top:1px solid #dce6e4; color:#8d6921; }
         .app-demo-linked-notice > span { display:flex; align-items:center; gap:6px; color:#173c3b; }
-        .app-demo-finance-cover { min-height:136px; padding:32px 56px; display:flex; align-items:center; justify-content:space-between; gap:30px; border-bottom:1px solid #ccdad8; background-color:#e8efee; background-image:linear-gradient(rgb(70 93 96 / 7%) 1px,transparent 1px),linear-gradient(90deg,rgb(70 93 96 / 7%) 1px,transparent 1px); background-size:40px 32px; }
-        .app-demo-finance-cover > div:first-child > strong { display:block; font-size:32px; letter-spacing:-.035em; }
-        .app-demo-finance-cover > div:first-child > span { display:block; margin-top:3px; color:#647476; }
-        .app-demo-connection { padding:16px 20px; display:flex; align-items:center; gap:16px; border:1px solid #dce6e4; border-radius:14px; background:#ffffff; box-shadow:var(--shadow-card); }
-        .app-demo-connection > .app-demo-icon:first-child { width:30px; height:30px; color:#3f7d5a; }
-        .app-demo-connection strong { color:#3f7d5a; white-space:nowrap; }
-        .app-demo-connection span { display:block; color:#647476; font-size:12px; white-space:nowrap; }
-        .app-demo-finance-content { padding:30px 56px; }
-        .app-demo-finance-tabs { display:flex; border-bottom:1px solid #cbdcc9; color:#465d60; font-weight:600; }
-        .app-demo-finance-tabs > span { padding:12px 16px; }
-        .app-demo-finance-tabs .is-active { background:#d6e9d8; }
-        .app-demo-month { width:fit-content; min-height:48px; margin:24px 0 20px; padding:12px 16px; display:flex; align-items:center; gap:12px; border:1px solid #dce6e4; border-radius:16px; background:rgb(252 253 253 / 50%); color:#465d60; font-weight:600; }
-        .app-demo-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
-        .app-demo-metric { min-width:0; overflow:hidden; border:1px solid #dce6e4; border-left:3px solid #669775; border-radius:14px; background:#fcfdfd; }
-        .app-demo-metric.is-due { border-left-color:#ad7066; background:#fffafa; }
-        .app-demo-metric-head { min-height:100px; padding:22px; display:flex; align-items:center; gap:22px; border-bottom:1px solid #dce6e4; }
-        .app-demo-metric-head > svg { width:28px; height:28px; color:#465d60; }
-        .app-demo-metric-head span { color:#647476; font-size:12px; }
-        .app-demo-metric-head strong { display:block; margin-top:8px; font-size:20px; white-space:nowrap; }
-        .app-demo-metric.is-income .app-demo-metric-head strong { color:#28764c; }
-        .app-demo-metric.is-due .app-demo-metric-head strong { color:#b3322a; }
-        .app-demo-metric-lines { padding:18px; display:grid; gap:12px; }
-        .app-demo-metric-lines > div { min-height:50px; padding:12px; display:flex; align-items:center; justify-content:space-between; gap:12px; border:1px solid #dce6e4; border-radius:10px; background:#ffffff; color:#647476; }
-        .app-demo-metric-lines strong { color:#3d5052; white-space:nowrap; }
-        .app-demo-finance-table { margin-top:20px; overflow:hidden; border:1px solid #dce6e4; border-radius:14px; background:#fcfdfd; }
-        .app-demo-finance-table-title { min-height:64px; padding:18px; display:flex; align-items:center; justify-content:space-between; gap:20px; border-bottom:1px solid #dce6e4; background:#edf3ed; }
-        .app-demo-finance-table-title > span { display:flex; align-items:center; gap:8px; color:#8a9c9d; font-size:12px; white-space:nowrap; }
-        .app-demo-finance-table-row { min-height:62px; padding:14px 18px; display:grid; grid-template-columns:2.2fr 1fr 1fr .8fr 20px; align-items:center; gap:18px; border-bottom:1px solid #e1ebe9; font-size:12px; }
-        .app-demo-finance-table-row.is-heading { min-height:46px; color:#647476; font-weight:600; }
-        .app-demo-finance-table-row small { display:block; margin-top:3px; color:#647476; }
+        /* Finanzas: composición de finances-client-page y primitivas compartidas (main 9fc8fcb). */
+        .current-product-demo.app-demo-finance { --demo-menu-width:80px; grid-template-columns:80px minmax(0,1fr); aspect-ratio:1600 / 1000; }
+        .app-demo-finance .app-demo-finance-workspace { position:relative; min-width:0; padding:32px; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,3fr); align-items:start; gap:64px; }
+        .app-demo-finance-workspace::before { position:absolute; inset:0 auto 0 0; width:calc((100% - 128px) / 4 + 64px); border-right:1px solid #cbdcc9; background-color:#f1f6f2; background-image:radial-gradient(ellipse at 112% 42%,rgb(214 233 216 / 72%) 0 23%,transparent 23.3%),radial-gradient(ellipse at -12% 100%,rgb(214 233 216 / 78%) 0 19%,transparent 19.3%),linear-gradient(145deg,#f1f6f2 0%,#f1f6f2 48%,#d6e9d8 100%); content:""; }
+        .app-demo-finance .app-demo-finance-rail,.app-demo-finance .app-demo-finance-content { position:relative; min-width:0; }
+        .app-demo-finance .app-demo-finance-rail-header { padding-bottom:20px; border-bottom:1px solid #e3ebe9; }
+        .app-demo-finance .app-demo-finance-rail-header > strong { display:block; font-size:24px; line-height:30px; letter-spacing:-.025em; }
+        .app-demo-finance .app-demo-finance-rail-header > span { display:block; margin-top:4px; font-size:12px; line-height:20px; color:#5d6c6d; }
+        .app-demo-finance .app-demo-finance-navigation { margin-top:20px; display:grid; gap:4px; }
+        .app-demo-finance .app-demo-finance-navigation > span { min-height:48px; padding:8px; display:flex; align-items:center; gap:10px; border:1px solid transparent; border-radius:10px; color:#5d6c6d; font-size:14px; font-weight:500; }
+        .app-demo-finance .app-demo-finance-navigation .is-active { position:relative; border-color:#fff; background:#d6e9d8; color:#173c3b; font-weight:600; }
+        .app-demo-finance .app-demo-finance-navigation .is-active::before { position:absolute; left:-1px; top:calc(50% - 10px); width:3px; height:20px; border-radius:0 3px 3px 0; background:#cbdcc9; content:""; }
+        .app-demo-finance .app-demo-finance-navigation .app-demo-icon { box-sizing:content-box; width:16px; height:16px; padding:5px; border-radius:8px; background:rgb(244 247 246 / 56%); }
+        .app-demo-finance .app-demo-finance-navigation .is-active .app-demo-icon { background:color-mix(in oklab,white 74%,#d6e9d8); }
+        .app-demo-finance .app-demo-finance-content { padding:0 16px 32px; }
+        .app-demo-finance .app-demo-finance-heading { min-height:65px; padding:0 8px 16px; display:flex; align-items:center; justify-content:space-between; gap:16px; border-bottom:1px solid #dce6e4; }
+        .app-demo-finance .app-demo-finance-heading > strong { font-size:20px; line-height:28px; }
+        .app-demo-finance .app-demo-month { min-height:48px; padding:0 16px; display:flex; align-items:center; gap:12px; border:1px solid color-mix(in oklab,#b4c7c6 58%,white); border-radius:16px; background:#f4f7f6; color:#465d60; font-size:14px; font-weight:600; white-space:nowrap; }
+        .app-demo-finance .app-demo-metrics { margin-top:20px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+        .app-demo-finance .app-demo-metric { min-width:0; overflow:hidden; border:1px solid color-mix(in oklab,#b4c7c6 52%,#fcfdfd); border-left:3px solid oklch(0.62 0.08 155); border-radius:10px; background:color-mix(in oklab,#f0fdf4 18%,#fcfdfd); }
+        .app-demo-finance .app-demo-metric.is-due { border-left-color:oklch(0.58 0.09 32); background:color-mix(in oklab,oklch(0.96 0.02 32) 18%,#fcfdfd); }
+        .app-demo-finance .app-demo-metric-head { min-height:76px; padding:12px 16px; display:flex; align-items:center; gap:16px; border-bottom:1px solid #e3ebe9; }
+        .app-demo-finance .app-demo-metric-head > .app-demo-icon { width:36px; height:36px; padding:3px; color:#465d60; }
+        .app-demo-finance .app-demo-metric-head span { color:#5d6c6d; font-size:13px; line-height:20px; }
+        .app-demo-finance .app-demo-metric-head strong { display:block; color:#273031; font-size:18px; line-height:28px; }
+        .app-demo-finance .app-demo-metric.is-income .app-demo-metric-head strong { color:#15803d; }
+        .app-demo-finance .app-demo-metric.is-due .app-demo-metric-head strong { color:#b91c1c; }
+        .app-demo-finance .app-demo-metric-lines { padding:12px 20px; display:grid; align-content:start; gap:2px; }
+        .app-demo-finance .app-demo-metric-lines > div { padding:2px 0; display:flex; align-items:baseline; justify-content:space-between; gap:16px; color:#5d6c6d; font-size:12px; line-height:20px; }
+        .app-demo-finance .app-demo-metric-lines strong { color:#273031; text-align:right; white-space:nowrap; }
+        .app-demo-finance .app-demo-finance-table { margin-top:40px; overflow:hidden; border:1px solid color-mix(in oklab,#b4c7c6 52%,#fcfdfd); border-radius:16px; background:#fff; box-shadow:0 1px 2px rgb(39 48 49 / 3.5%),0 8px 24px rgb(39 48 49 / 1.8%); }
+        .app-demo-finance .app-demo-finance-table-title { padding:16px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; border-bottom:1px solid #e3ebe9; background:#f4f7f6; }
+        .app-demo-finance .app-demo-finance-table-title > strong { flex:1; min-width:0; color:#465d60; font-size:14px; line-height:20px; }
+        .app-demo-finance .app-demo-finance-table-controls { display:grid; gap:8px; min-width:320px; }
+        .app-demo-finance .app-demo-finance-segments { width:fit-content; padding:4px; display:flex; gap:4px; border:1px solid color-mix(in oklab,#dce6e4 84%,white); border-radius:999px; background:color-mix(in oklab,#f4f7f6 58%,#fcfdfd); color:#5d6c6d; font-size:14px; }
+        .app-demo-finance .app-demo-finance-segments > span { min-height:36px; padding:8px 16px; border-radius:999px; white-space:nowrap; }
+        .app-demo-finance .app-demo-finance-segments .is-active { background:#465d60; color:#fcfdfd; }
+        .app-demo-finance .app-demo-finance-search { min-height:34px; padding:5px 8px; display:flex; align-items:center; gap:8px; border-bottom:1px solid color-mix(in oklab,#c7d4d3 44%,white); color:#708082; font-size:14px; }
+        .app-demo-finance .app-demo-finance-table-row { min-height:110px; display:grid; grid-template-columns:32% 22% 32% 14%; border-bottom:1px solid #e3ebe9; font-size:14px; }
+        .app-demo-finance .app-demo-finance-table-row:last-child { border-bottom:0; }
+        .app-demo-finance .app-demo-finance-table-row > div { min-width:0; padding:16px; }
+        .app-demo-finance .app-demo-finance-table-row > div:first-child { padding-left:24px; }
+        .app-demo-finance .app-demo-finance-table-row > div:last-child { display:flex; align-items:flex-start; justify-content:flex-end; border-left:1px solid #dce6e4; }
+        .app-demo-finance .app-demo-finance-table-row.is-heading { min-height:56px; align-items:center; color:#273031; font-weight:600; }
+        .app-demo-finance .app-demo-finance-table-row.is-heading > div { display:flex; align-items:center; gap:8px; }
+        .app-demo-finance .app-demo-finance-table-row.is-heading .app-demo-icon { width:14px; height:14px; color:#5d6c6d; }
+        .app-demo-finance .app-demo-finance-table-row small { display:block; margin-top:4px; color:#5d6c6d; font-size:12px; line-height:20px; }
+        .app-demo-finance .app-demo-finance-session-title { display:flex; align-items:center; gap:8px; font-weight:600; }
+        .app-demo-finance .app-demo-finance-session-title .app-demo-icon { width:16px; height:16px; }
+        .app-demo-finance .app-demo-finance-row-action { padding:7px 8px; display:inline-flex; align-items:center; gap:5px; border-radius:10px; background:#e8efee; color:#173c3b; font-size:14px; font-weight:500; white-space:nowrap; }
+        .app-demo-finance .app-demo-finance-row-action .app-demo-icon { width:14px; height:14px; }
+        .app-demo-finance .app-demo-finance-status { width:fit-content; padding:4px 12px; display:inline-flex; border:1px solid color-mix(in oklab,oklch(0.62 0.08 155) 22%,white); border-radius:999px; background:color-mix(in oklab,oklch(0.62 0.08 155) 10%,white); color:color-mix(in oklab,oklch(0.62 0.08 155) 82%,#273031); font-size:10px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; }
+        .app-demo-finance .app-demo-finance-status.is-unpaid { border-color:color-mix(in oklab,oklch(0.58 0.09 32) 20%,white); background:color-mix(in oklab,oklch(0.96 0.02 32) 86%,white); color:color-mix(in oklab,oklch(0.58 0.09 32) 82%,#273031); }
+        .app-demo-finance .app-demo-finance-medium { margin-left:6px; padding:4px 12px; display:inline-flex; border:1px solid color-mix(in oklab,#c7d4d3 72%,white); border-radius:999px; background:color-mix(in oklab,#e5ebea 88%,white); color:#173c3b; font-size:10px; font-weight:600; }
 
 
         .current-product-demo.app-demo-patient { --demo-menu-width:80px; grid-template-columns:80px 330px minmax(0,1fr); }
-        .current-product-demo.app-demo-finance { aspect-ratio:1440 / 1000; }
         .app-demo-patient .app-demo-context { min-height:0; padding:32px 28px 24px; }
         .app-demo-patient .app-demo-context-title { min-height:104px; }
         .app-demo-patient .app-demo-context-navigation { position:relative; flex:1; min-height:0; overflow:hidden; margin-right:-16px; padding-right:16px; }
@@ -5778,11 +5562,6 @@
         .app-demo-view-session { display:flex; align-items:center; gap:8px; color:#173c3b; white-space:nowrap; font-weight:500; }
         .app-demo-view-session .app-demo-icon { width:16px; height:16px; }
 
-
-        .app-demo-finance-cover { position:relative; isolation:isolate; overflow:hidden; }
-        .app-demo-finance-cover > div { position:relative; z-index:1; }
-        .app-demo-finance-signal { position:absolute; inset:0; width:100%; height:100%; fill:none; stroke:#6f898c; stroke-width:1; opacity:.28; }
-        .app-demo-finance-signal circle { fill:#6f898c; stroke:none; }
 
         .app-demo-participant-surface {
             min-width:0;
@@ -5897,6 +5676,186 @@
         .security-section,.cta-final { display:flex; align-items:center; }
         .current-product-demo,.current-product-demo.product-preview.preview-ui { box-shadow:var(--shadow-card); }
     </style>
+    <style id="verdme-closing">
+        html:has(.story-closing:target) { scroll-padding-top: var(--nav-height); }
+        .story-closing {
+            min-height: calc(100dvh - var(--nav-height));
+            padding: clamp(16px, 5vh, 56px) clamp(16px, 4vw, 40px);
+            display: grid;
+            place-items: center;
+            text-align: center;
+            background: linear-gradient(180deg, #e2ece8, #eef4f1 55%, #f6f8f6);
+        }
+        .story-closing-inner { width: min(100%, 1240px); }
+        .story-closing .sprig {
+            display: block;
+            width: clamp(60px, 6vw, 76px);
+            height: auto;
+            margin: 0 auto clamp(16px, 2vw, 22px);
+        }
+        .story-closing h2 {
+            max-width: 14ch;
+            margin: 0 auto 22px;
+            color: var(--sage-900);
+            font-size: clamp(2.4rem, 6.4vw, 5.2rem);
+            font-weight: 600;
+            letter-spacing: -.045em;
+            line-height: .98;
+        }
+        .story-closing p {
+            max-width: 44ch;
+            margin: 0 auto;
+            color: var(--ink-900);
+            font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+            line-height: 1.55;
+        }
+        .story-closing-actions { margin-top: 32px; display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+        .story-closing-actions a {
+            min-height: 48px;
+            padding: 12px 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 1.5px solid var(--line-strong);
+            border-radius: 12px;
+            background: rgb(255 255 255 / 60%);
+            color: var(--sage-900);
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.55;
+            text-decoration: none;
+        }
+        .story-closing-actions a:hover { background: white; border-color: var(--sage-700); }
+        .story-closing-actions .story-contact { background: var(--sage-900); border-color: transparent; color: white; }
+        .story-closing-actions .story-contact:hover { background: var(--sage-700); }
+        .story-closing-actions svg { width: 20px; height: 20px; flex: none; }
+        .story-closing-actions a:focus-visible { outline: 2px solid var(--sage-700); outline-offset: 3px; }
+        @media (max-height: 480px) and (min-width: 621px) {
+            .story-closing { padding-block: 12px; }
+            .story-closing .sprig { width: 42px; margin-bottom: 10px; }
+            .story-closing h2 { max-width: 24ch; margin-bottom: 12px; font-size: clamp(2rem, 4vw, 3rem); }
+            .story-closing-actions { margin-top: 16px; }
+        }
+        @media (max-width: 620px) {
+            .story-closing-actions a { width: 100%; }
+        }
+    </style>
+    <style id="verdme-centers">
+        .centers-section {
+            min-height:calc(100svh - 72px); padding:clamp(4rem,7vh,6rem) 1rem;
+            display:flex; align-items:center; border-top:1px solid var(--line-soft); background:var(--surface);
+        }
+        .centers-shell { width:min(100%,1180px); margin:0 auto; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; gap:clamp(2.5rem,6vw,5rem); }
+        .centers-copy { min-width:0; }
+        .centers-copy .section-kicker { margin-bottom:1rem; }
+        .centers-copy h2 { margin:0; color:var(--ink-900); font-size:var(--heading-section); font-weight:600; line-height:1.12; letter-spacing:-.035em; }
+        .centers-copy > p:last-child { max-width:560px; margin:1.2rem 0 0; color:var(--ink-700); font-size:1.125rem; line-height:1.7; }
+        .centers-features { margin:0; padding:0; display:grid; gap:22px; list-style:none; }
+        .centers-features li { display:flex; align-items:flex-start; gap:14px; }
+        .centers-feature-icon { width:40px; height:40px; flex:none; display:grid; place-items:center; border-radius:12px; background:#D6E9D8; color:var(--sage-900); }
+        .centers-feature-icon svg { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+        .centers-features h3 { margin:0; color:var(--sage-900); font-size:1rem; font-weight:600; line-height:1.5; }
+        .centers-features p { margin:4px 0 0; color:var(--ink-700); font-size:1rem; line-height:1.65; }
+        @media (max-width:959px) {
+            .centers-shell { grid-template-columns:1fr; gap:2rem; }
+            .centers-copy { max-width:700px; }
+        }
+    </style>
+    <style id="verdme-rda">
+        .rda-section {
+            min-height: calc(100svh - 72px);
+            padding: clamp(48px, 7vh, 88px) clamp(18px, 4vw, 52px);
+            display: grid;
+            align-items: center;
+            border-top: 1px solid var(--line-soft);
+            background: var(--paper-100);
+        }
+        .rda-shell { width: min(100%, 1180px); min-width: 0; margin-inline: auto; }
+        .rda-heading {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: end;
+            gap: 10px clamp(32px, 5vw, 80px);
+            margin-bottom: clamp(24px, 3vw, 40px);
+        }
+        .rda-heading .section-kicker { grid-column: 1 / -1; margin: 0; }
+        .rda-heading h2 {
+            max-width: 22ch;
+            margin: 0;
+            color: var(--sage-900);
+            font-size: var(--heading-section);
+            font-weight: 600;
+            line-height: 1.12;
+            letter-spacing: -.035em;
+            text-wrap: balance;
+        }
+        .rda-heading > p:last-child {
+            max-width: 53ch;
+            margin: 0;
+            color: var(--ink-700);
+            font-size: clamp(1rem, 1.45vw, 1.125rem);
+            line-height: 1.6;
+        }
+        .rda-columns {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            border: 1px solid var(--line-strong);
+            border-radius: 20px;
+            overflow: hidden;
+            background: var(--surface);
+        }
+        .rda-data { min-width: 0; padding: clamp(24px, 3vw, 40px); }
+        .rda-data:first-child { background: var(--paper-50); }
+        .rda-data + .rda-data { border-inline-start: 1px solid var(--line-strong); }
+        .rda-data-heading { display: flex; align-items: center; gap: 14px; }
+        .rda-data-heading svg {
+            box-sizing: border-box;
+            flex: none;
+            width: 44px;
+            height: 44px;
+            padding: 10px;
+            border: 1px solid var(--line-strong);
+            border-radius: 12px;
+            background: var(--surface);
+            fill: none;
+            stroke: var(--sage-900);
+            stroke-width: 1.65;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        .rda-data h3 {
+            margin: 0;
+            color: var(--sage-900);
+            font-size: clamp(1.25rem, 1.9vw, 1.55rem);
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -.025em;
+        }
+        .rda-data ul { margin: 22px 0 0; padding: 0; list-style: none; }
+        .rda-data li { padding-block: 13px; border-top: 1px solid var(--line-strong); }
+        .rda-data li:last-child { padding-bottom: 0; }
+        .rda-data h4 { margin: 0; color: var(--ink-900); font-size: 1rem; font-weight: 600; line-height: 1.4; }
+        .rda-data li p { margin: 3px 0 0; color: var(--sage-700); font-size: 1rem; line-height: 1.5; }
+        .rda-scope {
+            max-width: 92ch;
+            margin: 20px 0 0;
+            color: var(--ink-700);
+            font-size: 1rem;
+            line-height: 1.55;
+        }
+        .rda-scope strong { color: var(--sage-900); font-weight: 600; }
+        @media (max-width: 860px) {
+            .rda-heading { grid-template-columns: 1fr; gap: 12px; }
+            .rda-heading > p:last-child { max-width: 65ch; }
+        }
+        @media (max-width: 700px) {
+            .rda-columns { grid-template-columns: 1fr; border-radius: 16px; }
+            .rda-data { padding: 22px 20px; }
+            .rda-data + .rda-data { border-inline-start: 0; border-top: 1px solid var(--line-strong); }
+            .rda-data ul { margin-top: 16px; }
+        }
+    </style>
 </head>
 <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -5921,10 +5880,12 @@
                 </summary>
                 <div class="nav-mobile-panel">
                     <ul>
-                        <li><a href="#procesos">Procesos clínicos grupales</a></li>
+                        <li><a href="#procesos">Procesos clínicos</a></li>
+                        <li><a href="#datos-rda">Datos para RDA</a></li>
                         <li><a href="#pacientes">Pacientes</a></li>
                         <li><a href="#finanzas">Finanzas</a></li>
                         <li><a href="#cobros">Pagos online</a></li>
+                        <li><a href="#centros">Atención en equipo</a></li>
                         <li><a href="#seguridad">Seguridad</a></li>
                         <li><a href="#planes">Planes y precios</a></li>
                     </ul>
@@ -5956,9 +5917,9 @@
         <header class="hero hero-commercial" id="inicio">
             <div class="hero-grid">
                 <div class="hero-copy">
-                    <p class="eyebrow">Para psicólogos independientes</p>
+                    <p class="eyebrow">Para psicólogos independientes y centros de atención psicológica</p>
                     <h1>Menos información dispersa.<span>Más continuidad en tu práctica.</span></h1>
-                    <p class="hero-lead">Verdme conecta agenda, procesos clínicos, notas, consentimientos y cobros para que puedas seguir el hilo antes, durante y después de cada sesión.</p>
+                    <p class="hero-lead">Reúne agenda, pacientes, notas, registros clínicos y cobros para dar continuidad a la atención, tanto si trabajas por tu cuenta como en equipo.</p>
 
                     <ul class="hero-assurances" aria-label="Aspectos clave de Verdme">
                         <li>
@@ -5967,7 +5928,7 @@
                         </li>
                         <li>
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>
-                            Tus clientes pueden pagar online.
+                            Tus pacientes pueden pagar online.
                         </li>
                     </ul>
                 </div>
@@ -5981,9 +5942,9 @@
 
             <div class="proof-strip" role="group" aria-label="Explora los módulos de Verdme">
                 <ul>
-                    <li><a href="#procesos"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="18" r="2"/><path d="M7 6h7a5 5 0 0 1 0 10H7M7 18h7"/></svg>Procesos clínicos grupales</a></li>
+                    <li><a href="#procesos"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="18" r="2"/><path d="M7 6h7a5 5 0 0 1 0 10H7M7 18h7"/></svg>Procesos clínicos</a></li>
                     <li><a href="#pacientes"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="7.5" r="3.5"/><path d="M5 21c.3-4.3 2.7-6.5 7-6.5s6.7 2.2 7 6.5"/></svg>Gestión de pacientes</a></li>
-                    <li><a href="#finanzas"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18M16 15h2"/></svg>Finanzas del consultorio</a></li>
+                    <li><a href="#finanzas"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18M16 15h2"/></svg>Finanzas y cobros</a></li>
                     <li><a href="#cobros"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>Pagos online</a></li>
                     <li><a href="#seguridad"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>Seguridad en varios niveles</a></li>
                 </ul>
@@ -5993,9 +5954,9 @@
         <section class="clinical-showcase" id="procesos" aria-labelledby="clinical-showcase-title">
             <div class="clinical-showcase-shell">
                 <div class="clinical-showcase-copy">
-                    <p class="section-kicker">Procesos clínicos grupales</p>
+                    <p class="section-kicker">Procesos clínicos</p>
                     <h2 id="clinical-showcase-title">Conserva el hilo de cada proceso clínico.</h2>
-                    <p>Da continuidad a <strong>terapias individuales, familiares y grupales</strong>. Verdme reúne a los participantes, sus sesiones, las notas y el plan terapéutico en un mismo proceso clínico, para conservar el contexto de cada encuentro bajo tu criterio profesional.</p>
+                    <p>Da continuidad a la <strong>atención individual, de pareja, familiar y grupal</strong>. Verdme reúne a los participantes, sus sesiones, las notas y el plan terapéutico en un mismo proceso clínico, para conservar el contexto de cada encuentro bajo tu criterio profesional.</p>
                 </div>
 
                 <figure class="clinical-preview-wrap" id="notas" aria-label="Ejemplo ficticio de un proceso familiar por duelo con un padre y dos niños en la vista Pacientes"><div class="scaled-preview-frame" data-design-width="1440"><div class="current-product-demo app-demo-detail app-demo-clinical" aria-hidden="true"><aside class="app-demo-menu ">
@@ -6009,12 +5970,41 @@
             </div>
         </section>
 
+        <section class="rda-section" id="datos-rda" aria-labelledby="rda-title">
+            <div class="rda-shell">
+                <div class="rda-heading">
+                    <p class="section-kicker">Registro clínico estructurado</p>
+                    <h2 id="rda-title">Datos para el RDA, integrados en tu práctica.</h2>
+                    <p>Registra y organiza información del Resumen Digital de Atención (RDA) de Paciente y de Consulta Externa desde las fichas y sesiones de Verdme.</p>
+                </div>
+                <div class="rda-columns">
+                    <article class="rda-data" aria-labelledby="rda-patient-title">
+                        <div class="rda-data-heading"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-person"></use></svg><h3 id="rda-patient-title">En la ficha del paciente</h3></div>
+                        <ul>
+                            <li><h4>Identificación y contacto</h4><p>Documento, nombres, fecha de nacimiento y medios de contacto.</p></li>
+                            <li><h4>Información demográfica</h4><p>Lugar de nacimiento, residencia, caracterización y aseguramiento.</p></li>
+                            <li><h4>Antecedentes de salud</h4><p>Problemas de salud, medicamentos y antecedentes familiares.</p></li>
+                        </ul>
+                    </article>
+                    <article class="rda-data" aria-labelledby="rda-consultation-title">
+                        <div class="rda-data-heading"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-note"></use></svg><h3 id="rda-consultation-title">En la sesión de consulta externa</h3></div>
+                        <ul>
+                            <li><h4>Ficha clínica por paciente y sesión</h4><p>Notas y registros de cada participante, vinculados a su atención.</p></li>
+                            <li><h4>Diagnósticos, riesgos y alergias</h4><p>Descripción y códigos de diagnóstico, factores de riesgo, alergias e intolerancias.</p></li>
+                            <li><h4>Otros registros de la atención</h4><p>Información sobre incapacidades, formulación y órdenes, cuando corresponda a tu práctica.</p></li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="rda-scope"><strong>Registra a tu ritmo.</strong> Completa la información según tu criterio clínico y consulta el historial de cada registro de sesión. Cada integrante del equipo consulta o edita según los permisos de cada bloque.</p>
+            </div>
+        </section>
+
         <section class="patient-showcase" id="pacientes" aria-labelledby="patient-showcase-title">
             <div class="patient-showcase-shell">
                 <div class="patient-showcase-heading">
                     <p class="section-kicker">Gestión de pacientes</p>
                     <h2 id="patient-showcase-title">La historia de cada paciente, en contexto.</h2>
-                    <p>Un módulo para gestionar la información de tus pacientes y consultar sus datos de forma rápida y práctica cuando los necesites.</p>
+                    <p>Reúne datos de contacto, consentimientos y procesos vinculados para consultar la información de cada paciente en su contexto.</p>
                 </div>
 
                 <figure class="patient-preview-wrap" aria-label="Vista ilustrativa del proceso clínico y sus sesiones dentro del perfil de pacientes de Verdme"><div class="scaled-preview-frame" data-design-width="1440"><div class="current-product-demo app-demo-detail app-demo-patient" aria-hidden="true"><aside class="app-demo-menu is-compact">
@@ -6030,14 +6020,77 @@
                 <div class="finance-showcase-copy">
                     <p class="section-kicker">Finanzas y cobros</p>
                     <h2 id="finance-showcase-title">Tus finanzas, en orden y a la vista.</h2>
-                    <p>Verdme calcula el resumen de ingresos y cuentas por cobrar de tus sesiones y paquetes. Cuando habilitas los pagos online, también actualiza los estados que reporta la integración; los demás pagos puedes registrarlos tú.</p>
+                    <p>Consulta los ingresos registrados y los saldos pendientes de sesiones y paquetes. Los pagos online se actualizan según la información reportada por la integración; los demás pagos los registras tú.</p>
                 </div>
 
-                <figure class="finance-preview-wrap" aria-label="Vista ilustrativa del diseño actual de Finanzas y Cobros de Verdme"><div class="scaled-preview-frame" data-design-width="1440"><div class="current-product-demo app-demo-finance" aria-hidden="true"><aside class="app-demo-menu ">
+                <figure class="finance-preview-wrap" aria-label="Vista ilustrativa de Finanzas y Cobros con navegación lateral, resumen y movimientos del mes">
+                    <div class="scaled-preview-frame" data-design-width="1600">
+                        <div class="current-product-demo app-demo-finance" aria-hidden="true">
+                            <aside class="app-demo-menu is-compact">
         <div class="app-demo-brand"><svg class="app-demo-brand-mark" viewBox="0 0 200 210"><path d="M99 96C60 94 31 65 35 29C75 31 103 58 99 96Z" fill="#416861"/><path d="M105 97C106 57 134 29 173 33C170 73 145 100 105 97Z" fill="#D78867"/><path d="M100 104C135 123 147 155 129 185C93 167 78 136 100 104Z" fill="#D9B05F"/></svg><span class="app-demo-brand-copy"><strong>Verd<span>me</span></strong><small>SOFTWARE PARA PSICÓLOGOS</small></span><span class="app-demo-menu-toggle"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-panel"></use></svg></span></div>
         <div class="app-demo-menu-links"><span class="app-demo-menu-item " title="Agenda"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg><span>Agenda</span></span><span class="app-demo-menu-item " title="Pacientes"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-person"></use></svg><span>Pacientes</span></span><span class="app-demo-menu-item " title="Procesos clínicos"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-process"></use></svg><span>Procesos clínicos</span></span><span class="app-demo-menu-item " title="Dashboard"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-grid"></use></svg><span>Dashboard</span></span><span class="app-demo-menu-item is-active" title="Finanzas"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-wallet"></use></svg><span>Finanzas</span></span></div>
         <div class="app-demo-menu-footer"><span class="app-demo-menu-item"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-settings"></use></svg><span>Ajustes</span><svg class="app-demo-icon app-demo-settings-chevron" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></span><span class="app-demo-menu-item app-demo-logout"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-logout"></use></svg><span>Cerrar sesión</span></span></div>
-    </aside><div class="app-demo-main"><div class="app-demo-mobile-head"><svg class="app-demo-brand-mark" viewBox="0 0 200 210"><path d="M99 96C60 94 31 65 35 29C75 31 103 58 99 96Z" fill="#416861"/><path d="M105 97C106 57 134 29 173 33C170 73 145 100 105 97Z" fill="#D78867"/><path d="M100 104C135 123 147 155 129 185C93 167 78 136 100 104Z" fill="#D9B05F"/></svg><strong>Finanzas</strong><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-panel"></use></svg></div><div class="app-demo-finance-cover"><svg class="app-demo-finance-signal" viewBox="0 0 1100 136" preserveAspectRatio="none"><path d="M0 134C165 131 282 70 405 80S630 115 760 50S960 34 1100 3M405 80c60 26 115 40 172 38"/><circle cx="405" cy="80" r="4"/><circle cx="760" cy="50" r="4"/></svg><div><strong>Finanzas &amp; Cobros</strong><span>Entiende lo que recibiste, lo que falta por cobrar y la actividad financiera de tus sesiones y paquetes.</span></div><div class="app-demo-connection"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-user-check"></use></svg><div><strong>Wompi conectado</strong><span>Links y notificaciones activos</span></div><svg class="app-demo-icon is-next" viewBox="0 0 24 24"><use href="#demo-back"></use></svg></div></div><div class="app-demo-finance-content"><div class="app-demo-finance-tabs"><span class="is-active">Movimientos del mes</span><span>Todo lo que te deben</span></div><div class="app-demo-month"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg>Octubre de 2026</div><div class="app-demo-metrics"><div class="app-demo-metric is-income"><div class="app-demo-metric-head"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-coin"></use></svg><div><span>Ingresos</span><strong>$ 240.000</strong></div></div><div class="app-demo-metric-lines"><div><span>Wompi</span><strong>$ 180.000</strong></div><div><span>Registro manual</span><strong>$ 60.000</strong></div><div><span>Devoluciones, reversiones y correcciones</span><strong>$ 0</strong></div></div></div><div class="app-demo-metric is-due"><div class="app-demo-metric-head"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-hand"></use></svg><div><span>Por cobrar</span><strong>$ 120.000</strong></div></div><div class="app-demo-metric-lines"><div><span>Sesiones sin pagar</span><strong>$ 120.000</strong></div><div><span>Cuotas de paquetes sin pagar</span><strong>$ 0</strong></div></div></div><div class="app-demo-metric "><div class="app-demo-metric-head"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg><div><span>Sesiones</span><strong>3</strong></div></div><div class="app-demo-metric-lines"><div><span>Pagadas</span><strong>2</strong></div><div><span>Pendientes de pago</span><strong>1</strong></div></div></div></div><div class="app-demo-finance-table"><div class="app-demo-finance-table-title"><strong>Movimientos y cuentas por cobrar del mes · Octubre de 2026</strong><span><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-search"></use></svg>Buscar paciente o proceso</span></div><div class="app-demo-finance-table-row is-heading"><span>Tipo</span><span>Medio de pago</span><span>Saldo por cobrar</span><span>Estado</span><span></span></div><div class="app-demo-finance-table-row"><div><strong>24 de octubre · 11:00 a. m.</strong><small>Proceso clínico · Alba</small></div><span>—</span><strong>$ 120.000</strong><em class="app-demo-warning">SIN PAGAR</em><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-more"></use></svg></div><div class="app-demo-finance-table-row"><div><strong>12 de octubre · 9:30 a. m.</strong><small>Proceso clínico · Nora</small></div><span>Wompi</span><strong>$ 0</strong><em class="app-demo-status">PAGADO</em><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-more"></use></svg></div></div></div></div></div></div><figcaption class="finance-preview-caption">Vista ilustrativa de Finanzas y Cobros en Verdme.</figcaption></figure>
+    </aside>
+                            <div class="app-demo-finance-workspace">
+                                <aside class="app-demo-finance-rail">
+                                    <div class="app-demo-finance-rail-header"><strong>Finanzas &amp; Cobros</strong><span>Entiende lo que recibiste, lo que falta por cobrar y la actividad financiera de tus sesiones y paquetes.</span></div>
+                                    <div class="app-demo-finance-navigation">
+                                    <span class="is-active"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg>Movimientos del mes</span>
+                                    <span><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-hand"></use></svg>Todo lo que te deben</span>
+                                    <span><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-reschedule"></use></svg>Sesiones sin valor de cobro</span>
+                                    <span><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-settings"></use></svg>Wompi</span>
+                                    </div>
+                                </aside>
+                                <div class="app-demo-finance-content">
+                                    <div class="app-demo-finance-heading"><strong>Movimientos del mes</strong><span class="app-demo-month"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg>Octubre de 2026</span></div>
+                                    <div class="app-demo-metrics">
+                                <div class="app-demo-metric is-income">
+                                    <div class="app-demo-metric-head"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-coin"></use></svg><div><span>Ingresos</span><strong>$ 240.000</strong></div></div>
+                                    <div class="app-demo-metric-lines"><div><span>Wompi</span><strong>$ 180.000</strong></div><div><span>Registro manual</span><strong>$ 60.000</strong></div><div><span>Devoluciones, reversiones y correcciones</span><strong>$ 0</strong></div></div>
+                                </div>
+                                <div class="app-demo-metric is-due">
+                                    <div class="app-demo-metric-head"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-hand"></use></svg><div><span>Por cobrar</span><strong>$ 120.000</strong></div></div>
+                                    <div class="app-demo-metric-lines"><div><span>Sesiones sin pagar</span><strong>$ 120.000</strong></div><div><span>Cuotas de paquetes sin pagar</span><strong>$ 0</strong></div></div>
+                                </div>
+                                <div class="app-demo-metric ">
+                                    <div class="app-demo-metric-head"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg><div><span>Sesiones</span><strong>3</strong></div></div>
+                                    <div class="app-demo-metric-lines"><div><span>Pagadas</span><strong>2</strong></div><div><span>Pendientes de pago</span><strong>1</strong></div></div>
+                                </div>
+                                    </div>
+                                    <div class="app-demo-finance-table">
+                                        <div class="app-demo-finance-table-title">
+                                            <strong>Movimientos y cuentas por cobrar del mes · Octubre de 2026</strong>
+                                            <div class="app-demo-finance-table-controls">
+                                                <div class="app-demo-finance-segments"><span class="is-active">Obligaciones</span><span>Pagos y devoluciones</span></div>
+                                                <div class="app-demo-finance-search"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-search"></use></svg>Buscar paciente o proceso</div>
+                                            </div>
+                                        </div>
+                                        <div class="app-demo-finance-table-row is-heading"><div>Tipo<svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></div><div>Saldo por cobrar</div><div>Estado<svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></div><div></div></div>
+                                <div class="app-demo-finance-table-row">
+                                    <div><span class="app-demo-finance-session-title"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg>24 de octubre</span><small>11:00 a. m.</small><small>Proceso clínico · Alba</small></div>
+                                    <div><strong>$ 120.000</strong></div>
+                                    <div><span class="app-demo-finance-status is-unpaid">Sin pagar</span></div>
+                                    <div><span class="app-demo-finance-row-action">Acciones<svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></span></div>
+                                </div>
+                                <div class="app-demo-finance-table-row">
+                                    <div><span class="app-demo-finance-session-title"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg>12 de octubre</span><small>9:30 a. m.</small><small>Proceso clínico · Nora</small></div>
+                                    <div><strong>$ 0</strong></div>
+                                    <div><span class="app-demo-finance-status">Pagado</span><span class="app-demo-finance-medium">Pago con Wompi</span></div>
+                                    <div><span class="app-demo-finance-row-action">Acciones<svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></span></div>
+                                </div>
+                                <div class="app-demo-finance-table-row">
+                                    <div><span class="app-demo-finance-session-title"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg>8 de octubre</span><small>2:00 p. m.</small><small>Proceso clínico · Iris</small></div>
+                                    <div><strong>$ 0</strong></div>
+                                    <div><span class="app-demo-finance-status">Pagado</span><span class="app-demo-finance-medium">Registro manual</span></div>
+                                    <div><span class="app-demo-finance-row-action">Acciones<svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></span></div>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption class="finance-preview-caption">Vista ilustrativa de Finanzas y Cobros en Verdme. Datos ficticios.</figcaption>
+                </figure>
             </div>
         </section>
 
@@ -6052,9 +6105,9 @@
         </svg>
 
         <div class="payments-content">
-            <div class="payments-badge">Cobros para tu consultorio</div>
-            <h2 id="payments-ad-title">Verdme te permite recibir pagos de tus clientes online.</h2>
-            <p>Tus clientes pueden pagar con distintos medios disponibles. Verdme sincroniza automáticamente los pagos y estados reportados con las finanzas de tu consultorio, para que veas lo recibido y lo pendiente en la misma app.</p>
+            <div class="payments-badge">Pagos online</div>
+            <h2 id="payments-ad-title">Recibe pagos de tus pacientes online.</h2>
+            <p>Comparte enlaces de cobro para que tus pacientes paguen con los medios disponibles. Verdme actualiza los pagos y estados reportados en Finanzas, para que consultes lo recibido y lo pendiente en la misma app.</p>
 
         </div>
 
@@ -6148,12 +6201,40 @@
         </div>
     </section>
 
+    <section class="centers-section" id="centros" aria-labelledby="centers-title">
+        <div class="centers-shell">
+            <div class="centers-copy">
+                <p class="section-kicker">Centros de atención psicológica</p>
+                <h2 id="centers-title">La gestión de tu equipo, en un mismo lugar.</h2>
+                <p>Cada psicólogo dispone de las herramientas de Basic para su práctica. El equipo puede gestionar agendas, pacientes y pagos de forma centralizada, con permisos definidos para cada función.</p>
+            </div>
+            <ul class="centers-features">
+                <li>
+                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 15h3M15 15h2"/></svg></span>
+                    <div><h3>Una agenda para todo el equipo</h3><p>Consulta las agendas de varios profesionales y programa sesiones para otros integrantes del equipo.</p></div>
+                </li>
+                <li>
+                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="8" cy="8" r="5"/><path d="m12 12 9 9M17 17l3-3M14 14l3-3"/></svg></span>
+                    <div><h3>Accesos según cada función</h3><p>Define qué puede consultar y gestionar cada integrante. Por ejemplo, recepción puede agendar y registrar pagos sin acceder a la historia clínica.</p></div>
+                </li>
+                <li>
+                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 20v-2a6 6 0 0 1 10-4M17 11v10M20 13h-4a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-4"/></svg></span>
+                    <div><h3>Pacientes y pagos del equipo</h3><p>Busca pacientes por nombre o documento, registra sus datos y los pagos de las sesiones del equipo.</p></div>
+                </li>
+                <li>
+                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M6 16a3 3 0 0 1 6 0M15 9h3M15 13h3"/></svg></span>
+                    <div><h3>Claridad sobre usuarios y licencias</h3><p>Activa o desactiva el acceso de los profesionales y consulta cuántas licencias tienes contratadas, en uso y disponibles.</p></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <section class="security-section" id="seguridad">
         <div class="security-container">
             <div class="security-copy">
                 <p class="section-kicker">Seguridad en varios niveles</p>
                 <h2>Tu cuenta y tu información, bajo protección.</h2>
-                <p>Verdme protege el acceso a tu cuenta y cifra información clínica sensible, como notas, detalles de pacientes y archivos. También te permite revisar tus sesiones y mantener el contexto de pacientes y procesos reunido para retomar tu trabajo.</p>
+                <p>Configura los métodos de acceso a tu cuenta y revisa las sesiones abiertas. Verdme también cifra las notas clínicas, los detalles sensibles de pacientes y los archivos almacenados.</p>
             </div>
 
             <ul class="security-list">
@@ -6192,45 +6273,45 @@
         <div class="pricing-shell">
             <div class="pricing-heading">
                 <p class="section-kicker">Planes y precios</p>
-                <h2 id="pricing-title">Un plan claro para tu práctica.</h2>
-                <p>Conoce lo que incluye y cuánto pagas. Activa y cancela tu licencia por tu cuenta desde Verdme cuando quieras, sin permanencia, trabas ni costos ocultos.</p>
+                <h2 id="pricing-title">Elige cómo empezar.</h2>
+                <p>Basic para tu práctica independiente. Una propuesta a tu medida para el trabajo en equipo.</p>
             </div>
 
-            <div class="pricing-card">
-                <div class="pricing-card-top">
-                    <div class="pricing-plan-heading">
-                        <p class="pricing-plan-label">Plan mensual</p>
-                        <h3>Basic</h3>
-                    </div>
-                    <p class="pricing-amount">$99.000 <span>COP / mes</span></p>
-                </div>
-                <div class="pricing-card-body">
-                    <div class="pricing-card-main">
-                        <h4 class="pricing-content-title">Características incluidas</h4>
-                        <ul class="pricing-features">
-                            <li>Gestión de pacientes</li>
-                            <li>Gestión de agenda</li>
-                            <li>Procesos clínicos</li>
-                            <li>Historia clínica</li>
-                            <li>Cobros online a pacientes</li>
-                            <li>Módulo de finanzas</li>
-                            <li>Cifrado de datos clínicos y seguridad</li>
-                            <li>Acceso al sistema 24/7</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-card-aside">
-                        <h4 class="pricing-content-title">Tu licencia, a tu ritmo</h4>
-                        <ul class="pricing-conditions">
-                            <li>Cobro mensual recurrente, sin anualidad.</li>
-                            <li>Activas y cancelas desde Verdme.</li>
-                            <li>Sin permanencia, penalidades ni costos ocultos.</li>
-                            <li>Conservas el acceso hasta terminar el periodo pagado.</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="pricing-plans">
+                <article class="pricing-card" aria-labelledby="pricing-basic-title">
+                    <h3 id="pricing-basic-title">Basic</h3>
+                    <p class="pricing-audience">Psicólogos independientes</p>
+                    <p class="pricing-amount"><strong>$99.000</strong><span>COP / mes</span></p>
+                    <ul class="pricing-features">
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Gestión de pacientes</span></li>
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Gestión de agenda</span></li>
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Procesos clínicos</span></li>
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Historia clínica</span></li>
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Cobros online a pacientes</span></li>
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Módulo de finanzas</span></li>
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Cifrado de datos clínicos y seguridad</span></li>
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Acceso al sistema 24/7</span></li>
+                    </ul>
+                    <p class="pricing-terms">Cobro mensual recurrente, sin anualidad. Activas y cancelas desde Verdme. Sin permanencia, penalidades ni costos ocultos. Conservas el acceso hasta terminar el periodo pagado.</p>
+                    <a class="btn-primary-solid pricing-plan-action" href="https://wa.me/573156269673?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20para%20conocer%20Verdme%20y%20resolver%20algunas%20dudas." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg>Hablar con un asesor</a>
+                </article>
+
+                <article class="pricing-card is-team" aria-labelledby="pricing-team-title">
+                    <h3 id="pricing-team-title">Equipos</h3>
+                    <p class="pricing-audience">Centros de atención psicológica</p>
+                    <p class="pricing-amount"><strong>A tu medida</strong><span>según las necesidades de tu equipo</span></p>
+                    <ul class="pricing-features">
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Todo lo de Basic para cada psicólogo.</span></li>
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Gestión centralizada de la agenda del equipo.</span></li>
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Gestión centralizada de cobros y pagos.</span></li>
+                        <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><span>Permisos personalizados para los usuarios vinculados.</span></li>
+                    </ul>
+                    <p class="pricing-terms">Cuéntanos cuántos profesionales integran tu equipo y qué necesitas organizar para preparar una propuesta acorde con tu forma de trabajar.</p>
+                    <a class="btn-primary-solid pricing-plan-action" href="https://wa.me/573156269673?text=Hola%2C%20quiero%20conocer%20Verdme%20para%20mi%20organizaci%C3%B3n%20y%20cotizar%20un%20plan%20para%20mi%20equipo." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg>Cotizar para mi equipo</a>
+                </article>
             </div>
             <div class="pricing-legal">
-                <p>Consulta las condiciones de tu suscripción:</p>
+                <p>Consulta las condiciones de Basic:</p>
                 <div class="pricing-legal-links">
                     <a href="https://app.verdme.com/legal/subscriptions/v5/terms">Términos de la suscripción</a>
                     <a href="https://app.verdme.com/legal/subscriptions/v5/cancellation-refund">Cancelación y conservación de tu información</a>
@@ -6239,50 +6320,52 @@
         </div>
     </section>
 
-    <section class="cta-final" id="acceso">
-        <div class="cta-final-shell">
-            <div class="cta-final-copy">
-                <p class="section-kicker">Conversemos sobre tu práctica</p>
-                <h2>Habla con un asesor de Verdme.</h2>
-                <p>Cuéntanos cómo trabajas hoy y qué te gustaría organizar mejor. Un asesor puede mostrarte Verdme, resolver tus dudas y ayudarte a evaluar si encaja con tu práctica.</p>
-            </div>
-            <div class="cta-final-action">
-                <div class="cta-actions">
-                    <a href="https://wa.me/573156269673?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20para%20conocer%20Verdme%20y%20resolver%20algunas%20dudas." target="_blank" rel="noopener noreferrer" class="btn-primary-solid whatsapp-cta"><span class="whatsapp-icon" aria-hidden="true">
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #25d366;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="M360,0C161.18,0,0,161.18,0,360c0,65.41,17.45,126.75,47.94,179.61L0,720l187.02-44.21c51.34,28.18,110.28,44.21,172.98,44.21,198.82,0,360-161.18,360-360S558.82,0,360,0ZM360,655.52c-60.17,0-116.13-17.98-162.82-48.87l-110.49,28.14,30.99-105.61c-33.53-47.93-53.2-106.26-53.2-169.19,0-163.21,132.31-295.52,295.52-295.52s295.52,132.31,295.52,295.52-132.31,295.52-295.52,295.52Z"/>
-  <path class="cls-1" d="M444.35,407.52l87.1,41.06c4,1.88,6.56,5.94,6.2,10.34-.94,11.46-5.54,34.43-26.13,55.02-58.12,58.12-162.49-7.64-166.74-10.18-25.67-13.79-50.06-32.24-73.19-55.36-23.12-23.12-41.58-47.52-55.37-73.19-2.55-4.24-68.31-108.61-10.18-166.74,20.59-20.59,43.56-25.19,55.02-26.13,4.41-.36,8.46,2.2,10.34,6.2l41.07,87.1c1.94,4.12,1.09,9.02-2.13,12.24l-30.61,30.61c-6.62,6.62-8.56,16.93-4,25.11,11.17,20.03,26.19,39.32,43.59,57.07,17.75,17.4,37.04,32.43,57.07,43.59,8.18,4.56,18.48,2.62,25.11-4l30.61-30.61c3.22-3.22,8.12-4.08,12.24-2.13Z"/>
-</svg></span>Hablar con un asesor</a>
-                </div>
-            </div>
+    <section class="story-closing" id="acceso" aria-labelledby="closing-title">
+      <div class="story-closing-inner">
+        <svg class="sprig" viewBox="24 18 160 190" aria-hidden="true" focusable="false">
+          <path d="M94 196C89 166 86 132 101 100M101 100L96 91M101 100L110 92M101 100L102 110" fill="none" stroke="#416861" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M99 96C60 94 31 65 35 29C75 31 103 58 99 96Z" fill="#416861"/>
+          <path d="M105 97C106 57 134 29 173 33C170 73 145 100 105 97Z" fill="#D78867"/>
+          <path d="M100 104C135 123 147 155 129 185C93 167 78 136 100 104Z" fill="#D9B05F"/>
+        </svg>
+        <h2 id="closing-title">Escribe tu propia historia con Verdme.</h2>
+        <p>Tus pacientes, tu criterio, tu forma de acompañar. Verdme se encarga de que lo de alrededor esté en orden.</p>
+        <div class="story-closing-actions">
+          <a class="story-contact" href="https://wa.me/573156269673?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20para%20conocer%20Verdme%20y%20resolver%20algunas%20dudas." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5Z"/><path d="M9 10.5h6M9 13.5h4"/></g></svg>Hablar con un asesor</a>
+          <a data-login-link href="https://app.verdme.com/login">Iniciar sesión</a>
         </div>
+      </div>
     </section>
     </main>
 
     <footer class="site-footer">
-        <div class="footer-shell">
-            <div>
-                <div class="footer-brand">Verd<span>me</span></div>
-                <p class="footer-copy">Gestión clínica para psicólogos independientes.</p>
-                <small class="footer-copyright">© 2026 Verdme. Todos los derechos reservados.</small>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div>
+                    <a class="footer-brand" href="#inicio" aria-label="Verdme, volver al inicio">
+                        <svg viewBox="0 0 200 210" aria-hidden="true"><path d="M99 96C60 94 31 65 35 29C75 31 103 58 99 96Z" fill="#416861"/><path d="M105 97C106 57 134 29 173 33C170 73 145 100 105 97Z" fill="#D78867"/><path d="M100 104C135 123 147 155 129 185C93 167 78 136 100 104Z" fill="#D9B05F"/></svg>
+                        <span>Verd<span class="footer-brand-accent">me</span></span>
+                    </a>
+                    <p class="footer-copy">Gestión clínica para psicólogos independientes y centros de atención psicológica.</p>
+                </div>
+                <div>
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li>Información y asesoría: <a href="mailto:info@verdme.com">info@verdme.com</a></li>
+                        <li>WhatsApp: <a href="https://wa.me/573156269673?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20para%20conocer%20Verdme%20y%20resolver%20algunas%20dudas." target="_blank" rel="noopener noreferrer">+57 315 626 9673</a></li>
+                        <li>Soporte: <a href="mailto:support@verdme.com">support@verdme.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Verdme</h2>
+                    <ul>
+                        <li><a href="https://app.verdme.com/login" data-login-link>Iniciar sesión</a></li>
+                        <li><a href="https://app.verdme.com/legal/subscriptions/v5/terms">Términos de la suscripción</a></li>
+                        <li><a href="https://app.verdme.com/legal/subscriptions/v5/cancellation-refund">Cancelación y conservación de tu información</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-contact">
-                <span class="footer-contact-label">Contacto</span>
-                <a href="mailto:info@verdme.com">Información y asesoría: info@verdme.com</a>
-                <a href="https://wa.me/573156269673?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20para%20conocer%20Verdme%20y%20resolver%20algunas%20dudas." target="_blank" rel="noopener noreferrer">WhatsApp: +57 315 626 9673</a>
-                <a href="mailto:support@verdme.com">Soporte: support@verdme.com</a>
-            </div>
-            <div class="footer-links">
-                <a href="https://app.verdme.com/login" data-login-link>Iniciar sesión</a>
-            </div>
+            <p class="footer-copyright">© 2026 Verdme. Todos los derechos reservados.</p>
         </div>
     </footer>
     <script>
