@@ -5233,6 +5233,11 @@
             .nav-mobile-panel { top: 4.55rem; }
         }
 
+        @media (max-width: 520px) {
+            .site-nav .nav-links .btn-create-account { display: none; }
+            .nav-mobile-panel .btn-create-account { display: flex !important; }
+        }
+
         @media (max-width: 430px) {
             .nav-shell { gap: 0.5rem; }
             .nav-mobile-login { display: flex !important; border-top: 1px solid var(--line-soft); }
@@ -5889,11 +5894,13 @@
                         <li><a href="#seguridad">Seguridad</a></li>
                         <li><a href="#planes">Planes y precios</a></li>
                     </ul>
+                    <a class="nav-mobile-login btn-create-account" href="https://app.verdme.com/signup" data-login-link>Crear cuenta</a>
                     <a class="nav-mobile-login" href="https://app.verdme.com/login" data-login-link>Iniciar sesión</a>
                 </div>
             </details>
 
             <div class="nav-links">
+                <a href="https://app.verdme.com/signup" class="btn-login btn-create-account" data-login-link>Crear cuenta</a>
                 <a href="https://app.verdme.com/login" class="btn-login" data-login-link>Iniciar sesión</a>
                 <a href="https://wa.me/573156269673?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20para%20conocer%20Verdme%20y%20resolver%20algunas%20dudas." target="_blank" rel="noopener noreferrer" class="btn-signup whatsapp-cta"><span class="whatsapp-icon" aria-hidden="true">
 <?xml version="1.0" encoding="UTF-8"?>
@@ -6359,6 +6366,7 @@
                 <div>
                     <h2>Verdme</h2>
                     <ul>
+                        <li><a href="https://app.verdme.com/signup" class="btn-create-account" data-login-link>Crear cuenta</a></li>
                         <li><a href="https://app.verdme.com/login" data-login-link>Iniciar sesión</a></li>
                         <li><a href="https://app.verdme.com/legal/subscriptions/v5/terms">Términos de la suscripción</a></li>
                         <li><a href="https://app.verdme.com/legal/subscriptions/v5/cancellation-refund">Cancelación y conservación de tu información</a></li>

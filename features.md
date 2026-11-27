@@ -2,6 +2,10 @@
 
 Este documento es la fuente de verdad comercial para la landing page. Su objetivo es evitar que la comunicación prometa capacidades que el producto todavía no ofrece.
 
+## Cuenta de práctica independiente
+
+El formulario de registro del portal permite crear una cuenta personal, activar la invitación y configurar el segundo factor. La práctica accede a los módulos de Basic cuando se activa la suscripción. La oferta que muestra el portal determina el primer cobro y el período de prueba aplicable. El enlace «Crear cuenta» dirige a `/signup`. La verificación de esta entrega se realizó en local con Mercado Pago TEST.
+
 ## Fuente y alcance de la auditoría
 
 - Repositorio auditado: `psyco-web`.
