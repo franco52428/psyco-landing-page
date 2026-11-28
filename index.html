@@ -176,7 +176,13 @@
         }
         * { box-sizing: border-box; }
         * { margin: 0; padding: 0; }
-        html { scroll-padding-top: 5.25rem; }
+        html { --nav-height: 71px; scroll-padding-top: var(--nav-height); }
+        #contenido > :is(header, section) {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            align-content: center;
+            min-height: calc(100svh - var(--nav-height));
+        }
         body {
             background: var(--surface);
             font: 400 1rem/1.6 "Bricolage Grotesque Variable", Arial, sans-serif;
@@ -231,42 +237,43 @@
         .login-navigation-status { position: fixed; z-index: 15; top: 5rem; right: 1rem; background: var(--surface); padding: .7rem 1rem; border: 1px solid var(--line-soft); border-radius: 12px; }
 
         /* Portada y ejemplo de relaciones clínicas */
-        .hero-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,.96fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); padding-block: clamp(2.5rem, 5vw, 4.5rem); }
+        .hero-grid { display: grid; grid-template-columns: minmax(0,.88fr) minmax(0,1.12fr); align-items: center; gap: clamp(1.5rem, 3vw, 3rem); padding-block: clamp(2.5rem, 5vw, 4.5rem); }
         .hero .kicker { display: flex; align-items: center; gap: .7rem; }
         .hero .kicker::before { content: ""; display: block; width: 1.65rem; height: 2px; background: #668984; }
         .hero h1 { max-width: 21ch; margin: .9rem 0; font-size: clamp(2.2rem, 3.55vw, 3.2rem); font-weight: 600; line-height: 1.045; letter-spacing: -.055em; color: var(--sage-900); }
         .hero h1 span { display: block; color: var(--sage-700); }
         .hero .action { font-size: .96rem; }
-        .hero-figure { padding: clamp(1rem, 2.5vw, 2.5rem); border: 1px solid #cddbd6; border-radius: 24px; background-color: #e4ede8; background-image: linear-gradient(#74938815 1px, transparent 1px), linear-gradient(90deg,#74938815 1px,transparent 1px); background-size: 24px 24px; }
-        .case-file { border-radius: 15px; border: 1px solid #c0d0c9; overflow: hidden; background: var(--surface); box-shadow: 0 14px 28px -18px #21433c70; }
-        .case-head { display: flex; align-items: center; gap: 1rem; padding: 1.25rem 1.45rem; background: var(--sage-900); color: white; }
-        .patient-icon { display: grid; place-items: center; width: 46px; height: 46px; background: #365855; border-radius: 14px; color: #e0ebe5; }
-        .patient-icon .glyph { width: 25px; height: 25px; }
-        .case-head strong { display: block; font-size: 1.55rem; line-height: 1.15; letter-spacing: -.04em; font-weight: 600; }
-        .case-head small { color: #d3e4db; font-size: .82rem; }
-        .case-body, .case-foot { padding: 1rem 1.4rem; }
-        .case-title { display: flex; align-items: baseline; justify-content: space-between; gap: .5rem; color: var(--sage-900); }
-        .case-title > span { font-size: .78rem; color: var(--ink-700); }
-        .case-processes { list-style: none; margin-top: .55rem; }
-        .case-processes li { display: flex; gap: .85rem; align-items: center; position: relative; padding: .44rem 0; }
-        .case-processes li + li::before { content: ""; position: absolute; left: 18px; bottom: calc(50% + 18px); height: 100%; border-left: 1px solid #c2cfc9; }
-        .process-icon { z-index: 1; width: 37px; height: 37px; flex: none; display: grid; place-items: center; border: 1px solid #cddad2; border-radius: 11px; color: var(--sage-900); background: #e5eee7; }
-        .case-processes li:nth-child(2) .process-icon { background: #f1e7da; border-color: #e0d3be; }
-        .case-processes li:nth-child(3) .process-icon { background: #e4ecf0; border-color: #ccd8de; }
-        .case-processes strong, .case-processes small { display: block; line-height: 1.35; }
-        .case-processes strong { font-weight: 600; }
-        .case-processes small, figcaption { color: var(--ink-700); font-size: .85rem; }
-        .case-foot { padding-block: .8rem 1rem; border-top: 1px solid var(--line-soft); background: #f7f9f7; }
-        .case-foot small { color: var(--ink-700); }
-        .record-bar { display: flex; gap: .35rem 1rem; flex-wrap: wrap; }
-        .record-bar span { display: inline-flex; align-items: center; gap: .28rem; color: var(--sage-900); font-size: .85rem; }
-        figcaption { margin-top: .65rem; line-height: 1.4; }
-        .hero-figure figcaption { color: var(--sage-700); text-align: center; }
-        .proof-strip { border-top: 1px solid var(--line-strong); }
-        .proof-strip ul { display: grid; grid-template-columns: repeat(5, 1fr); list-style: none; }
-        .proof-strip a { min-height: 62px; display: flex; justify-content: center; align-items: center; gap: .55rem; text-decoration: none; font-size: .95rem; }
-        .proof-strip a:hover { text-decoration: underline; }
-        .proof-strip svg { flex: none; width: 19px; height: 19px; }
+        .clinical-network { min-width: 0; padding: clamp(10px, 1.2vw, 18px); background: #f4f7f6; border: 1px solid var(--line-strong); border-radius: 20px; }
+        .clinical-network figcaption { margin: 0; color: var(--sage-900); }
+        .clinical-network figcaption strong, .clinical-network figcaption small { display: block; }
+        .clinical-network figcaption strong { font-size: 1.2rem; }
+        .clinical-network > svg { display: block; width: 100%; height: auto; }
+        @media (min-width: 741px) {
+            .hero-grid { width: min(calc(100% - var(--gutter) * 2), 1320px); padding-block: clamp(.75rem, 2svh, 1.5rem); }
+            .clinical-network > svg { max-height: clamp(420px, calc(100svh - var(--nav-height) - 14rem), 700px); }
+        }
+        .clinical-network .wire { fill: none; stroke-width: 2; }
+        .clinical-network .pulse { fill: none; stroke-width: 3; stroke-dasharray: 5 110; stroke-linecap: round; animation: clinical-travel 4s linear 1; }
+        .clinical-network[data-motion] .pulse { animation-iteration-count: infinite; }
+        .clinical-network[data-motion="paused"] .pulse { animation-play-state: paused; }
+        .clinical-network .edge.muted .pulse { display: none; }
+        .network-motion { margin-left: auto; min-width: 44px; min-height: 44px; border: 0; border-radius: 8px; background: transparent; color: var(--sage-700); font: inherit; cursor: pointer; }
+        .network-motion:hover { background: var(--paper-50); }
+        @keyframes clinical-travel { to { stroke-dashoffset: -230; } }
+        .clinical-network .node { cursor: pointer; }
+        .clinical-network .node:focus-visible .outline, .clinical-network .node[aria-pressed="true"] .outline { stroke: #173c3b; stroke-width: 4; }
+        .clinical-network .muted { opacity: .26; }
+        .clinical-network .network-detail { color: var(--sage-700); font-size: .95rem; margin-top: .65rem; }
+        .hero .clinical-network { position: relative; }
+        .hero .network-motion { float: right; }
+        .hero .clinical-network::after { content: ""; display: block; clear: both; }
+        @media (prefers-reduced-motion: reduce) { .clinical-network .pulse, .network-motion { display: none; } }
+        @media (max-width: 520px) {
+            .clinical-network .node text[font-weight] { font-size: 21px; }
+            .clinical-network .node text[font-size="10"], .clinical-network .node text[font-size="11"] { display: none; }
+            .clinical-network .node text[font-size="12"] { font-size: 15px; }
+        }
+        figcaption { margin-top: .65rem; color: var(--ink-700); font-size: .85rem; line-height: 1.4; }
 
         .compact-preview { display: none; }
         @media (max-width: 900px), (scripting: none) {
@@ -280,22 +287,6 @@
         }
         @media (max-width: 1100px) { .payments-visual { text-align: center; } }
 
-        /* El selector nativo funciona también sin JavaScript. */
-        .mode-picker { position: relative; min-width: 0; padding: 1.2rem; border: 1px solid var(--line-strong); border-radius: 18px; background: var(--paper-100); display: flex; flex-wrap: wrap; gap: .35rem; }
-        .mode-picker legend { padding: 0 .4rem; font-size: .9rem; color: var(--sage-700); }
-        .mode-picker input { position: absolute; opacity: 0; width: 1px; height: 1px; }
-        .mode-picker label { display: grid; place-items: center; flex: 1 1 4rem; min-height: 44px; padding: .35rem .55rem; border-radius: 9px; font-size: .95rem; cursor: pointer; }
-        .mode-picker input:checked + label { background: var(--sage-900); color: white; font-weight: 600; }
-        .mode-picker input:focus-visible + label { outline: 3px solid #3b766d; outline-offset: 2px; }
-        .mode-panel { display: none; flex: 0 0 100%; padding: 1.25rem; margin-top: .5rem; background: white; border: 1px solid var(--line-soft); border-radius: 12px; }
-        #modo-individual:checked ~ #ejemplo-individual, #modo-pareja:checked ~ #ejemplo-pareja,
-        #modo-familiar:checked ~ #ejemplo-familiar, #modo-grupal:checked ~ #ejemplo-grupal { display: block; }
-        .mode-title { display: flex; gap: .6rem; align-items: center; color: var(--sage-900); }
-        .mode-title h3 { font-size: 1.2rem; }
-        .mode-panel dl { margin: .7rem 0; }
-        .mode-panel dl > div { padding: .5rem 0; border-bottom: 1px solid var(--line-soft); }
-        .mode-panel dt, .mode-panel p { color: var(--ink-700); font-size: .9rem; }
-        .mode-panel dd { font-weight: 500; }
         .disclosure { border-bottom: 1px solid var(--line-soft); }
         .disclosure summary { display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 1rem; min-height: 50px; padding: .75rem 0; font-weight: 500; color: var(--sage-900); cursor: pointer; }
         .disclosure summary::-webkit-details-marker { display: none; }
@@ -316,6 +307,83 @@
         .wompi-checkout * { font-family: Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
         .wompi-checkout svg, .wompi-checkout img { max-width: 100%; }
         .wompi-checkout-note { margin: .8rem auto; font-size: .85rem; text-align: center; }
+        .team-cycle-layout { grid-template-columns: minmax(0,.75fr) minmax(0,1.25fr); }
+        .team-cycle-layout .copy > .action { margin-top: 1rem; }
+        .team-cycle { background: #f7faf8; }
+        .cycle-map {
+            position: relative; isolation: isolate; display: grid; grid-template-columns: repeat(2,minmax(0,1fr));
+            grid-template-areas: "patient patient" "reception cash" "agendaLaura agendaAndres" "laura andres" "follow follow" "support support";
+            gap: 20px clamp(8px,2vw,26px); padding: 16px clamp(8px,2vw,26px); margin-block: .75rem 1rem;
+            background: radial-gradient(ellipse at 50% 0%, #e4efe8, transparent 64%), #f0f5f2; border-radius: 16px;
+        }
+        .cycle-lines { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+        .cycle-lines .wire { stroke: #89a99a; stroke-width: 1.4; }
+        .cycle-lines .pulse { display: none; stroke: #396b56; }
+        .team-cycle.is-exploring .edge:not(.muted) .pulse { display: block; animation: clinical-travel 2s linear 1; }
+        .cycle-map .node {
+            display: flex; justify-self: center; align-items: center; gap: .55rem; width: max-content; max-width: 100%;
+            padding: .45rem .85rem .45rem .45rem; color: #21473e; background: #fff; border: 1px solid #b6cbc1;
+            border-radius: 15px; text-align: left; font: inherit; box-shadow: 0 2px 4px rgb(25 62 49 / 5%);
+        }
+        .cycle-map .node:hover, .cycle-map .node[aria-pressed="true"] { border-color: #527c68; box-shadow: 0 0 0 2px #a9c5b5; }
+        .cycle-map .node.muted { opacity: .62; }
+        .cycle-map strong, .cycle-map small { display: block; line-height: 1.3; }
+        .cycle-map small { font-size: .85rem; color: #495f55; }
+        .cycle-faces { display: inline-flex; align-items: center; flex: none; }
+        .cycle-faces svg { width: 42px; height: 42px; }
+        .cycle-faces svg + svg { margin-left: -12px; }
+        .cycle-patient { grid-area: patient; }
+        .cycle-reception { grid-area: reception; }
+        .cycle-agendaLaura { grid-area: agendaLaura; }
+        .cycle-agendaAndres { grid-area: agendaAndres; }
+        .cycle-map .agenda-mark { width: 22px; height: 22px; }
+        .cycle-cash { grid-area: cash; }
+        .cycle-map .cycle-laura { grid-area: laura; background: #fbf2e8; }
+        .cycle-map .cycle-andres { grid-area: andres; background: #eaf1f6; }
+        .cycle-map .cycle-follow { grid-area: follow; color: var(--sage-900); background: #dce9e2; }
+        .cycle-follow .glyph { width: 28px; height: 28px; margin: 0 .3rem; }
+        .cycle-support {
+            grid-area: support; display: grid; grid-template-columns: repeat(2,minmax(0,1fr));
+            gap: .65rem; padding: .85rem; background: #e3ece6; border-radius: 14px;
+        }
+        .cycle-support h3 { grid-column: 1 / -1; margin: 0; text-align: center; color: #345447; font-size: .95rem; }
+        .cycle-support .node { justify-self: stretch; width: 100%; justify-content: center; }
+        @media (max-width: 520px) {
+            .cycle-map { column-gap: 6px; }
+            .cycle-map :is(.cycle-laura,.cycle-andres,.cycle-director,.cycle-access,.cycle-reception,.cycle-cash,.cycle-agendaLaura,.cycle-agendaAndres) { flex-direction: column; text-align: center; padding: .5rem; width: 100%; }
+            .cycle-faces svg { width: 36px; height: 36px; }
+        }
+        .clinical-network figcaption:has(.cycle-play) { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+        .clinical-network figcaption .cycle-play { flex: 0 0 auto; max-width: 45%; }
+        .team-cycle .cycle-map { margin-bottom: 0; }
+        .cycle-play { max-width: 100%; min-height: 44px; padding: .45rem .7rem; border: 1px solid var(--line-strong); border-radius: 10px; color: var(--sage-900); background: var(--surface); font: inherit; cursor: pointer; }
+        .hero-grid, .team-cycle-layout { position: relative; }
+        .tour-leader { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; overflow: visible; color: #42796a; }
+        .tour-leader[hidden] { display: none; }
+        .cycle-guide {
+            z-index: 3; position: relative; width: min(100%, 19rem); margin: .8rem 0; padding: .8rem 1rem;
+            border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface);
+            box-shadow: 0 5px 20px rgb(23 60 59 / 12%); scroll-margin-block: 1rem;
+        }
+        .cycle-guide.is-lateral { position: absolute; margin: 0; }
+        .cycle-guide .guide-count, .cycle-guide .guide-heading { display: inline; }
+        .cycle-guide .guide-count { margin-inline-end: .5rem; }
+        .guide-count { display: block; margin-bottom: .3rem; color: var(--sage-700); font-size: .85rem; }
+        .cycle-map.is-touring .node[aria-pressed="true"] { outline: 3px solid #527c68; outline-offset: 3px; }
+        .guide-heading { display: block; color: var(--sage-900); }
+        .guide-copy { margin-block: .4rem .6rem; color: var(--sage-700); }
+        .guide-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+        .guide-actions button { min-height: 44px; padding: .4rem .8rem; font: inherit; border-radius: 9px; border: 1px solid var(--line-strong); color: var(--sage-900); background: var(--surface); cursor: pointer; }
+        .guide-actions .guide-next { background: var(--sage-900); color: white; }
+        .guide-title { display: flex; align-items: flex-start; justify-content: space-between; gap: .4rem; }
+        .guide-exit { flex: 0 0 44px; height: 44px; margin: -.45rem -.65rem 0 0; background: transparent; border: 0; border-radius: 8px; color: var(--sage-700); font: inherit; font-size: 1.5rem; line-height: 1; cursor: pointer; }
+        .guide-exit:hover { background: var(--paper-50); }
+        .guide-actions button:disabled { opacity: .5; cursor: default; }
+        .cycle-play { background: #e4efe9; }
+        .team-capabilities .centers-feature-icon { color: white; }
+        .team-capabilities .centers-features p { color: var(--ink-700); }
+        @media (max-width: 920px) { .team-cycle-layout { grid-template-columns: minmax(0,1fr); } }
+        @media (prefers-reduced-motion: reduce) { .team-cycle.is-exploring .edge .pulse { display: none; animation: none; } }
         .teams { background: var(--sage-900); color: var(--surface); }
         .teams .copy h2 { color: white; }
         .teams .kicker, .teams .copy > p:not(.kicker), .centers-features p, .team-example figcaption { color: #d0dfd9; }
@@ -356,22 +424,18 @@
         @media (max-width: 920px) {
             .hero-grid { gap: 1.5rem; }
             .desktop-link { display: none; }
-            .proof-strip a { font-size: .85rem; }
         }
         @media (max-width: 740px) {
             .hero-grid, .split, .security-container, .footer-grid { grid-template-columns: minmax(0,1fr); }
             .hero-grid { gap: 1.8rem; padding-block: 2.4rem 1.8rem; }
             .hero h1 { font-size: clamp(2rem, 7.3vw, 2.45rem); }
-            .hero-figure { padding: 1rem; }
+            html { --nav-height: 61px; }
             .nav-shell { min-height: 60px; flex-wrap: wrap; }
             .nav-mobile { position: static; }
             .nav-mobile summary span { display: none; }
             .nav-mobile summary::before { content: ""; width: 18px; height: 14px; border-block: 1.5px solid; background: linear-gradient(currentColor,currentColor) center / 100% 1.5px no-repeat; }
             .nav-mobile summary .glyph { display: none; }
             .nav-mobile-panel { position: absolute; left: var(--gutter); right: var(--gutter); top: 100%; width: auto; }
-            .case-body, .case-foot, .case-head { padding-inline: 1rem; }
-            .proof-strip ul { display: flex; flex-wrap: wrap; column-gap: 1.1rem; padding-block: .45rem; }
-            .proof-strip a { min-height: 44px; }
             .payment-flow ol { grid-template-columns: 1fr 1fr; gap: .5rem; }
             .payment-flow li + li::before { content: none; }
             .footer-grid { gap: 1.5rem; }
@@ -379,10 +443,8 @@
         @media (max-width: 480px) {
             .actions { align-items: stretch; flex-direction: column; }
             .action { min-height: 46px; }
-            .mode-picker { padding: .8rem; }
-            .mode-picker label { flex-basis: 38%; }
-            .hero-figure { border-radius: 16px; }
-            .case-title { flex-wrap: wrap; }
+
+
             .payment-flow li { font-size: .9rem; }
         }
         @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -1328,11 +1390,8 @@
         <div class="shell hero-grid">
             <div class="hero-copy">
                 <p class="kicker">Para psicólogos, equipos y clínicas</p>
-                <h1>Un paciente, varios procesos clínicos. <span>Un proceso, varios participantes.</span></h1>
-                <p class="lead">
-                    Gestiona la atención individual, de pareja, familiar y grupal desde una misma plataforma. Conecta agenda,
-                    notas y cobros en tu práctica o centro de atención psicológica.
-                </p>
+                <h1>Pensado para todas las necesidades de tu práctica profesional</h1>
+                <p class="lead">Más que un software, Verdme te ofrece una gestión integral que tiene en cuenta las particularidades de la atención psicológica.</p>
                 <div class="actions">
                     <a class="action" href="https://app.verdme.com/signup" data-login-link>Soy profesional independiente</a
                     ><a class="action secondary" href="#centros">Tengo una clínica o equipo</a>
@@ -1342,206 +1401,151 @@
                     <svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></a
                 >
             </div>
-            <figure class="hero-figure">
-                <div class="case-file">
-                    <div class="case-head">
-                        <span class="patient-icon"><svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-person"></use></svg></span>
-                        <div><small>Ficha del paciente</small><strong>Mateo</strong></div>
+            <figure id="procesos" class="clinical-network" aria-labelledby="network-title">
+    <figcaption><span><strong id="network-title">Un psicólogo, tres procesos clínicos</strong><small>Ejemplo con datos ficticios</small></span>
+        <button type="button" class="cycle-play" hidden>Iniciar visita guiada</button></figcaption>
+    <svg viewBox="0 0 660 620" role="group" aria-label="Relaciones clínicas entre Daniel, sus pacientes y sus procesos">
+        <defs><clipPath id="red-retrato"><circle r="33"/></clipPath></defs>
+        <g class="edge" data-links="ana lorena"><path d="M158 420 H285" stroke="#a7aaa7" stroke-dasharray="4 5" fill="none"/><rect x="175" y="391" width="94" height="22" rx="11" fill="#f4f7f6"/><text x="222" y="406" text-anchor="middle" font-size="12" fill="#687978">Madre e hija</text></g>
+        <g class="edge" data-links="psicologo familia"><path class="wire" d="M330 102 C330 155 113 135 113 205" stroke="#173c3b"/><path class="pulse" d="M330 102 C330 155 113 135 113 205" stroke="#173c3b"/></g>
+        <g class="edge" data-links="psicologo individual"><path class="wire" d="M330 102 V205" stroke="#173c3b"/><path class="pulse" d="M330 102 V205" stroke="#173c3b"/></g>
+        <g class="edge" data-links="psicologo grupal"><path class="wire" d="M330 102 C330 155 547 135 547 205" stroke="#173c3b"/><path class="pulse" d="M330 102 C330 155 547 135 547 205" stroke="#173c3b"/></g>
+        <g class="edge" data-links="ana familia"><path class="wire" d="M113 298 V382" stroke="#b38361"/><path class="pulse" d="M113 298 V382" stroke="#b38361"/></g>
+        <g class="edge" data-links="lorena familia"><path class="wire" d="M113 298 C113 345 290 325 290 382" stroke="#b38361"/><path class="pulse" d="M113 298 C113 345 290 325 290 382" stroke="#b38361"/></g>
+        <g class="edge" data-links="lorena individual"><path class="wire" d="M330 298 V382" stroke="#4b8b76"/><path class="pulse" d="M330 298 V382" stroke="#4b8b76"/></g>
+        <g class="edge" data-links="lorena grupal"><path class="wire" d="M547 298 C547 345 370 325 370 382" stroke="#7886ad"/><path class="pulse" d="M547 298 C547 345 370 325 370 382" stroke="#7886ad"/></g>
+        <g class="edge" data-links="grupal carlos"><path class="wire" d="M570 298 C650 330 650 460 455 520" stroke="#7886ad"/><path class="pulse" d="M570 298 C650 330 650 460 455 520" stroke="#7886ad"/></g>
+        <g class="edge" data-links="grupal sofia"><path class="wire" d="M580 298 C650 360 630 460 547 520" stroke="#7886ad"/><path class="pulse" d="M580 298 C650 360 630 460 547 520" stroke="#7886ad"/></g>
+        <g class="edge" data-links="grupal david"><path class="wire" d="M590 298 C655 360 655 460 625 520" stroke="#7886ad"/><path class="pulse" d="M590 298 C655 360 655 460 625 520" stroke="#7886ad"/></g>
+        <g class="node" data-id="psicologo" tabindex="0" role="button" aria-label="Psicólogo tratante" transform="translate(330 42)"><circle r="32.3" fill="white" stroke="#8aa1a2" class="outline"/><g transform="scale(0.85)" clip-path="url(#red-retrato)"><circle r="33" fill="#e5ebea"/><path d="M-27 34 Q-24 13 -8 12 H8 Q24 13 27 34" fill="#173c3b"/><path d="M-6 5 H6 V16 Q0 23 -6 16Z" fill="#d9ad91"/><ellipse cy="-7" rx="13" ry="18" fill="#d9ad91"/><path d="M-15 -9 Q-19 -29 0 -27 Q17 -26 16 -7 Q4 -10 -2 -20 Q-8 -11 -15 -9" fill="#403934"/><circle cx="-5" cy="-7" r="1.2" fill="#453b37"/><circle cx="5" cy="-7" r="1.2" fill="#453b37"/><path d="M-4 1 Q0 5 4 1" fill="none" stroke="#a86d5d" stroke-width="1.3"/></g><text y="52.3" text-anchor="middle" font-size="16" font-weight="650">Daniel · Psicólogo tratante</text><text y="67.3" text-anchor="middle" font-size="11" fill="#5d6c6d"></text></g>
+        <g class="node" data-id="ana" tabindex="0" role="button" aria-label="Ana" transform="translate(120 420)"><circle r="38" fill="white" stroke="#8aa1a2" class="outline"/><g transform="scale(1)" clip-path="url(#red-retrato)"><circle r="33" fill="#e5ebea"/><path d="M-17 4 Q-23 -29 0 -29 Q23 -29 18 7 L21 20 H-21Z" fill="#3e302d"/><path d="M-27 34 Q-24 13 -8 12 H8 Q24 13 27 34" fill="#b98e75"/><path d="M-6 5 H6 V16 Q0 23 -6 16Z" fill="#edbf9f"/><ellipse cy="-7" rx="13" ry="18" fill="#edbf9f"/><path d="M-15 -9 Q-19 -29 0 -27 Q17 -26 16 -7 Q4 -10 -2 -20 Q-8 -11 -15 -9" fill="#3e302d"/><circle cx="-5" cy="-7" r="1.2" fill="#453b37"/><circle cx="5" cy="-7" r="1.2" fill="#453b37"/><path d="M-4 1 Q0 5 4 1" fill="none" stroke="#a86d5d" stroke-width="1.3"/></g><text y="58" text-anchor="middle" font-size="16" font-weight="650">Ana</text><text y="73" text-anchor="middle" font-size="11" fill="#5d6c6d">Hija · 1 proceso</text></g>
+        <g class="node" data-id="lorena" tabindex="0" role="button" aria-label="Lorena" transform="translate(330 420)"><circle r="43.699999999999996" fill="white" stroke="#8aa1a2" class="outline"/><g transform="scale(1.15)" clip-path="url(#red-retrato)"><circle r="33" fill="#e5ebea"/><path d="M-17 4 Q-23 -29 0 -29 Q23 -29 18 7 L21 20 H-21Z" fill="#604a40"/><path d="M-27 34 Q-24 13 -8 12 H8 Q24 13 27 34" fill="#71918c"/><path d="M-6 5 H6 V16 Q0 23 -6 16Z" fill="#efc2a6"/><ellipse cy="-7" rx="13" ry="18" fill="#efc2a6"/><path d="M-15 -9 Q-19 -29 0 -27 Q17 -26 16 -7 Q4 -10 -2 -20 Q-8 -11 -15 -9" fill="#604a40"/><circle cx="-5" cy="-7" r="1.2" fill="#453b37"/><circle cx="5" cy="-7" r="1.2" fill="#453b37"/><path d="M-4 1 Q0 5 4 1" fill="none" stroke="#a86d5d" stroke-width="1.3"/></g><text y="63.699999999999996" text-anchor="middle" font-size="16" font-weight="650">Lorena</text><text y="78.69999999999999" text-anchor="middle" font-size="11" fill="#5d6c6d">3 procesos activos</text></g>
+        <g class="node" data-id="carlos" tabindex="0" role="button" aria-label="Carlos" transform="translate(455 547)"><circle r="29.64" fill="white" stroke="#8aa1a2" class="outline"/><g transform="scale(0.78)" clip-path="url(#red-retrato)"><circle r="33" fill="#e5ebea"/><path d="M-27 34 Q-24 13 -8 12 H8 Q24 13 27 34" fill="#8096ad"/><path d="M-6 5 H6 V16 Q0 23 -6 16Z" fill="#d6a182"/><ellipse cy="-7" rx="13" ry="18" fill="#d6a182"/><path d="M-15 -9 Q-19 -29 0 -27 Q17 -26 16 -7 Q4 -10 -2 -20 Q-8 -11 -15 -9" fill="#393331"/><circle cx="-5" cy="-7" r="1.2" fill="#453b37"/><circle cx="5" cy="-7" r="1.2" fill="#453b37"/><path d="M-4 1 Q0 5 4 1" fill="none" stroke="#a86d5d" stroke-width="1.3"/></g><text y="49.64" text-anchor="middle" font-size="16" font-weight="650">Carlos</text><text y="64.64" text-anchor="middle" font-size="11" fill="#5d6c6d"></text></g>
+        <g class="node" data-id="sofia" tabindex="0" role="button" aria-label="Sofía" transform="translate(547 547)"><circle r="29.64" fill="white" stroke="#8aa1a2" class="outline"/><g transform="scale(0.78)" clip-path="url(#red-retrato)"><circle r="33" fill="#e5ebea"/><path d="M-17 4 Q-23 -29 0 -29 Q23 -29 18 7 L21 20 H-21Z" fill="#382b25"/><path d="M-27 34 Q-24 13 -8 12 H8 Q24 13 27 34" fill="#b98e75"/><path d="M-6 5 H6 V16 Q0 23 -6 16Z" fill="#c78f70"/><ellipse cy="-7" rx="13" ry="18" fill="#c78f70"/><path d="M-15 -9 Q-19 -29 0 -27 Q17 -26 16 -7 Q4 -10 -2 -20 Q-8 -11 -15 -9" fill="#382b25"/><circle cx="-5" cy="-7" r="1.2" fill="#453b37"/><circle cx="5" cy="-7" r="1.2" fill="#453b37"/><path d="M-4 1 Q0 5 4 1" fill="none" stroke="#a86d5d" stroke-width="1.3"/></g><text y="49.64" text-anchor="middle" font-size="16" font-weight="650">Sofía</text><text y="64.64" text-anchor="middle" font-size="11" fill="#5d6c6d"></text></g>
+        <g class="node" data-id="david" tabindex="0" role="button" aria-label="David" transform="translate(625 547)"><circle r="29.64" fill="white" stroke="#8aa1a2" class="outline"/><g transform="scale(0.78)" clip-path="url(#red-retrato)"><circle r="33" fill="#e5ebea"/><path d="M-27 34 Q-24 13 -8 12 H8 Q24 13 27 34" fill="#71918c"/><path d="M-6 5 H6 V16 Q0 23 -6 16Z" fill="#e8b99a"/><ellipse cy="-7" rx="13" ry="18" fill="#e8b99a"/><path d="M-15 -9 Q-19 -29 0 -27 Q17 -26 16 -7 Q4 -10 -2 -20 Q-8 -11 -15 -9" fill="#594537"/><circle cx="-5" cy="-7" r="1.2" fill="#453b37"/><circle cx="5" cy="-7" r="1.2" fill="#453b37"/><path d="M-4 1 Q0 5 4 1" fill="none" stroke="#a86d5d" stroke-width="1.3"/></g><text y="49.64" text-anchor="middle" font-size="16" font-weight="650">David</text><text y="64.64" text-anchor="middle" font-size="11" fill="#5d6c6d"></text></g>
+        <g class="node" data-id="familia" tabindex="0" role="button" aria-label="Proceso Familiar"><rect x="20" y="205" width="186" height="93" rx="13" fill="#fffaf5" stroke="#b38361" class="outline"/><text x="113" y="227" text-anchor="middle" font-size="10" letter-spacing="1" fill="#b38361">PROCESO CLÍNICO</text><text x="113" y="251" text-anchor="middle" font-size="17" font-weight="650" fill="#273031">Familiar</text><text x="113" y="272" text-anchor="middle" font-size="12" fill="#465d60">Ana + Lorena</text><text x="113" y="288" text-anchor="middle" font-size="10" fill="#465d60">2 participantes</text></g>
+        <g class="node" data-id="individual" tabindex="0" role="button" aria-label="Proceso Individual"><rect x="237" y="205" width="186" height="93" rx="13" fill="#edf6f1" stroke="#4b8b76" class="outline"/><text x="330" y="227" text-anchor="middle" font-size="10" letter-spacing="1" fill="#4b8b76">PROCESO CLÍNICO</text><text x="330" y="251" text-anchor="middle" font-size="17" font-weight="650" fill="#273031">Individual</text><text x="330" y="272" text-anchor="middle" font-size="12" fill="#465d60">Lorena</text><text x="330" y="288" text-anchor="middle" font-size="10" fill="#465d60">1 participante</text></g>
+        <g class="node" data-id="grupal" tabindex="0" role="button" aria-label="Proceso Grupal empresarial"><rect x="454" y="205" width="186" height="93" rx="13" fill="#f1f3fa" stroke="#7886ad" class="outline"/><text x="547" y="227" text-anchor="middle" font-size="10" letter-spacing="1" fill="#7886ad">PROCESO CLÍNICO</text><text x="547" y="251" text-anchor="middle" font-size="17" font-weight="650" fill="#273031">Grupal empresarial</text><text x="547" y="272" text-anchor="middle" font-size="12" fill="#465d60">Lorena + compañeros</text><text x="547" y="288" text-anchor="middle" font-size="10" fill="#465d60">4 participantes</text></g><text x="547" y="614" text-anchor="middle" font-size="12" fill="#687978">Compañeros de empresa</text>
+    </svg>
+                <div class="cycle-guide" role="dialog" aria-labelledby="hero-step-title" aria-describedby="hero-step-count hero-step-copy" hidden>
+                    <div class="guide-title">
+                        <div><span class="guide-count" id="hero-step-count"></span>
+                    <strong class="guide-heading" id="hero-step-title" tabindex="-1"></strong></div>
+                        <button type="button" class="guide-exit" aria-label="Cerrar visita" title="Cerrar visita"><span aria-hidden="true">×</span></button>
                     </div>
-                    <div class="case-body">
-                        <div class="case-title"><strong>Procesos vinculados</strong><span>3 procesos</span></div>
-                        <ul class="case-processes">
-                            <li>
-                                <span class="process-icon"><svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-person"></use></svg></span>
-                                <div><strong>Proceso individual</strong><small>Mateo</small></div>
-                            </li>
-                            <li>
-                                <span class="process-icon"><svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-people"></use></svg></span>
-                                <div><strong>Proceso familiar</strong><small>Mateo, Luna y Tomás</small></div>
-                            </li>
-                            <li>
-                                <span class="process-icon"><svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-people"></use></svg></span>
-                                <div><strong>Proceso grupal</strong><small>Mateo, Laura, Andrés y Sofía</small></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="case-foot">
-                        <small>En cada proceso</small>
-                        <div class="record-bar">
-                            <span><svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg>Sesiones</span><span><svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-note"></use></svg>Notas</span
-                            ><span><svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-plan"></use></svg>Plan terapéutico</span>
-                        </div>
+                    <p class="guide-copy" id="hero-step-copy"></p>
+                    <div class="guide-actions">
+                        <button type="button" class="guide-back">Anterior</button>
+                        <button type="button" class="guide-next">Siguiente</button>
                     </div>
                 </div>
-                <figcaption>Vista ilustrativa de la ficha de un paciente con datos ficticios.</figcaption>
-            </figure>
-        </div>
-        <div class="shell">
-            <div class="proof-strip" role="group" aria-label="Explora los módulos de Verdme">
-                <ul>
-                    <li>
-                        <a href="#procesos"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="18" r="2"/><path d="M7 6h7a5 5 0 0 1 0 10H7M7 18h7"/></svg>Procesos clínicos</a>
-                    </li>
-                    <li>
-                        <a href="#pacientes"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="7.5" r="3.5"/><path d="M5 21c.3-4.3 2.7-6.5 7-6.5s6.7 2.2 7 6.5"/></svg>Pacientes y agenda</a>
-                    </li>
-                    <li>
-                        <a href="#finanzas"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18M16 15h2"/></svg>Finanzas y cobros</a>
-                    </li>
-                    <li>
-                        <a href="#cobros"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 15h3"/></svg>Pagos online</a>
-                    </li>
-                    <li>
-                        <a href="#seguridad"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.8 6v5.2c0 4.5 2.8 8.2 7.2 9.8 4.4-1.6 7.2-5.3 7.2-9.8V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.5"/></svg>Seguridad</a>
-                    </li>
-                </ul>
-            </div>
+    <button class="network-motion" type="button" aria-label="Pausar animación" title="Pausar animación" hidden>Ⅱ</button>
+    <p class="network-detail" aria-live="polite">Daniel atiende a Lorena en tres procesos. En el familiar participa con su hija Ana y en el grupal con Carlos, Sofía y David, compañeros de su empresa.</p>
+</figure>
         </div>
     </header>
 
-    <section class="band" id="procesos" aria-labelledby="clinical-showcase-title">
-        <div class="shell split">
+    <section class="band" id="centros" aria-labelledby="centers-title">
+        <div class="shell split team-cycle-layout">
             <div class="copy">
-                <p class="kicker">Procesos clínicos</p>
-                <h2 id="clinical-showcase-title">Una plataforma para todas tus modalidades de intervención psicológica.</h2>
-                <p>
-                    Mateo puede acudir a una sesión individual y también a una familiar. Vincula su ficha a ambos procesos y
-                    conserva las sesiones, notas y objetivos de cada intervención en su contexto.
-                </p>
-                <a class="text-link" href="#pacientes">Explorar la gestión clínica</a>
+                <p class="kicker">Gestión del equipo</p>
+                <h2 id="centers-title">Para equipos y clínicas</h2>
+                <p>Crea roles según cómo trabaja tu centro. Para cada rol, tú eliges qué información puede consultar y qué tareas puede realizar. Después, asigna ese rol a las personas que lo necesitan.</p>
+                <p>Por ejemplo, puedes dar a recepción permiso para programar citas, a caja para registrar pagos y a los profesionales tratantes para consultar y actualizar los registros clínicos que les corresponden.</p>
+                <details class="disclosure team-capabilities"><summary>Qué puede gestionar el equipo</summary><ul class="centers-features">
+                <li>
+                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 15h3M15 15h2"/></svg></span>
+                    <div>
+                        <h3>Una agenda para todo el equipo</h3>
+                        <p>
+                            Consulta las agendas de varios profesionales y programa sesiones para otros integrantes del
+                            equipo.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="8" cy="8" r="5"/><path d="m12 12 9 9M17 17l3-3M14 14l3-3"/></svg></span>
+                    <div>
+                        <h3>Accesos según cada función</h3>
+                        <p>
+                            Define qué puede consultar y gestionar cada integrante. Por ejemplo, recepción puede agendar y
+                            registrar pagos sin acceder a la historia clínica.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 20v-2a6 6 0 0 1 10-4M17 11v10M20 13h-4a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-4"/></svg></span>
+                    <div>
+                        <h3>Pacientes y pagos del equipo</h3>
+                        <p>
+                            Busca pacientes por nombre o documento, registra sus datos y los pagos de las sesiones del
+                            equipo.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M6 16a3 3 0 0 1 6 0M15 9h3M15 13h3"/></svg></span>
+                    <div>
+                        <h3>Claridad sobre usuarios y licencias</h3>
+                        <p>
+                            Activa o desactiva el acceso de los profesionales y consulta cuántas licencias tienes
+                            contratadas, en uso y disponibles.
+                        </p>
+                    </div>
+                </li>
+            </ul></details>
+                <a
+                    class="action"
+                    href="https://wa.me/573156269673?text=Hola%2C%20quiero%20solicitar%20una%20demostraci%C3%B3n%20de%20Verdme%20para%20mi%20cl%C3%ADnica%20o%20equipo."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Solicitar demostración para mi clínica</a
+                >
             </div>
-            <div>
-                <fieldset class="mode-picker">
-                    <legend>Explora las modalidades con un ejemplo ficticio</legend>
-
-                    <input
-                        type="radio"
-                        name="modalidad"
-                        id="modo-individual"
-                        aria-controls="ejemplo-individual"
-                        checked
-                    /><label for="modo-individual">Individual</label>
-                    <input type="radio" name="modalidad" id="modo-pareja" aria-controls="ejemplo-pareja" /><label
-                        for="modo-pareja"
-                        >Pareja</label
-                    >
-                    <input type="radio" name="modalidad" id="modo-familiar" aria-controls="ejemplo-familiar" /><label
-                        for="modo-familiar"
-                        >Familiar</label
-                    >
-                    <input type="radio" name="modalidad" id="modo-grupal" aria-controls="ejemplo-grupal" /><label
-                        for="modo-grupal"
-                        >Grupal</label
-                    >
-                    <div class="mode-panel" id="ejemplo-individual">
-                        <div class="mode-title">
-                            <svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-person"></use></svg>
-                            <h3>Proceso individual</h3>
-                        </div>
-                        <dl>
-                            <div>
-                                <dt>Participantes</dt>
-                                <dd>Mateo</dd>
-                            </div>
-                            <div>
-                                <dt>Registros del proceso</dt>
-                                <dd>Sesiones, notas clínicas y plan terapéutico.</dd>
-                            </div>
-                        </dl>
-                        <p>Un proceso individual con sus propias sesiones y notas.</p>
-                    </div>
-                    <div class="mode-panel" id="ejemplo-pareja">
-                        <div class="mode-title">
-                            <svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-people"></use></svg>
-                            <h3>Proceso pareja</h3>
-                        </div>
-                        <dl>
-                            <div>
-                                <dt>Participantes</dt>
-                                <dd>Mateo y Laura</dd>
-                            </div>
-                            <div>
-                                <dt>Registros del proceso</dt>
-                                <dd>Sesiones, notas clínicas y plan terapéutico.</dd>
-                            </div>
-                        </dl>
-                        <p>Dos participantes vinculados a un proceso de intervención.</p>
-                    </div>
-                    <div class="mode-panel" id="ejemplo-familiar">
-                        <div class="mode-title">
-                            <svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-people"></use></svg>
-                            <h3>Proceso familiar</h3>
-                        </div>
-                        <dl>
-                            <div>
-                                <dt>Participantes</dt>
-                                <dd>Mateo, Luna y Tomás</dd>
-                            </div>
-                            <div>
-                                <dt>Registros del proceso</dt>
-                                <dd>Sesiones, notas clínicas y plan terapéutico.</dd>
-                            </div>
-                        </dl>
-                        <p>Un proceso compartido, independiente del proceso individual de Mateo.</p>
-                    </div>
-                    <div class="mode-panel" id="ejemplo-grupal">
-                        <div class="mode-title">
-                            <svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-people"></use></svg>
-                            <h3>Proceso grupal</h3>
-                        </div>
-                        <dl>
-                            <div>
-                                <dt>Participantes</dt>
-                                <dd>Mateo, Laura, Andrés y Sofía</dd>
-                            </div>
-                            <div>
-                                <dt>Registros del proceso</dt>
-                                <dd>Sesiones, notas clínicas y plan terapéutico.</dd>
-                            </div>
-                        </dl>
-                        <p>Varios participantes vinculados a un proceso clínico común.</p>
-                    </div>
-                </fieldset>
-                <div id="notas">
-                    <details class="disclosure">
-                        <summary>Ver el ejemplo de un proceso familiar en Verdme</summary>
-                        <figure
-                            class="clinical-preview-wrap"
-                            aria-label="Ejemplo ficticio de un proceso familiar por duelo con un padre y dos niños en la vista Pacientes"
-                        >
-                            <div class="compact-preview">
-                                <strong>Participantes del proceso familiar</strong>
-                                <dl>
-                                    <div>
-                                        <dt>Mateo</dt>
-                                        <dd>Participante</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Luna</dt>
-                                        <dd>Participante</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Tomás</dt>
-                                        <dd>Participante</dd>
-                                    </div>
-                                </dl>
-                            </div>
-                            <div class="scaled-preview-frame" data-design-width="1440"><div class="current-product-demo app-demo-detail app-demo-clinical" aria-hidden="true"><aside class="app-demo-menu ">
-        <div class="app-demo-brand"><svg class="app-demo-brand-mark" viewBox="0 0 200 210"><path d="M99 96C60 94 31 65 35 29C75 31 103 58 99 96Z" fill="#416861"/><path d="M105 97C106 57 134 29 173 33C170 73 145 100 105 97Z" fill="#D78867"/><path d="M100 104C135 123 147 155 129 185C93 167 78 136 100 104Z" fill="#D9B05F"/></svg><span class="app-demo-brand-copy"><strong>Verd<span>me</span></strong><small>SOFTWARE PARA PSICÓLOGOS</small></span><span class="app-demo-menu-toggle"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-panel"></use></svg></span></div>
-        <div class="app-demo-menu-links"><span class="app-demo-menu-item " title="Agenda"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg><span>Agenda</span></span><span class="app-demo-menu-item " title="Pacientes"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-person"></use></svg><span>Pacientes</span></span><span class="app-demo-menu-item is-active" title="Procesos clínicos"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-process"></use></svg><span>Procesos clínicos</span></span><span class="app-demo-menu-item " title="Dashboard"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-grid"></use></svg><span>Dashboard</span></span><span class="app-demo-menu-item " title="Finanzas"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-wallet"></use></svg><span>Finanzas</span></span></div>
-        <div class="app-demo-menu-footer"><span class="app-demo-menu-item"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-settings"></use></svg><span>Ajustes</span><svg class="app-demo-icon app-demo-settings-chevron" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></span><span class="app-demo-menu-item app-demo-logout"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-logout"></use></svg><span>Cerrar sesión</span></span></div>
-    </aside><aside class="app-demo-context"><div class="app-demo-context-title"><span class="app-demo-leaf"></span><div><strong>Duelo por la pérdida del abuelo</strong></div><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-edit"></use></svg></div>
-        <div class="app-demo-context-navigation"><div class="app-demo-context-label">Pacientes</div><span class="app-demo-context-item is-active"><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-people"></use></svg><span>Pacientes</span></span><div class="app-demo-context-label">Proceso clínico <em class="app-demo-status">Activo <svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-down"></use></svg></em></div><span class="app-demo-context-item "><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-note"></use></svg><span>Motivo de la consulta</span></span><span class="app-demo-context-item "><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-brain"></use></svg><span>Estado clínico</span></span><span class="app-demo-context-item "><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg><span>Sesiones</span></span><span class="app-demo-context-item "><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-note"></use></svg><span>Notas clínicas</span></span><span class="app-demo-context-item "><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-plan"></use></svg><span>Plan terapéutico</span></span><span class="app-demo-context-item "><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-wallet"></use></svg><span>Finanzas</span></span><span class="app-demo-context-item "><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-grid"></use></svg><span>Historial</span></span></div>
-        <div class="app-demo-context-footer"><span><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-folder"></use></svg>Procesos clínicos</span><span><svg class="app-demo-icon " viewBox="0 0 24 24"><use href="#demo-plus"></use></svg>Registrar</span></div>
-    </aside><div class="app-demo-main"><div class="app-demo-content"><div class="app-demo-section-head"><strong>Pacientes</strong><span class="app-demo-button"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-user-plus"></use></svg>Asociar paciente</span></div><div class="app-demo-participant-surface"><div class="app-demo-participant-list"><div class="app-demo-participant"><div class="app-demo-participant-copy"><div class="app-demo-participant-name"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-person"></use></svg><strong>Mateo (padre)</strong></div><div class="app-demo-participant-meta"><span class="app-demo-consent-ok"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-circle-check"></use></svg>Consentimiento vigente</span><span><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg>29/10/2026, 4:00 p. m.</span></div></div><span class="app-demo-participant-actions">Acciones <svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></span></div><div class="app-demo-participant"><div class="app-demo-participant-copy"><div class="app-demo-participant-name"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-person"></use></svg><strong>Luna (8 años)</strong></div><div class="app-demo-participant-meta"><span class="app-demo-consent-ok"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-circle-check"></use></svg>Consentimiento vigente</span><span><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg>29/10/2026, 4:00 p. m.</span></div></div><span class="app-demo-participant-actions">Acciones <svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></span></div><div class="app-demo-participant"><div class="app-demo-participant-copy"><div class="app-demo-participant-name"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-person"></use></svg><strong>Tomás (11 años)</strong></div><div class="app-demo-participant-meta"><span class="app-demo-consent-ok"><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-circle-check"></use></svg>Consentimiento vigente</span><span><svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg>29/10/2026, 4:00 p. m.</span></div></div><span class="app-demo-participant-actions">Acciones <svg class="app-demo-icon" viewBox="0 0 24 24"><use href="#demo-down"></use></svg></span></div></div></div></div></div></div></div>
-                            <figcaption class="clinical-preview-caption">
-                                Caso ficticio: Mateo y sus hijos, Luna (8 años) y Tomás (11 años), comparten un proceso
-                                familiar de duelo por la pérdida del abuelo.
-                            </figcaption>
-                        </figure>
-                    </details>
+            <figure class="clinical-network team-cycle">
+                <figcaption>
+                    <span><strong>De la primera cita al seguimiento</strong><small>Ejemplo ficticio de una configuración de roles</small></span>
+                    <button type="button" class="cycle-play" hidden>Iniciar visita guiada</button>
+                </figcaption>
+                <div class="cycle-map">
+                  <svg class="cycle-lines" aria-hidden="true"><defs><symbol id="team-a0" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="#fff" stroke="#71918c"/><clipPath id="team-clip0"><circle cx="60" cy="60" r="47"/></clipPath><g clip-path="url(#team-clip0)"><circle cx="60" cy="60" r="47" fill="#71918c" opacity=".18"/><g fill="#543c32"><path d="M34 54 Q23 15 60 17 Q95 16 88 62 L98 96 H25Z"/></g><path d="M15 120 Q18 87 48 80 H72 Q103 87 105 120Z" fill="#71918c"/><rect x="51" y="65" width="18" height="23" rx="7" fill="#e4b294"/><ellipse cx="60" cy="49" rx="24" ry="31" fill="#e4b294"/><g fill="#543c32"><path d="M35 45 Q25 15 60 17 Q95 15 86 45 Q65 38 54 28 Q48 40 35 45"/></g><circle cx="51" cy="49" r="2" fill="#40332e"/><circle cx="69" cy="49" r="2" fill="#40332e"/><path d="M54 64 Q60 70 66 64" stroke="#9c6357" stroke-width="1.7" fill="none"/></g></symbol><symbol id="team-a1" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="#fff" stroke="#c58d7d"/><clipPath id="team-clip1"><circle cx="60" cy="60" r="47"/></clipPath><g clip-path="url(#team-clip1)"><circle cx="60" cy="60" r="47" fill="#c58d7d" opacity=".18"/><g fill="#63442e"><path d="M36 42 Q15 42 23 80 L34 89 L41 54 M84 42 Q105 42 97 80 L86 89 L79 54"/></g><path d="M15 120 Q18 87 48 80 H72 Q103 87 105 120Z" fill="#c58d7d"/><rect x="51" y="65" width="18" height="23" rx="7" fill="#ebc2a5"/><ellipse cx="60" cy="49" rx="24" ry="31" fill="#ebc2a5"/><g fill="#63442e"><path d="M35 45 Q25 15 60 17 Q95 15 86 45 Q65 38 54 28 Q48 40 35 45"/></g><circle cx="51" cy="49" r="2" fill="#40332e"/><circle cx="69" cy="49" r="2" fill="#40332e"/><path d="M34 43 L25 37 L25 49Z M86 43 L95 37 L95 49Z" fill="#c58d7d"/><path d="M54 64 Q60 70 66 64" stroke="#9c6357" stroke-width="1.7" fill="none"/></g></symbol><symbol id="team-a2" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="#fff" stroke="#548c80"/><clipPath id="team-clip2"><circle cx="60" cy="60" r="47"/></clipPath><g clip-path="url(#team-clip2)"><circle cx="60" cy="60" r="47" fill="#548c80" opacity=".18"/><g fill="#593d2d"><path d="M34 54 Q23 15 60 17 Q95 16 88 62 L98 96 H25Z"/></g><path d="M15 120 Q18 87 48 80 H72 Q103 87 105 120Z" fill="#548c80"/><rect x="51" y="65" width="18" height="23" rx="7" fill="#ebc0a0"/><ellipse cx="60" cy="49" rx="24" ry="31" fill="#ebc0a0"/><g fill="#593d2d"><path d="M35 45 Q25 15 60 17 Q95 15 86 45 Q65 38 54 28 Q48 40 35 45"/></g><circle cx="51" cy="49" r="2" fill="#40332e"/><circle cx="69" cy="49" r="2" fill="#40332e"/><path d="M54 64 Q60 70 66 64" stroke="#9c6357" stroke-width="1.7" fill="none"/></g></symbol><symbol id="team-a3" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="#fff" stroke="#b58b62"/><clipPath id="team-clip3"><circle cx="60" cy="60" r="47"/></clipPath><g clip-path="url(#team-clip3)"><circle cx="60" cy="60" r="47" fill="#b58b62" opacity=".18"/><g fill="#302b28"></g><path d="M15 120 Q18 87 48 80 H72 Q103 87 105 120Z" fill="#b58b62"/><rect x="51" y="65" width="18" height="23" rx="7" fill="#c99069"/><ellipse cx="60" cy="49" rx="24" ry="31" fill="#c99069"/><g fill="#302b28"><path d="M35 44 Q27 16 60 16 Q94 16 86 45 L76 28 Q52 39 40 30Z"/></g><circle cx="51" cy="49" r="2" fill="#40332e"/><circle cx="69" cy="49" r="2" fill="#40332e"/><g fill="none" stroke="#465d60" stroke-width="2"><rect x="40" y="43" width="18" height="13" rx="5"/><rect x="62" y="43" width="18" height="13" rx="5"/><path d="M58 49 H62"/></g><path d="M54 64 Q60 70 66 64" stroke="#9c6357" stroke-width="1.7" fill="none"/></g></symbol><symbol id="team-a4" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="#fff" stroke="#8276a5"/><clipPath id="team-clip4"><circle cx="60" cy="60" r="47"/></clipPath><g clip-path="url(#team-clip4)"><circle cx="60" cy="60" r="47" fill="#8276a5" opacity=".18"/><g fill="#a86c39"><circle cx="36" cy="34" r="16"/><circle cx="53" cy="23" r="16"/><circle cx="73" cy="26" r="16"/><circle cx="86" cy="43" r="16"/><circle cx="31" cy="56" r="16"/><circle cx="87" cy="66" r="16"/><circle cx="32" cy="77" r="16"/><circle cx="84" cy="86" r="16"/></g><path d="M15 120 Q18 87 48 80 H72 Q103 87 105 120Z" fill="#8276a5"/><rect x="51" y="65" width="18" height="23" rx="7" fill="#f0c5aa"/><ellipse cx="60" cy="49" rx="24" ry="31" fill="#f0c5aa"/><g fill="#a86c39"><circle cx="38" cy="31" r="10"/><circle cx="49" cy="23" r="10"/><circle cx="61" cy="22" r="10"/><circle cx="74" cy="26" r="10"/><circle cx="84" cy="38" r="10"/></g><circle cx="51" cy="49" r="2" fill="#40332e"/><circle cx="69" cy="49" r="2" fill="#40332e"/><path d="M54 64 Q60 70 66 64" stroke="#9c6357" stroke-width="1.7" fill="none"/></g></symbol><symbol id="team-a5" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="#fff" stroke="#55768e"/><clipPath id="team-clip5"><circle cx="60" cy="60" r="47"/></clipPath><g clip-path="url(#team-clip5)"><circle cx="60" cy="60" r="47" fill="#55768e" opacity=".18"/><g fill="#302c28"></g><path d="M15 120 Q18 87 48 80 H72 Q103 87 105 120Z" fill="#55768e"/><rect x="51" y="65" width="18" height="23" rx="7" fill="#a87555"/><ellipse cx="60" cy="49" rx="24" ry="31" fill="#a87555"/><g fill="#302c28"><circle cx="38" cy="31" r="10"/><circle cx="49" cy="23" r="10"/><circle cx="61" cy="22" r="10"/><circle cx="74" cy="26" r="10"/><circle cx="84" cy="38" r="10"/></g><circle cx="51" cy="49" r="2" fill="#40332e"/><circle cx="69" cy="49" r="2" fill="#40332e"/><path d="M38 61 Q60 90 82 61 L77 73 Q60 87 43 73Z" fill="#302c28"/><path d="M54 64 Q60 70 66 64" stroke="#9c6357" stroke-width="1.7" fill="none"/></g></symbol><symbol id="team-a6" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="#fff" stroke="#254a49"/><clipPath id="team-clip6"><circle cx="60" cy="60" r="47"/></clipPath><g clip-path="url(#team-clip6)"><circle cx="60" cy="60" r="47" fill="#254a49" opacity=".18"/><g fill="#382c28"><circle cx="78" cy="19" r="17"/></g><path d="M15 120 Q18 87 48 80 H72 Q103 87 105 120Z" fill="#254a49"/><rect x="51" y="65" width="18" height="23" rx="7" fill="#e0ab8a"/><ellipse cx="60" cy="49" rx="24" ry="31" fill="#e0ab8a"/><g fill="#382c28"><path d="M35 45 Q25 15 60 17 Q95 15 86 45 Q65 38 54 28 Q48 40 35 45"/></g><circle cx="51" cy="49" r="2" fill="#40332e"/><circle cx="69" cy="49" r="2" fill="#40332e"/><g fill="none" stroke="#465d60" stroke-width="2"><rect x="40" y="43" width="18" height="13" rx="5"/><rect x="62" y="43" width="18" height="13" rx="5"/><path d="M58 49 H62"/></g><path d="M54 64 Q60 70 66 64" stroke="#9c6357" stroke-width="1.7" fill="none"/></g></symbol><symbol id="team-a7" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="#fff" stroke="#697d64"/><clipPath id="team-clip7"><circle cx="60" cy="60" r="47"/></clipPath><g clip-path="url(#team-clip7)"><circle cx="60" cy="60" r="47" fill="#697d64" opacity=".18"/><g fill="#776456"></g><path d="M15 120 Q18 87 48 80 H72 Q103 87 105 120Z" fill="#697d64"/><rect x="51" y="65" width="18" height="23" rx="7" fill="#ebc3a7"/><ellipse cx="60" cy="49" rx="24" ry="31" fill="#ebc3a7"/><g fill="#776456"><path d="M35 44 Q27 16 60 16 Q94 16 86 45 L76 28 Q52 39 40 30Z"/></g><circle cx="51" cy="49" r="2" fill="#40332e"/><circle cx="69" cy="49" r="2" fill="#40332e"/><g fill="none" stroke="#465d60" stroke-width="2"><rect x="40" y="43" width="18" height="13" rx="5"/><rect x="62" y="43" width="18" height="13" rx="5"/><path d="M58 49 H62"/></g><path d="M54 64 Q60 70 66 64" stroke="#9c6357" stroke-width="1.7" fill="none"/></g></symbol></defs>
+                    <g class="edge" data-links="patient reception"><path class="wire"/><path class="pulse"/></g>
+                    <g class="edge" data-links="reception cash"><path class="wire"/><path class="pulse"/></g>
+                    <g class="edge" data-links="reception agendaLaura"><path class="wire"/><path class="pulse"/></g>
+                    <g class="edge" data-links="reception agendaAndres"><path class="wire"/><path class="pulse"/></g>
+                    <g class="edge" data-links="agendaLaura laura"><path class="wire"/><path class="pulse"/></g>
+                    <g class="edge" data-links="agendaAndres andres"><path class="wire"/><path class="pulse"/></g>
+                    <g class="edge" data-links="laura follow"><path class="wire"/><path class="pulse"/></g>
+                    <g class="edge" data-links="andres follow"><path class="wire"/><path class="pulse"/></g>
+                    <g class="edge" data-links="follow reception"><path class="wire"/><path class="pulse"/></g>
+                  </svg>
+                  <button type="button" class="node cycle-patient" data-id="patient" aria-pressed="false"><span class="cycle-faces"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#team-a0"></use></svg><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#team-a1"></use></svg></span><span><strong>Lorena y Ana</strong><small>Solicitan atención</small></span></button>
+                  <button type="button" class="node cycle-reception" data-id="reception" aria-pressed="false"><span class="cycle-faces"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#team-a2"></use></svg></span><span><strong>Camila</strong><small>Recepción y agenda</small></span></button>
+                  <button type="button" class="node cycle-cash" data-id="cash" aria-pressed="false"><span class="cycle-faces"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#team-a3"></use></svg></span><span><strong>Mateo</strong><small>Cobros de citas agendadas</small></span></button>
+                  <button type="button" class="node cycle-agendaLaura" data-id="agendaLaura" aria-pressed="false"><svg class="glyph agenda-mark" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg><span><strong>Agenda de Laura</strong><small>Sesión con Lorena y Ana</small></span></button>
+                  <button type="button" class="node cycle-agendaAndres" data-id="agendaAndres" aria-pressed="false"><svg class="glyph agenda-mark" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-calendar"></use></svg><span><strong>Agenda de Andrés</strong><small>Sesión con Lorena</small></span></button>
+                  <button type="button" class="node cycle-laura" data-id="laura" aria-pressed="false"><span class="cycle-faces"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#team-a4"></use></svg></span><span><strong>Laura atiende a Lorena y Ana</strong><small>Proceso familiar</small></span></button>
+                  <button type="button" class="node cycle-andres" data-id="andres" aria-pressed="false"><span class="cycle-faces"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#team-a5"></use></svg></span><span><strong>Andrés atiende a Lorena</strong><small>Proceso individual</small></span></button>
+                  <button type="button" class="node cycle-follow" data-id="follow" aria-pressed="false"><span class="cycle-faces"><svg class="glyph" aria-hidden="true" viewBox="0 0 24 24"><use href="#demo-note"></use></svg></span><span><strong>Registro de la sesión</strong><small>Notas, incapacidades y órdenes según la atención</small></span></button>
+                  <div class="cycle-support" role="group" aria-labelledby="cycle-support-title">
+                    <h3 id="cycle-support-title">Funciones transversales del centro</h3>
+                  <button type="button" class="node cycle-access" data-id="access" aria-pressed="false"><span class="cycle-faces"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#team-a7"></use></svg></span><span><strong>Daniel</strong><small>Roles y accesos</small></span></button>
+                  <button type="button" class="node cycle-director" data-id="director" aria-pressed="false"><span class="cycle-faces"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#team-a6"></use></svg></span><span><strong>Valentina</strong><small>Operación y finanzas</small></span></button>
+                  </div>
                 </div>
-            </div>
+                <div class="cycle-guide" role="dialog" aria-labelledby="cycle-step-title" aria-describedby="cycle-step-count cycle-step-copy" hidden>
+                    <div class="guide-title">
+                        <div><span class="guide-count" id="cycle-step-count"></span>
+                    <strong class="guide-heading" id="cycle-step-title" tabindex="-1"></strong></div>
+                        <button type="button" class="guide-exit" aria-label="Cerrar visita" title="Cerrar visita"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <p class="guide-copy" id="cycle-step-copy"></p>
+                    <div class="guide-actions">
+                        <button type="button" class="guide-back">Anterior</button>
+                        <button type="button" class="guide-next">Siguiente</button>
+                    </div>
+                </div>
+            </figure>
         </div>
     </section>
 
@@ -1870,78 +1874,7 @@
         </div>
     </section>
 
-    <section class="band teams" id="centros" aria-labelledby="centers-title">
-        <div class="shell split">
-            <div class="copy">
-                <p class="kicker">Verdme para clínicas y equipos</p>
-                <h2 id="centers-title">Una plataforma para conectar a todo tu equipo clínico.</h2>
-                <p>
-                    Organiza la atención de varios profesionales desde tu centro de atención psicológica. Cada persona ve y
-                    gestiona la información que le corresponde según su función.
-                </p>
-                <a
-                    class="action inverse"
-                    href="https://wa.me/573156269673?text=Hola%2C%20quiero%20solicitar%20una%20demostraci%C3%B3n%20de%20Verdme%20para%20mi%20cl%C3%ADnica%20o%20equipo."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Solicitar demostración para mi clínica</a
-                >
-                <figure class="team-example">
-                    <figcaption>Ejemplo ficticio de agenda del equipo</figcaption>
-                    <ul>
-                        <li>
-                            <time>09:00</time><span><strong>Elena Ruiz</strong> Sesión individual</span>
-                        </li>
-                        <li>
-                            <time>10:30</time><span><strong>Daniel Gil</strong> Sesión familiar</span>
-                        </li>
-                    </ul>
-                </figure>
-            </div>
-            <ul class="centers-features">
-                <li>
-                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 15h3M15 15h2"/></svg></span>
-                    <div>
-                        <h3>Una agenda para todo el equipo</h3>
-                        <p>
-                            Consulta las agendas de varios profesionales y programa sesiones para otros integrantes del
-                            equipo.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="8" cy="8" r="5"/><path d="m12 12 9 9M17 17l3-3M14 14l3-3"/></svg></span>
-                    <div>
-                        <h3>Accesos según cada función</h3>
-                        <p>
-                            Define qué puede consultar y gestionar cada integrante. Por ejemplo, recepción puede agendar y
-                            registrar pagos sin acceder a la historia clínica.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 20v-2a6 6 0 0 1 10-4M17 11v10M20 13h-4a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-4"/></svg></span>
-                    <div>
-                        <h3>Pacientes y pagos del equipo</h3>
-                        <p>
-                            Busca pacientes por nombre o documento, registra sus datos y los pagos de las sesiones del
-                            equipo.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span class="centers-feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M6 16a3 3 0 0 1 6 0M15 9h3M15 13h3"/></svg></span>
-                    <div>
-                        <h3>Claridad sobre usuarios y licencias</h3>
-                        <p>
-                            Activa o desactiva el acceso de los profesionales y consulta cuántas licencias tienes
-                            contratadas, en uso y disponibles.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+
 
     <section class="security-section" id="seguridad">
         <div class="security-container">
@@ -2258,5 +2191,207 @@
         })();
     </script>
 
+<script>
+        (() => {
+            function setupTour(figure, map, descriptions, route) {
+                const play = figure.querySelector('.cycle-play');
+                const nodes = figure.querySelectorAll('.node');
+                const summary = figure.querySelector('.network-detail');
+                const overview = summary?.textContent;
+                let anchor;
+                const guide = figure.querySelector('.cycle-guide');
+                const heading = guide.querySelector('.guide-heading');
+                const back = guide.querySelector('.guide-back');
+                const next = guide.querySelector('.guide-next');
+                let step = 0;
+                function show(id) {
+                    const transversal = id === 'access' || id === 'director';
+                    const related = new Set([id]);
+                    for (const edge of figure.querySelectorAll('.edge')) {
+                        const links = edge.dataset.links.split(' ');
+                        const active = !id || links.includes(id);
+                        edge.classList.toggle('muted', !transversal && !active);
+                        if (active) links.forEach(link => related.add(link));
+                    }
+                    for (const node of nodes) {
+                        node.classList.toggle('muted', !!id && !transversal && !node.closest('.cycle-support') && !related.has(node.dataset.id));
+                        node.setAttribute('aria-pressed', String(node.dataset.id === id));
+                    }
+                    figure.classList.toggle('is-exploring', !!id && !transversal);
+                    if (summary) summary.textContent = descriptions[id] || overview;
+
+                }
+                const desktopLayout = matchMedia(figure.matches('.team-cycle') ? '(min-width: 921px)' : '(min-width: 741px)');
+                const shell = figure.parentElement;
+                const originalSpot = document.createComment('posición de la guía en móvil');
+                guide.before(originalSpot);
+                const ns = 'http://www.w3.org/2000/svg';
+                const leader = document.createElementNS(ns, 'svg');
+                leader.classList.add('tour-leader');
+                leader.setAttribute('aria-hidden', 'true');
+                const line = document.createElementNS(ns, 'path');
+                line.setAttribute('fill', 'none');
+                line.setAttribute('stroke', 'currentColor');
+                line.setAttribute('stroke-width', '1.8');
+                line.setAttribute('stroke-linejoin', 'round');
+                const dot = document.createElementNS(ns, 'circle');
+                dot.setAttribute('r', '3.5');
+                dot.setAttribute('fill', 'currentColor');
+                leader.append(line, dot);
+                leader.setAttribute('hidden', '');
+                shell.append(leader);
+                function positionGuide() {
+                    if (guide.hidden || !anchor) return;
+                    const lateral = desktopLayout.matches;
+                    if (lateral && guide.parentElement !== shell) shell.append(guide);
+                    else if (!lateral && guide.parentElement !== figure) originalSpot.after(guide);
+                    guide.classList.toggle('is-lateral', lateral);
+                    const bounds = shell.getBoundingClientRect();
+                    const card = figure.getBoundingClientRect();
+                    const target = anchor.getBoundingClientRect();
+                    const endX = target.left - bounds.left;
+                    const endY = target.top - bounds.top + target.height / 2;
+                    if (lateral) {
+                        guide.style.left = Math.max(0, card.left - bounds.left - guide.offsetWidth - 20) + 'px';
+                        guide.style.top = Math.max(0, Math.min(endY - guide.offsetHeight / 2, bounds.height - guide.offsetHeight)) + 'px';
+                    } else {
+                        guide.style.left = guide.style.top = '';
+                    }
+                    const tip = guide.getBoundingClientRect();
+                    const x = (lateral ? tip.right : tip.left) - bounds.left;
+                    const y = tip.top - bounds.top + tip.height / 2;
+                    const lane = card.left - bounds.left + (lateral ? -9 : 5);
+                    line.setAttribute('d', `M ${x} ${y} H ${lane} V ${endY} H ${endX}`);
+                    dot.setAttribute('cx', endX);
+                    dot.setAttribute('cy', endY);
+                    leader.removeAttribute('hidden');
+                }
+                const tourLayout = new ResizeObserver(positionGuide);
+                [shell, figure, guide].forEach(element => tourLayout.observe(element));
+                desktopLayout.addEventListener('change', positionGuide);
+                let opener = play;
+                function visit(index) {
+                    const id = route[index];
+                    step = index;
+                    anchor = map.querySelector('[data-id="' + id + '"]');
+                    show(id);
+                    play.hidden = true;
+                    guide.hidden = false;
+                    map.classList.add('is-touring');
+                    guide.querySelector('.guide-count').textContent = `Paso ${step + 1} de ${route.length}`;
+                    heading.textContent = anchor.querySelector('strong')?.textContent || anchor.getAttribute('aria-label');
+                    guide.querySelector('.guide-copy').textContent = descriptions[id];
+                    back.disabled = step === 0;
+                    next.textContent = step === route.length - 1 ? 'Finalizar visita' : 'Siguiente';
+                    positionGuide();
+                    heading.focus({ preventScroll: true });
+                    if (!desktopLayout.matches) guide.scrollIntoView({ block: 'nearest', behavior: 'instant' });
+                }
+                function finish() {
+                    guide.hidden = true;
+                    leader.setAttribute('hidden', '');
+                    map.classList.remove('is-touring');
+                    play.hidden = false;
+                    show('');
+                    opener.focus();
+                }
+                play.addEventListener('click', () => { opener = play; visit(0); });
+                back.addEventListener('click', () => visit(step - 1));
+                next.addEventListener('click', () => step + 1 < route.length ? visit(step + 1) : finish());
+                guide.querySelector('.guide-exit').addEventListener('click', finish);
+                figure.parentElement.addEventListener('keydown', event => {
+                    if (event.key === 'Escape' && !guide.hidden) finish();
+                });
+                for (const node of nodes) {
+                    const openStep = () => {
+                        opener = node;
+                        visit(route.indexOf(node.dataset.id));
+                    };
+                    node.addEventListener('click', openStep);
+                    if (node.matches('svg .node')) {
+                        node.addEventListener('keydown', event => {
+                            if (event.key === 'Enter' || event.key === ' ') {
+                                event.preventDefault();
+                                openStep();
+                            }
+                        });
+                    }
+                }
+                play.hidden = false;
+            }
+            function setupIndependentPractice(figure) {
+                const descriptions = {
+              "psicologo": "Daniel es el psicólogo tratante en los tres procesos de Lorena: familiar, individual y grupal.",
+              "lorena": "Lorena participa en un proceso familiar con Ana, un proceso individual y un proceso grupal con compañeros de su empresa.",
+              "ana": "Ana participa junto a su madre Lorena en el proceso familiar.",
+              "familia": "Ana y Lorena comparten un proceso de intervención familiar.",
+              "individual": "Lorena cuenta con un proceso independiente.",
+              "grupal": "Lorena, Carlos, Sofía y David participan en un proceso grupal.",
+              "carlos": "Carlos participa en el proceso grupal con Lorena y sus compañeros de empresa.",
+              "sofia": "Sofía participa en el proceso grupal con Lorena y sus compañeros de empresa.",
+              "david": "David participa en el proceso grupal con Lorena y sus compañeros de empresa."
+    };
+                const motion = figure.querySelector('.network-motion');
+                figure.dataset.motion = 'playing';
+                motion.addEventListener('click', () => {
+                    const pause = figure.dataset.motion === 'playing';
+                    figure.dataset.motion = pause ? 'paused' : 'playing';
+                    motion.textContent = pause ? '▷' : 'Ⅱ';
+                    motion.title = pause ? 'Reanudar animación' : 'Pausar animación';
+                    motion.setAttribute('aria-label', motion.title);
+                });
+                motion.hidden = false;
+                setupTour(figure, figure, descriptions, ['psicologo', 'lorena', 'familia', 'ana', 'individual', 'grupal', 'carlos', 'sofia', 'david']);
+            }
+            function setupTeam(figure) {
+                const descriptions = {
+                    patient: 'Lorena y Ana solicitan atención familiar. Lorena también solicita atención individual.',
+                    reception: 'Camila registra a las pacientes y programa sus citas. Su rol en este ejemplo permite agendar sin consultar las notas clínicas.',
+                    agendaLaura: 'Laura consulta su propia agenda y abre la sesión familiar programada con Lorena y Ana.',
+                    agendaAndres: 'Andrés consulta su propia agenda y abre la sesión individual programada con Lorena.',
+                    cash: 'Desde las citas de la agenda, Mateo registra pagos y consulta los saldos autorizados. El pago puede ocurrir antes o después de la atención.',
+                    laura: 'Laura atiende a Lorena y Ana juntas. Documenta las sesiones y el plan terapéutico del proceso familiar.',
+                    andres: 'Andrés lleva el proceso individual de Lorena. El acceso a los registros de otros procesos depende de los permisos.',
+                    follow: 'Cada tratante registra las notas y los datos clínicos de cada paciente en esa sesión. Según su práctica y sus permisos, puede consignar diagnósticos, alergias, factores de riesgo e información sobre incapacidades, formulación y órdenes. Si se requiere otra cita, recepción la programa desde la agenda.',
+                    director: 'Valentina consulta la operación y las finanzas del equipo según los permisos asignados.',
+                    access: 'Daniel administra usuarios, roles y permisos. La consulta clínica requiere los accesos correspondientes.'
+                };
+                const map = figure.querySelector('.cycle-map');
+                const connections = map.querySelectorAll('.edge');
+                function drawConnections() {
+                    const bounds = map.getBoundingClientRect();
+                    for (const edge of connections) {
+                        const [from, to] = edge.dataset.links.split(' ');
+                        const start = map.querySelector('[data-id="' + from + '"]').getBoundingClientRect();
+                        const end = map.querySelector('[data-id="' + to + '"]').getBoundingClientRect();
+                        const x = start.left + start.width / 2 - bounds.left;
+                        const y = start.bottom - bounds.top;
+                        const destX = end.left + end.width / 2 - bounds.left;
+                        const destY = end.top - bounds.top;
+                        const middle = (y + destY) / 2;
+                        let path = 'M' + x + ' ' + y + ' C' + x + ' ' + middle + ' ' + destX + ' ' + middle + ' ' + destX + ' ' + destY;
+                        if (from === 'reception' && to === 'cash') {
+                            path = 'M' + (start.right - bounds.left) + ' ' + (start.top + start.height / 2 - bounds.top)
+                                + ' L' + (end.left - bounds.left) + ' ' + (end.top + end.height / 2 - bounds.top);
+                        } else if (destY < y) {
+                            const right = from === 'director';
+                            const port = right ? 'right' : 'left';
+                            const lane = right ? bounds.width - 3 : from === 'access' ? 3 : 7;
+                            const sy = start.top + start.height / 2 - bounds.top;
+                            const ey = end.top + end.height / 2 - bounds.top;
+                            path = 'M' + (start[port] - bounds.left) + ' ' + sy + ' H' + lane + ' V' + ey + ' H' + (end[port] - bounds.left);
+                        }
+                        edge.querySelectorAll('path').forEach(line => line.setAttribute('d', path));
+                    }
+                }
+                drawConnections();
+                new ResizeObserver(drawConnections).observe(map);
+                const route = ['patient', 'reception', 'cash', 'agendaLaura', 'laura', 'agendaAndres', 'andres', 'follow', 'access', 'director'];
+                setupTour(figure, map, descriptions, route);
+            }
+            setupIndependentPractice(document.querySelector('.hero .clinical-network'));
+            setupTeam(document.querySelector('.team-cycle'));
+        })();
+    </script>
 </body>
 </html>
